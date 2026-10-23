@@ -1,0 +1,919 @@
+TAP version 13
+# Subtest: 访问-ACCESS-003 document 429 wins over API403
+not ok 1 - 访问-ACCESS-003 document 429 wins over API403
+  ---
+  duration_ms: 1.440542
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:11:37'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:12:69)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: 访问-ACCESS-003 document 401 wins over API403
+not ok 2 - 访问-ACCESS-003 document 401 wins over API403
+  ---
+  duration_ms: 0.119084
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:11:37'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:12:69)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 完成-DONE-003 partial bodies cannot mark search exhausted
+not ok 3 - 完成-DONE-003 partial bodies cannot mark search exhausted
+  ---
+  duration_ms: 0.133625
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:16:63)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 来源-SOURCE-001 old keyword response cannot finish the current word
+not ok 4 - 来源-SOURCE-001 old keyword response cannot finish the current word
+  ---
+  duration_ms: 0.073375
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:19:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:20:49)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+not ok 5 - 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+  ---
+  duration_ms: 0.120708
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:22:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:24:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+not ok 6 - 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+  ---
+  duration_ms: 4.590208
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: createEgoBrowser
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:30:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+not ok 7 - 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+  ---
+  duration_ms: 0.402875
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runInEgo
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:5:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:34:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+not ok 8 - 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+  ---
+  duration_ms: 1.276833
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: normalizeConfig
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:8:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:10:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: 输入-IN-002 invalid inputs are rejected before running
+not ok 9 - 输入-IN-002 invalid inputs are rejected before running
+  ---
+  duration_ms: 0.093833
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: normalizeConfig
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:8:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:14:18)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+not ok 10 - 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+  ---
+  duration_ms: 0.094
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:18:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: normalizeConfig
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:8:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:19:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CLI dry-run does not touch browser or create a run directory
+not ok 11 - CLI dry-run does not touch browser or create a run directory
+  ---
+  duration_ms: 23.824917
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:22:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    node:internal/modules/cjs/loader:1404
+      throw err;
+      ^
+    
+    Error: Cannot find module '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/find.mjs'
+        at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+        at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+        at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+        at Function._load (node:internal/modules/cjs/loader:1211:37)
+        at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+        at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+        at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+        at node:internal/main/run_main_module:36:49 {
+      code: 'MODULE_NOT_FOUND',
+      requireStack: []
+    }
+    
+    Node.js v22.16.0
+    
+    
+    1 !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    Function._load (node:internal/modules/cjs/loader:1211:37)
+    TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    node:internal/main/run_main_module:36:49 {
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.test.mjs:25:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+not ok 12 - 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+  ---
+  duration_ms: 1.0095
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.mjs' imported from /Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:860:10)
+    defaultResolve (node:internal/modules/esm/resolve:984:11)
+    ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:344:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:642:21)
+  ...
+# Subtest: 导出-EXPORT-002 zero results still produce headers and target shortfall
+not ok 13 - 导出-EXPORT-002 zero results still produce headers and target shortfall
+  ---
+  duration_ms: 0.460417
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: exportResults
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:14:18)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 身份-ID-001 wrong author and unready data never count as no email
+not ok 14 - 身份-ID-001 wrong author and unready data never count as no email
+  ---
+  duration_ms: 0.906625
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:8:56)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+not ok 15 - 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+  ---
+  duration_ms: 0.147667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:14:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+not ok 16 - 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+  ---
+  duration_ms: 0.187417
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:16:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:17:17)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+not ok 17 - 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+  ---
+  duration_ms: 0.11425
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:20:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:22:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 指标-METRIC-004 known empty window is not data incomplete
+not ok 18 - 指标-METRIC-004 known empty window is not data incomplete
+  ---
+  duration_ms: 0.058334
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:27:48)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+not ok 19 - 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+  ---
+  duration_ms: 0.10925
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:31:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+not ok 20 - 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+  ---
+  duration_ms: 0.071708
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:35:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:37:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 地区-REGION-001/002 country is optional, explicit wrong region rejects
+not ok 21 - 地区-REGION-001/002 country is optional, explicit wrong region rejects
+  ---
+  duration_ms: 0.088959
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:42:74)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+not ok 22 - 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+  ---
+  duration_ms: 0.327458
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:45:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: qualifyCandidate
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:48:23)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+not ok 23 - 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+  ---
+  duration_ms: 0.271833
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:53:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: qualifyCandidate
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:55:22)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 回放-REPLAY-001 old five-person captures independently reproduce sample means
+not ok 24 - 回放-REPLAY-001 old five-person captures independently reproduce sample means
+  ---
+  duration_ms: 0.134542
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:58:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: evaluateCapture
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:6:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:59:17)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+not ok 25 - 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+  ---
+  duration_ms: 2.840667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:12:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:13:58)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 完成-DONE-001 empty valid search exports an empty list
+not ok 26 - 完成-DONE-001 empty valid search exports an empty list
+  ---
+  duration_ms: 0.342833
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:17:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:18:106)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 完成-DONE-002 unknown completion pauses without switching words
+not ok 27 - 完成-DONE-002 unknown completion pauses without switching words
+  ---
+  duration_ms: 1.328125
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:20:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:21:126)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+not ok 28 - 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+  ---
+  duration_ms: 0.200917
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:25:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+not ok 29 - 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+  ---
+  duration_ms: 0.957084
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:29:14)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 导出-EXPORT-002 export failure resumes export only and finishes after verification
+not ok 30 - 导出-EXPORT-002 export failure resumes export only and finishes after verification
+  ---
+  duration_ms: 1.128708
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:32:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:33:56)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 落盘-STORE-001 active writer and changed resume config are rejected
+not ok 31 - 落盘-STORE-001 active writer and changed resume config are rejected
+  ---
+  duration_ms: 0.913875
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:36:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:37:50)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 依赖-DEP-001 whole offline flow works with global fetch forbidden
+not ok 32 - 依赖-DEP-001 whole offline flow works with global fetch forbidden
+  ---
+  duration_ms: 0.139875
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Missing implementation: runCampaign
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    fn (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:7:24)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:42:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 0
+# fail 32
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59.576875

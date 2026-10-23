@@ -1,0 +1,4 @@
+主页邮箱递归查找
+node find.mjs --url <主页或网页URL> --run-dir <新目录> [--space <Ego空间ID>] [--max-depth N] [--max-pages N]
+续跑: --resume --run-dir <原目录>；进度: --status --run-dir <目录>
+默认遍历至范围内队列耗尽；普通网页只检查联系线索/@/mailto。

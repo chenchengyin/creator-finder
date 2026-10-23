@@ -1,0 +1,581 @@
+{
+  "profile": {
+    "capturedAt": "2026-10-21T03:59:00.078Z",
+    "profileUrl": "https://www.tiktok.com/@timtim44441",
+    "statusCode": 0,
+    "httpStatus": 200,
+    "authorId": "7471734644758201390",
+    "username": "timtim44441",
+    "bio": "Glitchmediafiles@gmail.com",
+    "privateAccount": false,
+    "unverifiedRegionFields": {
+      "semantics": "account_or_internal_region_not_confirmed_creator_location"
+    },
+    "publicLocation": {},
+    "followers": "138798",
+    "playlists": [],
+    "captcha": false,
+    "loginWall": false,
+    "title": "TikTok - Make Your Day",
+    "visibleError": false,
+    "identityVerified": true,
+    "ready": true,
+    "latestOrderConfirmed": true
+  },
+  "candidate": {
+    "username": "timtim44441",
+    "authorIdHint": "7471734644758201390",
+    "keyword": "christian skits",
+    "source": "tiktok-video",
+    "sourceUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+    "sourceLink": "https://www.tiktok.com/@timtim44441/video/7698074119371246861",
+    "sourceText": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+    "status": "queued",
+    "sourceEvidence": [
+      {
+        "videoId": "7698074119371246861",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "text": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+        "videoUrl": "https://www.tiktok.com/@timtim44441/video/7698074119371246861",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+        "keyword": "christian skits",
+        "capturedAt": "2026-10-21T03:57:29.683Z",
+        "source": "tiktok_native_video_search"
+      },
+      {
+        "videoId": "7630570265147165965",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "text": "Drop some apples in the chat 🍎  #God #timtim #skit #comedyskit #agnostic ",
+        "videoUrl": "https://www.tiktok.com/@timtim44441/video/7630570265147165965",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+        "keyword": "christian skits",
+        "capturedAt": "2026-10-21T03:58:02.428Z",
+        "source": "tiktok_native_video_search"
+      }
+    ],
+    "bioHint": "Glitchmediafiles@gmail.com"
+  },
+  "pages": [
+    {
+      "statusCode": 0,
+      "hasMore": true,
+      "cursor": "1783605534000",
+      "httpStatus": 200,
+      "items": [
+        {
+          "id": "7698934021346168078",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792547775,
+          "views": "1191",
+          "description": "How dare you say I shouldn’t slime out my children 🥀 #hottake #timtim #satire #dukefootball #commonsense ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698934021346168078"
+        },
+        {
+          "id": "7698814945491750158",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792520064,
+          "views": "8374",
+          "description": "Replying to @Flex_Guy We are taught this in kindergarten btw #timtim #kimarirobinson #satire #gaslighting #dukefootball ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698814945491750158"
+        },
+        {
+          "id": "7698754246526700814",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792505943,
+          "views": "104100",
+          "description": "Butism is the newest forming religion at this point….  #timtim #duke #kimarirobinson #satire #gaslighting ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698754246526700814"
+        },
+        {
+          "id": "7698074119371246861",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792347571,
+          "views": "108400",
+          "description": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698074119371246861"
+        },
+        {
+          "id": "7695180593105079565",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1791673876,
+          "views": "137500",
+          "description": "But Im the bad guy?  #timtim #satire #atheisttiktok #christiantiktok #devil ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7695180593105079565"
+        },
+        {
+          "id": "7693731461211442446",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1791336471,
+          "views": "147600",
+          "description": "No not that verse….  #timtim #christiantiktok #atheist #God #skit ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7693731461211442446"
+        },
+        {
+          "id": "7693334232654974221",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1791243971,
+          "views": "559500",
+          "description": "When Christians read the “non popular” verses 😭  #timtim #christiantiktok #satire #God #atheist ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7693334232654974221"
+        },
+        {
+          "id": "7682531691776183566",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1788728816,
+          "views": "205700",
+          "description": "Why do y’all think this is a good mindset to have?  #timtim #christiantiktok #God #atheisttiktok #satire ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7682531691776183566"
+        },
+        {
+          "id": "7682148964409347341",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1788639711,
+          "views": "591000",
+          "description": "If Good, God. If bad, Devil  #timtim #God #christiantiktok #atheisttiktok #skit ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7682148964409347341"
+        },
+        {
+          "id": "7680385868565089549",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1788229204,
+          "views": "567700",
+          "description": "I gotta send somebody down there 🤷🏾‍♂️  #timtim #God #christiantiktok #atheist #agnostic ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7680385868565089549"
+        },
+        {
+          "id": "7680002909433515278",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1788140038,
+          "views": "743700",
+          "description": "Imagine being the first person to read the Bible 😭 #timtim #christiantiktok #atheist #religion #God ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7680002909433515278"
+        },
+        {
+          "id": "7679601093118086414",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1788046495,
+          "views": "166700",
+          "description": "“A Scorpio would never” 🥀  #timtim #lindsayclancy #satire #patrickclancy #skit ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7679601093118086414"
+        },
+        {
+          "id": "7679072924241874190",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1787923508,
+          "views": "272500",
+          "description": "Can we please stop doing ts ✌️ #timtim #God #nepal #atheist #religion ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7679072924241874190"
+        },
+        {
+          "id": "7661696216983407886",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1783877691,
+          "views": "950700",
+          "description": "Just say Freewill 🥀  #timtim  #christiantiktok  #atheist  #God  #satire ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7661696216983407886"
+        },
+        {
+          "id": "7660973496511597837",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1783709418,
+          "views": "1300000",
+          "description": "Right Question, Wrong Questioners 🥀  #timtim  #God  #atheist #christiantiktok #religion ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7660973496511597837"
+        },
+        {
+          "id": "7660527378296212750",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1783605534,
+          "views": "1400000",
+          "description": "If you don’t like Superman, surely you’ll like Batman 🥀  #timtim #deconstruction #God #atheist #agnostic",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7660527378296212750"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "decision": "passed",
+    "reason": "ten_day_mean_above_threshold",
+    "averageViews": 116666.66666666667,
+    "sampleSize": 3,
+    "sample": [
+      {
+        "id": "7698754246526700814",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "createdAt": 1792505943,
+        "views": 104100,
+        "description": "Butism is the newest forming religion at this point….  #timtim #duke #kimarirobinson #satire #gaslighting ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:59:00.078Z",
+        "url": "https://www.tiktok.com/@timtim44441/video/7698754246526700814"
+      },
+      {
+        "id": "7698074119371246861",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "createdAt": 1792347571,
+        "views": 108400,
+        "description": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:59:00.078Z",
+        "url": "https://www.tiktok.com/@timtim44441/video/7698074119371246861"
+      },
+      {
+        "id": "7695180593105079565",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "createdAt": 1791673876,
+        "views": 137500,
+        "description": "But Im the bad guy?  #timtim #satire #atheisttiktok #christiantiktok #devil ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:59:00.078Z",
+        "url": "https://www.tiktok.com/@timtim44441/video/7695180593105079565"
+      }
+    ],
+    "windowStart": "2026-10-11T00:00:00+08:00",
+    "windowEnd": "2026-10-20T23:59:59+08:00",
+    "coverageComplete": true
+  },
+  "result": {
+    "authorId": "7471734644758201390",
+    "username": "timtim44441",
+    "profileUrl": "https://www.tiktok.com/@timtim44441",
+    "bio": "Glitchmediafiles@gmail.com",
+    "emails": [
+      "glitchmediafiles@gmail.com"
+    ],
+    "emailSource": "profile_bio",
+    "profileCapturedAt": "2026-10-21T03:59:00.078Z",
+    "followers": "138798",
+    "location": {
+      "decision": "passed",
+      "country": "US",
+      "reason": "latest_video_locationCreated",
+      "semantics": "video_region_field_not_verified_creator_residence",
+      "evidence": [
+        {
+          "source": "video_detail_hydration",
+          "text": "locationCreated=US",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698934021346168078",
+          "videoId": "7698934021346168078",
+          "capturedAt": "2026-10-21T04:05:57.418Z"
+        }
+      ]
+    },
+    "content": {
+      "decision": "passed",
+      "reason": "assistant_review_of_explicit_christian_themed_satirical_skit_captions",
+      "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698074119371246861",
+          "videoId": "7698074119371246861",
+          "captureSurface": "verified_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z"
+        },
+        {
+          "source": "creator_video_description",
+          "text": "No not that verse….  #timtim #christiantiktok #atheist #God #skit ",
+          "url": "https://www.tiktok.com/@timtim44441/video/7693731461211442446",
+          "videoId": "7693731461211442446",
+          "captureSurface": "verified_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z"
+        }
+      ],
+      "reviewedAt": "2026-10-21T04:05:36.221Z",
+      "scope": "Public Christian-themed satire/skits; user explicitly permits religious satire; no inference of personal belief"
+    },
+    "metrics": {
+      "decision": "passed",
+      "reason": "ten_day_mean_above_threshold",
+      "averageViews": 116666.66666666667,
+      "sampleSize": 3,
+      "sample": [
+        {
+          "id": "7698754246526700814",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792505943,
+          "views": 104100,
+          "description": "Butism is the newest forming religion at this point….  #timtim #duke #kimarirobinson #satire #gaslighting ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698754246526700814"
+        },
+        {
+          "id": "7698074119371246861",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1792347571,
+          "views": 108400,
+          "description": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7698074119371246861"
+        },
+        {
+          "id": "7695180593105079565",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "createdAt": 1791673876,
+          "views": 137500,
+          "description": "But Im the bad guy?  #timtim #satire #atheisttiktok #christiantiktok #devil ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:59:00.078Z",
+          "url": "https://www.tiktok.com/@timtim44441/video/7695180593105079565"
+        }
+      ],
+      "windowStart": "2026-10-11T00:00:00+08:00",
+      "windowEnd": "2026-10-20T23:59:59+08:00",
+      "coverageComplete": true
+    },
+    "countryFilterStage": "after_collection",
+    "decision": "matched",
+    "reason": "bio_email_content_ten_day_mean_and_US_video_region_met",
+    "videoRegion": {
+      "schemaVersion": 1,
+      "username": "timtim44441",
+      "authorId": "7471734644758201390",
+      "selectionSnapshotAt": "2026-10-21T03:59:00.078Z",
+      "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+      "requestedCount": 1,
+      "observations": [
+        {
+          "videoId": "7698934021346168078",
+          "authorId": "7471734644758201390",
+          "username": "timtim44441",
+          "videoUrl": "https://www.tiktok.com/@timtim44441/video/7698934021346168078",
+          "publishedAt": "2026-10-21T01:56:15.000Z",
+          "capturedAt": "2026-10-21T04:05:57.418Z",
+          "source": "video_detail_hydration",
+          "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+          "rawValue": "US",
+          "regionCode": "US",
+          "status": "observed",
+          "reason": "video_region_field_observed",
+          "creatorResidenceVerified": false
+        }
+      ],
+      "navigationAttempts": [
+        {
+          "number": 1,
+          "url": "https://www.tiktok.com/@timtim44441/video/7698934021346168078",
+          "httpStatus": 200,
+          "captcha": false,
+          "loginPrompt": false,
+          "error": null,
+          "capturedAt": "2026-10-21T04:05:57.421Z",
+          "videoId": "7698934021346168078"
+        }
+      ],
+      "stopped": false,
+      "stopReason": null,
+      "summary": {
+        "status": "single_video",
+        "regionCode": "US",
+        "requestedCount": 1,
+        "inspectedCount": 1,
+        "usableCount": 1,
+        "creatorResidenceVerified": false,
+        "meaning": "Observed video region field; not verified creator residence or nationality."
+      }
+    }
+  },
+  "contentReview": {
+    "previous": {
+      "decision": "pending",
+      "reason": "content_topic_and_format_unverified",
+      "evidence": []
+    },
+    "decision": "passed",
+    "reason": "assistant_review_of_explicit_christian_themed_satirical_skit_captions",
+    "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+    "evidence": [
+      {
+        "source": "creator_video_description",
+        "text": "Happy Sunday btw 😭 #timtim #christiantiktok #atheist #satire #skit ",
+        "url": "https://www.tiktok.com/@timtim44441/video/7698074119371246861",
+        "videoId": "7698074119371246861",
+        "captureSurface": "verified_profile_item_list",
+        "capturedAt": "2026-10-21T03:59:00.078Z"
+      },
+      {
+        "source": "creator_video_description",
+        "text": "No not that verse….  #timtim #christiantiktok #atheist #God #skit ",
+        "url": "https://www.tiktok.com/@timtim44441/video/7693731461211442446",
+        "videoId": "7693731461211442446",
+        "captureSurface": "verified_profile_item_list",
+        "capturedAt": "2026-10-21T03:59:00.078Z"
+      }
+    ],
+    "reviewedAt": "2026-10-21T04:05:36.221Z",
+    "scope": "Public Christian-themed satire/skits; user explicitly permits religious satire; no inference of personal belief"
+  },
+  "videoRegion": {
+    "schemaVersion": 1,
+    "username": "timtim44441",
+    "authorId": "7471734644758201390",
+    "selectionSnapshotAt": "2026-10-21T03:59:00.078Z",
+    "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+    "requestedCount": 1,
+    "observations": [
+      {
+        "videoId": "7698934021346168078",
+        "authorId": "7471734644758201390",
+        "username": "timtim44441",
+        "videoUrl": "https://www.tiktok.com/@timtim44441/video/7698934021346168078",
+        "publishedAt": "2026-10-21T01:56:15.000Z",
+        "capturedAt": "2026-10-21T04:05:57.418Z",
+        "source": "video_detail_hydration",
+        "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+        "rawValue": "US",
+        "regionCode": "US",
+        "status": "observed",
+        "reason": "video_region_field_observed",
+        "creatorResidenceVerified": false
+      }
+    ],
+    "navigationAttempts": [
+      {
+        "number": 1,
+        "url": "https://www.tiktok.com/@timtim44441/video/7698934021346168078",
+        "httpStatus": 200,
+        "captcha": false,
+        "loginPrompt": false,
+        "error": null,
+        "capturedAt": "2026-10-21T04:05:57.421Z",
+        "videoId": "7698934021346168078"
+      }
+    ],
+    "stopped": false,
+    "stopReason": null,
+    "summary": {
+      "status": "single_video",
+      "regionCode": "US",
+      "requestedCount": 1,
+      "inspectedCount": 1,
+      "usableCount": 1,
+      "creatorResidenceVerified": false,
+      "meaning": "Observed video region field; not verified creator residence or nationality."
+    }
+  }
+}

@@ -1,0 +1,275 @@
+TAP version 13
+# Subtest: a transient 403 waits eleven seconds and retries the identical URL once
+ok 1 - a transient 403 waits eleven seconds and retries the identical URL once
+  ---
+  duration_ms: 1.51325
+  type: 'test'
+  ...
+# Subtest: two 403s exhaust the retry and never navigate a third time
+ok 2 - two 403s exhaust the retry and never navigate a third time
+  ---
+  duration_ms: 0.115542
+  type: 'test'
+  ...
+# Subtest: 401, 429 and a captcha do not enter the 403 retry path
+ok 3 - 401, 429 and a captcha do not enter the 403 retry path
+  ---
+  duration_ms: 0.090583
+  type: 'test'
+  ...
+# Subtest: control loss during the retry propagates without inspecting or taking over the page
+ok 4 - control loss during the retry propagates without inspecting or taking over the page
+  ---
+  duration_ms: 0.289542
+  type: 'test'
+  ...
+# Subtest: a failed navigation is inspected, allowing an observed 403 to receive its single retry
+ok 5 - a failed navigation is inspected, allowing an observed 403 to receive its single retry
+  ---
+  duration_ms: 0.138458
+  type: 'test'
+  ...
+# Subtest: a previously recorded 403 consumes the original attempt and permits only one delayed navigation
+ok 6 - a previously recorded 403 consumes the original attempt and permits only one delayed navigation
+  ---
+  duration_ms: 0.064708
+  type: 'test'
+  ...
+# Subtest: attempt callbacks preserve both failure and recovery evidence
+ok 7 - attempt callbacks preserve both failure and recovery evidence
+  ---
+  duration_ms: 0.114709
+  type: 'test'
+  ...
+# Subtest: search response parser extracts only public fields and preserves string IDs
+ok 8 - search response parser extracts only public fields and preserves string IDs
+  ---
+  duration_ms: 0.41825
+  type: 'test'
+  ...
+# Subtest: a missing has-more flag is unknown rather than proof of search exhaustion
+ok 9 - a missing has-more flag is unknown rather than proof of search exhaustion
+  ---
+  duration_ms: 0.044167
+  type: 'test'
+  ...
+# Subtest: repeated videos from one author produce one candidate and retain both evidence links
+ok 10 - repeated videos from one author produce one candidate and retain both evidence links
+  ---
+  duration_ms: 0.193417
+  type: 'test'
+  ...
+# Subtest: repeated search batches preserve checked status and do not duplicate evidence
+ok 11 - repeated search batches preserve checked status and do not duplicate evidence
+  ---
+  duration_ms: 0.066833
+  type: 'test'
+  ...
+# Subtest: stable author ID merges a renamed handle while different known authors are kept separate
+ok 12 - stable author ID merges a renamed handle while different known authors are kept separate
+  ---
+  duration_ms: 0.135208
+  type: 'test'
+  ...
+# Subtest: legacy candidates can acquire author IDs without losing their status
+ok 13 - legacy candidates can acquire author IDs without losing their status
+  ---
+  duration_ms: 0.044625
+  type: 'test'
+  ...
+# Subtest: CLI validates keyword, existing space ID and bounded batch count
+ok 14 - CLI validates keyword, existing space ID and bounded batch count
+  ---
+  duration_ms: 0.36725
+  type: 'test'
+  ...
+# Subtest: dry-run emits the encoded TikTok URL and does not create state or call Ego
+ok 15 - dry-run emits the encoded TikTok URL and does not create state or call Ego
+  ---
+  duration_ms: 24.763708
+  type: 'test'
+  ...
+# Subtest: real search orchestration persists candidates, evidence and the last observed cursor
+ok 16 - real search orchestration persists candidates, evidence and the last observed cursor
+  ---
+  duration_ms: 5.588208
+  type: 'test'
+  ...
+# Subtest: HTML and API 403 share one retry budget within a search batch
+ok 17 - HTML and API 403 share one retry budget within a search batch
+  ---
+  duration_ms: 2.432125
+  type: 'test'
+  ...
+# Subtest: latest selection uses publish time rather than pinned position and keeps a genuinely newest pinned post
+ok 18 - latest selection uses publish time rather than pinned position and keeps a genuinely newest pinned post
+  ---
+  duration_ms: 0.781334
+  type: 'test'
+  ...
+# Subtest: private posts and photo routes are excluded, duplicate video IDs count once
+ok 19 - private posts and photo routes are excluded, duplicate video IDs count once
+  ---
+  duration_ms: 0.2775
+  type: 'test'
+  ...
+# Subtest: photo media is excluded even when the profile collector supplied a video-shaped URL
+ok 20 - photo media is excluded even when the profile collector supplied a video-shaped URL
+  ---
+  duration_ms: 0.3155
+  type: 'test'
+  ...
+# Subtest: unknown latest order, wrong authors, unsafe numeric IDs and conflicting duplicates fail before navigation
+ok 21 - unknown latest order, wrong authors, unsafe numeric IDs and conflicting duplicates fail before navigation
+  ---
+  duration_ms: 1.535625
+  type: 'test'
+  ...
+# Subtest: future/invalid dates and an invalid limit fail selection
+ok 22 - future/invalid dates and an invalid limit fail selection
+  ---
+  duration_ms: 0.204625
+  type: 'test'
+  ...
+# Subtest: browser extraction reads only the video object, never app-context region or unrelated private data
+ok 23 - browser extraction reads only the video object, never app-context region or unrelated private data
+  ---
+  duration_ms: 1.626667
+  type: 'test'
+  ...
+# Subtest: ordinary video caption mentioning HTTP ERROR 403 does not override a successful navigation
+ok 24 - ordinary video caption mentioning HTTP ERROR 403 does not override a successful navigation
+  ---
+  duration_ms: 0.37675
+  type: 'test'
+  ...
+# Subtest: US is saved with exact source, video identity and time, without asserting residence
+ok 25 - US is saved with exact source, video identity and time, without asserting residence
+  ---
+  duration_ms: 0.141208
+  type: 'test'
+  ...
+# Subtest: absent, blank or non-string fields remain pending and never fall back to browser region
+ok 26 - absent, blank or non-string fields remain pending and never fall back to browser region
+  ---
+  duration_ms: 0.243292
+  type: 'test'
+  ...
+# Subtest: mismatched video, author, page route and publish time are rejected
+ok 27 - mismatched video, author, page route and publish time are rejected
+  ---
+  duration_ms: 0.315625
+  type: 'test'
+  ...
+# Subtest: HTTP protection and captcha stop collection even if stale hydration exists
+ok 28 - HTTP protection and captcha stop collection even if stale hydration exists
+  ---
+  duration_ms: 0.079416
+  type: 'test'
+  ...
+# Subtest: server failures cannot turn stale hydration into usable region evidence
+ok 29 - server failures cannot turn stale hydration into usable region evidence
+  ---
+  duration_ms: 0.029916
+  type: 'test'
+  ...
+# Subtest: an optional login prompt and missing hydration pause for inspection instead of asserting a forced login wall
+ok 30 - an optional login prompt and missing hydration pause for inspection instead of asserting a forced login wall
+  ---
+  duration_ms: 0.029375
+  type: 'test'
+  ...
+# Subtest: single-video, three-video, conflicting and incomplete evidence receive distinct summaries
+ok 31 - single-video, three-video, conflicting and incomplete evidence receive distinct summaries
+  ---
+  duration_ms: 0.092416
+  type: 'test'
+  ...
+# Subtest: collection stops after one delayed 403 retry without navigating the next video
+ok 32 - collection stops after one delayed 403 retry without navigating the next video
+  ---
+  duration_ms: 0.26375
+  type: 'test'
+  ...
+# Subtest: goto failure with confirmed 403 gets a single retry and preserves both denial attempts
+ok 33 - goto failure with confirmed 403 gets a single retry and preserves both denial attempts
+  ---
+  duration_ms: 0.243875
+  type: 'test'
+  ...
+# Subtest: region extraction recovers after one 403 without losing the successful US evidence
+ok 34 - region extraction recovers after one 403 without losing the successful US evidence
+  ---
+  duration_ms: 0.116708
+  type: 'test'
+  ...
+# Subtest: a matching already-loaded video is read without a redundant navigation
+ok 35 - a matching already-loaded video is read without a redundant navigation
+  ---
+  duration_ms: 0.064625
+  type: 'test'
+  ...
+# Subtest: an already-loaded 403 with a captcha or login prompt never starts the delayed retry
+ok 36 - an already-loaded 403 with a captcha or login prompt never starts the delayed retry
+  ---
+  duration_ms: 0.094125
+  type: 'test'
+  ...
+# Subtest: a successful page waits for the video object before classifying missing data
+ok 37 - a successful page waits for the video object before classifying missing data
+  ---
+  duration_ms: 0.397375
+  type: 'test'
+  ...
+# Subtest: a failed navigation cannot reuse previously loaded matching hydration as a successful observation
+ok 38 - a failed navigation cannot reuse previously loaded matching hydration as a successful observation
+  ---
+  duration_ms: 0.080459
+  type: 'test'
+  ...
+# Subtest: control loss propagates without trying another page or inspection
+ok 39 - control loss propagates without trying another page or inspection
+  ---
+  duration_ms: 0.139084
+  type: 'test'
+  ...
+# Subtest: a normal profile-list field avoids an extra detail navigation
+ok 40 - a normal profile-list field avoids an extra detail navigation
+  ---
+  duration_ms: 0.055584
+  type: 'test'
+  ...
+# Subtest: CLI rejects malformed options and cannot overwrite the input capture
+ok 41 - CLI rejects malformed options and cannot overwrite the input capture
+  ---
+  duration_ms: 0.230792
+  type: 'test'
+  ...
+# Subtest: dry-run selects targets without touching Ego and the runner refuses a space delegated to the user
+ok 42 - dry-run selects targets without touching Ego and the runner refuses a space delegated to the user
+  ---
+  duration_ms: 26.382041
+  type: 'test'
+  ...
+# {"output":"/var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/tiktok-region-runner-DwwWzt/region.json","summary":{"status":"single_video","regionCode":"US","requestedCount":1,"inspectedCount":1,"usableCount":1,"creatorResidenceVerified":false,"meaning":"Observed video region field; not verified creator residence or nationality."},"stopped":false,"stopReason":null}
+# Subtest: runner in an Agent-owned space writes a complete reusable JSON report from a normal captured list field
+ok 43 - runner in an Agent-owned space writes a complete reusable JSON report from a normal captured list field
+  ---
+  duration_ms: 2.873958
+  type: 'test'
+  ...
+# Subtest: CLI entrypoint remains usable through the compatibility directory symlink
+ok 44 - CLI entrypoint remains usable through the compatibility directory symlink
+  ---
+  duration_ms: 20.76675
+  type: 'test'
+  ...
+1..44
+# tests 44
+# suites 0
+# pass 44
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 91.164417

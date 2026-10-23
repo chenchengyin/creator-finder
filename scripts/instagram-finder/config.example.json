@@ -1,0 +1,9 @@
+{
+  "keywords": ["#biblereading"],
+  "conditions": {
+    "requireEmail": true,
+    "country": "US",
+    "minAverageViewsExclusive": 50000
+  },
+  "emailLimits": {}
+}

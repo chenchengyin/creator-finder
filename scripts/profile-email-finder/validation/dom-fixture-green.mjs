@@ -1,0 +1,16 @@
+const {readRenderedPage}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs');
+const {extractCandidates}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.mjs');
+const assert=(await import('node:assert/strict')).default;
+const fs=await import('node:fs/promises');
+const task=await taskSpace(51),page=task.page('p1');
+const html=`<!doctype html><html><body><nav><a href="https://fixture.example.org/Contact">CONTACT US</a></nav><main><p>ContactTo: <span>hello</span><span>@</span><span>example.org</span></p><p>No keyword plain@example.org</p><p>@creator obfuscated [at] demo [dot] org</p><p><a href="mailto:plus+tag%40example.org?cc=other%40example.org&body=ignore@example.org">Email</a></p><p>Visible <span style="opacity:0">hidden@example.org</span></p><p hidden>hidden2@example.org</p><input placeholder="you@example.org"><template>template@example.org</template><script>window.fixtureSecret='script@example.org'</script></main><footer><a href="https://fixture.example.org/contact-team">Contact team</a><p>footer@example.org</p></footer></body></html>`;
+await page.goto('data:text/html;charset=utf-8,'+encodeURIComponent(html));
+const c=await page.evaluate(readRenderedPage,{url:'https://fixture.example.org/'});
+c.url='https://fixture.example.org/';c.requestedUrl=c.url;
+const out=extractCandidates(c);
+await fs.writeFile('/Users/vb/Projects/creator-finder/scripts/profile-email-finder/validation/dom-fixture-result.json',JSON.stringify({capture:c,output:out},null,2));
+assert.deepEqual(out.emails.map(x=>x.key).sort(),['footer@example.org','hello@example.org','obfuscated@demo.org','other@example.org','plain@example.org','plus+tag@example.org']);
+assert.equal(out.emails.find(x=>x.key==='obfuscated@demo.org').status,'needs_review');
+assert.ok(out.links.some(x=>x.url==='https://fixture.example.org/Contact'));
+assert.ok(out.links.some(x=>x.url==='https://fixture.example.org/contact-team'));
+console.log(JSON.stringify({result:'passed',emails:out.emails.map(x=>x.key),links:out.links.map(x=>x.url)}));

@@ -1,0 +1,28 @@
+TAP version 13
+# Subtest: 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+not ok 1 - 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+  ---
+  duration_ms: 3.204042
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:300:1'
+  failureType: 'testCodeFailure'
+  error: 'login_wall'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    pause (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs:359:17)
+    protect (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs:441:17)
+    Object.readPage (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs:444:7)
+    async read (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:79:18)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:301:55)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 41.096208

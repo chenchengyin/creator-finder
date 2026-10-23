@@ -1,0 +1,11 @@
+{ completion: 'running', checked: 0, pending: 1, emails: 0, current: 'https://www.tiktok.com/@r3alism_0fficial' }
+{ completion: 'running', checked: 0, pending: 1, emails: 0, current: 'https://www.tiktok.com/@r3alism_0fficial' }
+{ completion: 'running', checked: 0, pending: 1, emails: 0, current: 'https://www.tiktok.com/@r3alism_0fficial' }
+{ completion: 'running', checked: 0, pending: 2, emails: 1, current: 'https://www.tiktok.com/@r3alism_0fficial' }
+{ completion: 'running', checked: 1, pending: 1, emails: 1, current: 'https://linktr.ee/R3alism' }
+{ completion: 'running', checked: 1, pending: 1, emails: 1, current: 'https://linktr.ee/R3alism' }
+{ completion: 'running', checked: 1, pending: 0, emails: 1, current: null }
+{ completion: 'partial', checked: 1, pending: 0, emails: 1, current: null }
+{"completion":"partial","emails":[{"email":"R3alism.yt@gmail.com","source":"https://www.tiktok.com/@r3alism_0fficial"}],"pages":[{"url":"https://www.tiktok.com/@r3alism_0fficial","status":"complete","issues":[]},{"url":"https://linktr.ee/R3alism","status":"failed","issues":["page.evaluate timed out after 15000ms and the Page is still unresponsive. Execution could not be confirmed stopped; reload or close the Page before continuing."]}],"pending":[]}
+{"webpage":{"complete":true,"issues":[],"checkpoint":{}},"rounds":1,"characters":2537}
+

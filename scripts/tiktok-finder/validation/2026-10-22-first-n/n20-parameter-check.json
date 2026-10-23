@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "mode": "offline_parameter_check",
+  "forceProfileFirstN": 20,
+  "searchBatches": 2,
+  "uniqueCandidates": 25,
+  "profileReads": 20,
+  "rank21Reason": "no_search_bio_email",
+  "liveSearchStarted": false
+}

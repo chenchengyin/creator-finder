@@ -1,0 +1,47 @@
+Inspect result written to file: /Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+{
+  "mode": "offline_only",
+  "historicalSearch": {
+    "keyword": "christian sketch comedy",
+    "batches": 9,
+    "scrollsAfterInitial": 8,
+    "rawVideoRows": 101,
+    "uniqueAuthors": 60,
+    "openedProfiles": 18,
+    "forcedFirstTen": [
+      "7497299912649851947",
+      "6672090545286955013",
+      "7377543241314911278",
+      "6742287939734848518",
+      "6717640498913641478",
+      "7493990898050417707",
+      "6845068444633089029",
+      "7415635631052047402",
+      "7596471365089248269",
+      "7673146931430573064"
+    ],
+    "forcedCompleted": 0,
+    "note": "Historical search replay; profile responses deliberately unavailable. No real candidate eligibility inferred."
+  },
+  "realLinkReplay": {
+    "authorId": "6785748498282841094",
+    "url": "https://youtube.com/@trarags?si=tiNqhlUuUi9mGwta",
+    "status": "present",
+    "sources": 2
+  },
+  "fixtureWorkbook": {
+    "path": "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/TikTok-达人查找结果.xlsx",
+    "previews": [
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/达人名单-预览.png",
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/主页证据-预览.png",
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/视频证据-预览.png"
+    ],
+    "auditPath": "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/2026-10-22-first-n/workbook-fixture/outputs/导出核对.json",
+    "verification": {
+      "passed": true,
+      "creatorCount": 1,
+      "shortfall": 0
+    }
+  },
+  "liveAcceptance": false
+}

@@ -1,0 +1,2 @@
+{"result":{"complete":false,"issues":["profile_expand_failed"],"checkpoint":{"expandError":"page.click timed out after 3000ms: Selector #page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-description-preview-view-model > truncated-text > button matched 1 elements, but none can receive input; dialog \"YouTube\" intercepts pointer events"}},"rounds":2,"links":["https://youtube.com/user/youtube?sub_confirmation=1"]}
+

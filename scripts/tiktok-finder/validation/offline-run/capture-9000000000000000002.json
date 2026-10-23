@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "username": "fixture_suspected",
+    "authorId": "9000000000000000002",
+    "profileUrl": "https://www.tiktok.com/@fixture_suspected",
+    "bio": "public@example.com",
+    "ready": true,
+    "identityVerified": true,
+    "statusCode": 0,
+    "privateAccount": false,
+    "latestOrderConfirmed": true,
+    "capturedAt": "2026-10-21T04:00:00Z",
+    "playlists": []
+  },
+  "pages": [
+    {
+      "statusCode": 0,
+      "hasMore": false,
+      "cursor": 1,
+      "items": [
+        {
+          "id": "7777777777777777772",
+          "authorId": "9000000000000000002",
+          "username": "fixture_suspected",
+          "createdAt": 1792022400,
+          "views": 60000,
+          "description": "Christian discussion",
+          "mediaType": "video",
+          "locationCreated": "US",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772"
+        }
+      ]
+    }
+  ]
+}

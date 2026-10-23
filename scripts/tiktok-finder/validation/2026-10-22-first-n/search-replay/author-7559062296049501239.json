@@ -1,0 +1,47 @@
+{
+  "authorId": "7559062296049501239",
+  "username": "greg.livesey",
+  "profileUrl": "https://www.tiktok.com/@greg.livesey",
+  "profile": null,
+  "bioHint": null,
+  "emails": [],
+  "profileCapturedAt": null,
+  "metrics": {
+    "sampleSize": null,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "profile_not_visited"
+    ]
+  },
+  "content": {
+    "decision": "not_evaluated",
+    "evidence": [],
+    "uncertainty": "邮箱条件未通过，未访问主页"
+  },
+  "capture": null,
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "rejected",
+  "reason": "no_search_bio_email",
+  "emailCheck": {
+    "source": "search_author_signature",
+    "status": "skipped_empty_signature"
+  },
+  "inclusionBasis": "邮箱：搜索结果简介为空；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 43,
+      "forced": false,
+      "reason": "existing_signature_prefilter",
+      "attempted": false,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

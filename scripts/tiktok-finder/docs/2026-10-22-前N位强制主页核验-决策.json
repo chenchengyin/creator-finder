@@ -1,0 +1,36 @@
+{
+  "status": "development_complete_offline_verified",
+  "implementationStatus": "implemented",
+  "platform": "tiktok",
+  "forceProfileFirstN": 20,
+  "selectionUnit": "first_unique_author_in_current_keyword_response_order",
+  "searchUntilValidExhaustion": true,
+  "afterFirstN": "existing_signature_email_prefilter",
+  "reuseWithinRun": true,
+  "captureHomepageExternalLinks": true,
+  "externalSiteEmailAllowed": false,
+  "resumeExisting22PersonCampaign": false,
+  "confirmedUserChoice": "搜索仍翻到底，前20位强制查主页，其余沿用原筛选规则",
+  "flowConfirmedAt": "2026-10-22",
+  "developmentAuthorization": "确认然后开发",
+  "codeReview": "brainstorming_bounded_read_only_completed",
+  "independentReview": false,
+  "moduleTests": {
+    "passed": 90,
+    "failed": 0
+  },
+  "regressionTests": {
+    "passed": 65,
+    "failed": 0
+  },
+  "liveAcceptance": true,
+  "previousForceProfileFirstN": 10,
+  "parameterUpdateAuthorization": "这样吧 设置为20",
+  "parameter20OfflineVerified": true,
+  "liveAcceptanceStatus": "completed_with_in_scope_fixes",
+  "liveRun": "runs/2026-10-22-bible-christian-n20-live",
+  "liveUniqueAuthors": 308,
+  "liveSelected": 4,
+  "finalTestsPassed": 166,
+  "defaultPostBodyRecovery": "one_replay_then_pause"
+}

@@ -1,0 +1,439 @@
+{
+  "authorId": "7415635631052047402",
+  "username": "tristan.thigpen",
+  "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+  "profile": {
+    "username": "tristan.thigpen",
+    "authorId": "7415635631052047402",
+    "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+    "ready": false,
+    "identityVerified": false,
+    "externalLink": {
+      "status": "unknown",
+      "url": null,
+      "reason": "offline_profile_not_available"
+    }
+  },
+  "emails": [],
+  "metrics": {
+    "items": [],
+    "sample": [],
+    "sampleSize": 0,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "latest_order_unconfirmed",
+      "post_response_incomplete"
+    ],
+    "windowStart": "2026-10-10T16:00:00.000Z",
+    "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+  },
+  "content": {
+    "decision": "passed",
+    "evidence": [
+      {
+        "videoId": "7538488738935000351",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "The Pastor tried to be patient!😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351"
+      },
+      {
+        "videoId": "7506942258264935710",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "When the wrong person at church volunteers to read!😆 Why did he volunteer to read?🤷🏽‍♂️ Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710"
+      },
+      {
+        "videoId": "7611280520059571487",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "He got a little too excited!😆 I create and post skits daily! Follow me for more church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #encouragement ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487"
+      },
+      {
+        "videoId": "7501000922563235118",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "All this over a macchiato… 😆 Church, coffee, and a misunderstanding! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #machiatto #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118"
+      },
+      {
+        "videoId": "7503248903219989806",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Some Pastors are not satisfied until you fall!🤦🏽‍♂️😆 But it’s not about the fall, it’s about receiving! Everyone is not going to fall. I hope you enjoy this classic skit I created a while back! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806"
+      },
+      {
+        "videoId": "7594551919322909983",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "“Pastor, we are not at church! We’re at the pet store!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnyskits ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983"
+      },
+      {
+        "videoId": "7595642926860963103",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "“You better get in where you fit in!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103"
+      },
+      {
+        "videoId": "7545155953994370334",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "The Word in the park was flowing… until he showed up! 😆🌳 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334"
+      },
+      {
+        "videoId": "7543681360448228639",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Pastor turned the sermon into a full reunion! 😆👀 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639"
+      },
+      {
+        "videoId": "7549736303269547294",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Should the Pastor have known the story?🤷🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294"
+      },
+      {
+        "videoId": "7628764219562822942",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "“I said I know how to pray!”😠😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #skits ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942"
+      },
+      {
+        "videoId": "7564889607414893854",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Pastor, Is this a church or a tennis court?🎾😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854"
+      },
+      {
+        "videoId": "7521444576071044383",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "They did not have the children’s church under control!🤦🏽‍♂️😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.748Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383"
+      },
+      {
+        "videoId": "7547025392947760414",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Would that be alriiiiiiiight?🎵😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414"
+      },
+      {
+        "videoId": "7575727628171169055",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Turn to your neighbor!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055"
+      },
+      {
+        "videoId": "7565279670573305118",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Pastor, someone’s in my seat!🪑😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118"
+      },
+      {
+        "videoId": "7553697062529895711",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "He got tired of the back and forth!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711"
+      },
+      {
+        "videoId": "7610586456892968223",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "“Man forget that stanky $35!”😆 I create skits daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223"
+      },
+      {
+        "videoId": "7625407609356471583",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "So which one do you say?🤷🏽‍♂️😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #happyeaster #eastersunday #funnyskits ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583"
+      },
+      {
+        "videoId": "7670389954836483359",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "He just wanted to make a return!😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #mall #funnyvideos ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359"
+      },
+      {
+        "videoId": "7660201031569067294",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "He was just tryna study!😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #christiancontent #funnyvideos ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294"
+      },
+      {
+        "videoId": "7571684011437853982",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Church Talk - Part 5: “Be a blessing!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.752Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982"
+      },
+      {
+        "videoId": "7623111663973109023",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "“You ain’t the only person out here tryna get it!”😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #churchfunny #funnyskits #funnyvideos ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.752Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023"
+      },
+      {
+        "videoId": "7569769331630820638",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "He laughed at the wrong time!🤦🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638"
+      },
+      {
+        "videoId": "7566845862467456286",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "Church Talk - Part 2: “Wash away your sins!”😂 Skits are posed daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286"
+      },
+      {
+        "videoId": "7478734946874510635",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "When he refused the mints in church!😆 Skits are posted daily! Follow for more church humor! Also, like, comment, and share!🙏🏽 #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635"
+      },
+      {
+        "videoId": "7488028893186723115",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "The church breakfast took a wild turn!😆 Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115"
+      },
+      {
+        "videoId": "7529944865245875486",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "What’s in your cart Pastor?🛒😆 Throwback skit before I had many followers! Check out the other skits in the “What’s in your cart Pastor” playlist on my profile! Skits are posted daily! Follow me for more humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486"
+      },
+      {
+        "videoId": "7445357294214188331",
+        "authorId": "7415635631052047402",
+        "username": "tristan.thigpen",
+        "text": "When the Pastor Struggles with the iPad!📱😆 If you found this funny, please hit the like button and follow for more! I’m a new content creator, and your likes, shares, and follows mean a lot! Skits are posted daily! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnyvideo #laughter ",
+        "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.758Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331"
+      }
+    ],
+    "uncertainty": null
+  },
+  "capture": {
+    "verificationContext": {
+      "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+      "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+    },
+    "profile": {
+      "username": "tristan.thigpen",
+      "authorId": "7415635631052047402",
+      "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "pages": [],
+    "postAttemptComplete": true,
+    "checks": {
+      "identity": "pending",
+      "email": "pending",
+      "posts": "in_progress",
+      "metrics": "pending",
+      "content": "passed",
+      "region": "pending"
+    },
+    "nextAction": "posts"
+  },
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "data_incomplete",
+  "reason": "profile_not_verified_public",
+  "location": {
+    "country": null,
+    "evidence": [],
+    "semantics": "video_region_field_not_verified_creator_residence"
+  },
+  "inclusionBasis": "内容： The Pastor tried to be patient!😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351）； When the wrong person at church volunteers to read!😆 Why did he volunteer to read?🤷🏽‍♂️ Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710）； He got a little too excited!😆 I create and post skits daily! Follow me for more church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #encouragement （https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487）； All this over a macchiato… 😆 Church, coffee, and a misunderstanding! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #machiatto #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118）； Some Pastors are not satisfied until you fall!🤦🏽‍♂️😆 But it’s not about the fall, it’s about receiving! Everyone is not going to fall. I hope you enjoy this classic skit I created a while back! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806）； “Pastor, we are not at church! We’re at the pet store!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnyskits （https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983）； “You better get in where you fit in!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103）； The Word in the park was flowing… until he showed up! 😆🌳 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334）； Pastor turned the sermon into a full reunion! 😆👀 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639）； Should the Pastor have known the story?🤷🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294）； “I said I know how to pray!”😠😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #skits （https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942）； Pastor, Is this a church or a tennis court?🎾😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854）； They did not have the children’s church under control!🤦🏽‍♂️😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383）； Would that be alriiiiiiiight?🎵😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414）； Turn to your neighbor!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055）； Pastor, someone’s in my seat!🪑😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118）； He got tired of the back and forth!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711）； “Man forget that stanky $35!”😆 I create skits daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223）； So which one do you say?🤷🏽‍♂️😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #happyeaster #eastersunday #funnyskits （https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583）； He just wanted to make a return!😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #mall #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359）； He was just tryna study!😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #christiancontent #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294）； Church Talk - Part 5: “Be a blessing!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982）； “You ain’t the only person out here tryna get it!”😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #churchfunny #funnyskits #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023）； He laughed at the wrong time!🤦🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638）； Church Talk - Part 2: “Wash away your sins!”😂 Skits are posed daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286）； When he refused the mints in church!😆 Skits are posted daily! Follow for more church humor! Also, like, comment, and share!🙏🏽 #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635）； The church breakfast took a wild turn!😆 Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115）； What’s in your cart Pastor?🛒😆 Throwback skit before I had many followers! Check out the other skits in the “What’s in your cart Pastor” playlist on my profile! Skits are posted daily! Follow me for more humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486）； When the Pastor Struggles with the iPad!📱😆 If you found this funny, please hit the like button and follow for more! I’m a new content creator, and your likes, shares, and follows mean a lot! Skits are posted daily! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@tristan.thigpen，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 8,
+      "forced": true,
+      "reason": "first_n_unique_authors",
+      "attempted": true,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

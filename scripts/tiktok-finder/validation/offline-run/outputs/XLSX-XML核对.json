@@ -1,0 +1,26 @@
+{
+  "creatorCount": 2,
+  "textAuthorID": {
+    "type": "str",
+    "value": "9000000000000000001",
+    "formula": null
+  },
+  "textVideoID": {
+    "type": "str",
+    "value": "7777777777777777771",
+    "formula": null
+  },
+  "computedMeans": [
+    {
+      "type": "n",
+      "value": "60000",
+      "formula": "IF(D7>0,E7/D7,\"\")"
+    },
+    {
+      "type": "n",
+      "value": "60000",
+      "formula": "IF(D8>0,E8/D8,\"\")"
+    }
+  ],
+  "nativeExcelTested": false
+}

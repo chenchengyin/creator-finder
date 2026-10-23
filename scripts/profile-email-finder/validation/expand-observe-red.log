@@ -1,0 +1,32 @@
+TAP version 13
+# Subtest: 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+not ok 1 - 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+  ---
+  duration_ms: 3.360625
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:305:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:308:49)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 38.879833

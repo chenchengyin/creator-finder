@@ -1,0 +1,15 @@
+{
+  "url": "https://www.youtube.com/@YouTube",
+  "result": {
+    "complete": false,
+    "issues": [
+      "profile_expand_failed"
+    ],
+    "checkpoint": {}
+  },
+  "rounds": 1,
+  "emails": [],
+  "links": [
+    "https://youtube.com/user/youtube?sub_confirmation=1"
+  ]
+}

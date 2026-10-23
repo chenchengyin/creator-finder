@@ -1,0 +1,43 @@
+TAP version 13
+# Subtest: 链接-LINK-012 普通网页大容器中的Contact不把商店文章都纳入
+not ok 1 - 链接-LINK-012 普通网页大容器中的Contact不把商店文章都纳入
+  ---
+  duration_ms: 6.130125
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:90:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'https://example.org/Contact',
+    +   'https://example.org/shop',
+    +   'https://example.org/articles'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'https://example.org/Contact'
+  actual:
+    0: 'https://example.org/Contact'
+    1: 'https://example.org/shop'
+    2: 'https://example.org/articles'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:92:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61.482458

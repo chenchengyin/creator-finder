@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "status": "completed",
+  "stage": "completed",
+  "currentKeywordIndex": 2,
+  "keywords": [
+    {
+      "keyword": "christian skits",
+      "stage": "completed",
+      "checkpoint": {
+        "keyword": "christian skits",
+        "cursor": 1,
+        "exhausted": true
+      }
+    },
+    {
+      "keyword": "bible comedy",
+      "stage": "completed",
+      "checkpoint": {
+        "keyword": "bible comedy",
+        "cursor": 1,
+        "exhausted": true
+      }
+    }
+  ],
+  "browser": {
+    "pageLabel": "p1"
+  },
+  "counts": {
+    "uniqueCandidates": 2,
+    "processed": 2,
+    "confirmed": 1,
+    "suspected": 1
+  },
+  "runtimeRunning": false,
+  "activeProcessId": null,
+  "stopReason": null,
+  "currentAuthor": null,
+  "output": {
+    "path": "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/offline-run/outputs/TikTok-达人查找结果.xlsx",
+    "previews": [
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/offline-run/outputs/达人名单-预览.png",
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/offline-run/outputs/主页证据-预览.png",
+      "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/offline-run/outputs/视频证据-预览.png"
+    ],
+    "auditPath": "/Users/vb/Projects/creator-finder/scripts/tiktok-finder/validation/offline-run/outputs/导出核对.json",
+    "verification": {
+      "passed": true,
+      "creatorCount": 2,
+      "shortfall": 0
+    }
+  }
+}

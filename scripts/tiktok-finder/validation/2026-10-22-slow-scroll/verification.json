@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-22",
+  "command": [
+    "/Users/vb/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "--test-reporter=tap",
+    "scripts/tiktok-finder/browser.test.mjs",
+    "scripts/tiktok-finder/config.test.mjs",
+    "scripts/tiktok-finder/export.test.mjs",
+    "scripts/tiktok-finder/first-n.test.mjs",
+    "scripts/tiktok-finder/post-body-recovery.test.mjs",
+    "scripts/tiktok-finder/profile.test.mjs",
+    "scripts/tiktok-finder/search.regression.test.mjs",
+    "scripts/tiktok-finder/slow-scroll.test.mjs",
+    "scripts/tiktok-finder/workflow.test.mjs",
+    "scripts/tiktok-browser/access.test.mjs",
+    "scripts/tiktok-search/search.test.mjs",
+    "scripts/tiktok-video-region/region.test.mjs",
+    "runs/2026-10-21-ai-keywords-round-1-us-100/recheck-cache.test.mjs"
+  ],
+  "passed": 186,
+  "failed": 0,
+  "newTests": 20,
+  "redFailureCounts": [
+    6,
+    4,
+    2,
+    2,
+    3,
+    2
+  ],
+  "historicalIntegrity": {
+    "checked": 1484,
+    "mismatches": []
+  },
+  "sourceSha256": {
+    "scripts/tiktok-finder/browser.mjs": "2cf7e7e9967b9bcea8aa61f33a41ce5742cc3644ef323ead8a36338b9df753cd",
+    "scripts/tiktok-finder/pagination.mjs": "0980a37f95caf0cd9d8c9e33e61aade85794b03590944f4b347ad771141f0431",
+    "scripts/tiktok-finder/browser.test.mjs": "2540c3b19dd41b1467065b648286f91144a0c65f8ba719841452f21d1d9cfa09",
+    "scripts/tiktok-finder/slow-scroll.test.mjs": "ee9af038fe061622763aba55e44bdd36783091ec3a44c797dec80df1725d4252",
+    "scripts/tiktok-finder/workflow.mjs": "0b36a65a6f15b4fda7bbbf3f9665c9f7a39d8d8cf86d5f518dc872c50731e032",
+    "scripts/tiktok-finder/profile.mjs": "3eb0569e8fcd3145d93cf2899576efc535e6398d13adf0f993c8bb224e602612",
+    "scripts/tiktok-finder/config.mjs": "9c8840db658b85f07734794b16f775d425ed9a47bb7ecdc3e8bfea2470b03e20",
+    "scripts/tiktok-finder/config.example.json": "f684829f5d60d5244661df2ea7cf8f887531bac3a631486d296bbdb24dbfebc5",
+    "scripts/tiktok-finder/export.mjs": "d1d63fe036fb039eb44de37a66439cd5273c198bf06655cf44282ec310062f7a",
+    "scripts/tiktok-finder/post-body-recovery.mjs": "2af93cc4a067039a8d3938e241a682e76f45f451841a051db00a4f26e3999394",
+    "scripts/tiktok-browser/access.mjs": "4495724c955ca40d64f37e18cd9526b8da99e375a600c43b50dbf9a0ea4760fe"
+  },
+  "review": {
+    "method": "Brainstorming bounded read-only implementation review",
+    "completed": true,
+    "independentReviewer": false,
+    "unresolvedBlockers": [],
+    "liveTikTokAcceptance": false,
+    "newBrowserSpaceCreated": false,
+    "gitCommit": false,
+    "afterFinalFix": "Reviewed browser adapter and collector again after the persisted, cross-batch wheel clock fix; original business and recovery regressions pass.",
+    "automaticFixes": [
+      "slow-body reads",
+      "prefetch retention and bounded buffer draining",
+      "native pagination order and chain validation",
+      "duplicate and partial-prefix evidence",
+      "bounded readiness and rendering",
+      "response origin",
+      "cross-batch and resume wheel interval"
+    ]
+  },
+  "dryRun": {
+    "mode": "dry_run",
+    "forceProfileFirstN": 20,
+    "directoryCreated": false
+  },
+  "verifiedAt": "2026-10-22T11:57:59.196Z"
+}

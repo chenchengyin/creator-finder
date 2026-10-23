@@ -1,0 +1,29 @@
+{
+  "verificationContext": {
+    "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+    "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+  },
+  "profile": {
+    "username": "2bestieswithadhd",
+    "authorId": "7493990898050417707",
+    "profileUrl": "https://www.tiktok.com/@2bestieswithadhd",
+    "ready": false,
+    "identityVerified": false,
+    "externalLink": {
+      "status": "unknown",
+      "url": null,
+      "reason": "offline_profile_not_available"
+    }
+  },
+  "pages": [],
+  "postAttemptComplete": true,
+  "checks": {
+    "identity": "pending",
+    "email": "pending",
+    "posts": "in_progress",
+    "metrics": "pending",
+    "content": "passed",
+    "region": "pending"
+  },
+  "nextAction": "posts"
+}

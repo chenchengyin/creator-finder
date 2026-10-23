@@ -1,0 +1,305 @@
+{
+  "capture": {
+    "url": "https://fixture.example.org/",
+    "requestedUrl": "https://fixture.example.org/",
+    "title": "",
+    "kind": "webpage",
+    "platform": null,
+    "ready": true,
+    "complete": true,
+    "httpStatus": 200,
+    "access": "ok",
+    "blocks": [
+      {
+        "text": "CONTACT US",
+        "context": "CONTACT US",
+        "location": "body > nav > a",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "ContactTo: hello@example.org",
+        "context": "ContactTo: hello@example.org",
+        "location": "body > main > p:nth-of-type(1)",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "No keyword plain@example.org",
+        "context": "No keyword plain@example.org",
+        "location": "body > main > p:nth-of-type(2)",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "@creator obfuscated [at] demo [dot] org",
+        "context": "@creator obfuscated [at] demo [dot] org",
+        "location": "body > main > p:nth-of-type(3)",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "Email",
+        "context": "Email",
+        "location": "body > main > p:nth-of-type(4)",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "Visible ",
+        "context": "Visible ",
+        "location": "body > main > p:nth-of-type(5)",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "Contact team",
+        "context": "Contact team",
+        "location": "body > footer > a",
+        "source": "visible_text",
+        "visible": true
+      },
+      {
+        "text": "footer@example.org",
+        "context": "footer@example.org",
+        "location": "body > footer > p",
+        "source": "visible_text",
+        "visible": true
+      }
+    ],
+    "links": [
+      {
+        "url": "https://fixture.example.org/Contact",
+        "text": "CONTACT US",
+        "label": "",
+        "context": "CONTACT US",
+        "location": "body > nav > a",
+        "source": "page_link",
+        "visible": true
+      },
+      {
+        "url": "mailto:plus+tag%40example.org?cc=other%40example.org&body=ignore@example.org",
+        "text": "Email",
+        "label": "",
+        "context": "Email",
+        "location": "body > main > p:nth-of-type(4) > a",
+        "source": "page_link",
+        "visible": true
+      },
+      {
+        "url": "https://fixture.example.org/contact-team",
+        "text": "Contact team",
+        "label": "",
+        "context": "Contact team\n\nfooter@example.org",
+        "location": "body > footer > a",
+        "source": "footer",
+        "visible": true
+      }
+    ],
+    "actions": [],
+    "issues": [],
+    "phase": "read",
+    "capturedAt": "2026-10-22T10:02:00.473Z"
+  },
+  "output": {
+    "emails": [
+      {
+        "email": "hello@example.org",
+        "key": "hello@example.org",
+        "status": "confirmed_public",
+        "variants": [
+          "hello@example.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "visible_text",
+            "location": "body > main > p:nth-of-type(1)",
+            "raw": "hello@example.org",
+            "context": "ContactTo: hello@example.org",
+            "contextTruncated": false,
+            "status": "confirmed_public",
+            "reason": null,
+            "recipientField": null,
+            "href": null,
+            "contactHint": true,
+            "normalization": []
+          }
+        ]
+      },
+      {
+        "email": "plain@example.org",
+        "key": "plain@example.org",
+        "status": "confirmed_public",
+        "variants": [
+          "plain@example.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "visible_text",
+            "location": "body > main > p:nth-of-type(2)",
+            "raw": "plain@example.org",
+            "context": "No keyword plain@example.org",
+            "contextTruncated": false,
+            "status": "confirmed_public",
+            "reason": null,
+            "recipientField": null,
+            "href": null,
+            "contactHint": false,
+            "normalization": []
+          }
+        ]
+      },
+      {
+        "email": "obfuscated@demo.org",
+        "key": "obfuscated@demo.org",
+        "status": "needs_review",
+        "variants": [
+          "obfuscated@demo.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "visible_text",
+            "location": "body > main > p:nth-of-type(3)",
+            "raw": "obfuscated [at] demo [dot] org",
+            "context": "@creator obfuscated [at] demo [dot] org",
+            "contextTruncated": false,
+            "status": "needs_review",
+            "reason": "obfuscated",
+            "recipientField": null,
+            "href": null,
+            "contactHint": false,
+            "normalization": [
+              {
+                "from": "obfuscated [at] demo [dot] org",
+                "to": "obfuscated@demo.org"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "email": "footer@example.org",
+        "key": "footer@example.org",
+        "status": "confirmed_public",
+        "variants": [
+          "footer@example.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "visible_text",
+            "location": "body > footer > p",
+            "raw": "footer@example.org",
+            "context": "footer@example.org",
+            "contextTruncated": false,
+            "status": "confirmed_public",
+            "reason": null,
+            "recipientField": null,
+            "href": null,
+            "contactHint": false,
+            "normalization": []
+          }
+        ]
+      },
+      {
+        "email": "plus+tag@example.org",
+        "key": "plus+tag@example.org",
+        "status": "confirmed_public",
+        "variants": [
+          "plus+tag@example.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "page_link",
+            "location": "body > main > p:nth-of-type(4) > a",
+            "raw": "plus+tag@example.org",
+            "context": "Email",
+            "contextTruncated": false,
+            "status": "confirmed_public",
+            "reason": null,
+            "recipientField": "path",
+            "href": "mailto:plus+tag%40example.org?cc=other%40example.org&body=ignore@example.org",
+            "contactHint": true,
+            "normalization": []
+          }
+        ]
+      },
+      {
+        "email": "other@example.org",
+        "key": "other@example.org",
+        "status": "needs_review",
+        "variants": [
+          "other@example.org"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://fixture.example.org/",
+            "pageKind": "webpage",
+            "platform": null,
+            "pageTitle": null,
+            "capturedAt": "2026-10-22T10:02:00.473Z",
+            "source": "page_link",
+            "location": "body > main > p:nth-of-type(4) > a",
+            "raw": "other@example.org",
+            "context": "Email",
+            "contextTruncated": false,
+            "status": "needs_review",
+            "reason": "mailto_recipient_review",
+            "recipientField": "cc",
+            "href": "mailto:plus+tag%40example.org?cc=other%40example.org&body=ignore@example.org",
+            "contactHint": true,
+            "normalization": []
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "url": "https://fixture.example.org/Contact",
+        "key": "https://fixture.example.org/Contact",
+        "kind": "webpage",
+        "platform": null,
+        "profileKey": null,
+        "source": "page_link",
+        "location": "body > nav > a",
+        "rawUrl": "https://fixture.example.org/Contact"
+      },
+      {
+        "url": "https://fixture.example.org/contact-team",
+        "key": "https://fixture.example.org/contact-team",
+        "kind": "webpage",
+        "platform": null,
+        "profileKey": null,
+        "source": "footer",
+        "location": "body > footer > a",
+        "rawUrl": "https://fixture.example.org/contact-team"
+      }
+    ],
+    "exclusions": [],
+    "issues": []
+  }
+}

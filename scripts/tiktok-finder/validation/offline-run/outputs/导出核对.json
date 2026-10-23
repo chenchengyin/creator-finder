@@ -1,0 +1,23 @@
+{
+  "verification": {
+    "passed": true,
+    "creatorCount": 2,
+    "shortfall": 0
+  },
+  "authors": [
+    {
+      "authorId": "9000000000000000001",
+      "decision": "confirmed",
+      "sampleSize": 1,
+      "averageViews": 60000
+    },
+    {
+      "authorId": "9000000000000000002",
+      "decision": "suspected",
+      "sampleSize": 1,
+      "averageViews": 60000
+    }
+  ],
+  "inspection": "{\"kind\":\"table\",\"sheet\":\"达人名单\",\"address\":\"A6:L8\",\"rows\":3,\"cols\":12,\"values\":[[\"账号\",\"作者ID\",\"主页公开邮箱\",\"窗口视频数\",\"窗口总播放\",\"窗口均播\",\"视频地区\",\"来源关键词\",\"复核状态\",\"主页链接\",\"采集时间（上海）\",\"收录依据\"],[\"@fixture_confirmed\",\"9000000000000000001\",\"public@example.com\",1,60000,60000,\"US\",\"christian skits；bible comedy\",\"已确认\",\"https://www.tiktok.com/@fixture_confirmed\",\"2026-10-21T12:00:00.000Z\",\"内容：2026-10-15T00:00:00.000Z #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）； #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）； #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）。\\n邮箱：public@example.com；来源 https://www.tiktok.com/@fixture_confirmed，采集 2026-10-21T04:00:00Z。\\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），1条视频，算术均播60000，须严格大于50000；覆盖完整。\\n地区：最新公开视频locationCreated=US；字段不证明本人现居地。\\n判定：confirmed；all_conditions_verified。\"],[\"@fixture_suspected\",\"9000000000000000002\",\"public@example.com\",1,60000,60000,\"US\",\"christian skits\",\"疑似符合，待人工复核\",\"https://www.tiktok.com/@fixture_suspected\",\"2026-10-21T12:00:00.000Z\",\"内容：2026-10-15T00:00:00.000Z Christian discussion（https://www.tiktok.com/@fixture_suspected/video/7777777777777777772）； Christian discussion（https://www.tiktok.com/@fixture_suspected/video/7777777777777777772）；公开原文尚不足以同时确认目标主题与内容形式，待人工复核。\\n邮箱：public@example.com；来源 https://www.tiktok.com/@fixture_suspected，采集 2026-10-21T04:00:00Z。\\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），1条视频，算术均播60000，须严格大于50000；覆盖完整。\\n地区：最新公开视频locationCreated=US；字段不证明本人现居地。\\n判定：suspected；content_requires_human_review。\"]]}",
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

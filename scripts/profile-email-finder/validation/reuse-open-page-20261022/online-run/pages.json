@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.instagram.com/fayeknightly_/",
+    "key": "https://www.instagram.com/fayeknightly_",
+    "depth": 0,
+    "path": [
+      "https://www.instagram.com/fayeknightly_/"
+    ],
+    "status": "complete",
+    "attempted": true,
+    "captures": [
+      "f3a64841ea2a2957e7975b8c.json"
+    ],
+    "issues": [],
+    "checkpoint": {},
+    "finalKey": "https://www.instagram.com/fayeknightly_",
+    "finalUrl": "https://www.instagram.com/fayeknightly_/",
+    "pendingProfileLinks": [],
+    "bioEmailFound": true,
+    "stopReason": "profile_bio_email_found"
+  }
+]

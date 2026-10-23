@@ -1,0 +1,198 @@
+{
+  "target": "https://www.youtube.com/@choruslove",
+  "channelTitle": "程人富宇宙",
+  "email": "kikochan@pomato.hk",
+  "completion": "completed",
+  "emailStatus": "confirmed_public",
+  "spaceId": 88,
+  "spaceFinished": true,
+  "observedAt": "2026-10-23T10:25:46.109+08:00",
+  "nativeMailto": [
+    {
+      "url": "mailto:kikochan@pomato.hk",
+      "text": "kikochan@pomato.hk",
+      "label": "",
+      "context": "kikochan@pomato.hk",
+      "location": "#email",
+      "source": "profile_contact_email",
+      "visible": true,
+      "siteWide": false
+    }
+  ],
+  "evidence": [
+    {
+      "sourceUrl": "https://www.youtube.com/@choruslove",
+      "pageKind": "profile",
+      "platform": "youtube",
+      "pageTitle": "程人富宇宙 - YouTube",
+      "capturedAt": "2026-10-23T02:25:46.135Z",
+      "source": "profile_bio",
+      "location": "#about-container > yt-attributed-string",
+      "raw": "kikochan@pomato.hk",
+      "context": "Halo～我係小薯茄嘅程人富\n我很醜，但是我肯搞笑\n\n呢個channel以後每個月至少會po一條片\n咩類型嘅片？\n乜都有！\n敬請期待 ୧[ * ಡ ▽ ಡ * ]୨\n-----------------------------------------------------------------\nFacebook page：\nhttps://www.facebook.com/chingyanfu\nIG：chingyanfu\n工作聯絡： kikochan@pomato.hk",
+      "contextTruncated": false,
+      "status": "confirmed_public",
+      "reason": null,
+      "recipientField": null,
+      "href": null,
+      "siteWide": false,
+      "contactHint": true,
+      "normalization": [],
+      "path": [
+        "https://www.youtube.com/@choruslove"
+      ]
+    },
+    {
+      "sourceUrl": "https://www.youtube.com/@choruslove",
+      "pageKind": "profile",
+      "platform": "youtube",
+      "pageTitle": "程人富宇宙 - YouTube",
+      "capturedAt": "2026-10-23T02:25:46.135Z",
+      "source": "profile_content",
+      "location": "#email",
+      "raw": "kikochan@pomato.hk",
+      "context": "kikochan@pomato.hk",
+      "contextTruncated": false,
+      "status": "confirmed_public",
+      "reason": null,
+      "recipientField": null,
+      "href": null,
+      "siteWide": false,
+      "contactHint": false,
+      "normalization": [],
+      "path": [
+        "https://www.youtube.com/@choruslove"
+      ]
+    },
+    {
+      "sourceUrl": "https://www.youtube.com/@choruslove",
+      "pageKind": "profile",
+      "platform": "youtube",
+      "pageTitle": "程人富宇宙 - YouTube",
+      "capturedAt": "2026-10-23T02:25:46.135Z",
+      "source": "profile_contact_email",
+      "location": "#email",
+      "raw": "kikochan@pomato.hk",
+      "context": "kikochan@pomato.hk",
+      "contextTruncated": false,
+      "status": "confirmed_public",
+      "reason": null,
+      "recipientField": "path",
+      "href": "mailto:kikochan@pomato.hk",
+      "linkText": "kikochan@pomato.hk",
+      "siteWide": false,
+      "contactHint": false,
+      "normalization": [],
+      "path": [
+        "https://www.youtube.com/@choruslove"
+      ]
+    }
+  ],
+  "processedPageCount": 1,
+  "pending": [],
+  "timing": {
+    "finalNativeResumeMs": 8953,
+    "currentContinuationUntilEmailMs": 368774,
+    "spaceCreatedUntilEmailMs": 987158,
+    "includesWaitingAndRepairs": true
+  },
+  "phases": [
+    {
+      "phase": "observed",
+      "observedAt": "2026-10-23T10:25:37.235+08:00"
+    },
+    {
+      "phase": "checkbox_requested",
+      "observedAt": "2026-10-23T10:25:37.481+08:00"
+    },
+    {
+      "phase": "verified",
+      "observedAt": "2026-10-23T10:25:39.879+08:00"
+    },
+    {
+      "phase": "submit_requested",
+      "observedAt": "2026-10-23T10:25:39.884+08:00"
+    },
+    {
+      "phase": "email_displayed",
+      "observedAt": "2026-10-23T10:25:46.109+08:00"
+    }
+  ],
+  "actions": [
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "798.9609375",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:09:47.777Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "798.9609375",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "afterUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:09:47.954Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "865",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:23:14.557Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "865",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "afterUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:23:14.837Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "click",
+      "target": "@410",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:25:37.483Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "click",
+      "target": "@410",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "afterUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:25:37.650Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "814.3359375",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:25:45.524Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "814.3359375",
+      "beforeUrl": "https://www.youtube.com/@choruslove",
+      "afterUrl": "https://www.youtube.com/@choruslove",
+      "at": "2026-10-23T02:25:45.634Z"
+    }
+  ],
+  "tests": {
+    "fullSuite": 466,
+    "passed": 466,
+    "failed": 0,
+    "independentReviewRelatedTests": 26
+  },
+  "note": "Bio also contains the same email. Generic finder retains Bio-first stopping. The production native-contact submodule was separately exercised against this same page to validate the requested checkbox-and-submit path, then the full finder resumed and retained both sources."
+}

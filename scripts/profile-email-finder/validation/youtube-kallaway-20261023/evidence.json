@@ -1,0 +1,247 @@
+{
+  "target": "https://www.youtube.com/@kallawaymarketing",
+  "channelTitle": "Kallaway",
+  "email": "kallaway@wavylabs.co",
+  "completion": "completed",
+  "matches": true,
+  "sourceType": "profile_contact",
+  "status": "confirmed_public",
+  "nativeEvidence": {
+    "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+    "pageKind": "profile",
+    "platform": "youtube",
+    "pageTitle": "Kallaway - YouTube",
+    "capturedAt": "2026-10-23T02:33:36.901Z",
+    "source": "profile_contact_email",
+    "location": "#email",
+    "raw": "kallaway@wavylabs.co",
+    "context": "kallaway@wavylabs.co",
+    "contextTruncated": false,
+    "status": "confirmed_public",
+    "reason": null,
+    "recipientField": "path",
+    "href": "mailto:kallaway@wavylabs.co",
+    "linkText": "kallaway@wavylabs.co",
+    "siteWide": false,
+    "contactHint": false,
+    "normalization": [],
+    "path": [
+      "https://www.youtube.com/@kallawaymarketing"
+    ]
+  },
+  "evidence": [
+    {
+      "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+      "pageKind": "profile",
+      "platform": "youtube",
+      "pageTitle": "Kallaway - YouTube",
+      "capturedAt": "2026-10-23T02:33:36.901Z",
+      "source": "profile_content",
+      "location": "#email",
+      "raw": "kallaway@wavylabs.co",
+      "context": "kallaway@wavylabs.co",
+      "contextTruncated": false,
+      "status": "confirmed_public",
+      "reason": null,
+      "recipientField": null,
+      "href": null,
+      "siteWide": false,
+      "contactHint": false,
+      "normalization": [],
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing"
+      ]
+    },
+    {
+      "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+      "pageKind": "profile",
+      "platform": "youtube",
+      "pageTitle": "Kallaway - YouTube",
+      "capturedAt": "2026-10-23T02:33:36.901Z",
+      "source": "profile_contact_email",
+      "location": "#email",
+      "raw": "kallaway@wavylabs.co",
+      "context": "kallaway@wavylabs.co",
+      "contextTruncated": false,
+      "status": "confirmed_public",
+      "reason": null,
+      "recipientField": "path",
+      "href": "mailto:kallaway@wavylabs.co",
+      "linkText": "kallaway@wavylabs.co",
+      "siteWide": false,
+      "contactHint": false,
+      "normalization": [],
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing"
+      ]
+    }
+  ],
+  "spaceId": 90,
+  "spaceFinished": true,
+  "spaceFinishedAt": "2026-10-23T02:33:37.042Z",
+  "processedPages": 1,
+  "pending": [],
+  "stopReason": "profile_contact_email_found",
+  "browserTotalMs": 33184,
+  "browserStartedAt": "2026-10-23T02:33:03.726Z",
+  "emailObservedAt": "2026-10-23T02:33:36.903Z",
+  "userRequestUntilEmailMs": 185059,
+  "phases": [
+    {
+      "phase": "observed",
+      "at": "2026-10-23T02:33:06.107Z",
+      "elapsedMs": 41
+    },
+    {
+      "phase": "about_opened",
+      "at": "2026-10-23T02:33:12.423Z",
+      "elapsedMs": 6357
+    },
+    {
+      "phase": "email_requested",
+      "at": "2026-10-23T02:33:12.426Z",
+      "elapsedMs": 6360
+    },
+    {
+      "phase": "verification_visible",
+      "at": "2026-10-23T02:33:20.311Z",
+      "elapsedMs": 14245
+    },
+    {
+      "phase": "verification_ready",
+      "at": "2026-10-23T02:33:20.536Z",
+      "elapsedMs": 14470
+    },
+    {
+      "phase": "checkbox_requested",
+      "at": "2026-10-23T02:33:28.330Z",
+      "elapsedMs": 22264
+    },
+    {
+      "phase": "verified",
+      "at": "2026-10-23T02:33:29.857Z",
+      "elapsedMs": 23791
+    },
+    {
+      "phase": "submit_requested",
+      "at": "2026-10-23T02:33:29.865Z",
+      "elapsedMs": 23799
+    },
+    {
+      "phase": "email_displayed",
+      "at": "2026-10-23T02:33:36.903Z",
+      "elapsedMs": 30837
+    }
+  ],
+  "actions": [
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "goto",
+      "target": "https://www.youtube.com/@kallawaymarketing",
+      "beforeUrl": "chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html",
+      "at": "2026-10-23T02:33:04.013Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "goto",
+      "target": "https://www.youtube.com/@kallawaymarketing",
+      "beforeUrl": "chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html",
+      "afterUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:05.608Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "948.9609375",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:12.071Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "948.9609375",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "afterUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:12.224Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "816",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:20.137Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "816",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "afterUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:20.298Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "click",
+      "target": "@297",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:28.334Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "click",
+      "target": "@297",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "afterUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:28.452Z"
+    },
+    {
+      "phase": "before",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "765.3359375",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:36.404Z"
+    },
+    {
+      "phase": "after",
+      "page": "p1",
+      "action": "mouse.click",
+      "target": "765.3359375",
+      "beforeUrl": "https://www.youtube.com/@kallawaymarketing",
+      "afterUrl": "https://www.youtube.com/@kallawaymarketing",
+      "at": "2026-10-23T02:33:36.551Z"
+    }
+  ],
+  "productionSourceSha256": {
+    "scripts/profile-email-finder/youtube-email.mjs": "923afc0096678b6d8bd4d40b9cd53465fe4662ac07a87d6b86b7fe21d421bd8c",
+    "scripts/profile-email-finder/browser.mjs": "73c1024413e512061011adf10e9dd9df4818b8d91bf170422b4b2bfa36532f25",
+    "scripts/profile-email-finder/finder.mjs": "8cb025591908c047b49a3c2ac79605999a2ce67200c6b11119a01c7dfc1ead9d",
+    "scripts/profile-email-finder/integration.mjs": "544dd60fd24c5409b64e8b84e9023e9f98020a8a1da14daef909a6fc622af1c6",
+    "scripts/instagram-finder/session.mjs": "4185baec250566d63e667085d1fdf1a08b21e2621117ebc8e0dfa990ffd9c18f"
+  },
+  "regression": {
+    "tests": 466,
+    "pass": 466,
+    "fail": 0
+  },
+  "requestedUpdateStatus": "awaiting_readable_new_source",
+  "sourceConversation": {
+    "id": "01a163ea-9352-7d82-a398-d9a17c788eb0",
+    "title": "研究 YouTube 邮箱获取流程",
+    "latestReadableBusinessMessageAt": "2026-10-22T16:08:58.823Z",
+    "lastMessage": "同样已登录、验证码只需勾选的情况下，预计整轮30–60秒。",
+    "checked": [
+      "read_thread",
+      "local session records"
+    ],
+    "note": "No newer implementation or business message was available in either source. This run validates the currently integrated version; no unseen update is claimed as integrated."
+  }
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "authorId": "9000000000000000001",
+    "username": "fixture_confirmed",
+    "profileUrl": "https://www.tiktok.com/@fixture_confirmed",
+    "profile": {
+      "username": "fixture_confirmed",
+      "authorId": "9000000000000000001",
+      "profileUrl": "https://www.tiktok.com/@fixture_confirmed",
+      "bio": "public@example.com",
+      "ready": true,
+      "identityVerified": true,
+      "statusCode": 0,
+      "privateAccount": false,
+      "latestOrderConfirmed": true,
+      "capturedAt": "2026-10-21T04:00:00Z",
+      "playlists": []
+    },
+    "emails": [
+      "public@example.com"
+    ],
+    "profileCapturedAt": "2026-10-21T04:00:00Z",
+    "metrics": {
+      "items": [
+        {
+          "id": "7777777777777777771",
+          "authorId": "9000000000000000001",
+          "username": "fixture_confirmed",
+          "createdAt": 1792022400,
+          "views": 60000,
+          "description": "#christianskit",
+          "mediaType": "video",
+          "locationCreated": "US",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771"
+        }
+      ],
+      "sample": [
+        {
+          "id": "7777777777777777771",
+          "authorId": "9000000000000000001",
+          "username": "fixture_confirmed",
+          "createdAt": 1792022400,
+          "views": 60000,
+          "description": "#christianskit",
+          "mediaType": "video",
+          "locationCreated": "US",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771"
+        }
+      ],
+      "sampleSize": 1,
+      "totalViews": 60000,
+      "averageViews": 60000,
+      "coverageComplete": true,
+      "issues": [],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "#christianskit",
+          "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+          "publishedAt": "2026-10-15T00:00:00.000Z"
+        },
+        {
+          "videoId": "7777777777777777771",
+          "authorId": "9000000000000000001",
+          "username": "fixture_confirmed",
+          "text": "#christianskit",
+          "videoUrl": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+          "keyword": "christian skits",
+          "capturedAt": "2026-10-21T07:42:01.058Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771"
+        },
+        {
+          "videoId": "7777777777777777771",
+          "authorId": "9000000000000000001",
+          "username": "fixture_confirmed",
+          "text": "#christianskit",
+          "videoUrl": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+          "searchUrl": "https://www.tiktok.com/search/video?q=bible%20comedy",
+          "keyword": "bible comedy",
+          "capturedAt": "2026-10-21T07:42:01.068Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "profile": {
+        "username": "fixture_confirmed",
+        "authorId": "9000000000000000001",
+        "profileUrl": "https://www.tiktok.com/@fixture_confirmed",
+        "bio": "public@example.com",
+        "ready": true,
+        "identityVerified": true,
+        "statusCode": 0,
+        "privateAccount": false,
+        "latestOrderConfirmed": true,
+        "capturedAt": "2026-10-21T04:00:00Z",
+        "playlists": []
+      },
+      "pages": [
+        {
+          "statusCode": 0,
+          "hasMore": false,
+          "cursor": 1,
+          "items": [
+            {
+              "id": "7777777777777777771",
+              "authorId": "9000000000000000001",
+              "username": "fixture_confirmed",
+              "createdAt": 1792022400,
+              "views": 60000,
+              "description": "#christianskit",
+              "mediaType": "video",
+              "locationCreated": "US",
+              "capturedAt": "2026-10-21T04:00:00Z",
+              "url": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771"
+            }
+          ]
+        }
+      ]
+    },
+    "sourceKeywords": [
+      "christian skits",
+      "bible comedy"
+    ],
+    "decision": "confirmed",
+    "reason": "all_conditions_verified",
+    "location": {
+      "country": "US",
+      "evidence": [
+        {
+          "videoId": "7777777777777777771",
+          "authorId": "9000000000000000001",
+          "rawValue": "US",
+          "videoUrl": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "fieldPath": "itemList[].locationCreated"
+        }
+      ],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容：2026-10-15T00:00:00.000Z #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）； #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）； #christianskit（https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771）。\n邮箱：public@example.com；来源 https://www.tiktok.com/@fixture_confirmed，采集 2026-10-21T04:00:00Z。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），1条视频，算术均播60000，须严格大于50000；覆盖完整。\n地区：最新公开视频locationCreated=US；字段不证明本人现居地。\n判定：confirmed；all_conditions_verified。",
+    "processedKeywords": [
+      "christian skits",
+      "bible comedy"
+    ]
+  },
+  {
+    "authorId": "9000000000000000002",
+    "username": "fixture_suspected",
+    "profileUrl": "https://www.tiktok.com/@fixture_suspected",
+    "profile": {
+      "username": "fixture_suspected",
+      "authorId": "9000000000000000002",
+      "profileUrl": "https://www.tiktok.com/@fixture_suspected",
+      "bio": "public@example.com",
+      "ready": true,
+      "identityVerified": true,
+      "statusCode": 0,
+      "privateAccount": false,
+      "latestOrderConfirmed": true,
+      "capturedAt": "2026-10-21T04:00:00Z",
+      "playlists": []
+    },
+    "emails": [
+      "public@example.com"
+    ],
+    "profileCapturedAt": "2026-10-21T04:00:00Z",
+    "metrics": {
+      "items": [
+        {
+          "id": "7777777777777777772",
+          "authorId": "9000000000000000002",
+          "username": "fixture_suspected",
+          "createdAt": 1792022400,
+          "views": 60000,
+          "description": "Christian discussion",
+          "mediaType": "video",
+          "locationCreated": "US",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772"
+        }
+      ],
+      "sample": [
+        {
+          "id": "7777777777777777772",
+          "authorId": "9000000000000000002",
+          "username": "fixture_suspected",
+          "createdAt": 1792022400,
+          "views": 60000,
+          "description": "Christian discussion",
+          "mediaType": "video",
+          "locationCreated": "US",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772"
+        }
+      ],
+      "sampleSize": 1,
+      "totalViews": 60000,
+      "averageViews": 60000,
+      "coverageComplete": true,
+      "issues": [],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "suspected",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "Christian discussion",
+          "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772",
+          "publishedAt": "2026-10-15T00:00:00.000Z"
+        },
+        {
+          "videoId": "7777777777777777772",
+          "authorId": "9000000000000000002",
+          "username": "fixture_suspected",
+          "text": "Christian discussion",
+          "videoUrl": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+          "keyword": "christian skits",
+          "capturedAt": "2026-10-21T07:42:01.058Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772"
+        }
+      ],
+      "uncertainty": "公开原文尚不足以同时确认目标主题与内容形式，待人工复核"
+    },
+    "capture": {
+      "profile": {
+        "username": "fixture_suspected",
+        "authorId": "9000000000000000002",
+        "profileUrl": "https://www.tiktok.com/@fixture_suspected",
+        "bio": "public@example.com",
+        "ready": true,
+        "identityVerified": true,
+        "statusCode": 0,
+        "privateAccount": false,
+        "latestOrderConfirmed": true,
+        "capturedAt": "2026-10-21T04:00:00Z",
+        "playlists": []
+      },
+      "pages": [
+        {
+          "statusCode": 0,
+          "hasMore": false,
+          "cursor": 1,
+          "items": [
+            {
+              "id": "7777777777777777772",
+              "authorId": "9000000000000000002",
+              "username": "fixture_suspected",
+              "createdAt": 1792022400,
+              "views": 60000,
+              "description": "Christian discussion",
+              "mediaType": "video",
+              "locationCreated": "US",
+              "capturedAt": "2026-10-21T04:00:00Z",
+              "url": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772"
+            }
+          ]
+        }
+      ]
+    },
+    "sourceKeywords": [
+      "christian skits"
+    ],
+    "decision": "suspected",
+    "reason": "content_requires_human_review",
+    "location": {
+      "country": "US",
+      "evidence": [
+        {
+          "videoId": "7777777777777777772",
+          "authorId": "9000000000000000002",
+          "rawValue": "US",
+          "videoUrl": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "fieldPath": "itemList[].locationCreated"
+        }
+      ],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容：2026-10-15T00:00:00.000Z Christian discussion（https://www.tiktok.com/@fixture_suspected/video/7777777777777777772）； Christian discussion（https://www.tiktok.com/@fixture_suspected/video/7777777777777777772）；公开原文尚不足以同时确认目标主题与内容形式，待人工复核。\n邮箱：public@example.com；来源 https://www.tiktok.com/@fixture_suspected，采集 2026-10-21T04:00:00Z。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），1条视频，算术均播60000，须严格大于50000；覆盖完整。\n地区：最新公开视频locationCreated=US；字段不证明本人现居地。\n判定：suspected；content_requires_human_review。",
+    "processedKeywords": [
+      "christian skits"
+    ]
+  }
+]

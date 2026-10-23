@@ -1,0 +1,17 @@
+{
+  "completion": "completed",
+  "emails": [
+    "TeamFaye@stregagroup.com"
+  ],
+  "pages": 1,
+  "actions": [],
+  "before": {
+    "url": "https://www.instagram.com/fayeknightly_/",
+    "timeOrigin": 1792671139375.5
+  },
+  "after": {
+    "url": "https://www.instagram.com/fayeknightly_/",
+    "timeOrigin": 1792671139375.5
+  },
+  "stopReason": "profile_bio_email_found"
+}

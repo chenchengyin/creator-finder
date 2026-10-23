@@ -1,0 +1,1016 @@
+{
+  "result": {
+    "complete": true,
+    "issues": [],
+    "checkpoint": {}
+  },
+  "captures": [
+    {
+      "url": "https://blog.youtube/creator-and-artist-stories/",
+      "requestedUrl": "https://blog.youtube/creator-and-artist-stories/",
+      "title": "Creator and Artist Stories and Profiles — YouTube Blog",
+      "kind": "webpage",
+      "platform": null,
+      "ready": true,
+      "complete": true,
+      "httpStatus": 200,
+      "access": "ok",
+      "blocks": [
+        {
+          "text": "Skip to Main Content",
+          "context": "Skip to Main Content",
+          "location": "body > header > div:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              News & Events\n              \n            ",
+          "context": "\n              News & Events\n              \n            ",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              Creator & Artist Stories\n              \n            ",
+          "context": "\n              Creator & Artist Stories\n              \n            ",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              Culture & Trends\n              \n            ",
+          "context": "\n              Culture & Trends\n              \n            ",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              Inside YouTube\n              \n            ",
+          "context": "\n              Inside YouTube\n              \n            ",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              Made On YouTube\n              \n            ",
+          "context": "\n              Made On YouTube\n              \n            ",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Feed",
+          "context": "Feed",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Topics",
+          "context": "Topics",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n      Search Input\n    ",
+          "context": "\n      Search Input\n    ",
+          "location": "body > header > div:nth-of-type(1) > div:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n        Subscribe\n      ",
+          "context": "\n        Subscribe\n      ",
+          "location": "body > header > div:nth-of-type(1) > div:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n      Creator and Artist Stories\n    ",
+          "context": "\n      Creator and Artist Stories\n    ",
+          "location": "#jump-content",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n      Discover profiles and stories on the talented people who create YouTube videos including creators and artists, all featured here on YouTube Blog.\n    ",
+          "context": "\n      Discover profiles and stories on the talented people who create YouTube videos including creators and artists, all featured here on YouTube Blog.\n    ",
+          "location": "#main-content > section:nth-of-type(1) > article > p",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Creator and Artist Stories Card Grid",
+          "context": "Creator and Artist Stories Card Grid",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(1) > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Latest\n          ",
+          "context": "\n            Latest\n          ",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Trending\n          ",
+          "context": "\n            Trending\n          ",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Creators\n          ",
+          "context": "\n            Creators\n          ",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Artists\n          ",
+          "context": "\n            Artists\n          ",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Celebrations\n          ",
+          "context": "\n            Celebrations\n          ",
+          "location": "#main-content > section:nth-of-type(2) > div:nth-of-type(2) > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n            Explore the latest company news, creator and artist profiles, culture and trends analyses, and behind-the-scenes insights on the YouTube Official Blog.\n          ",
+          "context": "\n            Explore the latest company news, creator and artist profiles, culture and trends analyses, and behind-the-scenes insights on the YouTube Official Blog.\n          ",
+          "location": "body > footer > div > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                About Us\n              ",
+          "context": "\n                About Us\n              ",
+          "location": "body > footer > div > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Our Channels",
+          "context": "Our Channels",
+          "location": "#item-top-1 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube\n        ",
+          "context": "\n          YouTube\n        ",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Creators\n        ",
+          "context": "\n          YouTube Creators\n        ",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creator Insider\n        ",
+          "context": "\n          Creator Insider\n        ",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          TeamYouTube [Help]\n        ",
+          "context": "\n          TeamYouTube [Help]\n        ",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Liaison\n        ",
+          "context": "\n          YouTube Liaison\n        ",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "X (Twitter)",
+          "context": "X (Twitter)",
+          "location": "#item-top-2 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube\n        ",
+          "context": "\n          YouTube\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Liaison\n        ",
+          "context": "\n          YouTube Liaison\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Creators\n        ",
+          "context": "\n          YouTube Creators\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          TeamYouTube\n        ",
+          "context": "\n          TeamYouTube\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Gaming\n        ",
+          "context": "\n          YouTube Gaming\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube TV\n        ",
+          "context": "\n          YouTube TV\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(6)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Music\n        ",
+          "context": "\n          YouTube Music\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(7)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTubeInsider\n        ",
+          "context": "\n          YouTubeInsider\n        ",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(8)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Connect",
+          "context": "Connect",
+          "location": "body > footer > div > div:nth-of-type(2) > div > div:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "About YouTube",
+          "context": "About YouTube",
+          "location": "#item-nav-1 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          About\n        ",
+          "context": "\n          About\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Press\n        ",
+          "context": "\n          Press\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Jobs\n        ",
+          "context": "\n          Jobs\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          How YouTube Works\n        ",
+          "context": "\n          How YouTube Works\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Culture & Trends\n        ",
+          "context": "\n          YouTube Culture & Trends\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Community Forum\n        ",
+          "context": "\n          Community Forum\n        ",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(6)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "YouTube Products",
+          "context": "YouTube Products",
+          "location": "#item-nav-2 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Kids\n        ",
+          "context": "\n          YouTube Kids\n        ",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Music\n        ",
+          "context": "\n          YouTube Music\n        ",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Originals\n        ",
+          "context": "\n          YouTube Originals\n        ",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube Premium\n        ",
+          "context": "\n          YouTube Premium\n        ",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube TV\n        ",
+          "context": "\n          YouTube TV\n        ",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "For Business",
+          "context": "For Business",
+          "location": "#item-nav-3 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Advertising\n        ",
+          "context": "\n          Advertising\n        ",
+          "location": "#item-nav-3 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Developers\n        ",
+          "context": "\n          Developers\n        ",
+          "location": "#item-nav-3 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "For Creators",
+          "context": "For Creators",
+          "location": "#item-nav-4 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Artists\n        ",
+          "context": "\n          Artists\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creators\n        ",
+          "context": "\n          Creators\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creator Academy\n        ",
+          "context": "\n          Creator Academy\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creating for Kids\n        ",
+          "context": "\n          Creating for Kids\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creators Research\n        ",
+          "context": "\n          Creators Research\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creators Services Directory\n        ",
+          "context": "\n          Creators Services Directory\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(6)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          YouTube VR\n        ",
+          "context": "\n          YouTube VR\n        ",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(7)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "Our Commitments",
+          "context": "Our Commitments",
+          "location": "#item-nav-5 > button > h2",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Creators for Change\n        ",
+          "context": "\n          Creators for Change\n        ",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          CSAI Match\n        ",
+          "context": "\n          CSAI Match\n        ",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n          Social Impact\n        ",
+          "context": "\n          Social Impact\n        ",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                  Policy & Safety\n                ",
+          "context": "\n                  Policy & Safety\n                ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(1)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                  Copyright\n                ",
+          "context": "\n                  Copyright\n                ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(2)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                  Brand Guidelines\n                ",
+          "context": "\n                  Brand Guidelines\n                ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(3)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                  Privacy\n                ",
+          "context": "\n                  Privacy\n                ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(4)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n                  Terms\n                ",
+          "context": "\n                  Terms\n                ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(5)",
+          "source": "visible_text",
+          "visible": true
+        },
+        {
+          "text": "\n              Help\n            ",
+          "context": "\n              Help\n            ",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(2) > div",
+          "source": "visible_text",
+          "visible": true
+        }
+      ],
+      "links": [
+        {
+          "url": "https://blog.youtube/creator-and-artist-stories/#jump-content",
+          "text": "Skip to Main Content",
+          "label": "",
+          "context": "Skip to Main Content\nNews & Events\nCreator & Artist Stories\nCulture & Trends\nInside YouTube\nMade On YouTube\nFeed\nTopics\nSearch Input\nSearch with AI\nSubscribe",
+          "location": "body > header > div:nth-of-type(1) > a:nth-of-type(1)",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/",
+          "text": "",
+          "label": "YouTube Official Blog",
+          "context": "Skip to Main Content\nNews & Events\nCreator & Artist Stories\nCulture & Trends\nInside YouTube\nMade On YouTube\nFeed\nTopics\nSearch Input\nSearch with AI\nSubscribe",
+          "location": "body > header > div:nth-of-type(1) > a:nth-of-type(2)",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/news-and-events/",
+          "text": "News & Events",
+          "label": "News & Events",
+          "context": "News & Events",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/creator-and-artist-stories/",
+          "text": "Creator & Artist Stories",
+          "label": "Creator & Artist Stories",
+          "context": "Creator & Artist Stories",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/culture-and-trends/",
+          "text": "Culture & Trends",
+          "label": "Culture & Trends",
+          "context": "Culture & Trends",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(3) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/inside-youtube/",
+          "text": "Inside YouTube",
+          "label": "Inside YouTube",
+          "context": "Inside YouTube",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(4) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/madeonyoutube/",
+          "text": "Made On YouTube",
+          "label": "Made On YouTube",
+          "context": "Made On YouTube",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(5) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/feed/",
+          "text": "Feed",
+          "label": "Feed",
+          "context": "Feed",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(1) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/creator-and-artist-stories/#topic-hub-nav",
+          "text": "Topics",
+          "label": "Topics",
+          "context": "Topics",
+          "location": "body > header > div:nth-of-type(1) > nav > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(2) > a",
+          "source": "page_link",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/about-us/",
+          "text": "About Us",
+          "label": "",
+          "context": "About Us",
+          "location": "body > footer > div > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/user/YouTube",
+          "text": "YouTube",
+          "label": "",
+          "context": "YouTube",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/user/creatoracademy",
+          "text": "YouTube Creators",
+          "label": "",
+          "context": "YouTube Creators",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCGg-UqjRgzhYDPJMr-9HXCg",
+          "text": "Creator Insider",
+          "label": "",
+          "context": "Creator Insider",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/user/YouTubeHelp",
+          "text": "TeamYouTube [Help]",
+          "label": "",
+          "context": "TeamYouTube [Help]",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/@YouTubeInsider",
+          "text": "YouTube Liaison",
+          "label": "",
+          "context": "YouTube Liaison",
+          "location": "#item-top-1 > div > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/YouTube",
+          "text": "YouTube",
+          "label": "",
+          "context": "YouTube",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/YouTubeInsider",
+          "text": "YouTube Liaison",
+          "label": "",
+          "context": "YouTube Liaison",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/YouTubeCreators",
+          "text": "YouTube Creators",
+          "label": "",
+          "context": "YouTube Creators",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/teamyoutube",
+          "text": "TeamYouTube",
+          "label": "",
+          "context": "TeamYouTube",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/youtubegaming",
+          "text": "YouTube Gaming",
+          "label": "",
+          "context": "YouTube Gaming",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/youtubetv",
+          "text": "YouTube TV",
+          "label": "",
+          "context": "YouTube TV",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(6) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/youtubemusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "text": "YouTube Music",
+          "label": "",
+          "context": "YouTube Music",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(7) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://x.com/YouTubeInsider",
+          "text": "YouTubeInsider",
+          "label": "",
+          "context": "YouTubeInsider",
+          "location": "#item-top-2 > div > ul > li:nth-of-type(8) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.instagram.com/youtube/",
+          "text": "",
+          "label": "Share on Instagram",
+          "context": "",
+          "location": "body > footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > section > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.facebook.com/youtube",
+          "text": "",
+          "label": "Share on Facebook",
+          "context": "",
+          "location": "body > footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > section > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://about.youtube/",
+          "text": "About",
+          "label": "",
+          "context": "About",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://blog.youtube/press/",
+          "text": "Press",
+          "label": "",
+          "context": "Press",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/jobs/",
+          "text": "Jobs",
+          "label": "",
+          "context": "Jobs",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/howyoutubeworks/",
+          "text": "How YouTube Works",
+          "label": "",
+          "context": "How YouTube Works",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/trends/",
+          "text": "YouTube Culture & Trends",
+          "label": "",
+          "context": "YouTube Culture & Trends",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://support.google.com/youtube/community",
+          "text": "Community Forum",
+          "label": "",
+          "context": "Community Forum",
+          "location": "#item-nav-1 > div > ul > li:nth-of-type(6) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/kids/",
+          "text": "YouTube Kids",
+          "label": "",
+          "context": "YouTube Kids",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/musicpremium",
+          "text": "YouTube Music",
+          "label": "",
+          "context": "YouTube Music",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCqVDpXKLmKeBU_yyt_QkItQ",
+          "text": "YouTube Originals",
+          "label": "",
+          "context": "YouTube Originals",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/premium/",
+          "text": "YouTube Premium",
+          "label": "",
+          "context": "YouTube Premium",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://tv.youtube.com/welcome/?zipcode=78702",
+          "text": "YouTube TV",
+          "label": "",
+          "context": "YouTube TV",
+          "location": "#item-nav-2 > div > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/ads/",
+          "text": "Advertising",
+          "label": "",
+          "context": "Advertising",
+          "location": "#item-nav-3 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://developers.google.com/youtube",
+          "text": "Developers",
+          "label": "",
+          "context": "Developers",
+          "location": "#item-nav-3 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://artists.youtube/",
+          "text": "Artists",
+          "label": "",
+          "context": "Artists",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/creators/",
+          "text": "Creators",
+          "label": "",
+          "context": "Creators",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCkRfArvrzheW2E7b6SVT7vQ",
+          "text": "Creator Academy",
+          "label": "",
+          "context": "Creator Academy",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/yt/family/",
+          "text": "Creating for Kids",
+          "label": "",
+          "context": "Creating for Kids",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/creators/research/",
+          "text": "Creators Research",
+          "label": "",
+          "context": "Creators Research",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://servicesdirectory.withyoutube.com/",
+          "text": "Creators Services Directory",
+          "label": "",
+          "context": "Creators Services Directory",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(6) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/@360/featured",
+          "text": "YouTube VR",
+          "label": "",
+          "context": "YouTube VR",
+          "location": "#item-nav-4 > div > ul > li:nth-of-type(7) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/creators/",
+          "text": "Creators for Change",
+          "label": "",
+          "context": "Creators for Change",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/csai-match/",
+          "text": "CSAI Match",
+          "label": "",
+          "context": "CSAI Match",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://socialimpact.youtube.com/",
+          "text": "Social Impact",
+          "label": "",
+          "context": "Social Impact",
+          "location": "#item-nav-5 > div > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/",
+          "text": "",
+          "label": "",
+          "context": "Policy & Safety Copyright Brand Guidelines Privacy Terms",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/howyoutubeworks/policies/community-guidelines/#community-guidelines",
+          "text": "Policy & Safety",
+          "label": "",
+          "context": "Policy & Safety",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(1) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/howyoutubeworks/policies/copyright/#support-and-troubleshooting",
+          "text": "Copyright",
+          "label": "",
+          "context": "Copyright",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(2) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-colors",
+          "text": "Brand Guidelines",
+          "label": "",
+          "context": "Brand Guidelines",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(3) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://policies.google.com/privacy",
+          "text": "Privacy",
+          "label": "",
+          "context": "Privacy",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(4) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/t/terms",
+          "text": "Terms",
+          "label": "",
+          "context": "Terms",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(1) > nav > ul > li:nth-of-type(5) > a",
+          "source": "footer",
+          "visible": true
+        },
+        {
+          "url": "https://support.google.com/youtube/community",
+          "text": "Help",
+          "label": "",
+          "context": "Help\nBrasil (Português)\nDeutschland (Deutsch)\nGlobal (English)\nLatinoamérica (Español)\n日本 (日本語)\n대한민국 (한국어)",
+          "location": "body > footer > div > div:nth-of-type(4) > div:nth-of-type(2) > div > a",
+          "source": "footer",
+          "visible": true
+        }
+      ],
+      "actions": [],
+      "issues": [],
+      "phase": "read",
+      "capturedAt": "2026-10-22T09:42:45.380Z",
+      "checkpoint": {
+        "phase": "read"
+      }
+    }
+  ]
+}

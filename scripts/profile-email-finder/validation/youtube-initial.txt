@@ -1,0 +1,40 @@
+[p1 "YouTube - YouTube" | space "主页邮箱脚本验收-20261022"(51): 1 managed, 0 untracked — p1* "YouTube - YouTube"]
+root
+  container
+    container
+      banner
+        container
+          container
+            button "导视" [ref=11, loc=css:button[aria-label="导视"]]
+            anchor [ref=12, url=https://www.youtube.com/]
+          container
+            button [ref=13]
+              svg_root
+              text "Filters"
+            search
+              form
+                comboboxgrouping [ref=14, loc=css:input[name="search_query"]]
+              button "Search" [ref=15, loc=css:button[aria-label="Search"]]
+          container
+            button [ref=16]
+              svg_root
+              svg_root
+            button [ref=17]
+              svg_root
+            button "Your feed" [ref=18, loc=css:button[aria-label="Your feed"]]
+              svg_root
+      navigation
+    svg_root
+    container "Notifications" [ref=19]
+  container
+    button [ref=20]
+      svg_root
+    text "翻译当前页面"
+    button [ref=21]
+      svg_root
+    text "数据增强"
+    text "-"
+    text "开启"
+    button "找相似" [ref=22, loc=css:button[aria-label="找相似"]]
+      image
+      text "找相似"

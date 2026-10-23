@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+ok 1 - 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+  ---
+  duration_ms: 10.214875
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+ok 2 - 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+  ---
+  duration_ms: 58.763792
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-002 current response order beats preseeded global queue order
+ok 3 - 顺序-ORDER-002 current response order beats preseeded global queue order
+  ---
+  duration_ms: 15.604333
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-002 a historical keyword source absent from the new response does not enter its forced prefix
+not ok 4 - 顺序-ORDER-002 a historical keyword source absent from the new response does not enter its forced prefix
+  ---
+  duration_ms: 8.1255
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:58:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'paused'
+    - 'completed'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'completed'
+  actual: 'paused'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:61:98)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+ok 5 - 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+  ---
+  duration_ms: 30.904625
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+ok 6 - 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+  ---
+  duration_ms: 16.090125
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+ok 7 - 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+  ---
+  duration_ms: 10.895375
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-002 old qualifying authors cannot stop the new run or leak into an early export
+ok 8 - 缓存-CACHE-002 old qualifying authors cannot stop the new run or leak into an early export
+  ---
+  duration_ms: 13.087459
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+ok 9 - 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+  ---
+  duration_ms: 0.251458
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+ok 10 - 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+  ---
+  duration_ms: 0.218917
+  type: 'test'
+  ...
+# Subtest: 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+ok 11 - 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+  ---
+  duration_ms: 0.109
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+ok 12 - 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+  ---
+  duration_ms: 37.073833
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-002 explicit target stop retains incomplete forced count
+ok 13 - 断点-RESUME-002 explicit target stop retains incomplete forced count
+  ---
+  duration_ms: 11.838083
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-001 checkpoint captured during upgrade wins over old author snapshot; committed authors repair stale counts
+ok 14 - 断点-RESUME-001 checkpoint captured during upgrade wins over old author snapshot; committed authors repair stale counts
+  ---
+  duration_ms: 22.010916
+  type: 'test'
+  ...
+# Subtest: 回归-REG-001 N zero keeps signature prefilter without forced profile reads
+ok 15 - 回归-REG-001 N zero keeps signature prefilter without forced profile reads
+  ---
+  duration_ms: 13.204416
+  type: 'test'
+  ...
+# Subtest: 回归-REG-001 disabled N preserves legacy handling of a cached no-email Bio
+ok 16 - 回归-REG-001 disabled N preserves legacy handling of a cached no-email Bio
+  ---
+  duration_ms: 0.10425
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-001 partial search checkpoint retains first appearance order after restart
+ok 17 - 顺序-ORDER-001 partial search checkpoint retains first appearance order after restart
+  ---
+  duration_ms: 18.764
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+ok 18 - 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+  ---
+  duration_ms: 0.39
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+ok 19 - 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+  ---
+  duration_ms: 0.137083
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+ok 20 - 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+  ---
+  duration_ms: 0.181792
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-001 real adapter saves basic mounted link without post calls or navigating its target
+ok 21 - 外链-LINK-001 real adapter saves basic mounted link without post calls or navigating its target
+  ---
+  duration_ms: 1.792333
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 20
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 316.64275

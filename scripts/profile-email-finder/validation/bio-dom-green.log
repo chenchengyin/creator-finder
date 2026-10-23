@@ -1,0 +1,11 @@
+Error: JavaScript evaluation failed at line 0, column 0: TypeError: Failed to set the 'innerHTML' property on 'Element': This document requires 'TrustedHTML' assignment.
+    at <anonymous>:2:53
+    at __egoPageEvaluate (<anonymous>:2:134)
+    at <anonymous>:3:9; expression: html=>{document.body.innerHTML=html;document.body.style.cssText='display:block;visibility:visible;opacity:1';}
+    at runtimeValue (file:////[eval1]:9189:15)
+    at evaluateInSession (file:////[eval1]:19460:12)
+    at async file:////[eval1]:19083:24
+    at async file:////[eval1]:16940:28
+{"platform":"tiktok","result":"passed","bioSource":"profile_bio","linkSource":"profile_content"}
+
+ego's nodejs process exited with code 1.

@@ -1,0 +1,561 @@
+{
+  "sourceConversation": {
+    "id": "01a16283-f323-7613-8072-bfcd8a8fd039",
+    "title": "设计主页邮箱递归查找脚本",
+    "sourceDirectory": "/Users/vb/Projects/creator-finder/scripts/profile-email-finder"
+  },
+  "destination": "/Users/vb/Projects/creator-finder_preview/scripts/profile-email-finder",
+  "integrationStatus": "completed",
+  "target": "https://www.youtube.com/@kallawaymarketing",
+  "completion": "completed",
+  "emails": [
+    {
+      "email": "kallaway@wavylabs.co",
+      "key": "kallaway@wavylabs.co",
+      "status": "confirmed_public",
+      "variants": [
+        "kallaway@wavylabs.co"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+          "pageKind": "profile",
+          "platform": "youtube",
+          "pageTitle": "Kallaway - YouTube",
+          "capturedAt": "2026-10-23T02:33:36.901Z",
+          "source": "profile_content",
+          "location": "#email",
+          "raw": "kallaway@wavylabs.co",
+          "context": "kallaway@wavylabs.co",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+          "pageKind": "profile",
+          "platform": "youtube",
+          "pageTitle": "Kallaway - YouTube",
+          "capturedAt": "2026-10-23T02:33:36.901Z",
+          "source": "profile_contact_email",
+          "location": "#email",
+          "raw": "kallaway@wavylabs.co",
+          "context": "kallaway@wavylabs.co",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": "path",
+          "href": "mailto:kallaway@wavylabs.co",
+          "linkText": "kallaway@wavylabs.co",
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing"
+          ]
+        }
+      ]
+    },
+    {
+      "email": "support@sandcastles.ai",
+      "key": "support@sandcastles.ai",
+      "status": "confirmed_public",
+      "variants": [
+        "support@sandcastles.ai"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://sandcastles.ai/contact",
+          "pageKind": "webpage",
+          "platform": null,
+          "pageTitle": "Sandcastles | Contact",
+          "capturedAt": "2026-10-23T02:54:33.583Z",
+          "source": "visible_text",
+          "location": "#root > div > main > section > div > div > div > div > div > div:nth-of-type(2)",
+          "raw": "support@sandcastles.ai",
+          "context": "support@sandcastles.ai",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing",
+            "https://sandcastles.ai/",
+            "https://sandcastles.ai/contact"
+          ]
+        },
+        {
+          "sourceUrl": "https://sandcastles.ai/contact",
+          "pageKind": "webpage",
+          "platform": null,
+          "pageTitle": "Sandcastles | Contact",
+          "capturedAt": "2026-10-23T02:54:33.583Z",
+          "source": "page_link",
+          "location": "#root > div > main > section > div > div > div > div > div > div:nth-of-type(2) > a",
+          "raw": "support@sandcastles.ai",
+          "context": "support@sandcastles.ai",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": "path",
+          "href": "mailto:support@sandcastles.ai",
+          "linkText": "support@sandcastles.ai",
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing",
+            "https://sandcastles.ai/",
+            "https://sandcastles.ai/contact"
+          ]
+        }
+      ]
+    }
+  ],
+  "acceptedEmails": [
+    {
+      "email": "kallaway@wavylabs.co",
+      "key": "kallaway@wavylabs.co",
+      "status": "confirmed_public",
+      "variants": [
+        "kallaway@wavylabs.co"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+          "pageKind": "profile",
+          "platform": "youtube",
+          "pageTitle": "Kallaway - YouTube",
+          "capturedAt": "2026-10-23T02:33:36.901Z",
+          "source": "profile_content",
+          "location": "#email",
+          "raw": "kallaway@wavylabs.co",
+          "context": "kallaway@wavylabs.co",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.youtube.com/@kallawaymarketing",
+          "pageKind": "profile",
+          "platform": "youtube",
+          "pageTitle": "Kallaway - YouTube",
+          "capturedAt": "2026-10-23T02:33:36.901Z",
+          "source": "profile_contact_email",
+          "location": "#email",
+          "raw": "kallaway@wavylabs.co",
+          "context": "kallaway@wavylabs.co",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": "path",
+          "href": "mailto:kallaway@wavylabs.co",
+          "linkText": "kallaway@wavylabs.co",
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing"
+          ]
+        }
+      ],
+      "sourceType": "profile_contact"
+    }
+  ],
+  "reviewEmails": [
+    {
+      "email": "support@sandcastles.ai",
+      "key": "support@sandcastles.ai",
+      "status": "confirmed_public",
+      "variants": [
+        "support@sandcastles.ai"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://sandcastles.ai/contact",
+          "pageKind": "webpage",
+          "platform": null,
+          "pageTitle": "Sandcastles | Contact",
+          "capturedAt": "2026-10-23T02:54:33.583Z",
+          "source": "visible_text",
+          "location": "#root > div > main > section > div > div > div > div > div > div:nth-of-type(2)",
+          "raw": "support@sandcastles.ai",
+          "context": "support@sandcastles.ai",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing",
+            "https://sandcastles.ai/",
+            "https://sandcastles.ai/contact"
+          ],
+          "reviewReason": "support_mailbox_requires_review"
+        },
+        {
+          "sourceUrl": "https://sandcastles.ai/contact",
+          "pageKind": "webpage",
+          "platform": null,
+          "pageTitle": "Sandcastles | Contact",
+          "capturedAt": "2026-10-23T02:54:33.583Z",
+          "source": "page_link",
+          "location": "#root > div > main > section > div > div > div > div > div > div:nth-of-type(2) > a",
+          "raw": "support@sandcastles.ai",
+          "context": "support@sandcastles.ai",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": "path",
+          "href": "mailto:support@sandcastles.ai",
+          "linkText": "support@sandcastles.ai",
+          "siteWide": false,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.youtube.com/@kallawaymarketing",
+            "https://sandcastles.ai/",
+            "https://sandcastles.ai/contact"
+          ],
+          "reviewReason": "support_mailbox_requires_review"
+        }
+      ],
+      "reviewReasons": [
+        "support_mailbox_requires_review"
+      ]
+    }
+  ],
+  "pending": [],
+  "processedPages": [
+    {
+      "url": "https://www.youtube.com/@kallawaymarketing",
+      "key": "https://www.youtube.com/@kallawaymarketing",
+      "depth": 0,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "b0e3a52ba36835614d4176ed.json",
+        "76a63abb4dbceb83ec59bc3d.json",
+        "8e7d52c74fe62683ba25a282.json",
+        "a3faa470490293037bf430b8.json",
+        "0868f95dd2013df7cdfd2312.json",
+        "24a5a6ede44a08682b861624.json",
+        "91f34db73babde4cd5704429.json",
+        "d5657a795a6bd3363afb4f06.json",
+        "b680a059ccebc7f5c2565910.json"
+      ],
+      "issues": [],
+      "checkpoint": {
+        "youtubeEmail": {
+          "startedAt": 1792722786066,
+          "history": [
+            {
+              "phase": "observed",
+              "at": "2026-10-23T02:33:06.107Z",
+              "elapsedMs": 41
+            },
+            {
+              "phase": "about_opened",
+              "at": "2026-10-23T02:33:12.423Z",
+              "elapsedMs": 6357
+            },
+            {
+              "phase": "email_requested",
+              "at": "2026-10-23T02:33:12.426Z",
+              "elapsedMs": 6360
+            },
+            {
+              "phase": "verification_visible",
+              "at": "2026-10-23T02:33:20.311Z",
+              "elapsedMs": 14245
+            },
+            {
+              "phase": "verification_ready",
+              "at": "2026-10-23T02:33:20.536Z",
+              "elapsedMs": 14470
+            },
+            {
+              "phase": "checkbox_requested",
+              "at": "2026-10-23T02:33:28.330Z",
+              "elapsedMs": 22264
+            },
+            {
+              "phase": "verified",
+              "at": "2026-10-23T02:33:29.857Z",
+              "elapsedMs": 23791
+            },
+            {
+              "phase": "submit_requested",
+              "at": "2026-10-23T02:33:29.865Z",
+              "elapsedMs": 23799
+            },
+            {
+              "phase": "email_displayed",
+              "at": "2026-10-23T02:33:36.903Z",
+              "elapsedMs": 30837
+            }
+          ],
+          "phase": "email_displayed",
+          "checkboxAttempted": true,
+          "submitAttempts": 1
+        }
+      },
+      "finalKey": "https://www.youtube.com/@kallawaymarketing",
+      "finalUrl": "https://www.youtube.com/@kallawaymarketing",
+      "pendingProfileLinks": [],
+      "bioEmailFound": false,
+      "previousStopReason": "profile_contact_email_found"
+    },
+    {
+      "url": "https://kallaway.co/launch",
+      "key": "https://kallaway.co/launch",
+      "depth": 1,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing",
+        "https://kallaway.co/launch"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "6c8fb692f635fc7e30c6ef37.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://onefactor.ai/kallaway/launch",
+      "finalUrl": "https://onefactor.ai/kallaway/launch",
+      "pendingProfileLinks": []
+    },
+    {
+      "url": "https://shortformsystem.co/",
+      "key": "https://shortformsystem.co/",
+      "depth": 1,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing",
+        "https://shortformsystem.co/"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "e9315ac8e78a5b02f76a1f46.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://shortformsystem.co/?utm_source=youtube",
+      "finalUrl": "https://shortformsystem.co/?utm_source=youtube",
+      "pendingProfileLinks": []
+    },
+    {
+      "url": "https://sandcastles.ai/",
+      "key": "https://sandcastles.ai/",
+      "depth": 1,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing",
+        "https://sandcastles.ai/"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "9b5f9271bda4f6d1efd66d84.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://sandcastles.ai/",
+      "finalUrl": "https://sandcastles.ai/",
+      "pendingProfileLinks": []
+    },
+    {
+      "url": "https://onefactor.ai/kallaway/academy",
+      "key": "https://onefactor.ai/kallaway/academy",
+      "depth": 1,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing",
+        "https://onefactor.ai/kallaway/academy"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "957807882e7a40df52eed350.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://onefactor.ai/kallaway/academy",
+      "finalUrl": "https://onefactor.ai/kallaway/academy",
+      "pendingProfileLinks": []
+    },
+    {
+      "url": "https://sandcastles.ai/contact",
+      "key": "https://sandcastles.ai/contact",
+      "depth": 2,
+      "path": [
+        "https://www.youtube.com/@kallawaymarketing",
+        "https://sandcastles.ai/",
+        "https://sandcastles.ai/contact"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "de6ac3bc569c2cf50db0b457.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://sandcastles.ai/contact",
+      "finalUrl": "https://sandcastles.ai/contact",
+      "pendingProfileLinks": []
+    }
+  ],
+  "rawEmailEvidencePreserved": true,
+  "reusedNativeEvidence": {
+    "spaceId": 90,
+    "email": "kallaway@wavylabs.co",
+    "originalBrowserElapsedMs": 33184,
+    "observedAt": "2026-10-23T02:33:36.910Z"
+  },
+  "linkedValidation": {
+    "spaceId": 92,
+    "startedAt": "2026-10-23T02:54:00.794Z",
+    "finishedAt": "2026-10-23T02:54:33.589Z",
+    "elapsedMs": 32795,
+    "newBrowserVisits": 5,
+    "reusedPages": 1,
+    "actions": [
+      {
+        "phase": "before",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://kallaway.co/launch",
+        "beforeUrl": "chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html#/",
+        "at": "2026-10-23T02:54:01.182Z"
+      },
+      {
+        "phase": "after",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://kallaway.co/launch",
+        "beforeUrl": "chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html#/",
+        "afterUrl": "https://onefactor.ai/kallaway/launch",
+        "at": "2026-10-23T02:54:03.274Z"
+      },
+      {
+        "phase": "before",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://shortformsystem.co/",
+        "beforeUrl": "https://onefactor.ai/kallaway/launch",
+        "at": "2026-10-23T02:54:09.185Z"
+      },
+      {
+        "phase": "after",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://shortformsystem.co/",
+        "beforeUrl": "https://onefactor.ai/kallaway/launch",
+        "afterUrl": "https://shortformsystem.co/?utm_source=youtube",
+        "at": "2026-10-23T02:54:11.133Z"
+      },
+      {
+        "phase": "before",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://sandcastles.ai/",
+        "beforeUrl": "https://shortformsystem.co/?utm_source=youtube",
+        "at": "2026-10-23T02:54:17.190Z"
+      },
+      {
+        "phase": "after",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://sandcastles.ai/",
+        "beforeUrl": "https://shortformsystem.co/?utm_source=youtube",
+        "afterUrl": "https://sandcastles.ai/",
+        "at": "2026-10-23T02:54:18.095Z"
+      },
+      {
+        "phase": "before",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://onefactor.ai/kallaway/academy",
+        "beforeUrl": "https://sandcastles.ai/",
+        "at": "2026-10-23T02:54:25.193Z"
+      },
+      {
+        "phase": "after",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://onefactor.ai/kallaway/academy",
+        "beforeUrl": "https://sandcastles.ai/",
+        "afterUrl": "https://onefactor.ai/kallaway/academy",
+        "at": "2026-10-23T02:54:27.281Z"
+      },
+      {
+        "phase": "before",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://sandcastles.ai/contact",
+        "beforeUrl": "https://onefactor.ai/kallaway/academy",
+        "at": "2026-10-23T02:54:33.196Z"
+      },
+      {
+        "phase": "after",
+        "page": "p1",
+        "action": "goto",
+        "target": "https://sandcastles.ai/contact",
+        "beforeUrl": "https://onefactor.ai/kallaway/academy",
+        "afterUrl": "https://sandcastles.ai/contact",
+        "at": "2026-10-23T02:54:33.580Z"
+      }
+    ],
+    "spaceFinished": {
+      "spaceId": 92,
+      "finishedAt": "2026-10-23T02:54:33.592Z"
+    }
+  },
+  "sourceClarificationAt": "2026-10-23T02:41:26.977Z",
+  "clarificationUntilLiveValidationMs": 786612,
+  "tests": {
+    "total": 477,
+    "passed": 477,
+    "failed": 0,
+    "independentIncrementalTests": 11
+  },
+  "sourceHashes": {
+    "youtube-email.mjs": {
+      "before": "923afc0096678b6d8bd4d40b9cd53465fe4662ac07a87d6b86b7fe21d421bd8c",
+      "after": "51ec6c96f8cbeb989e5fa096ee73d633fbf0800d152b79b4d2027788f702e196"
+    },
+    "finder.mjs": {
+      "before": "8cb025591908c047b49a3c2ac79605999a2ce67200c6b11119a01c7dfc1ead9d",
+      "after": "05417ccc597b83c6a2273440aba87ba06f12d3ddd8d35487d22f1b1f049d7f9e"
+    },
+    "integration.mjs": {
+      "before": "544dd60fd24c5409b64e8b84e9023e9f98020a8a1da14daef909a6fc622af1c6",
+      "after": "8c309905d76deff08728c90a37aaed7e8f5df69d7e71f581658537fa28f28af3"
+    }
+  },
+  "review": "Three concrete recovery/control findings were fixed and regression-tested; final independent review found no new concrete medium/high risk."
+}

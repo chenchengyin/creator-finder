@@ -1,0 +1,127 @@
+{
+  "authorId": "6672090545286955013",
+  "username": "djhuntsofficial",
+  "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+  "profile": {
+    "username": "djhuntsofficial",
+    "authorId": "6672090545286955013",
+    "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+    "ready": false,
+    "identityVerified": false,
+    "externalLink": {
+      "status": "unknown",
+      "url": null,
+      "reason": "offline_profile_not_available"
+    }
+  },
+  "emails": [],
+  "metrics": {
+    "items": [],
+    "sample": [],
+    "sampleSize": 0,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "latest_order_unconfirmed",
+      "post_response_incomplete"
+    ],
+    "windowStart": "2026-10-10T16:00:00.000Z",
+    "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+  },
+  "content": {
+    "decision": "passed",
+    "evidence": [
+      {
+        "videoId": "6962965556467223814",
+        "authorId": "6672090545286955013",
+        "username": "djhuntsofficial",
+        "text": "#greenscreen BAPTISM & JESUS‼️#michaeljr #standupcomedy #comedysketch #comedy #funny #christianhumor #jesus #baptism #facialexpressions #fyp #foryou",
+        "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814"
+      },
+      {
+        "videoId": "7505110451659754783",
+        "authorId": "6672090545286955013",
+        "username": "djhuntsofficial",
+        "text": "#onthisday WHEN JESUS GOT BAPTIZED cc: @Michael Jr. #michaeljr #jesuschrist #baptism #christiantiktok #christianity #christianhumor #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #funny #funnyvideos #funnyvideo #relatable ",
+        "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783"
+      },
+      {
+        "videoId": "7507289101301812511",
+        "authorId": "6672090545286955013",
+        "username": "djhuntsofficial",
+        "text": "#onthisday KEEPING THE PARTY GOIN’ cc @Mark Lowry #jesuschrist #jesusturnedwatertowine #partytime #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #comedy #funny #funnyvideo #funnyvideos #christiancomedy ",
+        "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.747Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511"
+      }
+    ],
+    "uncertainty": null
+  },
+  "capture": {
+    "verificationContext": {
+      "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+      "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+    },
+    "profile": {
+      "username": "djhuntsofficial",
+      "authorId": "6672090545286955013",
+      "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "pages": [],
+    "postAttemptComplete": true,
+    "checks": {
+      "identity": "pending",
+      "email": "pending",
+      "posts": "in_progress",
+      "metrics": "pending",
+      "content": "passed",
+      "region": "pending"
+    },
+    "nextAction": "posts"
+  },
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "data_incomplete",
+  "reason": "profile_not_verified_public",
+  "location": {
+    "country": null,
+    "evidence": [],
+    "semantics": "video_region_field_not_verified_creator_residence"
+  },
+  "inclusionBasis": "内容： #greenscreen BAPTISM & JESUS‼️#michaeljr #standupcomedy #comedysketch #comedy #funny #christianhumor #jesus #baptism #facialexpressions #fyp #foryou（https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814）； #onthisday WHEN JESUS GOT BAPTIZED cc: @Michael Jr. #michaeljr #jesuschrist #baptism #christiantiktok #christianity #christianhumor #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #funny #funnyvideos #funnyvideo #relatable （https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783）； #onthisday KEEPING THE PARTY GOIN’ cc @Mark Lowry #jesuschrist #jesusturnedwatertowine #partytime #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #comedy #funny #funnyvideo #funnyvideos #christiancomedy （https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@djhuntsofficial，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 2,
+      "forced": true,
+      "reason": "first_n_unique_authors",
+      "attempted": true,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

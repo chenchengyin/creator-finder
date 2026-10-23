@@ -1,0 +1,13 @@
+root
+  container
+    image
+    container
+      heading
+        text "访问"
+        text "www.tiktok.com"
+        text "的请求遭到拒绝"
+      paragraph
+        text "您未获授权，无法查看此网页。"
+      text "HTTP ERROR 403"
+  button [ref=1028]
+    text "重新加载"

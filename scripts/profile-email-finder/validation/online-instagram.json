@@ -1,0 +1,114 @@
+{
+  "captures": [
+    {
+      "url": "https://www.instagram.com/youtube/",
+      "requestedUrl": "https://www.instagram.com/youtube/",
+      "title": "Instagram",
+      "kind": "profile",
+      "platform": "instagram",
+      "ready": true,
+      "complete": true,
+      "httpStatus": 200,
+      "access": "ok",
+      "blocks": [
+        {
+          "text": "youtube",
+          "context": "youtube",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a > h2",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "YouTube",
+          "context": "YouTube",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "7078帖子",
+          "context": "7078帖子",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "3044万粉丝",
+          "context": "3044万粉丝",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "1847关注",
+          "context": "1847关注",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(3)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "here lie all the smashed like buttons 🪦",
+          "context": "here lie all the smashed like buttons 🪦",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "linkin.bio/youtube",
+          "context": "linkin.bio/youtube",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div > a > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "youtube",
+          "context": "youtube",
+          "location": "#efluns-threads-switch-container",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "关注",
+          "context": "关注",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > section:nth-of-type(2) > div > div > div > div > div:nth-of-type(1) > button > div > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "发消息",
+          "context": "发消息",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > section:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div",
+          "source": "profile_bio",
+          "visible": true
+        }
+      ],
+      "links": [
+        {
+          "url": "https://www.instagram.com/youtube/",
+          "text": "",
+          "label": "",
+          "context": "",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(1) > div > span > div > div > a",
+          "source": "profile_link",
+          "visible": true
+        },
+        {
+          "url": "https://l.instagram.com/?u=http%3A%2F%2Flinkin.bio%2Fyoutube%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadKuwbxQapBVG8BNph15C7pe1_g87u3P0D_R7cMcwezpZGAijhvSwEAzr2spg_aem_DjprbMZ5fY3gDtuGVsCk3w&e=AUCCWfrMK3tODHSpd498Fp_QxiUWPia8RAx06_9zZQm8Wh05GQsoME77PGZ2qCsf9KmjroV9rCuZJdVVkFiVIfWnQI4VeOAccOsdFSVmN7bKMAyLmQkRMa15sYhWONIZQKrzDDpqg9ky",
+          "text": "linkin.bio/youtube",
+          "label": "",
+          "context": "linkin.bio/youtube",
+          "location": "#mount_0_0_zr > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div > a",
+          "source": "profile_link",
+          "visible": true
+        }
+      ],
+      "actions": [],
+      "issues": [],
+      "phase": "read",
+      "capturedAt": "2026-10-22T09:34:11.057Z",
+      "checkpoint": {
+        "phase": "read"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.tiktok.com/@r3alism_0fficial",
+    "key": "https://www.tiktok.com/@r3alism_0fficial",
+    "depth": 0,
+    "path": [
+      "https://www.tiktok.com/@r3alism_0fficial"
+    ],
+    "status": "complete",
+    "attempted": true,
+    "captures": [
+      "71022f924ff3d598cde0ea99.json"
+    ],
+    "issues": [],
+    "checkpoint": {},
+    "finalKey": "https://www.tiktok.com/@r3alism_0fficial",
+    "finalUrl": "https://www.tiktok.com/@r3alism_0fficial",
+    "pendingProfileLinks": [],
+    "bioEmailFound": true,
+    "stopReason": "profile_bio_email_found"
+  }
+]

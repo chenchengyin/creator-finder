@@ -1,0 +1,23 @@
+{
+  "mode": "dry_run",
+  "runDir": "/var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/creator-finder-slow-scroll-dry-1792670143052",
+  "config": {
+    "schemaVersion": 1,
+    "keywords": [
+      "christian skits",
+      "bible comedy",
+      "church humor"
+    ],
+    "country": "US",
+    "days": 10,
+    "minAverageViewsExclusive": 50000,
+    "requireBioEmail": true,
+    "targetCount": 5,
+    "forceProfileFirstN": 20,
+    "timezone": "Asia/Shanghai",
+    "windowStart": "2026-10-11T16:00:00.000Z",
+    "windowEndExclusive": "2026-10-21T16:00:00.000Z",
+    "createdAt": "2026-10-22T11:55:43.073Z"
+  },
+  "pageLabel": "p1"
+}

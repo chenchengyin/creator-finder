@@ -1,0 +1,4261 @@
+[
+  {
+    "authorId": "7497299912649851947",
+    "username": "foolontheloose",
+    "profileUrl": "https://www.tiktok.com/@foolontheloose",
+    "profile": {
+      "username": "foolontheloose",
+      "authorId": "7497299912649851947",
+      "profileUrl": "https://www.tiktok.com/@foolontheloose",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7568694044633632031",
+          "authorId": "7497299912649851947",
+          "username": "foolontheloose",
+          "text": "No bibles were harmed in the making of this video #funny #christianhumor #skit #bible ",
+          "videoUrl": "https://www.tiktok.com/@foolontheloose/video/7568694044633632031",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@foolontheloose/video/7568694044633632031"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "foolontheloose",
+        "authorId": "7497299912649851947",
+        "profileUrl": "https://www.tiktok.com/@foolontheloose",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： No bibles were harmed in the making of this video #funny #christianhumor #skit #bible （https://www.tiktok.com/@foolontheloose/video/7568694044633632031）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@foolontheloose，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 1,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6672090545286955013",
+    "username": "djhuntsofficial",
+    "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+    "profile": {
+      "username": "djhuntsofficial",
+      "authorId": "6672090545286955013",
+      "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "6962965556467223814",
+          "authorId": "6672090545286955013",
+          "username": "djhuntsofficial",
+          "text": "#greenscreen BAPTISM & JESUS‼️#michaeljr #standupcomedy #comedysketch #comedy #funny #christianhumor #jesus #baptism #facialexpressions #fyp #foryou",
+          "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814"
+        },
+        {
+          "videoId": "7505110451659754783",
+          "authorId": "6672090545286955013",
+          "username": "djhuntsofficial",
+          "text": "#onthisday WHEN JESUS GOT BAPTIZED cc: @Michael Jr. #michaeljr #jesuschrist #baptism #christiantiktok #christianity #christianhumor #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #funny #funnyvideos #funnyvideo #relatable ",
+          "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783"
+        },
+        {
+          "videoId": "7507289101301812511",
+          "authorId": "6672090545286955013",
+          "username": "djhuntsofficial",
+          "text": "#onthisday KEEPING THE PARTY GOIN’ cc @Mark Lowry #jesuschrist #jesusturnedwatertowine #partytime #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #comedy #funny #funnyvideo #funnyvideos #christiancomedy ",
+          "videoUrl": "https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "djhuntsofficial",
+        "authorId": "6672090545286955013",
+        "profileUrl": "https://www.tiktok.com/@djhuntsofficial",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： #greenscreen BAPTISM & JESUS‼️#michaeljr #standupcomedy #comedysketch #comedy #funny #christianhumor #jesus #baptism #facialexpressions #fyp #foryou（https://www.tiktok.com/@djhuntsofficial/video/6962965556467223814）； #onthisday WHEN JESUS GOT BAPTIZED cc: @Michael Jr. #michaeljr #jesuschrist #baptism #christiantiktok #christianity #christianhumor #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #funny #funnyvideos #funnyvideo #relatable （https://www.tiktok.com/@djhuntsofficial/video/7505110451659754783）； #onthisday KEEPING THE PARTY GOIN’ cc @Mark Lowry #jesuschrist #jesusturnedwatertowine #partytime #djhuntsofficial #comedysketch #comedyskit #comedyskits #comedyvideo #comedyvideos #comedy #funny #funnyvideo #funnyvideos #christiancomedy （https://www.tiktok.com/@djhuntsofficial/video/7507289101301812511）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@djhuntsofficial，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 2,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7377543241314911278",
+    "username": "broc.saeger",
+    "profileUrl": "https://www.tiktok.com/@broc.saeger",
+    "profile": {
+      "username": "broc.saeger",
+      "authorId": "7377543241314911278",
+      "profileUrl": "https://www.tiktok.com/@broc.saeger",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7460588491714415903",
+          "authorId": "7377543241314911278",
+          "username": "broc.saeger",
+          "text": "gotta point em to Jesus 🤣🤣 #fypage #jesus #comedyskit #christianmemes #christianhumor #laugh #christiantiktok ",
+          "videoUrl": "https://www.tiktok.com/@broc.saeger/video/7460588491714415903",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@broc.saeger/video/7460588491714415903"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "broc.saeger",
+        "authorId": "7377543241314911278",
+        "profileUrl": "https://www.tiktok.com/@broc.saeger",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： gotta point em to Jesus 🤣🤣 #fypage #jesus #comedyskit #christianmemes #christianhumor #laugh #christiantiktok （https://www.tiktok.com/@broc.saeger/video/7460588491714415903）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@broc.saeger，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 3,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6742287939734848518",
+    "username": "vanceelliottcomedy",
+    "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+    "profile": {
+      "username": "vanceelliottcomedy",
+      "authorId": "6742287939734848518",
+      "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7685578802252057870",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "PART 11 - Shoutout to everyone commenting ideas! Comment more and I can use them in the next vid! #jesus #comedy #skit #christiancomedy #foryoupage ",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870"
+        },
+        {
+          "videoId": "7667428251031129358",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "Been super busy with long form videos, so here’s a throwback #Jesus #comedy #christiancomedy #skit #foryoupage",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358"
+        },
+        {
+          "videoId": "7662840055764962573",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "Doctor should’ve scheduled an appointment with Jesus instead #Jesus #christiancomedy #comedy #skit #foryoupage",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573"
+        },
+        {
+          "videoId": "7695946760778239245",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "Feel bad for him ngl #Jesus #comedy #christiancomedy #skit #foryoupage",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245"
+        },
+        {
+          "videoId": "7698560234981199118",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "Just take Him to the temple fr #Jesus #comedy #christiancomedy #skit #foryoupage",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118"
+        },
+        {
+          "videoId": "7446538017323617582",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "Jesus - just a chill guy who flipped tables #Jesus #christiancomedy #comedy #Bible #tables #skit #foryoupage ",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582"
+        },
+        {
+          "videoId": "7609165229083086094",
+          "authorId": "6742287939734848518",
+          "username": "vanceelliottcomedy",
+          "text": "I would love to have Jesus as a waiter lol #Jesus #christiancomedy #comedy #skit #foryoupage ",
+          "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "vanceelliottcomedy",
+        "authorId": "6742287939734848518",
+        "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： PART 11 - Shoutout to everyone commenting ideas! Comment more and I can use them in the next vid! #jesus #comedy #skit #christiancomedy #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870）； Been super busy with long form videos, so here’s a throwback #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358）； Doctor should’ve scheduled an appointment with Jesus instead #Jesus #christiancomedy #comedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573）； Feel bad for him ngl #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245）； Just take Him to the temple fr #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118）； Jesus - just a chill guy who flipped tables #Jesus #christiancomedy #comedy #Bible #tables #skit #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582）； I would love to have Jesus as a waiter lol #Jesus #christiancomedy #comedy #skit #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@vanceelliottcomedy，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 4,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6717640498913641478",
+    "username": "kaitlynfurey_",
+    "profileUrl": "https://www.tiktok.com/@kaitlynfurey_",
+    "profile": {
+      "username": "kaitlynfurey_",
+      "authorId": "6717640498913641478",
+      "profileUrl": "https://www.tiktok.com/@kaitlynfurey_",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7648026775942925581",
+          "authorId": "6717640498913641478",
+          "username": "kaitlynfurey_",
+          "text": "you’re hanging with a Christian who can’t wait for you to burn in 🔥 . . . #comedy #character #christian #sketch #religion ",
+          "videoUrl": "https://www.tiktok.com/@kaitlynfurey_/video/7648026775942925581",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@kaitlynfurey_/video/7648026775942925581"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "kaitlynfurey_",
+        "authorId": "6717640498913641478",
+        "profileUrl": "https://www.tiktok.com/@kaitlynfurey_",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： you’re hanging with a Christian who can’t wait for you to burn in 🔥 . . . #comedy #character #christian #sketch #religion （https://www.tiktok.com/@kaitlynfurey_/video/7648026775942925581）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@kaitlynfurey_，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 5,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7493990898050417707",
+    "username": "2bestieswithadhd",
+    "profileUrl": "https://www.tiktok.com/@2bestieswithadhd",
+    "profile": {
+      "username": "2bestieswithadhd",
+      "authorId": "7493990898050417707",
+      "profileUrl": "https://www.tiktok.com/@2bestieswithadhd",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7671283787619175711",
+          "authorId": "7493990898050417707",
+          "username": "2bestieswithadhd",
+          "text": "If you know… you know. 😂⛪️ #ChurchHumor #ChristianComedy #POV #Relatable #SketchComedy ",
+          "videoUrl": "https://www.tiktok.com/@2bestieswithadhd/video/7671283787619175711",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@2bestieswithadhd/video/7671283787619175711"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "2bestieswithadhd",
+        "authorId": "7493990898050417707",
+        "profileUrl": "https://www.tiktok.com/@2bestieswithadhd",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： If you know… you know. 😂⛪️ #ChurchHumor #ChristianComedy #POV #Relatable #SketchComedy （https://www.tiktok.com/@2bestieswithadhd/video/7671283787619175711）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@2bestieswithadhd，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 6,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6845068444633089029",
+    "username": "jonhobgood",
+    "profileUrl": "https://www.tiktok.com/@jonhobgood",
+    "profile": {
+      "username": "jonhobgood",
+      "authorId": "6845068444633089029",
+      "profileUrl": "https://www.tiktok.com/@jonhobgood",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7607147481448697101",
+          "authorId": "6845068444633089029",
+          "username": "jonhobgood",
+          "text": "And they been up since 4 am 😂 #church #dad #comedy #sketch ",
+          "videoUrl": "https://www.tiktok.com/@jonhobgood/video/7607147481448697101",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.746Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@jonhobgood/video/7607147481448697101"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "jonhobgood",
+        "authorId": "6845068444633089029",
+        "profileUrl": "https://www.tiktok.com/@jonhobgood",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： And they been up since 4 am 😂 #church #dad #comedy #sketch （https://www.tiktok.com/@jonhobgood/video/7607147481448697101）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@jonhobgood，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 7,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7415635631052047402",
+    "username": "tristan.thigpen",
+    "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+    "profile": {
+      "username": "tristan.thigpen",
+      "authorId": "7415635631052047402",
+      "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7538488738935000351",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "The Pastor tried to be patient!😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351"
+        },
+        {
+          "videoId": "7506942258264935710",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "When the wrong person at church volunteers to read!😆 Why did he volunteer to read?🤷🏽‍♂️ Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710"
+        },
+        {
+          "videoId": "7611280520059571487",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "He got a little too excited!😆 I create and post skits daily! Follow me for more church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #encouragement ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487"
+        },
+        {
+          "videoId": "7501000922563235118",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "All this over a macchiato… 😆 Church, coffee, and a misunderstanding! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #machiatto #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118"
+        },
+        {
+          "videoId": "7503248903219989806",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Some Pastors are not satisfied until you fall!🤦🏽‍♂️😆 But it’s not about the fall, it’s about receiving! Everyone is not going to fall. I hope you enjoy this classic skit I created a while back! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806"
+        },
+        {
+          "videoId": "7594551919322909983",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "“Pastor, we are not at church! We’re at the pet store!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnyskits ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983"
+        },
+        {
+          "videoId": "7595642926860963103",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "“You better get in where you fit in!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103"
+        },
+        {
+          "videoId": "7545155953994370334",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "The Word in the park was flowing… until he showed up! 😆🌳 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334"
+        },
+        {
+          "videoId": "7543681360448228639",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Pastor turned the sermon into a full reunion! 😆👀 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639"
+        },
+        {
+          "videoId": "7549736303269547294",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Should the Pastor have known the story?🤷🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294"
+        },
+        {
+          "videoId": "7628764219562822942",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "“I said I know how to pray!”😠😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #skits ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942"
+        },
+        {
+          "videoId": "7564889607414893854",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Pastor, Is this a church or a tennis court?🎾😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854"
+        },
+        {
+          "videoId": "7521444576071044383",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "They did not have the children’s church under control!🤦🏽‍♂️😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.748Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383"
+        },
+        {
+          "videoId": "7547025392947760414",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Would that be alriiiiiiiight?🎵😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414"
+        },
+        {
+          "videoId": "7575727628171169055",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Turn to your neighbor!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055"
+        },
+        {
+          "videoId": "7565279670573305118",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Pastor, someone’s in my seat!🪑😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118"
+        },
+        {
+          "videoId": "7553697062529895711",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "He got tired of the back and forth!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711"
+        },
+        {
+          "videoId": "7610586456892968223",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "“Man forget that stanky $35!”😆 I create skits daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223"
+        },
+        {
+          "videoId": "7625407609356471583",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "So which one do you say?🤷🏽‍♂️😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #happyeaster #eastersunday #funnyskits ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583"
+        },
+        {
+          "videoId": "7670389954836483359",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "He just wanted to make a return!😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #mall #funnyvideos ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359"
+        },
+        {
+          "videoId": "7660201031569067294",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "He was just tryna study!😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #christiancontent #funnyvideos ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294"
+        },
+        {
+          "videoId": "7571684011437853982",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Church Talk - Part 5: “Be a blessing!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.752Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982"
+        },
+        {
+          "videoId": "7623111663973109023",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "“You ain’t the only person out here tryna get it!”😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #churchfunny #funnyskits #funnyvideos ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.752Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023"
+        },
+        {
+          "videoId": "7569769331630820638",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "He laughed at the wrong time!🤦🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638"
+        },
+        {
+          "videoId": "7566845862467456286",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "Church Talk - Part 2: “Wash away your sins!”😂 Skits are posed daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286"
+        },
+        {
+          "videoId": "7478734946874510635",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "When he refused the mints in church!😆 Skits are posted daily! Follow for more church humor! Also, like, comment, and share!🙏🏽 #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635"
+        },
+        {
+          "videoId": "7488028893186723115",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "The church breakfast took a wild turn!😆 Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115"
+        },
+        {
+          "videoId": "7529944865245875486",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "What’s in your cart Pastor?🛒😆 Throwback skit before I had many followers! Check out the other skits in the “What’s in your cart Pastor” playlist on my profile! Skits are posted daily! Follow me for more humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486"
+        },
+        {
+          "videoId": "7445357294214188331",
+          "authorId": "7415635631052047402",
+          "username": "tristan.thigpen",
+          "text": "When the Pastor Struggles with the iPad!📱😆 If you found this funny, please hit the like button and follow for more! I’m a new content creator, and your likes, shares, and follows mean a lot! Skits are posted daily! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnyvideo #laughter ",
+          "videoUrl": "https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.758Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "tristan.thigpen",
+        "authorId": "7415635631052047402",
+        "profileUrl": "https://www.tiktok.com/@tristan.thigpen",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： The Pastor tried to be patient!😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7538488738935000351）； When the wrong person at church volunteers to read!😆 Why did he volunteer to read?🤷🏽‍♂️ Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7506942258264935710）； He got a little too excited!😆 I create and post skits daily! Follow me for more church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #encouragement （https://www.tiktok.com/@tristan.thigpen/video/7611280520059571487）； All this over a macchiato… 😆 Church, coffee, and a misunderstanding! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #machiatto #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7501000922563235118）； Some Pastors are not satisfied until you fall!🤦🏽‍♂️😆 But it’s not about the fall, it’s about receiving! Everyone is not going to fall. I hope you enjoy this classic skit I created a while back! Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7503248903219989806）； “Pastor, we are not at church! We’re at the pet store!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnyskits （https://www.tiktok.com/@tristan.thigpen/video/7594551919322909983）； “You better get in where you fit in!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7595642926860963103）； The Word in the park was flowing… until he showed up! 😆🌳 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7545155953994370334）； Pastor turned the sermon into a full reunion! 😆👀 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7543681360448228639）； Should the Pastor have known the story?🤷🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7549736303269547294）； “I said I know how to pray!”😠😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #funnyskits #skits （https://www.tiktok.com/@tristan.thigpen/video/7628764219562822942）； Pastor, Is this a church or a tennis court?🎾😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7564889607414893854）； They did not have the children’s church under control!🤦🏽‍♂️😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7521444576071044383）； Would that be alriiiiiiiight?🎵😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7547025392947760414）； Turn to your neighbor!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7575727628171169055）； Pastor, someone’s in my seat!🪑😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7565279670573305118）； He got tired of the back and forth!😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7553697062529895711）； “Man forget that stanky $35!”😆 I create skits daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7610586456892968223）； So which one do you say?🤷🏽‍♂️😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #happyeaster #eastersunday #funnyskits （https://www.tiktok.com/@tristan.thigpen/video/7625407609356471583）； He just wanted to make a return!😂 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #mall #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7670389954836483359）； He was just tryna study!😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christianhumor #christiancomedy #christiancontent #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7660201031569067294）； Church Talk - Part 5: “Be a blessing!”😆 Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7571684011437853982）； “You ain’t the only person out here tryna get it!”😆 I create and post skits daily! Follow me for your daily dose of church humor! #churchhumor #christiancomedy #churchfunny #funnyskits #funnyvideos （https://www.tiktok.com/@tristan.thigpen/video/7623111663973109023）； He laughed at the wrong time!🤦🏽‍♂️😆 Throwback skit! Skits are posted daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7569769331630820638）； Church Talk - Part 2: “Wash away your sins!”😂 Skits are posed daily! Follow me for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnypastor （https://www.tiktok.com/@tristan.thigpen/video/7566845862467456286）； When he refused the mints in church!😆 Skits are posted daily! Follow for more church humor! Also, like, comment, and share!🙏🏽 #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7478734946874510635）； The church breakfast took a wild turn!😆 Skits are posted daily! Follow for more church humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7488028893186723115）； What’s in your cart Pastor?🛒😆 Throwback skit before I had many followers! Check out the other skits in the “What’s in your cart Pastor” playlist on my profile! Skits are posted daily! Follow me for more humor! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnypastor #churchlife #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7529944865245875486）； When the Pastor Struggles with the iPad!📱😆 If you found this funny, please hit the like button and follow for more! I’m a new content creator, and your likes, shares, and follows mean a lot! Skits are posted daily! #churchhumor #christianhumor #churchcomedy #christiancomedy #funnychurchvideos #funnyvideo #laughter （https://www.tiktok.com/@tristan.thigpen/video/7445357294214188331）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@tristan.thigpen，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 8,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7596471365089248269",
+    "username": "edenexpchurch",
+    "profileUrl": "https://www.tiktok.com/@edenexpchurch",
+    "profile": {
+      "username": "edenexpchurch",
+      "authorId": "7596471365089248269",
+      "profileUrl": "https://www.tiktok.com/@edenexpchurch",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7671314165948042526",
+          "authorId": "7596471365089248269",
+          "username": "edenexpchurch",
+          "text": "When he said, ‘Be more like Jesus’… she remembered one specific story. 👀😂 Context is everything! Jesus didn’t flip tables because He lost His temper, He did it because of righteous anger over what God’s house had become (Matthew 21:12–13). Don’t worry… it’s just a skit. 😅  #Ede#EdenExperienceChurchr#ChristianHumorb#BibleHumorr#ChristianReelsustonChurch",
+          "videoUrl": "https://www.tiktok.com/@edenexpchurch/video/7671314165948042526",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@edenexpchurch/video/7671314165948042526"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "edenexpchurch",
+        "authorId": "7596471365089248269",
+        "profileUrl": "https://www.tiktok.com/@edenexpchurch",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： When he said, ‘Be more like Jesus’… she remembered one specific story. 👀😂 Context is everything! Jesus didn’t flip tables because He lost His temper, He did it because of righteous anger over what God’s house had become (Matthew 21:12–13). Don’t worry… it’s just a skit. 😅  #Ede#EdenExperienceChurchr#ChristianHumorb#BibleHumorr#ChristianReelsustonChurch（https://www.tiktok.com/@edenexpchurch/video/7671314165948042526）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@edenexpchurch，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 9,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7673146931430573064",
+    "username": "illseeyoutomorrowfaith",
+    "profileUrl": "https://www.tiktok.com/@illseeyoutomorrowfaith",
+    "profile": {
+      "username": "illseeyoutomorrowfaith",
+      "authorId": "7673146931430573064",
+      "profileUrl": "https://www.tiktok.com/@illseeyoutomorrowfaith",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7697359006892870913",
+          "authorId": "7673146931430573064",
+          "username": "illseeyoutomorrowfaith",
+          "text": "Jesus explained as the boss's son who walks in, fixes the printer, and brings donuts for the whole office. Comedian Noah Gardenswartz, and \"HR the Romans\" got me. Joke aside, the hiring terms are real. Everyone who took him at his word got welcomed into the family. John 1:11-12 🎥 Noah Gardenswartz #faith #christiancomedy #jesus #christian #IllSeeYouTomorrowFaith",
+          "videoUrl": "https://www.tiktok.com/@illseeyoutomorrowfaith/video/7697359006892870913",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@illseeyoutomorrowfaith/video/7697359006892870913"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "illseeyoutomorrowfaith",
+        "authorId": "7673146931430573064",
+        "profileUrl": "https://www.tiktok.com/@illseeyoutomorrowfaith",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Jesus explained as the boss's son who walks in, fixes the printer, and brings donuts for the whole office. Comedian Noah Gardenswartz, and \"HR the Romans\" got me. Joke aside, the hiring terms are real. Everyone who took him at his word got welcomed into the family. John 1:11-12 🎥 Noah Gardenswartz #faith #christiancomedy #jesus #christian #IllSeeYouTomorrowFaith（https://www.tiktok.com/@illseeyoutomorrowfaith/video/7697359006892870913）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@illseeyoutomorrowfaith，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 10,
+        "forced": true,
+        "reason": "first_n_unique_authors",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6810737966835893254",
+    "username": "jasonsamosaaa",
+    "profileUrl": "https://www.tiktok.com/@jasonsamosaaa",
+    "profile": null,
+    "bioHint": "If you hit follow, my dreams come true. If you don't, they die. No pressure tho",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 11,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7070536212025295878",
+    "username": "high_and_mighty_comedy",
+    "profileUrl": "https://www.tiktok.com/@high_and_mighty_comedy",
+    "profile": {
+      "username": "high_and_mighty_comedy",
+      "authorId": "7070536212025295878",
+      "profileUrl": "https://www.tiktok.com/@high_and_mighty_comedy",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7149162126836354310",
+          "authorId": "7070536212025295878",
+          "username": "high_and_mighty_comedy",
+          "text": "Confess your sins and all will be forgiven. With one exception...  #confession #confessional #comedy #comedysketch #sketchcomedy #catholocism #church #comedyskit #humour #humor #foryoupage #fyp #fypシ ",
+          "videoUrl": "https://www.tiktok.com/@high_and_mighty_comedy/video/7149162126836354310",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.747Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@high_and_mighty_comedy/video/7149162126836354310"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "high_and_mighty_comedy",
+        "authorId": "7070536212025295878",
+        "profileUrl": "https://www.tiktok.com/@high_and_mighty_comedy",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Confess your sins and all will be forgiven. With one exception...  #confession #confessional #comedy #comedysketch #sketchcomedy #catholocism #church #comedyskit #humour #humor #foryoupage #fyp #fypシ （https://www.tiktok.com/@high_and_mighty_comedy/video/7149162126836354310）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@high_and_mighty_comedy，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 12,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7628292537124733966",
+    "username": "joshs.skits7",
+    "profileUrl": "https://www.tiktok.com/@joshs.skits7",
+    "profile": null,
+    "bioHint": "@theidkjoshshow skit/sketch channel.",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 13,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7571673387652760631",
+    "username": "loldtestament",
+    "profileUrl": "https://www.tiktok.com/@loldtestament",
+    "profile": null,
+    "bioHint": "Ai bible videos daily\nCheck out YouTube",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 14,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7487940652837487638",
+    "username": "cagey.comedy",
+    "profileUrl": "https://www.tiktok.com/@cagey.comedy",
+    "profile": null,
+    "bioHint": "Like my videos so I can pay my rent",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 15,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6772091438081934341",
+    "username": "sazzymills",
+    "profileUrl": "https://www.tiktok.com/@sazzymills",
+    "profile": null,
+    "bioHint": "Bowel Cancer Survivor 💪\nComic 🎭\nStoma owner 💩\n\nI poo in a bag get over it",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 16,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6960378910337696774",
+    "username": "theidkjoshshow",
+    "profileUrl": "https://www.tiktok.com/@theidkjoshshow",
+    "profile": null,
+    "bioHint": "✝️✡️God first! Taking it day by day and a breath at a time! \n@Josh’s Skits  skit channel",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 17,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7323412576984253482",
+    "username": "stargreen01",
+    "profileUrl": "https://www.tiktok.com/@stargreen01",
+    "profile": {
+      "username": "stargreen01",
+      "authorId": "7323412576984253482",
+      "profileUrl": "https://www.tiktok.com/@stargreen01",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7665745860331834637",
+          "authorId": "7323412576984253482",
+          "username": "stargreen01",
+          "text": "#christiancomedy #skit #faithtok #christiantiktok #biblehumor ",
+          "videoUrl": "https://www.tiktok.com/@stargreen01/video/7665745860331834637",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.750Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@stargreen01/video/7665745860331834637"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "stargreen01",
+        "authorId": "7323412576984253482",
+        "profileUrl": "https://www.tiktok.com/@stargreen01",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： #christiancomedy #skit #faithtok #christiantiktok #biblehumor （https://www.tiktok.com/@stargreen01/video/7665745860331834637）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@stargreen01，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 18,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6848048969768797190",
+    "username": "the.bible.teacher",
+    "profileUrl": "https://www.tiktok.com/@the.bible.teacher",
+    "profile": null,
+    "bioHint": "PO Box: 190 E Stacy Rd, STE 306-338",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 19,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7460488318817895446",
+    "username": "boomer1665",
+    "profileUrl": "https://www.tiktok.com/@boomer1665",
+    "profile": null,
+    "bioHint": "Just your average Christian telling you that Jesus loves you :)",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 20,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7354511647525897248",
+    "username": "simply_presh_relatable",
+    "profileUrl": "https://www.tiktok.com/@simply_presh_relatable",
+    "profile": null,
+    "bioHint": "YouTube 3k subscribers\nFacebook 49k followers\ninstagram 10kfollowers",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 21,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7187785927166673962",
+    "username": "humbleandfaithful",
+    "profileUrl": "https://www.tiktok.com/@humbleandfaithful",
+    "profile": null,
+    "bioHint": "✝️ Jesus is my Superpower 🔥  \n⬇️ Get Faith-Based Apparel ⬇️",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 22,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6963656175489729542",
+    "username": "tt_saved_not_soft",
+    "profileUrl": "https://www.tiktok.com/@tt_saved_not_soft",
+    "profile": null,
+    "bioHint": "Saved but not soft! A Mama who wants to share her worship & speak life into those who need to it, in Jesus's name💙TTS-Affliate, ❤️ lashes & opening packages!",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 23,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7047043706737951750",
+    "username": "christiandude4",
+    "profileUrl": "https://www.tiktok.com/@christiandude4",
+    "profile": {
+      "username": "christiandude4",
+      "authorId": "7047043706737951750",
+      "profileUrl": "https://www.tiktok.com/@christiandude4",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "suspected",
+      "evidence": [
+        {
+          "videoId": "7560051520922848568",
+          "authorId": "7047043706737951750",
+          "username": "christiandude4",
+          "text": "#eswatinitiktok🇸🇿 #comedyskits #comedy #laugh #lol ",
+          "videoUrl": "https://www.tiktok.com/@christiandude4/video/7560051520922848568",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.752Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@christiandude4/video/7560051520922848568"
+        }
+      ],
+      "uncertainty": "公开原文尚不足以同时确认目标主题与内容形式，待人工复核"
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "christiandude4",
+        "authorId": "7047043706737951750",
+        "profileUrl": "https://www.tiktok.com/@christiandude4",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "suspected",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： #eswatinitiktok🇸🇿 #comedyskits #comedy #laugh #lol （https://www.tiktok.com/@christiandude4/video/7560051520922848568）；公开原文尚不足以同时确认目标主题与内容形式，待人工复核。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@christiandude4，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 24,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7616313249348666401",
+    "username": "bodundeolowu",
+    "profileUrl": "https://www.tiktok.com/@bodundeolowu",
+    "profile": null,
+    "bioHint": "Actor | Filmmaker @thewinlos\nFaith Driven | Inspirational Stories",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 25,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7332370245179016234",
+    "username": "fruitfulwalk",
+    "profileUrl": "https://www.tiktok.com/@fruitfulwalk",
+    "profile": {
+      "username": "fruitfulwalk",
+      "authorId": "7332370245179016234",
+      "profileUrl": "https://www.tiktok.com/@fruitfulwalk",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7552783713658998071",
+          "authorId": "7332370245179016234",
+          "username": "fruitfulwalk",
+          "text": "Not me almost calling my husband a sucker while talking to the Lord 😅😂 This is what I cut out of the first take… y’all ever have those too real prayer convos?? #TalksWithGod #ChristianHumor #FaithAndLaughter #RelatableChristian #FunnyPrayer ",
+          "videoUrl": "https://www.tiktok.com/@fruitfulwalk/video/7552783713658998071",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.752Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@fruitfulwalk/video/7552783713658998071"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "fruitfulwalk",
+        "authorId": "7332370245179016234",
+        "profileUrl": "https://www.tiktok.com/@fruitfulwalk",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Not me almost calling my husband a sucker while talking to the Lord 😅😂 This is what I cut out of the first take… y’all ever have those too real prayer convos?? #TalksWithGod #ChristianHumor #FaithAndLaughter #RelatableChristian #FunnyPrayer （https://www.tiktok.com/@fruitfulwalk/video/7552783713658998071）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@fruitfulwalk，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 26,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6874052596077839365",
+    "username": "exclusivelyjabari",
+    "profileUrl": "https://www.tiktok.com/@exclusivelyjabari",
+    "profile": null,
+    "bioHint": "Christian Comedian🤣",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 27,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7459999160767480874",
+    "username": "andrewvpando",
+    "profileUrl": "https://www.tiktok.com/@andrewvpando",
+    "profile": {
+      "username": "andrewvpando",
+      "authorId": "7459999160767480874",
+      "profileUrl": "https://www.tiktok.com/@andrewvpando",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7645335743518264607",
+          "authorId": "7459999160767480874",
+          "username": "andrewvpando",
+          "text": "Gotta work with what you got  #christiantiktok #christian #relateable #pastor #comedyskit ",
+          "videoUrl": "https://www.tiktok.com/@andrewvpando/video/7645335743518264607",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.752Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@andrewvpando/video/7645335743518264607"
+        },
+        {
+          "videoId": "7630632903096929567",
+          "authorId": "7459999160767480874",
+          "username": "andrewvpando",
+          "text": "he’s the actual worst, I know  #christiantiktok #christiancontent #christiancomedy #christiandating #comedyskit ",
+          "videoUrl": "https://www.tiktok.com/@andrewvpando/video/7630632903096929567",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@andrewvpando/video/7630632903096929567"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "andrewvpando",
+        "authorId": "7459999160767480874",
+        "profileUrl": "https://www.tiktok.com/@andrewvpando",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Gotta work with what you got  #christiantiktok #christian #relateable #pastor #comedyskit （https://www.tiktok.com/@andrewvpando/video/7645335743518264607）； he’s the actual worst, I know  #christiantiktok #christiancontent #christiancomedy #christiandating #comedyskit （https://www.tiktok.com/@andrewvpando/video/7630632903096929567）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@andrewvpando，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 28,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7133720258550973486",
+    "username": "dysfunctionalcharacters",
+    "profileUrl": "https://www.tiktok.com/@dysfunctionalcharacters",
+    "profile": null,
+    "bioHint": "Everyday Life & Church Parodies!!!⛪️   Laughter is Good for the Soul!!!!😂",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 29,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7356237104381101102",
+    "username": "queenmiraclelashae",
+    "profileUrl": "https://www.tiktok.com/@queenmiraclelashae",
+    "profile": null,
+    "bioHint": "Actress\nfun\nJesus is the Savior of your soul ❤️ Laughter is good for the soul",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 30,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7310087759196603434",
+    "username": "godneverfails.us",
+    "profileUrl": "https://www.tiktok.com/@godneverfails.us",
+    "profile": null,
+    "bioHint": "Production studio partnering w/ kingdom creatives to tell high quality Faith based stories ✝️ \n\nFilms | Music | Theater",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 31,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6721019106181235717",
+    "username": "mzpowers",
+    "profileUrl": "https://www.tiktok.com/@mzpowers",
+    "profile": null,
+    "bioHint": "✨\"Tips & Tricks for TikTok growth\" ✨\"Daily Motivation & Affirmations\" ✨ \"Join me on my TikTok Journey\"✨",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 32,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7471318338141881387",
+    "username": "the.abigail.precious",
+    "profileUrl": "https://www.tiktok.com/@the.abigail.precious",
+    "profile": null,
+    "bioHint": "One of those girls who loves Jesus, family, feminity, and building for impact in meaningful, big ways.🤍",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 33,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6690676088269685766",
+    "username": "mrcurtise",
+    "profileUrl": "https://www.tiktok.com/@mrcurtise",
+    "profile": null,
+    "bioHint": "Comedian\nIf you like me, tell your friends. If you hate me, tell your enemies.",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 34,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6927728724712915973",
+    "username": "prosperiyo",
+    "profileUrl": "https://www.tiktok.com/@prosperiyo",
+    "profile": null,
+    "bioHint": "Amvca winner🏆JESUS |RELATABLE| FUN\nBringing Bible stories to life(Naija style)",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 35,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6927334658196866053",
+    "username": "flysince87",
+    "profileUrl": "https://www.tiktok.com/@flysince87",
+    "profile": null,
+    "bioHint": "Jesus is my Lord and Savior \nFl",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 36,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6816291285168407558",
+    "username": "lucasestrellacomedy",
+    "profileUrl": "https://www.tiktok.com/@lucasestrellacomedy",
+    "profile": null,
+    "bioHint": "I have a YouTube go watch it\n\nhttps://youtube.com/@lucasestrellacomedy?si=JUfzse98AhL_uEhs",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 37,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7483263606025864198",
+    "username": "styles__ta",
+    "profileUrl": "https://www.tiktok.com/@styles__ta",
+    "profile": null,
+    "bioHint": "POVs • Skits • Real Stories 🎭\nCapturing life, one story at a time 🎥\nContent strategist @bekscity",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 38,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7619239976848426004",
+    "username": "the.vine.films",
+    "profileUrl": "https://www.tiktok.com/@the.vine.films",
+    "profile": null,
+    "bioHint": "Bringing healing and repairing the worship altar in the church ( Jeremiah 1:9-10)",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 39,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6941807870237230086",
+    "username": "dotcomedytv1",
+    "profileUrl": "https://www.tiktok.com/@dotcomedytv1",
+    "profile": null,
+    "bioHint": "🎬 New clips dropping daily👉 Follow and don’t miss the next viral moment",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 40,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7612503226735084551",
+    "username": "bethel_los_reyes",
+    "profileUrl": "https://www.tiktok.com/@bethel_los_reyes",
+    "profile": null,
+    "bioHint": "✝️Somos intencionales ✝️",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 41,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "213189019017351168",
+    "username": "carlossarti",
+    "profileUrl": "https://www.tiktok.com/@carlossarti",
+    "profile": null,
+    "bioHint": "👨‍👩‍👧Husband + Father + Pastor \nSilverdale Gracia Chattanooga",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 42,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7559062296049501239",
+    "username": "greg.livesey",
+    "profileUrl": "https://www.tiktok.com/@greg.livesey",
+    "profile": null,
+    "bioHint": null,
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_empty_signature"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介为空；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 43,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7512989600564315167",
+    "username": "veomademedoit",
+    "profileUrl": "https://www.tiktok.com/@veomademedoit",
+    "profile": null,
+    "bioHint": "Vibes: Unhinged, unfiltered, maybe funny 💀😂",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 44,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7089478446343406598",
+    "username": "moretintindacreatortoks",
+    "profileUrl": "https://www.tiktok.com/@moretintindacreatortoks",
+    "profile": null,
+    "bioHint": "SKITS+ENTERTAINMENT\n(Shonglish Boy) \nDrawing Account @TINTINDRAWS_ \nYouTube https://www.youtube.com/@tintindaCreatortv98004\nOld account @KING 👑 TINTIN",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 45,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6890371669086405638",
+    "username": "slimkage_",
+    "profileUrl": "https://www.tiktok.com/@slimkage_",
+    "profile": {
+      "username": "slimkage_",
+      "authorId": "6890371669086405638",
+      "profileUrl": "https://www.tiktok.com/@slimkage_",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7622021300457852190",
+          "authorId": "6890371669086405638",
+          "username": "slimkage_",
+          "text": "Real narrow… #fyp #fypシ #christiantiktok #christiancomedy #comedyskit ",
+          "videoUrl": "https://www.tiktok.com/@slimkage_/video/7622021300457852190",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.756Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@slimkage_/video/7622021300457852190"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "slimkage_",
+        "authorId": "6890371669086405638",
+        "profileUrl": "https://www.tiktok.com/@slimkage_",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Real narrow… #fyp #fypシ #christiantiktok #christiancomedy #comedyskit （https://www.tiktok.com/@slimkage_/video/7622021300457852190）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@slimkage_，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 46,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6784582546480088070",
+    "username": "elainaguidry_",
+    "profileUrl": "https://www.tiktok.com/@elainaguidry_",
+    "profile": null,
+    "bioHint": "Actor|Creator|BrandAmbassador\nAward Winning Actress 🏆\nKountry Wayne Skits 🎥\n👑 KSW AGENCY | Creator\nBack up account: @Elainaguidrybackup",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 47,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7137452474583270405",
+    "username": "therealdanieljames1",
+    "profileUrl": "https://www.tiktok.com/@therealdanieljames1",
+    "profile": null,
+    "bioHint": "Christian Creator 🎭 | Follow and learn to get that First 1000 followers fast | Watch now 👇",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 48,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7609346404704584711",
+    "username": "celia27257",
+    "profileUrl": "https://www.tiktok.com/@celia27257",
+    "profile": null,
+    "bioHint": "★God first★",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 49,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7644937169282319373",
+    "username": "lilcraptherapist",
+    "profileUrl": "https://www.tiktok.com/@lilcraptherapist",
+    "profile": null,
+    "bioHint": "Denver based producer, rapper, musician, disappointment.",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 50,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7117453243836728363",
+    "username": "blue.becks",
+    "profileUrl": "https://www.tiktok.com/@blue.becks",
+    "profile": null,
+    "bioHint": "Don't give up. Love God & people. That's it. Phillipians 1:24\nCashapp: $GgirlB\nVenmo: @Rebekah-Smith-106\nFollow me on Insta at godgirl_b (Bexs)",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 51,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6810229930426418181",
+    "username": "bailey_host",
+    "profileUrl": "https://www.tiktok.com/@bailey_host",
+    "profile": null,
+    "bioHint": "Aspiring Victoria Secret Model\nEthnically Amish",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 52,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7349111626438935585",
+    "username": "ro.comedy1610",
+    "profileUrl": "https://www.tiktok.com/@ro.comedy1610",
+    "profile": null,
+    "bioHint": "Comedian",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 53,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7535193020807857183",
+    "username": "yourvoiceisyourpower",
+    "profileUrl": "https://www.tiktok.com/@yourvoiceisyourpower",
+    "profile": null,
+    "bioHint": "Proverbs 31  💁🏽‍♀️ Bold biz, big faith. \nSub for content that converts👇🏾",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 54,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6985951674532299782",
+    "username": "firstclassgentleman",
+    "profileUrl": "https://www.tiktok.com/@firstclassgentleman",
+    "profile": {
+      "username": "firstclassgentleman",
+      "authorId": "6985951674532299782",
+      "profileUrl": "https://www.tiktok.com/@firstclassgentleman",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "passed",
+      "evidence": [
+        {
+          "videoId": "7528746607718747406",
+          "authorId": "6985951674532299782",
+          "username": "firstclassgentleman",
+          "text": "Black Christian comedy skit #fyp #viral #tictok #christiantiktok #blackchurch #BlackTikTok #preacher #pentecostal #cogic #baptist #christiancomedy #christianhumor #churchtiktok #churchtok #BlackTikTok #relatable #christiansoftiktok @DRUSKI @kevonstage @Pastormikejr @Eric Thomas @Kirk Franklin @Lecrae @Tasha Cobbs Leonard @JoshRobi__ @Tyler Perry Studios ",
+          "videoUrl": "https://www.tiktok.com/@firstclassgentleman/video/7528746607718747406",
+          "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+          "keyword": "christian sketch comedy",
+          "capturedAt": "2026-10-22T10:00:26.758Z",
+          "source": "tiktok_native_video_search",
+          "url": "https://www.tiktok.com/@firstclassgentleman/video/7528746607718747406"
+        }
+      ],
+      "uncertainty": null
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "firstclassgentleman",
+        "authorId": "6985951674532299782",
+        "profileUrl": "https://www.tiktok.com/@firstclassgentleman",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "passed",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容： Black Christian comedy skit #fyp #viral #tictok #christiantiktok #blackchurch #BlackTikTok #preacher #pentecostal #cogic #baptist #christiancomedy #christianhumor #churchtiktok #churchtok #BlackTikTok #relatable #christiansoftiktok @DRUSKI @kevonstage @Pastormikejr @Eric Thomas @Kirk Franklin @Lecrae @Tasha Cobbs Leonard @JoshRobi__ @Tyler Perry Studios （https://www.tiktok.com/@firstclassgentleman/video/7528746607718747406）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@firstclassgentleman，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 55,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7405658336001606663",
+    "username": "bella.ozz",
+    "profileUrl": "https://www.tiktok.com/@bella.ozz",
+    "profile": {
+      "username": "bella.ozz",
+      "authorId": "7405658336001606663",
+      "profileUrl": "https://www.tiktok.com/@bella.ozz",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "emails": [],
+    "metrics": {
+      "items": [],
+      "sample": [],
+      "sampleSize": 0,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "latest_order_unconfirmed",
+        "post_response_incomplete"
+      ],
+      "windowStart": "2026-10-10T16:00:00.000Z",
+      "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+    },
+    "content": {
+      "decision": "suspected",
+      "evidence": [],
+      "uncertainty": "公开原文尚不足以同时确认目标主题与内容形式，待人工复核"
+    },
+    "capture": {
+      "verificationContext": {
+        "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+        "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+      },
+      "profile": {
+        "username": "bella.ozz",
+        "authorId": "7405658336001606663",
+        "profileUrl": "https://www.tiktok.com/@bella.ozz",
+        "ready": false,
+        "identityVerified": false,
+        "externalLink": {
+          "status": "unknown",
+          "url": null,
+          "reason": "offline_profile_not_available"
+        }
+      },
+      "pages": [],
+      "postAttemptComplete": true,
+      "checks": {
+        "identity": "pending",
+        "email": "pending",
+        "posts": "in_progress",
+        "metrics": "pending",
+        "content": "suspected",
+        "region": "pending"
+      },
+      "nextAction": "posts"
+    },
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "data_incomplete",
+    "reason": "profile_not_verified_public",
+    "location": {
+      "country": null,
+      "evidence": [],
+      "semantics": "video_region_field_not_verified_creator_residence"
+    },
+    "inclusionBasis": "内容：方向证据不足；公开原文尚不足以同时确认目标主题与内容形式，待人工复核。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@bella.ozz，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 56,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": true,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "6797168260076192774",
+    "username": "wfh_nurse_",
+    "profileUrl": "https://www.tiktok.com/@wfh_nurse_",
+    "profile": null,
+    "bioHint": "God 1st ✝️\nBoyMom 💙 \nWFH MomLife👩🏽‍💻\nTT Shop- Real Reviews✅\nIntentional Living✨",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 57,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7103955260192556037",
+    "username": "blaqshuu",
+    "profileUrl": "https://www.tiktok.com/@blaqshuu",
+    "profile": null,
+    "bioHint": "Only Business \n0594616177\nmix content creator\nfully support to hit millions K",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 58,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7111030970803029034",
+    "username": "chriso.internet",
+    "profileUrl": "https://www.tiktok.com/@chriso.internet",
+    "profile": null,
+    "bioHint": "To infinity and bath & beyond",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 59,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  },
+  {
+    "authorId": "7411186038935913518",
+    "username": "themaddieandtheoshow",
+    "profileUrl": "https://www.tiktok.com/@themaddieandtheoshow",
+    "profile": null,
+    "bioHint": "Maddie & Theo Show📺🎬😂\n A Vertical Sitcom",
+    "emails": [],
+    "profileCapturedAt": null,
+    "metrics": {
+      "sampleSize": null,
+      "totalViews": null,
+      "averageViews": null,
+      "coverageComplete": false,
+      "issues": [
+        "profile_not_visited"
+      ]
+    },
+    "content": {
+      "decision": "not_evaluated",
+      "evidence": [],
+      "uncertainty": "邮箱条件未通过，未访问主页"
+    },
+    "capture": null,
+    "sourceKeywords": [
+      "christian sketch comedy"
+    ],
+    "decision": "rejected",
+    "reason": "no_search_bio_email",
+    "emailCheck": {
+      "source": "search_author_signature",
+      "status": "skipped_no_email_hint"
+    },
+    "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+    "processedKeywords": [
+      "christian sketch comedy"
+    ],
+    "keywordChecks": {
+      "christian sketch comedy": {
+        "rank": 60,
+        "forced": false,
+        "reason": "existing_signature_prefilter",
+        "attempted": false,
+        "completed": false,
+        "reused": false
+      }
+    }
+  }
+]

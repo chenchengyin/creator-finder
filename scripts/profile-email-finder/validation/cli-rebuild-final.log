@@ -1,0 +1,72 @@
+{"progress":{"completion":"completed","checked":1,"pending":0,"emails":1,"current":null}}
+{"progress":{"completion":"running","checked":1,"pending":0,"emails":1,"current":null}}
+{"progress":{"completion":"completed","checked":1,"pending":0,"emails":1,"current":null}}
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.tiktok.com/@fixture",
+  "completion": "completed",
+  "error": null,
+  "browser": {
+    "spaceId": 9999997,
+    "owned": true,
+    "pageLabel": "p1",
+    "closed": true
+  },
+  "emails": [
+    {
+      "email": "fixture@example.org",
+      "key": "fixture@example.org",
+      "status": "confirmed_public",
+      "variants": [
+        "fixture@example.org"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.tiktok.com/@fixture",
+          "pageKind": "profile",
+          "platform": "tiktok",
+          "pageTitle": null,
+          "capturedAt": "2026-10-22T09:58:22.917Z",
+          "source": "visible_text",
+          "location": "bio",
+          "raw": "fixture@example.org",
+          "context": "fixture@example.org",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.tiktok.com/@fixture"
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.tiktok.com/@fixture",
+      "key": "https://www.tiktok.com/@fixture",
+      "depth": 0,
+      "path": [
+        "https://www.tiktok.com/@fixture"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "5056d2ee0d226799cad331f5.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.tiktok.com/@fixture",
+      "finalUrl": "https://www.tiktok.com/@fixture"
+    }
+  ],
+  "pending": [],
+  "issues": [],
+  "edges": [],
+  "updatedAt": "2026-10-22T10:04:40.785Z"
+}
+

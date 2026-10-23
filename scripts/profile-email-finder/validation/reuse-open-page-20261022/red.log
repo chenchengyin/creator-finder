@@ -1,0 +1,429 @@
+TAP version 13
+# Subtest: 复用-REUSE-001 三平台当前主页已打开时直接采集，不重新导航
+not ok 1 - 复用-REUSE-001 三平台当前主页已打开时直接采集，不重新导航
+  ---
+  duration_ms: 4.366708
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:87:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    tiktok
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:97:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 复用-REUSE-002 尾斜杠及普通页内锚点不导致主页重开
+not ok 2 - 复用-REUSE-002 尾斜杠及普通页内锚点不导致主页重开
+  ---
+  duration_ms: 0.318542
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:101:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:107:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 复用-REUSE-003 其他账号、空白页、不同query或路由仍导航到原入参
+ok 3 - 复用-REUSE-003 其他账号、空白页、不同query或路由仍导航到原入参
+  ---
+  duration_ms: 0.381375
+  type: 'test'
+  ...
+# Subtest: 复用-REUSE-004 当前页仍加载时等待目标资料后读取，保留已展开内容
+not ok 4 - 复用-REUSE-004 当前页仍加载时等待目标资料后读取，保留已展开内容
+  ---
+  duration_ms: 0.2125
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:125:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:136:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 复用-REUSE-005 已打开主页命中后停止，不展开挂链或移交调用方空间
+not ok 5 - 复用-REUSE-005 已打开主页命中后停止，不展开挂链或移交调用方空间
+  ---
+  duration_ms: 0.375667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:139:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:150:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 复用-REUSE-006 从复用主页访问下一页仍执行导航间隔
+not ok 6 - 复用-REUSE-006 从复用主页访问下一页仍执行导航间隔
+  ---
+  duration_ms: 0.748917
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:154:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        [
+          'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ],
+    +   [
+    +     'goto',
+          'https://example.org/contact'
+        ]
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0:
+      0: 'goto'
+      1: 'https://example.org/contact'
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+    1:
+      0: 'goto'
+      1: 'https://example.org/contact'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:161:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 复用-REUSE-007 无法读取当前地址或控制丢失时暂停，不尝试导航
+not ok 7 - 复用-REUSE-007 无法读取当前地址或控制丢失时暂停，不尝试导航
+  ---
+  duration_ms: 0.441125
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:165:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:170:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 复用-REUSE-008 已打开主页遇验证码仍暂停，不刷新绕过
+not ok 8 - 复用-REUSE-008 已打开主页遇验证码仍暂停，不刷新绕过
+  ---
+  duration_ms: 0.124375
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:174:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   [
+    +     'goto',
+    +     'https://www.tiktok.com/@alpha'
+    +   ]
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      0: 'goto'
+      1: 'https://www.tiktok.com/@alpha'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:177:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 主页-PROFILE-001 无Bio邮箱仍返回挂载链接
+ok 9 - 主页-PROFILE-001 无Bio邮箱仍返回挂载链接
+  ---
+  duration_ms: 0.511792
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-002 展开INS资料并逐轮保存
+ok 10 - 主页-PROFILE-002 展开INS资料并逐轮保存
+  ---
+  duration_ms: 0.592541
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-003 YouTube邮箱只读不启动mailto
+ok 11 - 主页-PROFILE-003 YouTube邮箱只读不启动mailto
+  ---
+  duration_ms: 0.178542
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-004 私密或未知资料页不假空
+ok 12 - 主页-PROFILE-004 私密或未知资料页不假空
+  ---
+  duration_ms: 0.0985
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-005 采集器只读目标资料区协议
+ok 13 - 主页-PROFILE-005 采集器只读目标资料区协议
+  ---
+  duration_ms: 0.063417
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-001 导航串行并执行不同平台节奏
+ok 14 - 浏览-BROWSER-001 导航串行并执行不同平台节奏
+  ---
+  duration_ms: 0.118667
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-002 TikTok普通403仅等待后原址一次重试
+ok 15 - 浏览-BROWSER-002 TikTok普通403仅等待后原址一次重试
+  ---
+  duration_ms: 2.778625
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-003 验证码限流及控制丢失暂停
+ok 16 - 浏览-BROWSER-003 验证码限流及控制丢失暂停
+  ---
+  duration_ms: 0.228792
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-004 导航超时但正文已好直接读取
+ok 17 - 浏览-BROWSER-004 导航超时但正文已好直接读取
+  ---
+  duration_ms: 0.164541
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-005 生命周期不关闭调用方空间
+ok 18 - 浏览-BROWSER-005 生命周期不关闭调用方空间
+  ---
+  duration_ms: 0.124917
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-006 普通页面不自动滚动或通用展开
+ok 19 - 浏览-BROWSER-006 普通页面不自动滚动或通用展开
+  ---
+  duration_ms: 0.0855
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-007 未知/复制/表单动作不执行，留缺口
+ok 20 - 浏览-BROWSER-007 未知/复制/表单动作不执行，留缺口
+  ---
+  duration_ms: 0.355042
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-008 外站403不套用TikTok重试
+ok 21 - 浏览-BROWSER-008 外站403不套用TikTok重试
+  ---
+  duration_ms: 0.14425
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-009 可读主页有登录邀请不误停
+ok 22 - 浏览-BROWSER-009 可读主页有登录邀请不误停
+  ---
+  duration_ms: 0.097459
+  type: 'test'
+  ...
+# Subtest: 联系-CONTACT-001 capture保存先于下一步展开
+ok 23 - 联系-CONTACT-001 capture保存先于下一步展开
+  ---
+  duration_ms: 0.127416
+  type: 'test'
+  ...
+# Subtest: 写盘失败必须阻止下一步浏览操作
+ok 24 - 写盘失败必须阻止下一步浏览操作
+  ---
+  duration_ms: 0.113
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+ok 25 - 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+  ---
+  duration_ms: 0.062083
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+ok 26 - 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+  ---
+  duration_ms: 0.154709
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-011 重定向到明显内网地址不读取DOM
+ok 27 - 浏览-BROWSER-011 重定向到明显内网地址不读取DOM
+  ---
+  duration_ms: 0.098041
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-013 已完成别名的capture要求停止时不再展开
+ok 28 - 链接-LINK-013 已完成别名的capture要求停止时不再展开
+  ---
+  duration_ms: 0.067958
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+ok 29 - 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+  ---
+  duration_ms: 0.099833
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-012 Page无法确认停止执行时暂停队列
+ok 30 - 浏览-BROWSER-012 Page无法确认停止执行时暂停队列
+  ---
+  duration_ms: 0.130375
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-008 展开超时后先落盘观察，原按钮最多再试一次
+ok 31 - 主页-PROFILE-008 展开超时后先落盘观察，原按钮最多再试一次
+  ---
+  duration_ms: 0.315625
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-013 等待期间用户接管立即停，不再读取DOM
+ok 32 - 浏览-BROWSER-013 等待期间用户接管立即停，不再读取DOM
+  ---
+  duration_ms: 0.068709
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-014 TikTok重试后401与浏览器异常保留真正暂停原因
+ok 33 - 浏览-BROWSER-014 TikTok重试后401与浏览器异常保留真正暂停原因
+  ---
+  duration_ms: 0.389
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-015 普通外站导航失败不重试也不读上一页DOM
+ok 34 - 浏览-BROWSER-015 普通外站导航失败不重试也不读上一页DOM
+  ---
+  duration_ms: 0.526083
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-016 普通网页验证码与控制丢失继续暂停
+ok 35 - 浏览-BROWSER-016 普通网页验证码与控制丢失继续暂停
+  ---
+  duration_ms: 0.247583
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+ok 36 - 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+  ---
+  duration_ms: 0.062208
+  type: 'test'
+  ...
+# Subtest: 简介-BIO-006 展开后回调要求停止时不再进行第二个链接展开
+ok 37 - 简介-BIO-006 展开后回调要求停止时不再进行第二个链接展开
+  ---
+  duration_ms: 0.095708
+  type: 'test'
+  ...
+# Subtest: 简介-BIO-007 展开超时后的观察命中邮箱，遵守回调停止信号
+ok 38 - 简介-BIO-007 展开超时后的观察命中邮箱，遵守回调停止信号
+  ---
+  duration_ms: 0.098
+  type: 'test'
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 31
+# fail 7
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 74.055333

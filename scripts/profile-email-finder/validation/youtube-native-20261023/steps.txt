@@ -1,0 +1,57 @@
+YouTube 邮箱集成与实测说明
+完成日期：2026-10-23（北京时间）
+
+结果
+频道：程人富宇宙 / @choruslove
+网址：https://www.youtube.com/@choruslove
+本次真实取得邮箱：kikochan@pomato.hk
+原生页面链接：mailto:kikochan@pomato.hk
+确认时间：2026-10-23T10:25:46.109+08:00
+完整邮箱采集器状态：completed；处理1页；待处理0；邮箱confirmed_public。
+证据同时包含 profile_bio、profile_content 和 profile_contact_email；原生业务邮箱行定位为 #email。
+本次原生结果来自YouTube当前页面，不使用历史对话地址或Instagram挂链邮箱代替验收。
+
+本次实际操作步骤
+1. 使用用户确认的新独立空间88及p1页面，打开指定频道，核对标题“程人富宇宙”和@choruslove。原任务空间19、INS实测空间60、来源对话空间62均未操作。
+2. 2026-10-23 10:09:47 点击简介“更多”，打开频道详情。该页面随后一直复用，后续恢复未重新导航或新建页面。
+3. 检查“更多信息”区域中的原生“查看电子邮件地址”按钮。最初识别失败，实测确认是YouTube自定义元素hidden属性返回Symbol(Yf)，旧代码误把它当作隐藏；修正并回归后再推进。
+4. 10:23:14 点击“查看电子邮件地址”。页面显示原生验证iframe和“提交”；iframe起初尚未加载，已为模块补上实际就绪等待。
+5. 用户明确继续验证后，沿用空间88和已打开的验证区域。10:25:37.483 模块点击普通可见的reCAPTCHA勾选框一次。
+6. 10:25:39.879 检测到验证通过，依据aria-checked=true继续。此次没有图片挑战，也没有重复勾选。
+7. 保留项目已有的共享操作间隔后，10:25:45.524 点击原生“提交”一次。点击前重新核验通过状态、按钮位置和落点。
+8. 10:25:46.109 观察到About中的原生邮箱链接mailto:kikochan@pomato.hk。到达成功条件后停止交互，不再刷新或重复验证。
+9. 用完整邮箱采集器恢复同一个preview运行目录，得到completed，保存当前页面原始证据与来源；最后正常finish空间88。
+
+关于简介邮箱与原生邮箱
+这个频道的完整简介中也公开了“工作聯絡：kikochan@pomato.hk”。修正可见性后，共用解析器同样能读到。
+正常采集保留已有Bio优先规则，简介命中后不必再走业务邮箱验证。为验收本次新增的YouTube业务邮箱逻辑，本次直接调用生产youtube-email.mjs子模块，完整完成勾选和提交；随后完整采集器恢复，保留简介与原生入口两份来源。
+因此主采集器的stopReason仍是profile_bio_email_found；这不代表原生流程未执行，原生#email mailto及profile_contact_email证据已单独保存。
+
+耗时口径
+最后从已打开的验证区域恢复，到原生邮箱显示，模块耗时8.953秒，含普通勾选、验证通过、共享操作间隔、一次提交及页面读取。
+本次用户“继续验证”后，首次接回空间到取得邮箱约368.774秒（约6分9秒），含问题定位、代码修复和回归。
+空间88创建至取得邮箱约987.158秒（约16分27秒），含此前等待用户确认、暂停与排查。以上均不能称作从空白页一次顺畅获取的耗时。
+
+集成落点
+/Users/vb/Projects/creator-finder_preview
+- scripts/profile-email-finder/youtube-email.mjs：原生业务邮箱状态流程、就绪等待、稳定点击、阶段断点。
+- browser.mjs：接入原生流程，兼容自定义元素hidden特殊值，原生mailto保存profile_contact_email。
+- finder.mjs：识别原生主页联系邮箱，保留Bio优先及普通站外多邮箱策略。
+- integration.mjs：只有原生联系证据时，acceptedEmails来源为profile_contact；同时有Bio时保留Bio优先和全部证据。
+- scripts/instagram-finder/session.mjs：鼠标点击保留共享节奏和日志，等待后再定位。
+
+处理边界
+入口或验证iframe异步加载时等待实际就绪。邮箱提示只检查原生联系区域，不把作者自由简介里的email字样当作原生入口。
+普通勾选最多一次；提交最多两次且每次先确认验证通过。本次实际勾选一次、提交一次。
+图片挑战、验证未完成、登录、401/403、限流和控制异常保存暂停。
+未知控件保留缺口。借用页面由调用方管理生命周期，只有确认指定目标完成后才结束空间。
+
+验证
+项目脚本全量：466 tests / 466 pass / 0 fail。
+最终命令：node --test /Users/vb/Projects/creator-finder_preview/scripts/**/*.test.mjs
+独立复核相关26项测试通过，最后变更未发现具体中高风险。
+真实证据：同目录YouTube原生邮箱实测证据.json；项目内validation/youtube-native-20261023。
+
+早期失败结果保留
+空间86首轮转入Instagram取得artiste@pomato.hk，未视为YouTube原生成功。该旧实测脚本曾过早结束空间，之后经用户确认新建空间88。
+空间88早期因控件可见性和iframe加载状态误判暂停，均有原始记录；最终成功结果如上。

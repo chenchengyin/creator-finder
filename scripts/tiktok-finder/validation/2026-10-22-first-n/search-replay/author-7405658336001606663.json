@@ -1,0 +1,90 @@
+{
+  "authorId": "7405658336001606663",
+  "username": "bella.ozz",
+  "profileUrl": "https://www.tiktok.com/@bella.ozz",
+  "profile": {
+    "username": "bella.ozz",
+    "authorId": "7405658336001606663",
+    "profileUrl": "https://www.tiktok.com/@bella.ozz",
+    "ready": false,
+    "identityVerified": false,
+    "externalLink": {
+      "status": "unknown",
+      "url": null,
+      "reason": "offline_profile_not_available"
+    }
+  },
+  "emails": [],
+  "metrics": {
+    "items": [],
+    "sample": [],
+    "sampleSize": 0,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "latest_order_unconfirmed",
+      "post_response_incomplete"
+    ],
+    "windowStart": "2026-10-10T16:00:00.000Z",
+    "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+  },
+  "content": {
+    "decision": "suspected",
+    "evidence": [],
+    "uncertainty": "公开原文尚不足以同时确认目标主题与内容形式，待人工复核"
+  },
+  "capture": {
+    "verificationContext": {
+      "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+      "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+    },
+    "profile": {
+      "username": "bella.ozz",
+      "authorId": "7405658336001606663",
+      "profileUrl": "https://www.tiktok.com/@bella.ozz",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "pages": [],
+    "postAttemptComplete": true,
+    "checks": {
+      "identity": "pending",
+      "email": "pending",
+      "posts": "in_progress",
+      "metrics": "pending",
+      "content": "suspected",
+      "region": "pending"
+    },
+    "nextAction": "posts"
+  },
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "data_incomplete",
+  "reason": "profile_not_verified_public",
+  "location": {
+    "country": null,
+    "evidence": [],
+    "semantics": "video_region_field_not_verified_creator_residence"
+  },
+  "inclusionBasis": "内容：方向证据不足；公开原文尚不足以同时确认目标主题与内容形式，待人工复核。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@bella.ozz，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 56,
+      "forced": false,
+      "reason": "existing_signature_prefilter",
+      "attempted": true,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

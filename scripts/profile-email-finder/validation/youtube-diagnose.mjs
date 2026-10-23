@@ -1,0 +1,10 @@
+const {createEgoBrowser}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs');
+const {extractCandidates}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.mjs');
+const fs=await import('node:fs/promises');
+const task=await taskSpace(51),actual=task.page('p1');
+const page=new Proxy(actual,{get(target,key){const value=target[key];if(typeof value!=='function')return value;return async(...args)=>{try{return await value.apply(target,args);}catch(e){console.log({method:key,error:e.message});throw e;}};}});
+const browser=createEgoBrowser({page,task,owned:false});const captures=[];
+const result=await browser.readPage({url:'https://www.youtube.com/@YouTube',onCapture:async c=>{captures.push(c);}});
+await fs.writeFile('/Users/vb/Projects/creator-finder/scripts/profile-email-finder/validation/youtube-diagnose-result.json',JSON.stringify({result,captures},null,2));
+console.log(JSON.stringify({result,rounds:captures.length,links:captures.flatMap(c=>extractCandidates(c).links.map(l=>l.url))}));
+console.log(await actual.snapshot());

@@ -1,0 +1,33 @@
+{
+  "baselineTests": 128,
+  "baselinePassed": 128,
+  "allTests": 143,
+  "addedTests": [
+    "输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status",
+    "参数-N-001/002 N is optional, frozen and a nonnegative safe integer",
+    "顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter",
+    "顺序-ORDER-002 current response order beats preseeded global queue order",
+    "搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds",
+    "主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename",
+    "缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection",
+    "缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused",
+    "缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts",
+    "邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup",
+    "断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven",
+    "断点-RESUME-002 explicit target stop retains incomplete forced count",
+    "外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence",
+    "外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown",
+    "外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown"
+  ],
+  "failures": [
+    "输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status",
+    "顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter",
+    "顺序-ORDER-002 current response order beats preseeded global queue order",
+    "搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds",
+    "主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename",
+    "缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection",
+    "断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven",
+    "断点-RESUME-002 explicit target stop retains incomplete forced count"
+  ],
+  "verifiedAt": "2026-10-22T09:56:41.017Z"
+}

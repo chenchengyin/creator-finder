@@ -1,0 +1,10 @@
+{"phase":"before","page":"p1","action":"goto","target":"https://www.youtube.com/@kallawaymarketing","beforeUrl":"chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html","at":"2026-10-23T02:33:04.013Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://www.youtube.com/@kallawaymarketing","beforeUrl":"chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html","afterUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:05.608Z"}
+{"phase":"before","page":"p1","action":"mouse.click","target":"948.9609375","beforeUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:12.071Z"}
+{"phase":"after","page":"p1","action":"mouse.click","target":"948.9609375","beforeUrl":"https://www.youtube.com/@kallawaymarketing","afterUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:12.224Z"}
+{"phase":"before","page":"p1","action":"mouse.click","target":"816","beforeUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:20.137Z"}
+{"phase":"after","page":"p1","action":"mouse.click","target":"816","beforeUrl":"https://www.youtube.com/@kallawaymarketing","afterUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:20.298Z"}
+{"phase":"before","page":"p1","action":"click","target":"@297","beforeUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:28.334Z"}
+{"phase":"after","page":"p1","action":"click","target":"@297","beforeUrl":"https://www.youtube.com/@kallawaymarketing","afterUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:28.452Z"}
+{"phase":"before","page":"p1","action":"mouse.click","target":"765.3359375","beforeUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:36.404Z"}
+{"phase":"after","page":"p1","action":"mouse.click","target":"765.3359375","beforeUrl":"https://www.youtube.com/@kallawaymarketing","afterUrl":"https://www.youtube.com/@kallawaymarketing","at":"2026-10-23T02:33:36.551Z"}

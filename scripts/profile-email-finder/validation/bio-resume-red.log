@@ -1,0 +1,39 @@
+TAP version 13
+# Subtest: 简介-BIO-008 已提交Bio命中后意外中断，续跑不重新挖该页
+not ok 1 - 简介-BIO-008 已提交Bio命中后意外中断，续跑不重新挖该页
+  ---
+  duration_ms: 56.20175
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:980:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + [
+    +   'https://www.tiktok.com/@alpha',
+    +   'https://example.org/contact'
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0: 'https://www.tiktok.com/@alpha'
+    1: 'https://example.org/contact'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:983:111)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 109.893209

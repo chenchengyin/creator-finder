@@ -1,0 +1,42 @@
+TAP version 13
+# Subtest: 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+not ok 1 - 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+  ---
+  duration_ms: 4.771333
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:320:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + []
+    - [
+    -   [
+    -     '#more',
+    -     'Enter'
+    -   ]
+    - ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0:
+      0: '#more'
+      1: 'Enter'
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:322:94)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 48.9775

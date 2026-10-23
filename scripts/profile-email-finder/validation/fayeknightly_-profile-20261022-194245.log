@@ -1,0 +1,77 @@
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":1,"current":"https://www.instagram.com/fayeknightly_/"}}
+{"progress":{"completion":"running","checked":1,"pending":0,"emails":1,"current":null}}
+{"progress":{"completion":"completed","checked":1,"pending":0,"emails":1,"current":null}}
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.instagram.com/fayeknightly_/",
+  "completion": "completed",
+  "error": null,
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "emails": [
+    {
+      "email": "TeamFaye@stregagroup.com",
+      "key": "teamfaye@stregagroup.com",
+      "status": "confirmed_public",
+      "variants": [
+        "TeamFaye@stregagroup.com"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.instagram.com/fayeknightly_/",
+          "pageKind": "profile",
+          "platform": "instagram",
+          "pageTitle": "Instagram",
+          "capturedAt": "2026-10-22T11:43:16.742Z",
+          "source": "profile_bio",
+          "location": "#mount_0_0_Sh > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div",
+          "raw": "TeamFaye@stregagroup.com",
+          "context": "정 애 🇺🇸🇰🇷 \nmember of \nTeamFaye@stregagroup.com \n\nAccount owned by  (parent)",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.instagram.com/fayeknightly_/"
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.instagram.com/fayeknightly_/",
+      "key": "https://www.instagram.com/fayeknightly_",
+      "depth": 0,
+      "path": [
+        "https://www.instagram.com/fayeknightly_/"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "8b1d60b981b1a813823036e9.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.instagram.com/fayeknightly_",
+      "finalUrl": "https://www.instagram.com/fayeknightly_/",
+      "pendingProfileLinks": [],
+      "bioEmailFound": true,
+      "stopReason": "profile_bio_email_found"
+    }
+  ],
+  "pending": [],
+  "issues": [],
+  "edges": [],
+  "updatedAt": "2026-10-22T11:43:16.751Z"
+}
+

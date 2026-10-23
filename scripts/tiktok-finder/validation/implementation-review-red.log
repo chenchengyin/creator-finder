@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: 身份-ID-001 wrong author and unready data never count as no email
+not ok 1 - 身份-ID-001 wrong author and unready data never count as no email
+  ---
+  duration_ms: 2.152667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + '1'
+    - '9999999999999999999'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: '9999999999999999999'
+  actual: '1'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/profile.test.mjs:8:173)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+not ok 2 - 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+  ---
+  duration_ms: 23.4405
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:73:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + '2222222222222222222'
+    - '9999999999999999999'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: '9999999999999999999'
+  actual: '2222222222222222222'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:75:167)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 71.891125

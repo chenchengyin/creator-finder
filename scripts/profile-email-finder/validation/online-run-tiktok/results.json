@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.tiktok.com/@r3alism_0fficial",
+  "completion": "partial",
+  "error": null,
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "emails": [
+    {
+      "email": "R3alism.yt@gmail.com",
+      "key": "r3alism.yt@gmail.com",
+      "status": "confirmed_public",
+      "variants": [
+        "R3alism.yt@gmail.com"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.tiktok.com/@r3alism_0fficial",
+          "pageKind": "profile",
+          "platform": "tiktok",
+          "pageTitle": "TikTok - Make Your Day",
+          "capturedAt": "2026-10-22T09:42:12.880Z",
+          "source": "profile_bio",
+          "location": "#main-content-others_homepage > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(3) > h2",
+          "raw": "R3alism.yt@gmail.com",
+          "context": "I'm Colin. I spread the Gospel, and follow Jesus. He saved me. So I remind you of Him everyday. \nR3alism.yt@gmail.com\nI AM WRITING A 365-DAY DEVOTIONAL🔥",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.tiktok.com/@r3alism_0fficial"
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.tiktok.com/@r3alism_0fficial",
+      "key": "https://www.tiktok.com/@r3alism_0fficial",
+      "depth": 0,
+      "path": [
+        "https://www.tiktok.com/@r3alism_0fficial"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "09c5ecee7c05752c71874ea1.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.tiktok.com/@r3alism_0fficial",
+      "finalUrl": "https://www.tiktok.com/@r3alism_0fficial"
+    },
+    {
+      "url": "https://linktr.ee/R3alism",
+      "key": "https://linktr.ee/R3alism",
+      "depth": 1,
+      "path": [
+        "https://www.tiktok.com/@r3alism_0fficial",
+        "https://linktr.ee/R3alism"
+      ],
+      "status": "failed",
+      "attempted": true,
+      "captures": [],
+      "issues": [
+        "page.evaluate timed out after 15000ms and the Page is still unresponsive. Execution could not be confirmed stopped; reload or close the Page before continuing."
+      ],
+      "checkpoint": {}
+    }
+  ],
+  "pending": [],
+  "issues": [
+    {
+      "url": "https://linktr.ee/R3alism",
+      "reason": "page.evaluate timed out after 15000ms and the Page is still unresponsive. Execution could not be confirmed stopped; reload or close the Page before continuing."
+    }
+  ],
+  "edges": [
+    {
+      "from": "https://www.tiktok.com/@r3alism_0fficial",
+      "to": "https://linktr.ee/R3alism",
+      "source": "profile_link",
+      "location": "#main-content-others_homepage > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(3) > div > a"
+    }
+  ],
+  "updatedAt": "2026-10-22T09:42:43.564Z"
+}

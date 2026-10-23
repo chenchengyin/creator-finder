@@ -1,0 +1,203 @@
+{
+  "url": "https://www.youtube.com/@choruslove",
+  "requestedUrl": "https://www.youtube.com/@choruslove",
+  "title": "程人富宇宙 - YouTube",
+  "kind": "profile",
+  "platform": "youtube",
+  "ready": true,
+  "complete": true,
+  "httpStatus": 200,
+  "access": "ok",
+  "blocks": [
+    {
+      "text": "说明",
+      "context": "说明",
+      "location": "#about-container > h2",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "Halo～我係小薯茄嘅程人富\n我很醜，但是我肯搞笑\n\n呢個channel以後每個月至少會po一條片\n咩類型嘅片？\n乜都有！\n敬請期待 ୧[ * ಡ ▽ ಡ * ]୨\n-----------------------------------------------------------------\nFacebook page：\nhttps://www.facebook.com/chingyanfu\nIG：chingyanfu\n工作聯絡： kikochan@pomato.hk",
+      "context": "Halo～我係小薯茄嘅程人富\n我很醜，但是我肯搞笑\n\n呢個channel以後每個月至少會po一條片\n咩類型嘅片？\n乜都有！\n敬請期待 ୧[ * ಡ ▽ ಡ * ]୨\n-----------------------------------------------------------------\nFacebook page：\nhttps://www.facebook.com/chingyanfu\nIG：chingyanfu\n工作聯絡： kikochan@pomato.hk",
+      "location": "#about-container > yt-attributed-string",
+      "source": "profile_bio",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "链接",
+      "context": "链接",
+      "location": "#links-section > h2",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "Instagram",
+      "context": "Instagram",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "instagram.com/chingyanfu/?hl=zh-hk",
+      "context": "instagram.com/chingyanfu/?hl=zh-hk",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div > span:nth-of-type(2) > a",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "facebook",
+      "context": "facebook",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "facebook.com/chingyanfu",
+      "context": "facebook.com/chingyanfu",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div > span:nth-of-type(2) > a",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "更多信息",
+      "context": "更多信息",
+      "location": "#additional-info-container > h2",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "点击查看，会自动上报邮箱，感谢共享邮箱",
+      "context": "点击查看，会自动上报邮箱，感谢共享邮箱",
+      "location": "#efluns-youtube-email-share-alert",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "kikochan@pomato.hk",
+      "context": "kikochan@pomato.hk",
+      "location": "#email",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "www.youtube.com/@choruslove",
+      "context": "www.youtube.com/@choruslove",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "香港",
+      "context": "香港",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "2019年4月24日注册",
+      "context": "2019年4月24日注册",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(5) > td:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "7.94万位订阅者",
+      "context": "7.94万位订阅者",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(6) > td:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "71 个视频",
+      "context": "71 个视频",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(7) > td:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "8,095,955次观看",
+      "context": "8,095,955次观看",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(8) > td:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "分享频道",
+      "context": "分享频道",
+      "location": "#share-channel > ytd-button-renderer > yt-button-shape > button > div:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "text": "举报用户",
+      "context": "举报用户",
+      "location": "#flagging-button > ytd-button-renderer > yt-button-shape > button > div:nth-of-type(2)",
+      "source": "profile_content",
+      "visible": true,
+      "siteWide": false
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYnZUZW82MlFvbTE4cnBieldyelFNTHxBSTVJdTV1Q3UtWU4yZ0lwbkFrLXFwX3hWb3lFOGtKQUZrdDhtOWpIUEpKYnFFZFEyYW9Qd3pia1pfS2ctMjAycjdReEVGVUU0djA3SmlvLUZQR0hCZC1HYnpaenF3VXFoNno2&q=https%3A%2F%2Fwww.instagram.com%2Fchingyanfu%2F%3Fhl%3Dzh-hk",
+      "text": "instagram.com/chingyanfu/?hl=zh-hk",
+      "label": "",
+      "context": "instagram.com/chingyanfu/?hl=zh-hk",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div > span:nth-of-type(2) > a",
+      "source": "profile_link",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "url": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYnAzNHEwRXpQeXpoMVAyWEJYSzhxaXxBSTVJdTV0ajItbTR1djB2YWE5WFpVU3VqRzlxanVtU2luSnFxam5TV3pfM05WNy1yeWtzbzA0UlR0VmJXSEF2X0U1Zl8xNy04VG4wWUI3U3RSSTRsR0g4RkprdWFic29lZ3Va&q=https%3A%2F%2Fwww.facebook.com%2Fchingyanfu%2F",
+      "text": "facebook.com/chingyanfu",
+      "label": "",
+      "context": "facebook.com/chingyanfu",
+      "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div > span:nth-of-type(2) > a",
+      "source": "profile_link",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "url": "mailto:kikochan@pomato.hk",
+      "text": "kikochan@pomato.hk",
+      "label": "",
+      "context": "kikochan@pomato.hk",
+      "location": "#email",
+      "source": "profile_contact_email",
+      "visible": true,
+      "siteWide": false
+    },
+    {
+      "url": "http://www.youtube.com/@choruslove",
+      "text": "www.youtube.com/@choruslove",
+      "label": "",
+      "context": "www.youtube.com/@choruslove",
+      "location": "#additional-info-container > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a",
+      "source": "profile_link",
+      "visible": true,
+      "siteWide": false
+    }
+  ],
+  "actions": [],
+  "issues": [],
+  "phase": "read",
+  "capturedAt": "2026-10-23T02:25:46.113Z"
+}

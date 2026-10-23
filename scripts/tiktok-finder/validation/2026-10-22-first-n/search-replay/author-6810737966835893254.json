@@ -1,0 +1,47 @@
+{
+  "authorId": "6810737966835893254",
+  "username": "jasonsamosaaa",
+  "profileUrl": "https://www.tiktok.com/@jasonsamosaaa",
+  "profile": null,
+  "bioHint": "If you hit follow, my dreams come true. If you don't, they die. No pressure tho",
+  "emails": [],
+  "profileCapturedAt": null,
+  "metrics": {
+    "sampleSize": null,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "profile_not_visited"
+    ]
+  },
+  "content": {
+    "decision": "not_evaluated",
+    "evidence": [],
+    "uncertainty": "邮箱条件未通过，未访问主页"
+  },
+  "capture": null,
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "rejected",
+  "reason": "no_search_bio_email",
+  "emailCheck": {
+    "source": "search_author_signature",
+    "status": "skipped_no_email_hint"
+  },
+  "inclusionBasis": "邮箱：搜索结果简介未发现邮箱，且没有结尾省略标记；未访问主页，按必备邮箱条件提前排除。搜索签名可能存在无标记截断，未对该账号的主页Bio作核验。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 11,
+      "forced": false,
+      "reason": "existing_signature_prefilter",
+      "attempted": false,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

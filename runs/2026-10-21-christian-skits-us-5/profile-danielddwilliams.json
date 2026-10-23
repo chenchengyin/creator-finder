@@ -1,0 +1,710 @@
+{
+  "profile": {
+    "capturedAt": "2026-10-21T03:34:25.700Z",
+    "profileUrl": "https://www.tiktok.com/@danielddwilliams",
+    "statusCode": 0,
+    "httpStatus": 200,
+    "authorId": "6776022441925411845",
+    "username": "danielddwilliams",
+    "bio": "Jesus sent me to make you smile 😜\ndanielddwilliams@gmail.com 📩\nJoin our community 👇🏽",
+    "privateAccount": false,
+    "unverifiedRegionFields": {
+      "semantics": "account_or_internal_region_not_confirmed_creator_location"
+    },
+    "publicLocation": {},
+    "followers": "55146",
+    "playlists": [],
+    "captcha": false,
+    "loginWall": false,
+    "title": "TikTok - Make Your Day",
+    "visibleError": false,
+    "identityVerified": true,
+    "ready": true,
+    "latestOrderConfirmed": true
+  },
+  "candidate": {
+    "username": "danielddwilliams",
+    "authorIdHint": "6776022441925411845",
+    "bioHint": "Jesus sent me to make you smile 😜\ndanielddwilliams@gmail.com 📩\nJoin our community 👇🏽",
+    "keyword": "christian skits",
+    "source": "tiktok-video",
+    "sourceUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+    "sourceText": "When you tell God you gonna stop cussing😩🤣  - What were the 3 tests? Hint: first was test of consciousness or awareness- Comment below what you think?🤣 #skit #cussing #christianhumor #lessons ",
+    "sourceLink": "https://www.tiktok.com/@danielddwilliams/video/7696954084125068575",
+    "status": "queued"
+  },
+  "pages": [
+    {
+      "statusCode": 0,
+      "hasMore": true,
+      "cursor": "1791051481006",
+      "httpStatus": 200,
+      "items": [
+        {
+          "id": "7673563706243960094",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1786640790,
+          "views": "567100",
+          "description": "The removal prayer is no joke😩🤣  - But are we really ready to maintain the blessings you’re asking for? 😩 #skit #removalprayer #christianhumor #prayerworks ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7673563706243960094"
+        },
+        {
+          "id": "7624201640345718046",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1775147786,
+          "views": "10100000",
+          "description": "Esp when you got work or exams😫 (follow for more🙌🏽) #alarm #students #work #christianlife ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7624201640345718046"
+        },
+        {
+          "id": "7602389720672242975",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1770069301,
+          "views": "2300000",
+          "description": "Let’s stop using God😫  follow for more 🙌🏽 #godknows #christiantiktok #repent ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7602389720672242975"
+        },
+        {
+          "id": "7698891193039572254",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792537808,
+          "views": "2916",
+          "description": "Your circle matters😊 Glad I found a friend who redirected me to Jesus😩 (now be that friend😊) #friends #godisgood #christianlife ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254"
+        },
+        {
+          "id": "7698406229621738766",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792424894,
+          "views": "13800",
+          "description": "It’s time to make Satan cry 😩🤣 #bible #christianhumor #devotional #follow ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698406229621738766"
+        },
+        {
+          "id": "7698088505699798302",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792350913,
+          "views": "85900",
+          "description": "Infact more than you deserve🫣 #datingtips #love #breakup #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698088505699798302"
+        },
+        {
+          "id": "7697799140390096158",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792283545,
+          "views": "8646",
+          "description": "Never let the devil know your next move🫣🤣 #satan #christianlife #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7697799140390096158"
+        },
+        {
+          "id": "7696954084125068575",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792086784,
+          "views": "18300",
+          "description": "When you tell God you gonna stop cussing😩🤣  - What were the 3 tests? Hint: first was test of consciousness or awareness- Comment below what you think?🤣 #skit #cussing #christianhumor #lessons ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7696954084125068575"
+        },
+        {
+          "id": "7696257965904383262",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791924704,
+          "views": "13200",
+          "description": "A lil throwback back🤣 i still can’t believe they said “let’s take it higher” like why😩🤣 #churchtiktok #church #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7696257965904383262"
+        },
+        {
+          "id": "7695816635101334815",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791821965,
+          "views": "7070",
+          "description": "God is still waiting 🤣 #wordly #songs #christianhumor #christiantiktok ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7695816635101334815"
+        },
+        {
+          "id": "7695564566633205023",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791763266,
+          "views": "273400",
+          "description": "Read that again😎 #dontlosehope #encouragementforyou #godisgood #christiantiktok ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7695564566633205023"
+        },
+        {
+          "id": "7694803389036776735",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791586044,
+          "views": "27200",
+          "description": "Don’t forgot who you’re - “a Child of God” #attack #spirituality #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7694803389036776735"
+        },
+        {
+          "id": "7694753176758668575",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791574353,
+          "views": "173800",
+          "description": "Who else 💃🏽😩🙏🏽🤣 #thankyougod #grateful #blessed #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7694753176758668575"
+        },
+        {
+          "id": "7694696899856682271",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791561241,
+          "views": "5313",
+          "description": "Welcome home sweetheart🤣 #sidechicks #playboy #christianhumor #solomon ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7694696899856682271"
+        },
+        {
+          "id": "7694388959450795295",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791489551,
+          "views": "16700",
+          "description": "Come and receive the “bread of Life🤣🤝 #halloweencostume #halloween #christianlife #follow ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7694388959450795295"
+        },
+        {
+          "id": "7693964509920202014",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791390735,
+          "views": "8350",
+          "description": "Replying to @𝓢𝔁𝓸𝓶𝓲𝓪 🫂 When God is silent Pt.2 (why,😩 what to do 🤔?) #skit #christianhumor #christianlife ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7693964509920202014"
+        },
+        {
+          "id": "7693722091539025183",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791334283,
+          "views": "109100",
+          "description": "Our true character is often revealed in times like these😩 #skit #godissilent #christiantiktok #godsvoice ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7693722091539025183"
+        },
+        {
+          "id": "7693235340592680223",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791220970,
+          "views": "54500",
+          "description": "So annoying like why?? Who else😩🤣 #fasting #fast #christianhumor #follow ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7693235340592680223"
+        },
+        {
+          "id": "7692507466306719006",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791051481,
+          "views": "108400",
+          "description": "Seeing others grow also motivate me to draw closer to God🥺 -who else😩? #fyp #wordly #christiantiktok #worldly ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7692507466306719006"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "decision": "passed",
+    "reason": "ten_day_mean_above_threshold",
+    "averageViews": 60045.142857142855,
+    "sampleSize": 7,
+    "sample": [
+      {
+        "id": "7698406229621738766",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1792424894,
+        "views": 13800,
+        "description": "It’s time to make Satan cry 😩🤣 #bible #christianhumor #devotional #follow ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7698406229621738766"
+      },
+      {
+        "id": "7698088505699798302",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1792350913,
+        "views": 85900,
+        "description": "Infact more than you deserve🫣 #datingtips #love #breakup #christianhumor ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7698088505699798302"
+      },
+      {
+        "id": "7697799140390096158",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1792283545,
+        "views": 8646,
+        "description": "Never let the devil know your next move🫣🤣 #satan #christianlife #christianhumor ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7697799140390096158"
+      },
+      {
+        "id": "7696954084125068575",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1792086784,
+        "views": 18300,
+        "description": "When you tell God you gonna stop cussing😩🤣  - What were the 3 tests? Hint: first was test of consciousness or awareness- Comment below what you think?🤣 #skit #cussing #christianhumor #lessons ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7696954084125068575"
+      },
+      {
+        "id": "7696257965904383262",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1791924704,
+        "views": 13200,
+        "description": "A lil throwback back🤣 i still can’t believe they said “let’s take it higher” like why😩🤣 #churchtiktok #church #christianhumor ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7696257965904383262"
+      },
+      {
+        "id": "7695816635101334815",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1791821965,
+        "views": 7070,
+        "description": "God is still waiting 🤣 #wordly #songs #christianhumor #christiantiktok ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7695816635101334815"
+      },
+      {
+        "id": "7695564566633205023",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "createdAt": 1791763266,
+        "views": 273400,
+        "description": "Read that again😎 #dontlosehope #encouragementforyou #godisgood #christiantiktok ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7695564566633205023"
+      }
+    ],
+    "windowStart": "2026-10-11T00:00:00+08:00",
+    "windowEnd": "2026-10-20T23:59:59+08:00",
+    "coverageComplete": true
+  },
+  "result": {
+    "authorId": "6776022441925411845",
+    "username": "danielddwilliams",
+    "profileUrl": "https://www.tiktok.com/@danielddwilliams",
+    "bio": "Jesus sent me to make you smile 😜\ndanielddwilliams@gmail.com 📩\nJoin our community 👇🏽",
+    "emails": [
+      "danielddwilliams@gmail.com"
+    ],
+    "emailSource": "profile_bio",
+    "profileCapturedAt": "2026-10-21T03:34:25.700Z",
+    "followers": "55146",
+    "location": {
+      "decision": "passed",
+      "country": "US",
+      "reason": "latest_video_locationCreated",
+      "semantics": "video_region_field_not_verified_creator_residence",
+      "evidence": [
+        {
+          "source": "video_detail_hydration",
+          "text": "locationCreated=US",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254",
+          "videoId": "7698891193039572254",
+          "capturedAt": "2026-10-21T03:52:03.960Z"
+        }
+      ]
+    },
+    "content": {
+      "decision": "passed",
+      "reason": "assistant_review_of_explicit_christian_skit_public_caption",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "The removal prayer is no joke😩🤣  - But are we really ready to maintain the blessings you’re asking for? 😩 #skit #removalprayer #christianhumor #prayerworks ",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7673563706243960094",
+          "videoId": "7673563706243960094",
+          "captureSurface": "verified_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z"
+        },
+        {
+          "source": "creator_video_description",
+          "text": "It’s time to make Satan cry 😩🤣 #bible #christianhumor #devotional #follow ",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698406229621738766",
+          "videoId": "7698406229621738766",
+          "captureSurface": "verified_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z"
+        }
+      ],
+      "scope": "Public Christian-themed skit content, not personal belief",
+      "reviewMethod": "assistant_manual_review_of_captured_public_caption"
+    },
+    "metrics": {
+      "decision": "passed",
+      "reason": "ten_day_mean_above_threshold",
+      "averageViews": 60045.142857142855,
+      "sampleSize": 7,
+      "sample": [
+        {
+          "id": "7698406229621738766",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792424894,
+          "views": 13800,
+          "description": "It’s time to make Satan cry 😩🤣 #bible #christianhumor #devotional #follow ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698406229621738766"
+        },
+        {
+          "id": "7698088505699798302",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792350913,
+          "views": 85900,
+          "description": "Infact more than you deserve🫣 #datingtips #love #breakup #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698088505699798302"
+        },
+        {
+          "id": "7697799140390096158",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792283545,
+          "views": 8646,
+          "description": "Never let the devil know your next move🫣🤣 #satan #christianlife #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7697799140390096158"
+        },
+        {
+          "id": "7696954084125068575",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1792086784,
+          "views": 18300,
+          "description": "When you tell God you gonna stop cussing😩🤣  - What were the 3 tests? Hint: first was test of consciousness or awareness- Comment below what you think?🤣 #skit #cussing #christianhumor #lessons ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7696954084125068575"
+        },
+        {
+          "id": "7696257965904383262",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791924704,
+          "views": 13200,
+          "description": "A lil throwback back🤣 i still can’t believe they said “let’s take it higher” like why😩🤣 #churchtiktok #church #christianhumor ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7696257965904383262"
+        },
+        {
+          "id": "7695816635101334815",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791821965,
+          "views": 7070,
+          "description": "God is still waiting 🤣 #wordly #songs #christianhumor #christiantiktok ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7695816635101334815"
+        },
+        {
+          "id": "7695564566633205023",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "createdAt": 1791763266,
+          "views": 273400,
+          "description": "Read that again😎 #dontlosehope #encouragementforyou #godisgood #christiantiktok ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:34:25.700Z",
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7695564566633205023"
+        }
+      ],
+      "windowStart": "2026-10-11T00:00:00+08:00",
+      "windowEnd": "2026-10-20T23:59:59+08:00",
+      "coverageComplete": true
+    },
+    "countryFilterStage": "after_collection",
+    "decision": "matched",
+    "reason": "bio_email_content_ten_day_mean_and_US_video_region_met",
+    "videoRegion": {
+      "schemaVersion": 1,
+      "username": "danielddwilliams",
+      "authorId": "6776022441925411845",
+      "selectionSnapshotAt": "2026-10-21T03:34:25.700Z",
+      "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+      "requestedCount": 1,
+      "observations": [
+        {
+          "videoId": "7698891193039572254",
+          "authorId": "6776022441925411845",
+          "username": "danielddwilliams",
+          "videoUrl": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254",
+          "publishedAt": "2026-10-20T23:10:08.000Z",
+          "capturedAt": "2026-10-21T03:52:03.960Z",
+          "source": "video_detail_hydration",
+          "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+          "rawValue": "US",
+          "regionCode": "US",
+          "status": "observed",
+          "reason": "video_region_field_observed",
+          "creatorResidenceVerified": false
+        }
+      ],
+      "navigationAttempts": [
+        {
+          "number": 1,
+          "url": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254",
+          "httpStatus": 200,
+          "captcha": false,
+          "loginPrompt": false,
+          "error": null,
+          "capturedAt": "2026-10-21T03:52:03.960Z",
+          "videoId": "7698891193039572254"
+        }
+      ],
+      "stopped": false,
+      "stopReason": null,
+      "summary": {
+        "status": "single_video",
+        "regionCode": "US",
+        "requestedCount": 1,
+        "inspectedCount": 1,
+        "usableCount": 1,
+        "creatorResidenceVerified": false,
+        "meaning": "Observed video region field; not verified creator residence or nationality."
+      }
+    }
+  },
+  "contentReview": {
+    "previous": {
+      "decision": "pending",
+      "reason": "content_topic_and_format_unverified",
+      "evidence": []
+    },
+    "reviewedAt": "2026-10-21T03:36:24.595457+00:00",
+    "decision": "passed",
+    "reason": "assistant_review_of_explicit_christian_skit_public_caption",
+    "evidence": [
+      {
+        "source": "creator_video_description",
+        "text": "The removal prayer is no joke😩🤣  - But are we really ready to maintain the blessings you’re asking for? 😩 #skit #removalprayer #christianhumor #prayerworks ",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7673563706243960094",
+        "videoId": "7673563706243960094",
+        "captureSurface": "verified_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z"
+      },
+      {
+        "source": "creator_video_description",
+        "text": "It’s time to make Satan cry 😩🤣 #bible #christianhumor #devotional #follow ",
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7698406229621738766",
+        "videoId": "7698406229621738766",
+        "captureSurface": "verified_profile_item_list",
+        "capturedAt": "2026-10-21T03:34:25.700Z"
+      }
+    ],
+    "scope": "Public Christian-themed skit content, not personal belief",
+    "reviewMethod": "assistant_manual_review_of_captured_public_caption"
+  },
+  "videoRegion": {
+    "schemaVersion": 1,
+    "username": "danielddwilliams",
+    "authorId": "6776022441925411845",
+    "selectionSnapshotAt": "2026-10-21T03:34:25.700Z",
+    "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+    "requestedCount": 1,
+    "observations": [
+      {
+        "videoId": "7698891193039572254",
+        "authorId": "6776022441925411845",
+        "username": "danielddwilliams",
+        "videoUrl": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254",
+        "publishedAt": "2026-10-20T23:10:08.000Z",
+        "capturedAt": "2026-10-21T03:52:03.960Z",
+        "source": "video_detail_hydration",
+        "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+        "rawValue": "US",
+        "regionCode": "US",
+        "status": "observed",
+        "reason": "video_region_field_observed",
+        "creatorResidenceVerified": false
+      }
+    ],
+    "navigationAttempts": [
+      {
+        "number": 1,
+        "url": "https://www.tiktok.com/@danielddwilliams/video/7698891193039572254",
+        "httpStatus": 200,
+        "captcha": false,
+        "loginPrompt": false,
+        "error": null,
+        "capturedAt": "2026-10-21T03:52:03.960Z",
+        "videoId": "7698891193039572254"
+      }
+    ],
+    "stopped": false,
+    "stopReason": null,
+    "summary": {
+      "status": "single_video",
+      "regionCode": "US",
+      "requestedCount": 1,
+      "inspectedCount": 1,
+      "usableCount": 1,
+      "creatorResidenceVerified": false,
+      "meaning": "Observed video region field; not verified creator residence or nationality."
+    }
+  }
+}

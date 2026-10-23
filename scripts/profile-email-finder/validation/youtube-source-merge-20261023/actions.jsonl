@@ -1,0 +1,10 @@
+{"phase":"before","page":"p1","action":"goto","target":"https://kallaway.co/launch","beforeUrl":"chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html#/","at":"2026-10-23T02:54:01.182Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://kallaway.co/launch","beforeUrl":"chrome-extension://lecdifefmmfjnjjinhaennhdlmcaeeeb/main.html#/","afterUrl":"https://onefactor.ai/kallaway/launch","at":"2026-10-23T02:54:03.274Z"}
+{"phase":"before","page":"p1","action":"goto","target":"https://shortformsystem.co/","beforeUrl":"https://onefactor.ai/kallaway/launch","at":"2026-10-23T02:54:09.185Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://shortformsystem.co/","beforeUrl":"https://onefactor.ai/kallaway/launch","afterUrl":"https://shortformsystem.co/?utm_source=youtube","at":"2026-10-23T02:54:11.133Z"}
+{"phase":"before","page":"p1","action":"goto","target":"https://sandcastles.ai/","beforeUrl":"https://shortformsystem.co/?utm_source=youtube","at":"2026-10-23T02:54:17.190Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://sandcastles.ai/","beforeUrl":"https://shortformsystem.co/?utm_source=youtube","afterUrl":"https://sandcastles.ai/","at":"2026-10-23T02:54:18.095Z"}
+{"phase":"before","page":"p1","action":"goto","target":"https://onefactor.ai/kallaway/academy","beforeUrl":"https://sandcastles.ai/","at":"2026-10-23T02:54:25.193Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://onefactor.ai/kallaway/academy","beforeUrl":"https://sandcastles.ai/","afterUrl":"https://onefactor.ai/kallaway/academy","at":"2026-10-23T02:54:27.281Z"}
+{"phase":"before","page":"p1","action":"goto","target":"https://sandcastles.ai/contact","beforeUrl":"https://onefactor.ai/kallaway/academy","at":"2026-10-23T02:54:33.196Z"}
+{"phase":"after","page":"p1","action":"goto","target":"https://sandcastles.ai/contact","beforeUrl":"https://onefactor.ai/kallaway/academy","afterUrl":"https://sandcastles.ai/contact","at":"2026-10-23T02:54:33.580Z"}

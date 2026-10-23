@@ -1,0 +1,4 @@
+AssertionError [ERR_ASSERTION]: tiktok link label must not qualify as bio
+    at file:////[eval2]:16:93
+
+ego's nodejs process exited with code 1.

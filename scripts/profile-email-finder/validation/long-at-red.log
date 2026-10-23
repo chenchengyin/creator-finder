@@ -1,0 +1,32 @@
+TAP version 13
+# Subtest: 提取-EMAIL-016 长@段落与损坏域名有界且不截取超长邮箱
+not ok 1 - 提取-EMAIL-016 长@段落与损坏域名有界且不截取超长邮箱
+  ---
+  duration_ms: 1504.870375
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:84:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    ETIMEDOUT
+    
+    null !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: ~
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:87:94)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1543.528084

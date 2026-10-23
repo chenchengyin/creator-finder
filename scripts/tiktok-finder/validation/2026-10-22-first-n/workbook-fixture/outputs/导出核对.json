@@ -1,0 +1,30 @@
+{
+  "verification": {
+    "passed": true,
+    "creatorCount": 1,
+    "shortfall": 0
+  },
+  "authors": [
+    {
+      "authorId": "9999999999999999999",
+      "decision": "confirmed",
+      "sampleSize": 1,
+      "averageViews": 60000
+    }
+  ],
+  "profileLinks": [
+    {
+      "authorId": "9999999999999999999",
+      "status": "present",
+      "url": "https://example.com/?fixture=1&source=first-n",
+      "evidence": [
+        {
+          "fieldPath": "fixture.bioLink.link",
+          "rawValue": "https://example.com/?fixture=1&source=first-n"
+        }
+      ]
+    }
+  ],
+  "inspection": "{\"kind\":\"table\",\"sheet\":\"达人名单\",\"address\":\"A6:O7\",\"rows\":2,\"cols\":15,\"values\":[[\"账号\",\"作者ID\",\"主页公开邮箱\",\"窗口视频数\",\"窗口总播放\",\"窗口均播\",\"视频地区\",\"来源关键词\",\"复核状态\",\"主页链接\",\"采集时间（上海）\",\"收录依据\",\"主页挂链\",\"挂链状态\",\"挂链来源依据\"],[\"@fixture_first_n\",\"9999999999999999999\",\"public@example.com\",1,60000,60000,\"US\",\"christian skits\",\"已确认\",\"https://www.tiktok.com/@fixture_first_n\",\"2026-10-21T12:00:00.000Z\",\"离线虚构测试账号，仅用于验证导出。\\n内容：2026-10-15T00:00:00.000Z #christianskit（https://www.tiktok.com/@fixture_first_n/video/7777777777777777777）； #christianskit（https://www.tiktok.com/@fixture_first_n/video/7777777777777777777）。\\n邮箱：public@example.com；来源 https://www.tiktok.com/@fixture_first_n，采集 2026-10-21T04:00:00Z。\\n主页挂链：present；https://example.com/?fixture=1&source=first-n；仅记录公开挂链，不作为Bio邮箱。\\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），1条视频，算术均播60000，须严格大于50000；覆盖完整。\\n地区：最新公开视频locationCreated=US；字段不证明本人现居地。\\n判定：confirmed；all_conditions_verified。\",\"https://example.com/?fixture=1&source=first-n\",\"已挂链\",\"fixture.bioLink.link: https://example.com/?fixture=1&source=first-n\"]]}",
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "url": "https://www.tiktok.com/@fixture",
+    "key": "https://www.tiktok.com/@fixture",
+    "depth": 0,
+    "path": [
+      "https://www.tiktok.com/@fixture"
+    ],
+    "status": "complete",
+    "attempted": true,
+    "captures": [
+      "5056d2ee0d226799cad331f5.json"
+    ],
+    "issues": [],
+    "checkpoint": {},
+    "finalKey": "https://www.tiktok.com/@fixture",
+    "finalUrl": "https://www.tiktok.com/@fixture"
+  }
+]

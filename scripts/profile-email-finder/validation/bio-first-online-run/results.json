@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.tiktok.com/@r3alism_0fficial",
+  "completion": "completed",
+  "error": null,
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "emails": [
+    {
+      "email": "R3alism.yt@gmail.com",
+      "key": "r3alism.yt@gmail.com",
+      "status": "confirmed_public",
+      "variants": [
+        "R3alism.yt@gmail.com"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.tiktok.com/@r3alism_0fficial",
+          "pageKind": "profile",
+          "platform": "tiktok",
+          "pageTitle": "TikTok - Make Your Day",
+          "capturedAt": "2026-10-22T10:42:28.081Z",
+          "source": "profile_bio",
+          "location": "#main-content-others_homepage > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(3) > h2",
+          "raw": "R3alism.yt@gmail.com",
+          "context": "I'm Colin. I spread the Gospel, and follow Jesus. He saved me. So I remind you of Him everyday. \nR3alism.yt@gmail.com\nI AM WRITING A 365-DAY DEVOTIONAL🔥",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.tiktok.com/@r3alism_0fficial"
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.tiktok.com/@r3alism_0fficial",
+      "key": "https://www.tiktok.com/@r3alism_0fficial",
+      "depth": 0,
+      "path": [
+        "https://www.tiktok.com/@r3alism_0fficial"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "71022f924ff3d598cde0ea99.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.tiktok.com/@r3alism_0fficial",
+      "finalUrl": "https://www.tiktok.com/@r3alism_0fficial",
+      "pendingProfileLinks": [],
+      "bioEmailFound": true,
+      "stopReason": "profile_bio_email_found"
+    }
+  ],
+  "pending": [],
+  "issues": [],
+  "edges": [],
+  "updatedAt": "2026-10-22T10:42:28.090Z"
+}

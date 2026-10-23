@@ -1,0 +1,11 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
+  [
++   'https://www.youtube.com/@YouTube%E7%BC%87%E5%BA%A1%E6%B5%974650%E6%B6%93%E5%9B%A6%E7%B6%85%E7%92%81%E3%88%A4%E6%A7%84%E9%91%B0%EF%BF%BD'
+-   'https://www.youtube.com/@YouTube'
+  ]
+
+    at file:////[eval2]:7:8
+
+ego's nodejs process exited with code 1.

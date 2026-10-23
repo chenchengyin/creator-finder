@@ -1,0 +1,42 @@
+const unavailable=e=>/control|ownership|delegat|CDP|closed|detached|unresponsive|inactive|execution.*stopped/i.test(e.message);
+export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),lastActionAt=null}){
+ let current={},failure=null;
+ const state={lastActionAt};
+ const assertHealthy=()=>{if(failure)throw failure;};
+ const guard=async call=>{assertHealthy();try{return await call();}catch(e){if(unavailable(e)&&!e.storageFailure){e.pause=true;e.reason='browser_unavailable: '+e.message;}if(e.pause||e.storageFailure)failure=e;throw e;}};
+ const record=async event=>{try{await log({...current,...event,at:new Date(now()).toISOString()});}catch(e){e.storageFailure=true;failure=e;throw e;}};
+ const pace=async(action,target)=>{
+  assertHealthy();
+  const min=action==='goto'&&/^https:\/\/(www\.)?tiktok\.com\//.test(target)?10500:8000;
+  const delay=state.lastActionAt===null?0:Math.max(0,min-(now()-state.lastActionAt));
+  if(delay)await sleep(delay);
+  assertHealthy();
+ };
+ const execute=async(page,action,target,call)=>{
+  let beforeUrl;
+  assertHealthy();
+  try{
+   beforeUrl=await page.url();
+   await pace(action,target);
+   await record({phase:'before',page:page.label,action,target,beforeUrl});
+   state.lastActionAt=now();
+   const value=await call();
+   await record({phase:'after',page:page.label,action,target,beforeUrl,afterUrl:await page.url()});
+   return value;
+  }catch(e){
+   if(!e.storageFailure)await record({phase:'error',page:page.label,action,target,beforeUrl,error:e.message});
+   if(unavailable(e)&&!e.storageFailure){e.pause=true;e.reason='browser_unavailable: '+e.message;}
+   if(e.pause||e.storageFailure)failure=e;
+   throw e;
+  }
+ };
+ return {state,assertHealthy,context(value){current={...current,...value};},wrap(raw){
+  return new Proxy(raw,{get(target,key){
+   // Let a coordinate action inspect its target only after the shared pacing wait.
+   if(key==='prepareAction')return (action,target='')=>guard(()=>pace(action,target));
+   if(['goto','click','reload','close','press'].includes(key)&&typeof raw[key]==='function')return (...args)=>execute(raw,key,String(args[0]||''),()=>raw[key](...args));
+   if(['mouse','keyboard'].includes(key)&&raw[key])return new Proxy(raw[key],{get(device,method){const value=device[method];if(typeof value!=='function')return value;if(method==='wheel'||method==='press'||method==='click')return (...args)=>execute(raw,`${key}.${String(method)}`,String(args[0]||''),()=>value.apply(device,args));return (...args)=>guard(()=>value.apply(device,args));}});
+   const value=Reflect.get(target,key,target);return typeof value==='function'? (...args)=>guard(()=>value.apply(target,args)):value;
+  }});
+ }};
+}

@@ -1,0 +1,555 @@
+TAP version 13
+# Subtest: 访问-ACCESS-005 region resume preserves 0 saved button clicks after the ordinary 403 budget is exhausted
+ok 1 - 访问-ACCESS-005 region resume preserves 0 saved button clicks after the ordinary 403 budget is exhausted
+  ---
+  duration_ms: 16.856333
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 region resume preserves 3 saved button clicks after the ordinary 403 budget is exhausted
+ok 2 - 访问-ACCESS-005 region resume preserves 3 saved button clicks after the ordinary 403 budget is exhausted
+  ---
+  duration_ms: 26.619458
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 region resume preserves 10 saved button clicks after the ordinary 403 budget is exhausted
+ok 3 - 访问-ACCESS-005 region resume preserves 10 saved button clicks after the ordinary 403 budget is exhausted
+  ---
+  duration_ms: 14.490417
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 region resume preserves 30 saved button clicks after the ordinary 403 budget is exhausted
+ok 4 - 访问-ACCESS-005 region resume preserves 30 saved button clicks after the ordinary 403 budget is exhausted
+  ---
+  duration_ms: 1.514958
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 document 429 wins over API403
+ok 5 - 访问-ACCESS-003 document 429 wins over API403
+  ---
+  duration_ms: 3.531875
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 document 401 wins over API403
+ok 6 - 访问-ACCESS-003 document 401 wins over API403
+  ---
+  duration_ms: 2.109083
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 partial bodies cannot mark search exhausted
+ok 7 - 完成-DONE-003 partial bodies cannot mark search exhausted
+  ---
+  duration_ms: 1.917791
+  type: 'test'
+  ...
+# Subtest: 来源-SOURCE-001 old keyword response cannot finish the current word
+ok 8 - 来源-SOURCE-001 old keyword response cannot finish the current word
+  ---
+  duration_ms: 1.970667
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+ok 9 - 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+  ---
+  duration_ms: 3.242833
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 search adapter clicks a visible browser error reload button
+ok 10 - 访问-ACCESS-005 search adapter clicks a visible browser error reload button
+  ---
+  duration_ms: 5.677792
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 an exhausted ordinary search 403 budget still permits its unused visible button budget
+ok 11 - 访问-ACCESS-005 an exhausted ordinary search 403 budget still permits its unused visible button budget
+  ---
+  duration_ms: 3.366
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 visible reload click budget survives adapter restart
+ok 12 - 访问-ACCESS-005 visible reload click budget survives adapter restart
+  ---
+  duration_ms: 21.186167
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-005 an interrupted Ego error-page checkpoint resumes the visible button without navigating again
+ok 13 - 访问-ACCESS-005 an interrupted Ego error-page checkpoint resumes the visible button without navigating again
+  ---
+  duration_ms: 43.897625
+  type: 'test'
+  ...
+# Subtest: 节奏-PACE-001 search pagination keeps a serialized 10.5 second interval
+ok 14 - 节奏-PACE-001 search pagination keeps a serialized 10.5 second interval
+  ---
+  duration_ms: 2.932375
+  type: 'test'
+  ...
+# Subtest: 节奏-PACE-002 profile post pagination uses a three second interval
+ok 15 - 节奏-PACE-002 profile post pagination uses a three second interval
+  ---
+  duration_ms: 2.209584
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-004 profile 403 budget survives restarting the browser adapter
+ok 16 - 访问-ACCESS-004 profile 403 budget survives restarting the browser adapter
+  ---
+  duration_ms: 3.9555
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 real adapter reads profile and post fields; optional email is honored
+ok 17 - 身份-ID-001 real adapter reads profile and post fields; optional email is honored
+  ---
+  duration_ms: 5.869875
+  type: 'test'
+  ...
+# Subtest: 排序-SORT-001 waits for Latest state to settle before deciding whether to click
+ok 18 - 排序-SORT-001 waits for Latest state to settle before deciding whether to click
+  ---
+  duration_ms: 2.719875
+  type: 'test'
+  ...
+# Subtest: 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+ok 19 - 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+  ---
+  duration_ms: 1.128791
+  type: 'test'
+  ...
+# Subtest: 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+ok 20 - 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+  ---
+  duration_ms: 23.226292
+  type: 'test'
+  ...
+# Subtest: 输入-IN-002 invalid inputs are rejected before running
+ok 21 - 输入-IN-002 invalid inputs are rejected before running
+  ---
+  duration_ms: 1.043833
+  type: 'test'
+  ...
+# Subtest: 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+ok 22 - 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+  ---
+  duration_ms: 1.219833
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-001 optional run limits are validated, frozen and absent from legacy configs
+ok 23 - 停止-LIMIT-001 optional run limits are validated, frozen and absent from legacy configs
+  ---
+  duration_ms: 0.456666
+  type: 'test'
+  ...
+# Subtest: CLI dry-run does not touch browser or create a run directory
+ok 24 - CLI dry-run does not touch browser or create a run directory
+  ---
+  duration_ms: 48.296583
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-neHnkv/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+ok 25 - 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+  ---
+  duration_ms: 1069.315333
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-tdKFsE/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-002 zero results still produce headers and target shortfall
+ok 26 - 导出-EXPORT-002 zero results still produce headers and target shortfall
+  ---
+  duration_ms: 80.096709
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-8Ft2VU/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status
+ok 27 - 输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status
+  ---
+  duration_ms: 49.1535
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-4hMRHD/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 输出-EXPORT-001 export-only omits imported eligibility without current-run verification
+ok 28 - 输出-EXPORT-001 export-only omits imported eligibility without current-run verification
+  ---
+  duration_ms: 32.728375
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-VxBUzT/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 输出-EXPORT-001 current-run forced profile flows through real workbook exporter
+ok 29 - 输出-EXPORT-001 current-run forced profile flows through real workbook exporter
+  ---
+  duration_ms: 117.022458
+  type: 'test'
+  ...
+# Subtest: 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+ok 30 - 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+  ---
+  duration_ms: 15.053167
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+ok 31 - 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+  ---
+  duration_ms: 90.985541
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-002 current response order beats preseeded global queue order
+ok 32 - 顺序-ORDER-002 current response order beats preseeded global queue order
+  ---
+  duration_ms: 20.36375
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-002 a historical keyword source absent from the new response does not enter its forced prefix
+ok 33 - 顺序-ORDER-002 a historical keyword source absent from the new response does not enter its forced prefix
+  ---
+  duration_ms: 21.664458
+  type: 'test'
+  ...
+# Subtest: 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+ok 34 - 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+  ---
+  duration_ms: 39.992333
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+ok 35 - 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+  ---
+  duration_ms: 18.704959
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+ok 36 - 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+  ---
+  duration_ms: 13.849458
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-002 old qualifying authors cannot stop the new run or leak into an early export
+ok 37 - 缓存-CACHE-002 old qualifying authors cannot stop the new run or leak into an early export
+  ---
+  duration_ms: 14.106042
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+ok 38 - 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+  ---
+  duration_ms: 0.302084
+  type: 'test'
+  ...
+# Subtest: 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+ok 39 - 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+  ---
+  duration_ms: 0.228334
+  type: 'test'
+  ...
+# Subtest: 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+ok 40 - 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+  ---
+  duration_ms: 0.115375
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+ok 41 - 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+  ---
+  duration_ms: 50.261
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-002 explicit target stop retains incomplete forced count
+ok 42 - 断点-RESUME-002 explicit target stop retains incomplete forced count
+  ---
+  duration_ms: 19.172917
+  type: 'test'
+  ...
+# Subtest: 断点-RESUME-001 checkpoint captured during upgrade wins over old author snapshot; committed authors repair stale counts
+ok 43 - 断点-RESUME-001 checkpoint captured during upgrade wins over old author snapshot; committed authors repair stale counts
+  ---
+  duration_ms: 22.397292
+  type: 'test'
+  ...
+# Subtest: 回归-REG-001 N zero keeps signature prefilter without forced profile reads
+ok 44 - 回归-REG-001 N zero keeps signature prefilter without forced profile reads
+  ---
+  duration_ms: 14.404292
+  type: 'test'
+  ...
+# Subtest: 回归-REG-001 disabled N preserves legacy handling of a cached no-email Bio
+ok 45 - 回归-REG-001 disabled N preserves legacy handling of a cached no-email Bio
+  ---
+  duration_ms: 0.118375
+  type: 'test'
+  ...
+# Subtest: 顺序-ORDER-001 partial search checkpoint retains first appearance order after restart
+ok 46 - 顺序-ORDER-001 partial search checkpoint retains first appearance order after restart
+  ---
+  duration_ms: 21.591458
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+ok 47 - 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+  ---
+  duration_ms: 0.333833
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+ok 48 - 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+  ---
+  duration_ms: 0.179333
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+ok 49 - 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+  ---
+  duration_ms: 0.169375
+  type: 'test'
+  ...
+# Subtest: 外链-LINK-001 real adapter saves basic mounted link without post calls or navigating its target
+ok 50 - 外链-LINK-001 real adapter saves basic mounted link without post calls or navigating its target
+  ---
+  duration_ms: 2.272958
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 wrong author and unready data never count as no email
+ok 51 - 身份-ID-001 wrong author and unready data never count as no email
+  ---
+  duration_ms: 6.461542
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+ok 52 - 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+  ---
+  duration_ms: 0.366917
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+ok 53 - 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+  ---
+  duration_ms: 1.363709
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+ok 54 - 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+  ---
+  duration_ms: 0.331125
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-004 known empty window is not data incomplete
+ok 55 - 指标-METRIC-004 known empty window is not data incomplete
+  ---
+  duration_ms: 0.1665
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+ok 56 - 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+  ---
+  duration_ms: 0.666042
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+ok 57 - 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+  ---
+  duration_ms: 1.078416
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001/002 country is optional, explicit wrong region rejects
+ok 58 - 地区-REGION-001/002 country is optional, explicit wrong region rejects
+  ---
+  duration_ms: 0.601416
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-001 separate input directions use OR, phrases keep theme plus format
+ok 59 - 内容-CONTENT-001 separate input directions use OR, phrases keep theme plus format
+  ---
+  duration_ms: 0.79125
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+ok 60 - 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+  ---
+  duration_ms: 1.197542
+  type: 'test'
+  ...
+# Subtest: 邮箱-EMAIL-001 empty or complete no-email search signatures skip profile; visible truncation still verifies
+ok 61 - 邮箱-EMAIL-001 empty or complete no-email search signatures skip profile; visible truncation still verifies
+  ---
+  duration_ms: 1.134917
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+ok 62 - 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+  ---
+  duration_ms: 0.136709
+  type: 'test'
+  ...
+# Subtest: 回放-REPLAY-001 old five-person captures independently reproduce sample means
+ok 63 - 回放-REPLAY-001 old five-person captures independently reproduce sample means
+  ---
+  duration_ms: 11.023625
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 actual legacy caller never retries document429 plus API403
+ok 64 - 访问-ACCESS-003 actual legacy caller never retries document429 plus API403
+  ---
+  duration_ms: 18.747542
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 actual legacy caller keeps partial body failures incomplete
+ok 65 - 完成-DONE-003 actual legacy caller keeps partial body failures incomplete
+  ---
+  duration_ms: 8.858875
+  type: 'test'
+  ...
+# Subtest: 来源-SOURCE-001 actual legacy caller ignores mismatched query responses
+ok 66 - 来源-SOURCE-001 actual legacy caller ignores mismatched query responses
+  ---
+  duration_ms: 8.318625
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-002 the keyword cap stops before searching the next keyword
+ok 67 - 停止-LIMIT-002 the keyword cap stops before searching the next keyword
+  ---
+  duration_ms: 38.950458
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-003 target stops within a keyword after saving the qualifying author
+ok 68 - 停止-LIMIT-003 target stops within a keyword after saving the qualifying author
+  ---
+  duration_ms: 27.726375
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-002/004 saved completed keywords consume the cap and export retry does not search again
+ok 69 - 停止-LIMIT-002/004 saved completed keywords consume the cap and export retry does not search again
+  ---
+  duration_ms: 38.000666
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-003/004 target limit and unfinished candidates survive export and finish failures
+ok 70 - 停止-LIMIT-003/004 target limit and unfinished candidates survive export and finish failures
+  ---
+  duration_ms: 34.144792
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-003 repeated authors do not consume the unique creator target twice
+ok 71 - 停止-LIMIT-003 repeated authors do not consume the unique creator target twice
+  ---
+  duration_ms: 37.16825
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-002 imported completed keywords consume the cap before any browser action
+ok 72 - 停止-LIMIT-002 imported completed keywords consume the cap before any browser action
+  ---
+  duration_ms: 6.463667
+  type: 'test'
+  ...
+# Subtest: 停止-LIMIT-003 suspected counts toward target while rejected authors do not
+ok 73 - 停止-LIMIT-003 suspected counts toward target while rejected authors do not
+  ---
+  duration_ms: 18.29425
+  type: 'test'
+  ...
+# Subtest: 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+ok 74 - 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+  ---
+  duration_ms: 20.255375
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-001 empty valid search exports an empty list
+ok 75 - 完成-DONE-001 empty valid search exports an empty list
+  ---
+  duration_ms: 12.416
+  type: 'test'
+  ...
+# Subtest: 邮箱-EMAIL-002 empty search signature rejection is persisted without opening a profile
+ok 76 - 邮箱-EMAIL-002 empty search signature rejection is persisted without opening a profile
+  ---
+  duration_ms: 17.631959
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-002 unknown completion pauses without switching words
+ok 77 - 完成-DONE-002 unknown completion pauses without switching words
+  ---
+  duration_ms: 9.55275
+  type: 'test'
+  ...
+# Subtest: 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+ok 78 - 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+  ---
+  duration_ms: 8.113667
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+ok 79 - 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+  ---
+  duration_ms: 29.897083
+  type: 'test'
+  ...
+# Subtest: 导出-EXPORT-002 export failure resumes export only and finishes after verification
+ok 80 - 导出-EXPORT-002 export failure resumes export only and finishes after verification
+  ---
+  duration_ms: 21.050292
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 active writer and changed resume config are rejected
+ok 81 - 落盘-STORE-001 active writer and changed resume config are rejected
+  ---
+  duration_ms: 20.473125
+  type: 'test'
+  ...
+# Subtest: 依赖-DEP-001 whole offline flow works with global fetch forbidden
+ok 82 - 依赖-DEP-001 whole offline flow works with global fetch forbidden
+  ---
+  duration_ms: 18.282208
+  type: 'test'
+  ...
+# Subtest: 顺序-SEQ-001/002 two search pages finish before profiles and all extra authors export
+ok 83 - 顺序-SEQ-001/002 two search pages finish before profiles and all extra authors export
+  ---
+  duration_ms: 18.351542
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 final author record survives crash before results and keyword pointer
+ok 84 - 落盘-STORE-001 final author record survives crash before results and keyword pointer
+  ---
+  duration_ms: 23.859958
+  type: 'test'
+  ...
+# Subtest: 去重-DEDUP-001 stable author rename reuses prior facts and retains both keywords
+ok 85 - 去重-DEDUP-001 stable author rename reuses prior facts and retains both keywords
+  ---
+  duration_ms: 32.860417
+  type: 'test'
+  ...
+# Subtest: 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+ok 86 - 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+  ---
+  duration_ms: 15.439375
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+ok 87 - 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+  ---
+  duration_ms: 1.586125
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 successful partial search bodies persist without finishing the word
+ok 88 - 完成-DONE-003 successful partial search bodies persist without finishing the word
+  ---
+  duration_ms: 4.013084
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+ok 89 - 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+  ---
+  duration_ms: 14.096584
+  type: 'test'
+  ...
+# Subtest: 导出-EXPORT-002 browser finish failure resumes finalization without exporting again
+ok 90 - 导出-EXPORT-002 browser finish failure resumes finalization without exporting again
+  ---
+  duration_ms: 16.050458
+  type: 'test'
+  ...
+1..90
+# tests 90
+# suites 0
+# pass 90
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1498.368625

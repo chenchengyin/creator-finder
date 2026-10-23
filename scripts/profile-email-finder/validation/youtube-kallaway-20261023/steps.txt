@@ -1,0 +1,46 @@
+Kallaway / YouTube 邮箱实测与更新状态
+日期：2026-10-23（北京时间）
+
+已完成的实测
+频道：Kallaway / @kallawaymarketing
+网址：https://www.youtube.com/@kallawaymarketing
+邮箱：kallaway@wavylabs.co
+实际原生链接：mailto:kallaway@wavylabs.co
+确认时间：2026-10-23T10:33:36.903+08:00
+来源：YouTube频道About原生邮箱行 #email，profile_contact_email。
+接入层来源：profile_contact；matches=true；confirmed_public。
+完整采集器completed，处理1页，待处理0，页面无issues。
+
+当前新增逻辑的集成状态
+指定对话：《研究 YouTube 邮箱获取流程》
+ID：01a163ea-9352-7d82-a398-d9a17c788eb0
+已核对对话读取接口和本地对应会话记录。当前最新可读业务消息仍是2026-10-23 00:08:58关于“预计整轮30–60秒”的旧记录。
+未发现用户所说的新逻辑，已询问新增内容或文件位置。因此本次真实验收使用当前已集成版本，尚未声称“新增逻辑已同步”。本轮没有为此修改生产采集代码。
+
+本次实际操作步骤
+1. 创建独立浏览器空间90，使用p1。没有进入原任务空间19、INS实测空间60、原流程空间62或已结束的choruslove空间88。
+2. 10:33:04.013 导航到 https://www.youtube.com/@kallawaymarketing，等待频道头部加载并核对地址。
+3. 10:33:12.071 点击简介旁“更多”。模块将按钮滚动到可点击位置，等待两个动画帧，再检查落点后点击，打开About。
+4. 10:33:20.137 点击“查看电子邮件地址”，等待原生验证iframe实际就绪；10:33:20.536记录verification_ready。
+5. 10:33:28.334 点击普通可见reCAPTCHA勾选框一次。此次没有图片挑战，也没有用户手动勾选步骤。
+6. 10:33:29.857 确认aria-checked=true，记录verified。
+7. 保留现有共享操作间隔，10:33:36.404 点击原生“提交”一次。提交前再次检查已验证状态与按钮落点。
+8. 10:33:36.903 读取原生邮箱行，看到mailto:kallaway@wavylabs.co。共用解析器提取并保存原始文本、来源URL、路径、时间和位置，标记profile_contact_email。
+9. 邮箱接入层返回acceptedEmails及sourceType=profile_contact。当前主页stopReason=profile_contact_email_found，结束该主页挂链挖掘；没有转去官网寻找替代邮箱。
+10. 保存完整结果、阶段断点和页面快照。10:33:37.042 正常结束空间90。获取成功后未重复刷新或验证。
+
+耗时
+浏览器完整单轮：33.184秒，从创建空间开始，包含打开网页、更多、查看邮箱、iframe加载、一次勾选、一次提交和结果保存。
+收到本次请求至首次显示邮箱：185.059秒（约3分5秒），包含来源对话核对和准备；不把它称作33秒。
+现有共享动作间隔约8秒，这轮耗时主要包含该等待。
+
+验证
+本次重新运行项目脚本全量：466 tests / 466 pass / 0 fail。
+命令：node --test /Users/vb/Projects/creator-finder_preview/scripts/**/*.test.mjs
+真实目标频道原生流程也已通过。这验证当前版本，不代表未取得的新逻辑已验收。
+
+保存位置
+项目：/Users/vb/Projects/creator-finder_preview
+运行断点：runs/2026-10-23-youtube-kallawaymarketing
+验证记录：scripts/profile-email-finder/validation/youtube-kallaway-20261023
+同目录交付：Kallaway-YouTube邮箱实测证据.json

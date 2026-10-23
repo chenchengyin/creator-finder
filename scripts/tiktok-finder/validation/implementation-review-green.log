@@ -1,0 +1,547 @@
+TAP version 13
+# Subtest: a transient 403 waits eleven seconds and retries the identical URL once
+ok 1 - a transient 403 waits eleven seconds and retries the identical URL once
+  ---
+  duration_ms: 3.370917
+  type: 'test'
+  ...
+# Subtest: two 403s exhaust the retry and never navigate a third time
+ok 2 - two 403s exhaust the retry and never navigate a third time
+  ---
+  duration_ms: 0.251292
+  type: 'test'
+  ...
+# Subtest: 401, 429 and a captcha do not enter the 403 retry path
+ok 3 - 401, 429 and a captcha do not enter the 403 retry path
+  ---
+  duration_ms: 0.196042
+  type: 'test'
+  ...
+# Subtest: control loss during the retry propagates without inspecting or taking over the page
+ok 4 - control loss during the retry propagates without inspecting or taking over the page
+  ---
+  duration_ms: 0.489833
+  type: 'test'
+  ...
+# Subtest: a failed navigation is inspected, allowing an observed 403 to receive its single retry
+ok 5 - a failed navigation is inspected, allowing an observed 403 to receive its single retry
+  ---
+  duration_ms: 0.191375
+  type: 'test'
+  ...
+# Subtest: a previously recorded 403 consumes the original attempt and permits only one delayed navigation
+ok 6 - a previously recorded 403 consumes the original attempt and permits only one delayed navigation
+  ---
+  duration_ms: 0.079166
+  type: 'test'
+  ...
+# Subtest: attempt callbacks preserve both failure and recovery evidence
+ok 7 - attempt callbacks preserve both failure and recovery evidence
+  ---
+  duration_ms: 0.147083
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 document 429 wins over API403
+ok 8 - 访问-ACCESS-003 document 429 wins over API403
+  ---
+  duration_ms: 14.182292
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 document 401 wins over API403
+ok 9 - 访问-ACCESS-003 document 401 wins over API403
+  ---
+  duration_ms: 9.694542
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 partial bodies cannot mark search exhausted
+ok 10 - 完成-DONE-003 partial bodies cannot mark search exhausted
+  ---
+  duration_ms: 6.746417
+  type: 'test'
+  ...
+# Subtest: 来源-SOURCE-001 old keyword response cannot finish the current word
+ok 11 - 来源-SOURCE-001 old keyword response cannot finish the current word
+  ---
+  duration_ms: 11.977208
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+ok 12 - 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+  ---
+  duration_ms: 14.637583
+  type: 'test'
+  ...
+# Subtest: 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+ok 13 - 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+  ---
+  duration_ms: 10.628083
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-004 profile 403 budget survives restarting the browser adapter
+ok 14 - 访问-ACCESS-004 profile 403 budget survives restarting the browser adapter
+  ---
+  duration_ms: 10.635833
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 real adapter reads profile and post fields; optional email is honored
+ok 15 - 身份-ID-001 real adapter reads profile and post fields; optional email is honored
+  ---
+  duration_ms: 7.153
+  type: 'test'
+  ...
+# Subtest: 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+ok 16 - 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+  ---
+  duration_ms: 2.827166
+  type: 'test'
+  ...
+# Subtest: 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+ok 17 - 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+  ---
+  duration_ms: 18.494125
+  type: 'test'
+  ...
+# Subtest: 输入-IN-002 invalid inputs are rejected before running
+ok 18 - 输入-IN-002 invalid inputs are rejected before running
+  ---
+  duration_ms: 1.391042
+  type: 'test'
+  ...
+# Subtest: 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+ok 19 - 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+  ---
+  duration_ms: 2.512916
+  type: 'test'
+  ...
+# Subtest: CLI dry-run does not touch browser or create a run directory
+ok 20 - CLI dry-run does not touch browser or create a run directory
+  ---
+  duration_ms: 80.266458
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-gjYRmN/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+ok 21 - 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+  ---
+  duration_ms: 2059.246792
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-BWWq3v/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-002 zero results still produce headers and target shortfall
+ok 22 - 导出-EXPORT-002 zero results still produce headers and target shortfall
+  ---
+  duration_ms: 215.335167
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 wrong author and unready data never count as no email
+ok 23 - 身份-ID-001 wrong author and unready data never count as no email
+  ---
+  duration_ms: 2.178916
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+ok 24 - 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+  ---
+  duration_ms: 0.359334
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+ok 25 - 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+  ---
+  duration_ms: 0.620833
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+ok 26 - 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+  ---
+  duration_ms: 0.16525
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-004 known empty window is not data incomplete
+ok 27 - 指标-METRIC-004 known empty window is not data incomplete
+  ---
+  duration_ms: 0.9485
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+ok 28 - 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+  ---
+  duration_ms: 0.415541
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+ok 29 - 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+  ---
+  duration_ms: 0.341125
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001/002 country is optional, explicit wrong region rejects
+ok 30 - 地区-REGION-001/002 country is optional, explicit wrong region rejects
+  ---
+  duration_ms: 0.140208
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-001 separate input directions use OR, phrases keep theme plus format
+ok 31 - 内容-CONTENT-001 separate input directions use OR, phrases keep theme plus format
+  ---
+  duration_ms: 0.440417
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+ok 32 - 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+  ---
+  duration_ms: 1.709291
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+ok 33 - 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+  ---
+  duration_ms: 0.483375
+  type: 'test'
+  ...
+# Subtest: 回放-REPLAY-001 old five-person captures independently reproduce sample means
+ok 34 - 回放-REPLAY-001 old five-person captures independently reproduce sample means
+  ---
+  duration_ms: 17.313583
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 actual legacy caller never retries document429 plus API403
+ok 35 - 访问-ACCESS-003 actual legacy caller never retries document429 plus API403
+  ---
+  duration_ms: 19.621375
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 actual legacy caller keeps partial body failures incomplete
+ok 36 - 完成-DONE-003 actual legacy caller keeps partial body failures incomplete
+  ---
+  duration_ms: 11.6295
+  type: 'test'
+  ...
+# Subtest: 来源-SOURCE-001 actual legacy caller ignores mismatched query responses
+ok 37 - 来源-SOURCE-001 actual legacy caller ignores mismatched query responses
+  ---
+  duration_ms: 20.68925
+  type: 'test'
+  ...
+# Subtest: 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+ok 38 - 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+  ---
+  duration_ms: 99.348417
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-001 empty valid search exports an empty list
+ok 39 - 完成-DONE-001 empty valid search exports an empty list
+  ---
+  duration_ms: 40.493708
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-002 unknown completion pauses without switching words
+ok 40 - 完成-DONE-002 unknown completion pauses without switching words
+  ---
+  duration_ms: 14.244875
+  type: 'test'
+  ...
+# Subtest: 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+ok 41 - 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+  ---
+  duration_ms: 16.530666
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+ok 42 - 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+  ---
+  duration_ms: 61.69675
+  type: 'test'
+  ...
+# Subtest: 导出-EXPORT-002 export failure resumes export only and finishes after verification
+ok 43 - 导出-EXPORT-002 export failure resumes export only and finishes after verification
+  ---
+  duration_ms: 47.409167
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 active writer and changed resume config are rejected
+ok 44 - 落盘-STORE-001 active writer and changed resume config are rejected
+  ---
+  duration_ms: 37.157833
+  type: 'test'
+  ...
+# Subtest: 依赖-DEP-001 whole offline flow works with global fetch forbidden
+ok 45 - 依赖-DEP-001 whole offline flow works with global fetch forbidden
+  ---
+  duration_ms: 32.013708
+  type: 'test'
+  ...
+# Subtest: 顺序-SEQ-001/002 two search pages finish before profiles and all extra authors export
+ok 46 - 顺序-SEQ-001/002 two search pages finish before profiles and all extra authors export
+  ---
+  duration_ms: 111.654625
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 final author record survives crash before results and keyword pointer
+ok 47 - 落盘-STORE-001 final author record survives crash before results and keyword pointer
+  ---
+  duration_ms: 45.780208
+  type: 'test'
+  ...
+# Subtest: 去重-DEDUP-001 stable author rename reuses prior facts and retains both keywords
+ok 48 - 去重-DEDUP-001 stable author rename reuses prior facts and retains both keywords
+  ---
+  duration_ms: 44.443375
+  type: 'test'
+  ...
+# Subtest: 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+ok 49 - 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+  ---
+  duration_ms: 58.218125
+  type: 'test'
+  ...
+# Subtest: 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+ok 50 - 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+  ---
+  duration_ms: 4.09375
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 successful partial search bodies persist without finishing the word
+ok 51 - 完成-DONE-003 successful partial search bodies persist without finishing the word
+  ---
+  duration_ms: 12.386708
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+ok 52 - 身份-ID-001 unverified wrong profile cannot overwrite the candidate stable identity
+  ---
+  duration_ms: 56.311709
+  type: 'test'
+  ...
+# Subtest: search response parser extracts only public fields and preserves string IDs
+ok 53 - search response parser extracts only public fields and preserves string IDs
+  ---
+  duration_ms: 0.818166
+  type: 'test'
+  ...
+# Subtest: a missing has-more flag is unknown rather than proof of search exhaustion
+ok 54 - a missing has-more flag is unknown rather than proof of search exhaustion
+  ---
+  duration_ms: 0.109042
+  type: 'test'
+  ...
+# Subtest: repeated videos from one author produce one candidate and retain both evidence links
+ok 55 - repeated videos from one author produce one candidate and retain both evidence links
+  ---
+  duration_ms: 0.455833
+  type: 'test'
+  ...
+# Subtest: repeated search batches preserve checked status and do not duplicate evidence
+ok 56 - repeated search batches preserve checked status and do not duplicate evidence
+  ---
+  duration_ms: 0.160708
+  type: 'test'
+  ...
+# Subtest: stable author ID merges a renamed handle while different known authors are kept separate
+ok 57 - stable author ID merges a renamed handle while different known authors are kept separate
+  ---
+  duration_ms: 0.74475
+  type: 'test'
+  ...
+# Subtest: legacy candidates can acquire author IDs without losing their status
+ok 58 - legacy candidates can acquire author IDs without losing their status
+  ---
+  duration_ms: 0.10225
+  type: 'test'
+  ...
+# Subtest: CLI validates keyword, existing space ID and bounded batch count
+ok 59 - CLI validates keyword, existing space ID and bounded batch count
+  ---
+  duration_ms: 0.512667
+  type: 'test'
+  ...
+# Subtest: dry-run emits the encoded TikTok URL and does not create state or call Ego
+ok 60 - dry-run emits the encoded TikTok URL and does not create state or call Ego
+  ---
+  duration_ms: 63.788166
+  type: 'test'
+  ...
+# Subtest: real search orchestration persists candidates, evidence and the last observed cursor
+ok 61 - real search orchestration persists candidates, evidence and the last observed cursor
+  ---
+  duration_ms: 14.601541
+  type: 'test'
+  ...
+# Subtest: HTML and API 403 share one retry budget within a search batch
+ok 62 - HTML and API 403 share one retry budget within a search batch
+  ---
+  duration_ms: 5.614458
+  type: 'test'
+  ...
+# Subtest: latest selection uses publish time rather than pinned position and keeps a genuinely newest pinned post
+ok 63 - latest selection uses publish time rather than pinned position and keeps a genuinely newest pinned post
+  ---
+  duration_ms: 0.978583
+  type: 'test'
+  ...
+# Subtest: private posts and photo routes are excluded, duplicate video IDs count once
+ok 64 - private posts and photo routes are excluded, duplicate video IDs count once
+  ---
+  duration_ms: 0.122375
+  type: 'test'
+  ...
+# Subtest: photo media is excluded even when the profile collector supplied a video-shaped URL
+ok 65 - photo media is excluded even when the profile collector supplied a video-shaped URL
+  ---
+  duration_ms: 1.066042
+  type: 'test'
+  ...
+# Subtest: unknown latest order, wrong authors, unsafe numeric IDs and conflicting duplicates fail before navigation
+ok 66 - unknown latest order, wrong authors, unsafe numeric IDs and conflicting duplicates fail before navigation
+  ---
+  duration_ms: 2.577959
+  type: 'test'
+  ...
+# Subtest: future/invalid dates and an invalid limit fail selection
+ok 67 - future/invalid dates and an invalid limit fail selection
+  ---
+  duration_ms: 0.415125
+  type: 'test'
+  ...
+# Subtest: browser extraction reads only the video object, never app-context region or unrelated private data
+ok 68 - browser extraction reads only the video object, never app-context region or unrelated private data
+  ---
+  duration_ms: 3.7485
+  type: 'test'
+  ...
+# Subtest: ordinary video caption mentioning HTTP ERROR 403 does not override a successful navigation
+ok 69 - ordinary video caption mentioning HTTP ERROR 403 does not override a successful navigation
+  ---
+  duration_ms: 0.749584
+  type: 'test'
+  ...
+# Subtest: US is saved with exact source, video identity and time, without asserting residence
+ok 70 - US is saved with exact source, video identity and time, without asserting residence
+  ---
+  duration_ms: 0.377958
+  type: 'test'
+  ...
+# Subtest: absent, blank or non-string fields remain pending and never fall back to browser region
+ok 71 - absent, blank or non-string fields remain pending and never fall back to browser region
+  ---
+  duration_ms: 0.379583
+  type: 'test'
+  ...
+# Subtest: mismatched video, author, page route and publish time are rejected
+ok 72 - mismatched video, author, page route and publish time are rejected
+  ---
+  duration_ms: 0.905416
+  type: 'test'
+  ...
+# Subtest: HTTP protection and captcha stop collection even if stale hydration exists
+ok 73 - HTTP protection and captcha stop collection even if stale hydration exists
+  ---
+  duration_ms: 0.281042
+  type: 'test'
+  ...
+# Subtest: server failures cannot turn stale hydration into usable region evidence
+ok 74 - server failures cannot turn stale hydration into usable region evidence
+  ---
+  duration_ms: 0.097375
+  type: 'test'
+  ...
+# Subtest: an optional login prompt and missing hydration pause for inspection instead of asserting a forced login wall
+ok 75 - an optional login prompt and missing hydration pause for inspection instead of asserting a forced login wall
+  ---
+  duration_ms: 0.18775
+  type: 'test'
+  ...
+# Subtest: single-video, three-video, conflicting and incomplete evidence receive distinct summaries
+ok 76 - single-video, three-video, conflicting and incomplete evidence receive distinct summaries
+  ---
+  duration_ms: 0.435834
+  type: 'test'
+  ...
+# Subtest: collection stops after one delayed 403 retry without navigating the next video
+ok 77 - collection stops after one delayed 403 retry without navigating the next video
+  ---
+  duration_ms: 0.771917
+  type: 'test'
+  ...
+# Subtest: goto failure with confirmed 403 gets a single retry and preserves both denial attempts
+ok 78 - goto failure with confirmed 403 gets a single retry and preserves both denial attempts
+  ---
+  duration_ms: 0.379084
+  type: 'test'
+  ...
+# Subtest: region extraction recovers after one 403 without losing the successful US evidence
+ok 79 - region extraction recovers after one 403 without losing the successful US evidence
+  ---
+  duration_ms: 0.133875
+  type: 'test'
+  ...
+# Subtest: a matching already-loaded video is read without a redundant navigation
+ok 80 - a matching already-loaded video is read without a redundant navigation
+  ---
+  duration_ms: 0.477791
+  type: 'test'
+  ...
+# Subtest: an already-loaded 403 with a captcha or login prompt never starts the delayed retry
+ok 81 - an already-loaded 403 with a captcha or login prompt never starts the delayed retry
+  ---
+  duration_ms: 0.307417
+  type: 'test'
+  ...
+# Subtest: a successful page waits for the video object before classifying missing data
+ok 82 - a successful page waits for the video object before classifying missing data
+  ---
+  duration_ms: 0.512833
+  type: 'test'
+  ...
+# Subtest: a failed navigation cannot reuse previously loaded matching hydration as a successful observation
+ok 83 - a failed navigation cannot reuse previously loaded matching hydration as a successful observation
+  ---
+  duration_ms: 0.341375
+  type: 'test'
+  ...
+# Subtest: control loss propagates without trying another page or inspection
+ok 84 - control loss propagates without trying another page or inspection
+  ---
+  duration_ms: 0.299834
+  type: 'test'
+  ...
+# Subtest: a normal profile-list field avoids an extra detail navigation
+ok 85 - a normal profile-list field avoids an extra detail navigation
+  ---
+  duration_ms: 0.104667
+  type: 'test'
+  ...
+# Subtest: CLI rejects malformed options and cannot overwrite the input capture
+ok 86 - CLI rejects malformed options and cannot overwrite the input capture
+  ---
+  duration_ms: 0.368542
+  type: 'test'
+  ...
+# Subtest: dry-run selects targets without touching Ego and the runner refuses a space delegated to the user
+ok 87 - dry-run selects targets without touching Ego and the runner refuses a space delegated to the user
+  ---
+  duration_ms: 76.36975
+  type: 'test'
+  ...
+# {"output":"/var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/tiktok-region-runner-aUsaxf/region.json","summary":{"status":"single_video","regionCode":"US","requestedCount":1,"inspectedCount":1,"usableCount":1,"creatorResidenceVerified":false,"meaning":"Observed video region field; not verified creator residence or nationality."},"stopped":false,"stopReason":null}
+# Subtest: runner in an Agent-owned space writes a complete reusable JSON report from a normal captured list field
+ok 88 - runner in an Agent-owned space writes a complete reusable JSON report from a normal captured list field
+  ---
+  duration_ms: 5.521084
+  type: 'test'
+  ...
+# Subtest: CLI entrypoint remains usable through the compatibility directory symlink
+ok 89 - CLI entrypoint remains usable through the compatibility directory symlink
+  ---
+  duration_ms: 54.314583
+  type: 'test'
+  ...
+1..89
+# tests 89
+# suites 0
+# pass 89
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2346.276708

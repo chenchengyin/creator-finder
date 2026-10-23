@@ -1,0 +1,1232 @@
+[p1 "YouTube - YouTube" | space "主页邮箱脚本验收-20261022"(51): 1 managed, 0 untracked — p1* "YouTube - YouTube"]
+root
+  container
+    container
+      banner
+        container
+          container
+            button "导视" [ref=11, loc=css:button[aria-label="导视"]]
+              svg_root
+            container
+              anchor [ref=12, url=https://www.youtube.com/]
+                svg_root
+              text "SG"
+            button "跳过导航" [ref=23, loc=css:button[aria-label="跳过导航"]]
+              text "跳过导航"
+          container
+            button [ref=13]
+              svg_root
+              text "Filters"
+            search
+              form
+                comboboxgrouping [ref=14, loc=css:input[name="search_query"]]
+                  text "搜索"
+              button "Search" [ref=15, loc=css:button[aria-label="Search"]]
+                svg_root
+            container
+              button "通过语音搜索内容" [ref=24, loc=css:button[aria-label="通过语音搜索内容"]]
+                svg_root
+              tooltip "tooltip" [ref=25]
+          container
+            container
+              button [ref=16]
+                svg_root
+                svg_root
+              button [ref=17]
+                svg_root
+              button "Your feed" [ref=18, loc=css:button[aria-label="Your feed"]]
+                svg_root
+            container
+              anchor [ref=26]
+                button "设置" [ref=27]
+                  svg_root
+              anchor "登录" [ref=28, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%2540YouTube&hl=zh-CN&ec=65620]
+                svg_root
+                text "登录"
+      navigation
+        container [ref=29]
+          container
+            container
+              link [ref=30, url=https://www.youtube.com/]
+                link [ref=31]
+                  svg_root
+                  text "首页"
+              link [ref=32]
+                link [ref=33]
+                  svg_root
+                  text "Shorts"
+              link [ref=34, loc=href:/feed/subscriptions, url=https://www.youtube.com/feed/subscriptions]
+                link [ref=35]
+                  svg_root
+                  text "订阅"
+              link [ref=36, loc=href:/feed/you, url=https://www.youtube.com/feed/you]
+                link [ref=37]
+                  svg_root
+                  text "我"
+              link [ref=38, loc=href:/feed/history, url=https://www.youtube.com/feed/history]
+                link [ref=39]
+                  svg_root
+                  text "历史记录"
+            container
+              text "登录即可给视频点赞、发表评论并订阅内容。"
+              anchor "登录" [ref=40, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%2540YouTube&hl=zh-CN]
+                svg_root
+                text "登录"
+            container
+              heading
+                text "探索"
+              container
+                link [ref=41, loc=href:/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ, url=https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ]
+                  link [ref=42]
+                    svg_root
+                    text "音乐"
+                link [ref=43, loc=href:/feed/storefront?bp=ogUCKAU%3D, url=https://www.youtube.com/feed/storefront?bp=ogUCKAU%3D]
+                  link [ref=44]
+                    svg_root
+                    text "电影"
+                link [ref=45, loc=href:/gaming, url=https://www.youtube.com/gaming]
+                  link [ref=46]
+                    svg_root
+                    text "游戏"
+                button
+                  link [ref=47]
+                    link [ref=48]
+                      svg_root
+                      text "展开"
+            container
+              heading
+                text "更多 YouTube 产品与功能"
+              container
+                link [ref=49, loc=href:/premium, url=https://www.youtube.com/premium]
+                  link [ref=50]
+                    svg_root
+                    text "YouTube Premium"
+                link [ref=51, loc=href:https://music.youtube.com/, url=https://music.youtube.com/]
+                  link [ref=52]
+                    svg_root
+                    text "YouTube Music"
+                link [ref=53, loc=href:https://www.youtubekids.com/?source=youtube_web, url=https://www.youtubekids.com/?source=youtube_web]
+                  link [ref=54]
+                    svg_root
+                    text "YouTube Kids"
+            link [ref=55, loc=href:/reporthistory, url=https://www.youtube.com/reporthistory]
+              link [ref=56]
+                svg_root
+                text "举报记录"
+          container
+            container
+              anchor [ref=57, loc=href:/about/, url=https://www.youtube.com/about/]
+                text "关于"
+              anchor [ref=58, loc=href:/about/press/, url=https://www.youtube.com/about/press/]
+                text "新闻"
+              anchor [ref=59, loc=href:/about/copyright/, url=https://www.youtube.com/about/copyright/]
+                text "版权"
+              anchor [ref=60, loc=href:/t/contact_us/, url=https://www.youtube.com/t/contact_us/]
+                text "联系我们"
+              anchor [ref=61, loc=href:/creators/, url=https://www.youtube.com/creators/]
+                text "创作者"
+              anchor [ref=62, loc=href:/ads/, url=https://www.youtube.com/ads/]
+                text "广告"
+              anchor [ref=63, loc=href:https://developers.google.com/youtube, url=https://developers.google.com/youtube]
+                text "开发者"
+            container
+              anchor [ref=64, loc=href:/t/terms, url=https://www.youtube.com/t/terms]
+                text "条款"
+              anchor [ref=65, loc=href:/t/privacy, url=https://www.youtube.com/t/privacy]
+                text "隐私权"
+              anchor [ref=66, loc=href:/about/policies/, url=https://www.youtube.com/about/policies/]
+                text "政策与安全"
+              anchor [ref=67, url=https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen]
+                text "YouTube 的运作方式"
+              anchor [ref=68, loc=href:/new, url=https://www.youtube.com/new]
+                text "测试新功能"
+            text "© 2026 Google LLC"
+      main
+        container
+          container
+            image
+            container
+              container
+                container
+                  image
+                  container
+                    container
+                      button [ref=69]
+                        svg_root
+                        text "blog.youtube/creator-and-artist-stories"
+                        svg_root
+                      button [ref=70]
+                        image
+                        text "youtube.com/user/youtube?sub_confirmation=1"
+                        svg_root
+                    button [ref=71]
+                      text "查看另外 2 条"
+                      svg_root
+                container
+                  heading "YouTube，已验证"
+                    text "YouTube"
+                    image
+                      svg_root
+                  container
+                    group
+                      text "@YouTube"
+                    text "•"
+                    group
+                      container "4650万位订阅者"
+                        text "4650万位订阅者"
+                      text "•"
+                      text "1660 个视频"
+                  container
+                    text "YouTube's official YouTube channel"
+                    button "说明。YouTube's official YouTube channel…点按即可了解详情。" [ref=72, loc=css:button[aria-label="说明。YouTube's official YouTube channel…点按即可了解详情。"]]
+                      text "…更多"
+                  container
+                    anchor [ref=73, url=https://youtube.com/user/youtube?sub_confirmation=1]
+                      image
+                        svg_root
+                      text "YouTube"
+                    button [ref=74]
+                      text "和另外 3 个链接"
+                  container
+                    button "订阅" [ref=75, loc=css:button[aria-label="订阅"]]
+                      text "订阅"
+                    button [ref=76]
+                      text "View channel stats"
+              container
+                container
+                  image
+                  image
+                  text "美国"
+                button "Expand info card" [ref=77, loc=css:button[aria-label="Expand info card"]]
+                  svg_root
+              button "Collapse" [ref=78, loc=role:button[name="Collapse"]]
+                container
+                  svg_root
+                  paragraph
+                    text "Quick channel stats"
+                container
+                  container
+                    button [ref=79]
+                      text "View all"
+                    button "Quick channel stats settings" [ref=80, loc=css:button[aria-label="Quick channel stats settings"]]
+                      svg_root
+                  svg_root
+          tablist [ref=81]
+            tablist
+              tab [ref=82]
+                text "首页"
+              tab [ref=83]
+                text "视频"
+              tab [ref=84]
+                text "Shorts"
+              tab [ref=85]
+                text "直播"
+              tab [ref=86]
+                text "播客"
+              tab [ref=87]
+                text "播放列表"
+              tab [ref=88]
+                text "帖子"
+              container
+                button "搜索" [ref=89]
+                  svg_root
+                form
+        container
+          container
+            container "YouTube 视频播放器" [ref=90]
+              video [ref=91]
+              container [ref=92]
+                text "and the "10 Lives of LDShadowLady, Afterlife the Movie"."
+              container
+                slider "播放滑块" [ref=93, loc=role:slider[name="播放滑块"]]
+                slider "点击或滚动面板可进行精确跳转。" [ref=94, loc=role:slider[name="点击或滚动面板可进行精确跳转。"]]
+              container
+                button "暂停 (k)" [ref=95, loc=css:button[aria-label="暂停 (k)"]]
+                  svg_root
+                container
+                  button "取消静音 (m)" [ref=96, loc=css:button[aria-label="取消静音 (m)"]]
+                    svg_root
+                  slider "音量" [ref=97, loc=role:slider[name="音量"]]
+                button "0 分钟 2 秒/8 分钟 19 秒" [ref=98, loc=role:button[name="0 分钟 2 秒/8 分钟 19 秒"]]
+                  text "0:02"
+                  text "/"
+                  text "8:19"
+              button "展开" [ref=99]
+                svg_root
+              button "设置" [ref=100]
+                svg_root
+            container
+              container
+                heading "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend. 8分钟20秒钟"
+                  anchor [ref=101, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                    text "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+                container
+                  text "1,380,580次观看"
+                  container
+                    text "•"
+                    text "2天前"
+              container
+                container
+                  text "A Minecraft legend built block by block 🟪 Over 15 years ago, @ldshadowlady uploaded her first Call of Duty video from her bedroom. Today, she’s YouTube royalty, holding the crown as one of the mo..."
+                  anchor [ref=102, loc=href:/@ldshadowlady, url=https://www.youtube.com/@ldshadowlady]
+                    text "https://www.youtube.com/@ldshadowlady"
+                  text "Featuring Lauren:"
+                  anchor [ref=103, loc=href:/@LaurenZside, url=https://www.youtube.com/@LaurenZside]
+                    text "https://www.youtube.com/@LaurenZside"
+                  text "Created & Produced by Star Quality Creative Director: Hunter Ellenbarger Art Director & Creative Producer: Katie Binfield Associate Producer: Logan Wenzel Photographer: Liam Warwick Videographer: Geor..."
+                button [ref=104]
+                  anchor [ref=105, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                    text "了解详情"
+          heading
+            anchor [ref=106, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH4tNID8Jkz0opMGjeMKob7D]
+            anchor [ref=107, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH4tNID8Jkz0opMGjeMKob7D]
+              text "What’s New from @YouTube"
+            anchor "全部播放" [ref=108, loc=href:/watch?v=yjHvkMeVzK0&list=PLbpi6ZahtOH4tNID8Jkz0opMGjeMKob7D, url=https://www.youtube.com/watch?v=yjHvkMeVzK0&list=PLbpi6ZahtOH4tNID8Jkz0opMGjeMKob7D]
+              svg_root
+              text "全部播放"
+          container
+            container
+              anchor [ref=109, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                image "8分钟20秒钟"
+                  text "8:20"
+              container
+                heading "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+                  anchor "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend. 8分钟20秒钟" [ref=110, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                    text "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和LDShadowLady"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "138万"
+                  text "2天前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=111]
+                svg_root
+            container
+              anchor [ref=112, url=https://www.youtube.com/watch?v=71ya_JC_IbM]
+                image "14分钟52秒钟"
+                  text "14:52"
+              container
+                heading "20 years of esports history explained"
+                  anchor "20 years of esports history explained 14分钟52秒钟" [ref=113, url=https://www.youtube.com/watch?v=71ya_JC_IbM]
+                    text "20 years of esports history explained"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 3 位联合创作者"
+                group
+                  svg_root
+                  text "191万"
+                  text "13天前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=114]
+                svg_root
+            container
+              anchor [ref=115, url=https://www.youtube.com/watch?v=pRrmQUm6Zvg]
+                image "10分钟6秒钟"
+                  text "10:06"
+              container
+                heading "Turning the YouTube Logo Into a Monster"
+                  anchor "Turning the YouTube Logo Into a Monster 10分钟6秒钟" [ref=116, loc=css:a[aria-label="Turning the YouTube Logo Into a Monster 10分钟6秒钟"], url=https://www.youtube.com/watch?v=pRrmQUm6Zvg]
+                    text "Turning the YouTube Logo Into a Monster"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和Wicked Makers"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "519万"
+                  text "3周前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=117]
+                svg_root
+            container
+              anchor [ref=118, url=https://www.youtube.com/watch?v=wGA27zJEnaU]
+                image "6分钟27秒钟"
+                  text "6:27"
+              container
+                heading "Keira Riff reacts to her Watch History"
+                  anchor "Keira Riff reacts to her Watch History 6分钟27秒钟" [ref=119, url=https://www.youtube.com/watch?v=wGA27zJEnaU]
+                    text "Keira Riff reacts to her Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 2 位联合创作者"
+                group
+                  svg_root
+                  text "235万"
+                  text "1个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=120]
+                svg_root
+            container
+              anchor [ref=121, url=https://www.youtube.com/watch?v=NDHk8bGGq74]
+                image "11分钟16秒钟"
+                  text "11:16"
+              container
+                heading "Sam Smith reacts to their Watch History"
+                  anchor "Sam Smith reacts to their Watch History 11分钟16秒钟" [ref=122, url=https://www.youtube.com/watch?v=NDHk8bGGq74]
+                    text "Sam Smith reacts to their Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和SAM SMITH"
+                  container "音乐人官方频道"
+                    svg_root
+                group
+                  svg_root
+                  text "860万"
+                  text "1个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=123]
+                svg_root
+            container
+              anchor [ref=124, url=https://www.youtube.com/watch?v=FNoK3gc-Jk0]
+                image "7分钟25秒钟"
+                  text "7:25"
+              container
+                heading "Marina Sena reacts to her Watch History"
+                  anchor "Marina Sena reacts to her Watch History 7分钟25秒钟" [ref=125, url=https://www.youtube.com/watch?v=FNoK3gc-Jk0]
+                    text "Marina Sena reacts to her Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和YouTube Brasil"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "774万"
+                  text "2个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=126]
+                svg_root
+          button "下一页" [ref=127]
+            svg_root
+          heading
+            anchor [ref=128, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH5rgGn0kqb5Ig9rF5u2SsjU]
+            anchor [ref=129, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH5rgGn0kqb5Ig9rF5u2SsjU]
+              text "You Watched WHAT on YouTube? | YouTube Watch History"
+            anchor "全部播放" [ref=130, loc=href:/watch?v=wGA27zJEnaU&list=PLbpi6ZahtOH5rgGn0kqb5Ig9rF5u2SsjU, url=https://www.youtube.com/watch?v=wGA27zJEnaU&list=PLbpi6ZahtOH5rgGn0kqb5Ig9rF5u2SsjU]
+              svg_root
+              text "全部播放"
+          container
+            container
+              anchor [ref=131, url=https://www.youtube.com/watch?v=wGA27zJEnaU]
+                image "6分钟27秒钟"
+                  text "6:27"
+              container
+                heading "Keira Riff reacts to her Watch History"
+                  anchor "Keira Riff reacts to her Watch History 6分钟27秒钟" [ref=132, url=https://www.youtube.com/watch?v=wGA27zJEnaU]
+                    text "Keira Riff reacts to her Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 2 位联合创作者"
+                group
+                  svg_root
+                  text "235万"
+                  text "1个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=133]
+                svg_root
+            container
+              anchor [ref=134, url=https://www.youtube.com/watch?v=NDHk8bGGq74]
+                image "11分钟16秒钟"
+                  text "11:16"
+              container
+                heading "Sam Smith reacts to their Watch History"
+                  anchor "Sam Smith reacts to their Watch History 11分钟16秒钟" [ref=135, url=https://www.youtube.com/watch?v=NDHk8bGGq74]
+                    text "Sam Smith reacts to their Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和SAM SMITH"
+                  container "音乐人官方频道"
+                    svg_root
+                group
+                  svg_root
+                  text "860万"
+                  text "1个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=136]
+                svg_root
+            container
+              anchor [ref=137, url=https://www.youtube.com/watch?v=FNoK3gc-Jk0&pp=0gcJCSwMAYcqIYzv]
+                image "7分钟25秒钟"
+                  text "7:25"
+              container
+                heading "Marina Sena reacts to her Watch History"
+                  anchor "Marina Sena reacts to her Watch History 7分钟25秒钟" [ref=138, url=https://www.youtube.com/watch?v=FNoK3gc-Jk0&pp=0gcJCSwMAYcqIYzv]
+                    text "Marina Sena reacts to her Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和YouTube Brasil"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "774万"
+                  text "2个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=139]
+                svg_root
+            container
+              anchor [ref=140, url=https://www.youtube.com/watch?v=zc87_hodp2g]
+                image "5分钟57秒钟"
+                  text "5:57"
+              container
+                heading "DANNA reacts to her Watch History"
+                  anchor "DANNA reacts to her Watch History 5分钟57秒钟" [ref=141, loc=css:a[aria-label="DANNA reacts to her Watch History 5分钟57秒钟"], url=https://www.youtube.com/watch?v=zc87_hodp2g]
+                    text "DANNA reacts to her Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 3 位联合创作者"
+                group
+                  svg_root
+                  text "217万"
+                  text "2个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=142]
+                svg_root
+            container
+              anchor [ref=143, url=https://www.youtube.com/watch?v=C0H9gGqAGxo]
+                image "7分钟8秒钟"
+                  text "7:08"
+              container
+                heading "Pabllo Vittar reacts to her Watch History (ROCKSTAR) | Watch History"
+                  anchor "Pabllo Vittar reacts to her Watch History (ROCKSTAR) | Watch History 7分钟8秒钟" [ref=144, url=https://www.youtube.com/watch?v=C0H9gGqAGxo]
+                    text "Pabllo Vittar reacts to her Watch History (ROCKSTAR) | Watch History"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 2 位联合创作者"
+                group
+                  svg_root
+                  text "200万"
+                  text "2个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=145]
+                svg_root
+            container
+              anchor [ref=146, url=https://www.youtube.com/watch?v=wNJ4r2WsUMI]
+                image "6分钟54秒钟"
+                  text "6:54"
+              container
+                heading "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love)"
+                  anchor "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) 6分钟54秒钟" [ref=147, url=https://www.youtube.com/watch?v=wNJ4r2WsUMI]
+                    text "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love)"
+                group
+                  anchor [ref=148, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "170万"
+                  text "4个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=149]
+                svg_root
+          button "下一页" [ref=150]
+            svg_root
+          svg_root
+          heading
+            text "Shorts"
+          button "其他操作" [ref=151]
+            svg_root
+          container
+            anchor [ref=152, url=https://www.youtube.com/shorts/0HAETg7L15o]
+            container
+              container
+                heading
+                  anchor [ref=153, url=https://www.youtube.com/shorts/0HAETg7L15o]
+                    text "if dress rehearsal is any indication, this will be a great (and slightly chaotic) episode"
+                text "5689次观看"
+              button "其他操作" [ref=154]
+                svg_root
+          container
+            anchor [ref=155, url=https://www.youtube.com/shorts/XT8-iYLYCg8]
+            container
+              container
+                heading
+                  anchor [ref=156, url=https://www.youtube.com/shorts/XT8-iYLYCg8]
+                    text "lights, camera, @ldshadowlady"
+                text "7610次观看"
+              button "其他操作" [ref=157]
+                svg_root
+          container
+            anchor [ref=158, url=https://www.youtube.com/shorts/wXSbAW0B2FQ]
+            container
+              container
+                heading
+                  anchor [ref=159, url=https://www.youtube.com/shorts/wXSbAW0B2FQ]
+                    text "the watch history reveal we needed 👀 #VSFashionShow"
+                text "1.2万次观看"
+              button "其他操作" [ref=160]
+                svg_root
+          container
+            anchor [ref=161, url=https://www.youtube.com/shorts/il_MMI2MOYM]
+            container
+              container
+                heading
+                  anchor [ref=162, url=https://www.youtube.com/shorts/il_MMI2MOYM]
+                    text "all great bags hold something wild"
+                text "2.9万次观看"
+              button "其他操作" [ref=163]
+                svg_root
+          container
+            anchor [ref=164, url=https://www.youtube.com/shorts/S8Yn2Os0bWc]
+            container
+              container
+                heading
+                  anchor [ref=165, url=https://www.youtube.com/shorts/S8Yn2Os0bWc]
+                    text "can we all agree a smokey eye never misses 🩷 which one are you picking #VSFashionShow"
+                text "14万次观看"
+              button "其他操作" [ref=166]
+                svg_root
+          container
+            anchor [ref=167, url=https://www.youtube.com/shorts/BinqprMup7k]
+            container
+              container
+                heading
+                  anchor [ref=168, url=https://www.youtube.com/shorts/BinqprMup7k]
+                    text "most likely to make you cry? lose sleep? cancel plans?"
+                text "1.7万次观看"
+              button "其他操作" [ref=169]
+                svg_root
+          button "下一批" [ref=170, loc=css:button[aria-label="下一批"]]
+            svg_root
+          heading
+            anchor [ref=171, url=https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ/posts]
+            anchor [ref=172, url=https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ/posts]
+              text "帖子"
+          container
+            link
+              anchor [ref=173, url=https://www.youtube.com/@YouTube]
+              anchor [ref=174, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=175, loc=href:/post/UgkxgKsYQRjxJasB38_-TzCpg4JJELAGAU-Q, url=https://www.youtube.com/post/UgkxgKsYQRjxJasB38_-TzCpg4JJELAGAU-Q]
+                text "16小时前"
+              text "going through your liked videos just to relive that era"
+              container
+                anchor "为这个帖子点赞，已有 4,363 人点赞" [ref=176, loc=css:a[aria-label="为这个帖子点赞，已有 4,363 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=177]
+              text "4363"
+              container
+                anchor "不喜欢这个帖子" [ref=178, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=179]
+              container
+                button "分享" [ref=180]
+                  svg_root
+                tooltip "tooltip" [ref=181]
+              container
+                anchor "393 条评论" [ref=182, loc=css:a[aria-label="393 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkxgKsYQRjxJasB38_-TzCpg4JJELAGAU-Q&hl=zh-CN]
+                  svg_root
+                  text "393"
+                tooltip "tooltip" [ref=183]
+            link
+              anchor [ref=184, url=https://www.youtube.com/@YouTube]
+              anchor [ref=185, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=186, loc=href:/post/UgkxIJJxSHdhadyW1Oj-330dDnQfHtvH-49q, url=https://www.youtube.com/post/UgkxIJJxSHdhadyW1Oj-330dDnQfHtvH-49q]
+                text "1天前"
+              text "playing spooky games with subtitles on just in case we missed something"
+              container
+                anchor "为这个帖子点赞，已有 3,494 人点赞" [ref=187, loc=css:a[aria-label="为这个帖子点赞，已有 3,494 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=188]
+              text "3494"
+              container
+                anchor "不喜欢这个帖子" [ref=189, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=190]
+              container
+                button "分享" [ref=191]
+                  svg_root
+                tooltip "tooltip" [ref=192]
+              container
+                anchor "301 条评论" [ref=193, loc=css:a[aria-label="301 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkxIJJxSHdhadyW1Oj-330dDnQfHtvH-49q&hl=zh-CN]
+                  svg_root
+                  text "301"
+                tooltip "tooltip" [ref=194]
+            link
+              anchor [ref=195, url=https://www.youtube.com/@YouTube]
+              anchor [ref=196, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=197, loc=href:/post/Ugkx1WVx3O5b3bnClAyoHpliNN19pyNPeHof, url=https://www.youtube.com/post/Ugkx1WVx3O5b3bnClAyoHpliNN19pyNPeHof]
+                text "1天前"
+              text "scrolling back to creators' old videos to see where they started vs where they are now ❤️"
+              container
+                anchor "为这个帖子点赞，已有 3,685 人点赞" [ref=198, loc=css:a[aria-label="为这个帖子点赞，已有 3,685 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=199]
+              text "3685"
+              container
+                anchor "不喜欢这个帖子" [ref=200, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=201]
+              container
+                button "分享" [ref=202]
+                  svg_root
+                tooltip "tooltip" [ref=203]
+              container
+                anchor "387 条评论" [ref=204, loc=css:a[aria-label="387 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkx1WVx3O5b3bnClAyoHpliNN19pyNPeHof&hl=zh-CN]
+                  svg_root
+                  text "387"
+                tooltip "tooltip" [ref=205]
+            link
+              anchor [ref=206, url=https://www.youtube.com/@YouTube]
+              anchor [ref=207, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=208, loc=href:/post/Ugkx3dqOdBTxo7aos-jSj7q9BhAHWQOM_bQn, url=https://www.youtube.com/post/Ugkx3dqOdBTxo7aos-jSj7q9BhAHWQOM_bQn]
+                text "3天前"
+              text "watching educational videos at 2x speed to double the learning"
+              container
+                anchor "为这个帖子点赞，已有 7,016 人点赞" [ref=209, loc=css:a[aria-label="为这个帖子点赞，已有 7,016 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=210]
+              text "7016"
+              container
+                anchor "不喜欢这个帖子" [ref=211, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=212]
+              container
+                button "分享" [ref=213]
+                  svg_root
+                tooltip "tooltip" [ref=214]
+              container
+                anchor "667 条评论" [ref=215, loc=css:a[aria-label="667 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkx3dqOdBTxo7aos-jSj7q9BhAHWQOM_bQn&hl=zh-CN]
+                  svg_root
+                  text "667"
+                tooltip "tooltip" [ref=216]
+            link
+              anchor [ref=217, url=https://www.youtube.com/@YouTube]
+              anchor [ref=218, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=219, loc=href:/post/UgkxIzeIbGtv2m-u5xIxuhZl1SURg-Eomt-T, url=https://www.youtube.com/post/UgkxIzeIbGtv2m-u5xIxuhZl1SURg-Eomt-T]
+                text "5天前"
+              text "if you could only watch one creator forever, who would it be??"
+              container
+                anchor "为这个帖子点赞，已有 11,296 人点赞" [ref=220, loc=css:a[aria-label="为这个帖子点赞，已有 11,296 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=221]
+              text "1.1万"
+              container
+                anchor "不喜欢这个帖子" [ref=222, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=223]
+              container
+                button "分享" [ref=224]
+                  svg_root
+                tooltip "tooltip" [ref=225]
+              container
+                anchor "4221 条评论" [ref=226, loc=css:a[aria-label="4221 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkxIzeIbGtv2m-u5xIxuhZl1SURg-Eomt-T&hl=zh-CN]
+                  svg_root
+                  text "4221"
+                tooltip "tooltip" [ref=227]
+            link
+              anchor [ref=228, url=https://www.youtube.com/@YouTube]
+              anchor [ref=229, url=https://www.youtube.com/@YouTube]
+                text "YouTube"
+              text "•"
+              anchor [ref=230, loc=href:/post/UgkxYyo1fnjWfHtrybG1kENO14IS9HH8eJvP, url=https://www.youtube.com/post/UgkxYyo1fnjWfHtrybG1kENO14IS9HH8eJvP]
+                text "6天前"
+              container
+                text "your favorite creator’s favorite creators are competing on Jeopardy! YouTube Edition watch"
+                anchor [ref=231, url=https://www.youtube.com/channel/UCGGZ_POGmIWG1pQXTDzQv-g]
+                  text "‪@MichelleKhare‬"
+                text ","
+                anchor [ref=232, url=https://www.youtube.com/channel/UCFjx-_ac8x8B43w-sBFNIGg]
+                  text "‪@angelagiovanagiarratana‬"
+                text ","
+                anchor [ref=233, url=https://www.youtube.com/channel/UCXGR70CkW_pXb8n52LzCCRw]
+                  text "‪@mythicalkitchen‬"
+                text "'s Josh Scherer, and compete on Jeopardy! YouTube Edition on October 22nd at 9pm ET / 6pm PT, streaming exclusively on YouTube."
+              svg_root
+              container
+                anchor "为这个帖子点赞，已有 2,363 人点赞" [ref=234, loc=css:a[aria-label="为这个帖子点赞，已有 2,363 人点赞"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=235]
+              text "2363"
+              container
+                anchor "不喜欢这个帖子" [ref=236, url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252F&hl=zh-CN]
+                  svg_root
+                tooltip "tooltip" [ref=237]
+              container
+                button "分享" [ref=238]
+                  svg_root
+                tooltip "tooltip" [ref=239]
+              container
+                anchor "279 条评论" [ref=240, loc=css:a[aria-label="279 条评论"], url=https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dzh-CN%26next%3D%252Fpost%252FUgkxYyo1fnjWfHtrybG1kENO14IS9HH8eJvP&hl=zh-CN]
+                  svg_root
+                  text "279"
+                tooltip "tooltip" [ref=241]
+          button "下一页" [ref=242]
+            svg_root
+          heading
+            text "联合创作的视频"
+            anchor "全部播放" [ref=243, url=https://www.youtube.com/watch_videos?video_ids=0HAETg7L15o%2CyjHvkMeVzK0%2CO6OXQCfPCig%2CiuPXgT4obls%2CaaXE6FtgcvI%2CXiW4sNNLFBY%2CdBGpGMeCkZM%2CLObUNgOG1ao%2C9d_0bu-0PSM%2Clrx7WbomgEg%2CAOVf1JmEeS8%2CTsGdHjsA5XU%2Ccd1T-b30LqY%2Cq3gzYpK82ZM%2CPYIoVCXp_dY%2C-1OCc85R99U%2Ch56ePUXqHHc%2C71ya_JC_IbM%2Czbz3_tmRiZw%2C2_dF0cmN7B4%2Cqafp2vrro8A%2CSvKGrUzsyqg%2CyL2iVzM9NuU%2C_wogmiwYknY%2CsSUcdLu3R84%2CpRrmQUm6Zvg%2C4ZXrsNC0wCU%2CCUE_NNc7dbI%2CkTKTa7h92CA%2Cx38jvgefUtI%2CadMIil4ebJY%2C9aIyj5uYCWU%2CVm-EiZq6Bjg%2Crb-M6kE10jk%2CGToSHELP0VY%2Cg1iQ1CkMgd0%2CKp5HTcGZsx0%2Cj_ki4pdrqa4%2CZwyObwAhRSM%2CwToeNUwRb_k%2CFaVD4hJPHBA%2CohXPErTzXww%2Cujypa1Nd8Bw%2C2-5wxS-F6lY%2CY5d8mU1mM0s%2CengQjz-Lm54%2C5bhVibSw0nU%2CmevJru7sjU0%2C9CnS-7yON5w%2CwGA27zJEnaU%2CGcgxdQ1xLm0%2CUrmYM-W9Tv4%2CzNemIcbSGBE%2CNDHk8bGGq74%2CFNoK3gc-Jk0%2CrPWbrcPQl64%2CRpodZA0fjRo%2CUPzUU8tD1Cg%2CYE5atUDhF6E%2Cnh3-1br-qro%2CI3Wk7kR1TgY%2CU1GDKOEgi3c%2C7ByjTFNKOyY%2CJuCaFNzeVGY%2CYhwVjWzH5x8%2Cl0vAcy_js80%2CMZjf-NlpW3w%2ColY0lRusfXE%2CpJ0O3pDPKvY%2CXGiCkREV_Cg%2Czc87_hodp2g%2C81ltJTR-MMo%2CRUZjwisAnHw%2CC0H9gGqAGxo%2CpnA1kf9GDoQ%2CKDPR_fHLNSQ%2CxdcmpXzWsHM%2CdTMEwDAHqn8%2CQnbY4P3yXx4%2C_rCiOQxod9g%2CFDk0ZPbTehc%2C6WgQhow9hgc%2CQumUiGApK4g%2CFU-jb7QivXE%2CN3m1dOalMIg%2CtcW5fX-L-CA%2CrX2oYw1wCoU%2CeGIbnQsOK78%2Cbju36ORkLmI%2CjlkmHNjWslQ%2CkguFHXPCA3I%2C3ULziZWKQDE%2CDh_xA2fvayk%2CeSbN0lL-pAY%2CPL9ghUY4GGY%2CBpeH_uHbiM0%2C-A16qIoujQE%2CnG_LjmkXXAE%2CRDEjehs06nE%2CKohQcC_-kRM&type=0&title=%E8%81%94%E5%90%88%E5%88%9B%E4%BD%9C%E7%9A%84%E8%A7%86%E9%A2%91]
+              svg_root
+              text "全部播放"
+          container
+            container
+              anchor [ref=244, url=https://www.youtube.com/watch?v=0HAETg7L15o]
+                image "29秒钟"
+                  text "0:29"
+              container
+                heading "if dress rehearsal is any indication, this will be a great (and slightly chaotic) episode"
+                  anchor "if dress rehearsal is any indication, this will be a great (and slightly chaotic) episode 29秒钟" [ref=245, url=https://www.youtube.com/watch?v=0HAETg7L15o]
+                    text "if dress rehearsal is any indication, this will be a great (and slightly chaotic) episode"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和Jeopardy!"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "5689"
+                  text "14小时前"
+              button "其他操作" [ref=246]
+                svg_root
+            container
+              anchor [ref=247, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                image "8分钟20秒钟"
+                  text "8:20"
+              container
+                heading "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+                  anchor "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend. 8分钟20秒钟" [ref=248, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                    text "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和LDShadowLady"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "138万"
+                  text "2天前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=249]
+                svg_root
+            container
+              anchor [ref=250, url=https://www.youtube.com/watch?v=O6OXQCfPCig]
+                image "8秒钟"
+                  text "0:08"
+              container
+                heading "going behind the screen with @ldshadowlady"
+                  anchor "going behind the screen with @ldshadowlady 8秒钟" [ref=251, loc=css:a[aria-label="going behind the screen with @ldshadowlady 8秒钟"], url=https://www.youtube.com/watch?v=O6OXQCfPCig]
+                    text "going behind the screen with @ldshadowlady"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和LDShadowLady"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "3.7万"
+                  text "2天前"
+              button "其他操作" [ref=252]
+                svg_root
+            container
+              anchor [ref=253, url=https://www.youtube.com/watch?v=iuPXgT4obls]
+                image "11秒钟"
+                  text "0:11"
+              container
+                heading "The moment has arrived. ✨ Introducing Solange, our Angels Among Us winner."
+                  anchor "The moment has arrived. ✨ Introducing Solange, our Angels Among Us winner. 11秒钟" [ref=254, url=https://www.youtube.com/watch?v=iuPXgT4obls]
+                    text "The moment has arrived. ✨ Introducing Solange, our Angels Among Us winner."
+                group
+                  text "Victoria's Secret"
+                  container "已验证"
+                    svg_root
+                  text "和YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "73万"
+                  text "3天前"
+              button "其他操作" [ref=255]
+                svg_root
+            container
+              anchor [ref=256, url=https://www.youtube.com/watch?v=aaXE6FtgcvI]
+                image "6分钟36秒钟"
+                  svg_root
+                  text "6:36"
+              container
+                heading "한로로 (HANRORO) - __에게, 시간을 달리네 (Live at SERIES.L with YouTube Music Nights)"
+                  anchor "한로로 (HANRORO) - __에게, 시간을 달리네 (Live at SERIES.L with YouTube Music Nights) 6分钟36秒钟" [ref=257, url=https://www.youtube.com/watch?v=aaXE6FtgcvI]
+                    text "한로로 (HANRORO) - __에게, 시간을 달리네 (Live at SERIES.L with YouTube Music Nights)"
+                group
+                  text "한로로 HANRORO"
+                  container "音乐人官方频道"
+                    svg_root
+                  text "和YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "5万"
+                  text "4天前"
+              button "其他操作" [ref=258]
+                svg_root
+            container
+              anchor [ref=259, url=https://www.youtube.com/watch?v=XiW4sNNLFBY]
+                image "13秒钟"
+                  text "0:13"
+              container
+                heading "walk walk fashion baby, the world is our runway"
+                  anchor "walk walk fashion baby, the world is our runway 13秒钟" [ref=260, loc=css:a[aria-label="walk walk fashion baby, the world is our runway 13秒钟"], url=https://www.youtube.com/watch?v=XiW4sNNLFBY]
+                    text "walk walk fashion baby, the world is our runway"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和Jeauni Cassanova"
+                group
+                  svg_root
+                  text "10万"
+                  text "4天前"
+              button "其他操作" [ref=261]
+                svg_root
+          button "下一页" [ref=262]
+            svg_root
+          heading
+            anchor [ref=263, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH4-Ta_BteO5C7kjsdwPq6RA]
+            anchor [ref=264, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH4-Ta_BteO5C7kjsdwPq6RA]
+              text "Fandoms Fueling YouTube"
+            anchor "全部播放" [ref=265, loc=href:/watch?v=71ya_JC_IbM&list=PLbpi6ZahtOH4-Ta_BteO5C7kjsdwPq6RA, url=https://www.youtube.com/watch?v=71ya_JC_IbM&list=PLbpi6ZahtOH4-Ta_BteO5C7kjsdwPq6RA]
+              svg_root
+              text "全部播放"
+          container
+            container
+              anchor [ref=266, url=https://www.youtube.com/watch?v=71ya_JC_IbM]
+                image "14分钟52秒钟"
+                  text "14:52"
+              container
+                heading "20 years of esports history explained"
+                  anchor "20 years of esports history explained 14分钟52秒钟" [ref=267, url=https://www.youtube.com/watch?v=71ya_JC_IbM]
+                    text "20 years of esports history explained"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 3 位联合创作者"
+                group
+                  svg_root
+                  text "191万"
+                  text "13天前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=268]
+                svg_root
+            container
+              anchor [ref=269, url=https://www.youtube.com/watch?v=v0lZEMOZxE4]
+                image "10分钟43秒钟"
+                  text "10:43"
+              container
+                heading "How K-pop fans took over YouTube (and the world) ft. @Helen Peng and @Form of Therapy"
+                  anchor "How K-pop fans took over YouTube (and the world) ft. @Helen Peng and @Form of Therapy 10分钟43秒钟" [ref=270, url=https://www.youtube.com/watch?v=v0lZEMOZxE4]
+                    text "How K-pop fans took over YouTube (and the world) ft. @Helen Peng and @Form of Therapy"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 3 位联合创作者"
+                group
+                  svg_root
+                  text "266万"
+                  text "7个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=271]
+                svg_root
+            container
+              anchor [ref=272, url=https://www.youtube.com/watch?v=OzjerLmZt8Q]
+                image "6分钟47秒钟"
+                  text "6:47"
+              container
+                heading "What will the cast of One Piece make public vs. keep private? | Unlisted"
+                  anchor "What will the cast of One Piece make public vs. keep private? | Unlisted 6分钟47秒钟" [ref=273, url=https://www.youtube.com/watch?v=OzjerLmZt8Q]
+                    text "What will the cast of One Piece make public vs. keep private? | Unlisted"
+                group
+                  anchor [ref=274, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "189万"
+                  text "7个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=275]
+                svg_root
+            container
+              anchor [ref=276, url=https://www.youtube.com/watch?v=LeSkX_1w28g&pp=0gcJCSwMAYcqIYzv]
+                image "9分钟"
+                  text "9:00"
+              container
+                heading "MIKU TONIGHT ft. Mr. Itoh, @pinocchiop, @SAWTOWNE and @DECO27"
+                  anchor "MIKU TONIGHT ft. Mr. Itoh, @pinocchiop, @SAWTOWNE and @DECO27 9分钟" [ref=277, loc=css:a[aria-label="MIKU TONIGHT ft. Mr. Itoh, @pinocchiop, @SAWTOWNE and @DECO27 9分钟"], url=https://www.youtube.com/watch?v=LeSkX_1w28g&pp=0gcJCSwMAYcqIYzv]
+                    text "MIKU TONIGHT ft. Mr. Itoh, @pinocchiop, @SAWTOWNE and @DECO27"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 2 位联合创作者"
+                group
+                  svg_root
+                  text "309万"
+                  text "7个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=278]
+                svg_root
+            container
+              anchor [ref=279, url=https://www.youtube.com/watch?v=qN53Rp27bV8]
+                image "5分钟4秒钟"
+                  svg_root
+                  text "5:04"
+              container
+                heading ""Theater Kid Energy" ft @Jordan Fisher, @Emily Bear, @Caleb Hyles & more (Original Musical)"
+                  anchor ""Theater Kid Energy" ft @Jordan Fisher, @Emily Bear, @Caleb Hyles & more (Original Musical) 5分钟4秒钟" [ref=280, url=https://www.youtube.com/watch?v=qN53Rp27bV8]
+                    text ""Theater Kid Energy" ft @Jordan Fisher, @Emily Bear, @Caleb Hyles & more (Original Musical)"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "以及另外 3 位联合创作者"
+                group
+                  svg_root
+                  text "252万"
+                  text "11个月前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=281]
+                svg_root
+            container
+              anchor [ref=282, url=https://www.youtube.com/watch?v=4q2Kfm-knAc]
+                image "8分钟42秒钟"
+                  text "8:42"
+              container
+                heading "1 TRILLION ROBLOX VIEWS ON YOUTUBE?!?!?!?! ft. @Lana's Life @MeEnyu"
+                  anchor "1 TRILLION ROBLOX VIEWS ON YOUTUBE?!?!?!?! ft. @Lana's Life @MeEnyu 8分钟42秒钟" [ref=283, url=https://www.youtube.com/watch?v=4q2Kfm-knAc]
+                    text "1 TRILLION ROBLOX VIEWS ON YOUTUBE?!?!?!?! ft. @Lana's Life @MeEnyu"
+                group
+                  anchor [ref=284, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "498万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=285]
+                svg_root
+          button "下一页" [ref=286]
+            svg_root
+          heading
+            anchor [ref=287, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH7uLRFYnIVOAM52GwoX6eiy]
+            anchor [ref=288, url=https://www.youtube.com/playlist?list=PLbpi6ZahtOH7uLRFYnIVOAM52GwoX6eiy]
+              text "Creators Tell All | YouTube Creator Confessions"
+            anchor "全部播放" [ref=289, loc=href:/watch?v=AywVVVVXpiU&list=PLbpi6ZahtOH7uLRFYnIVOAM52GwoX6eiy, url=https://www.youtube.com/watch?v=AywVVVVXpiU&list=PLbpi6ZahtOH7uLRFYnIVOAM52GwoX6eiy]
+              svg_root
+              text "全部播放"
+          container
+            container
+              anchor [ref=290, url=https://www.youtube.com/watch?v=AywVVVVXpiU]
+                image "6分钟15秒钟"
+                  text "6:15"
+              container
+                heading "Who will survive? @JuegaGerman, @LaurenZside & more horror gamers face off | Creator Confessions"
+                  anchor "Who will survive? @JuegaGerman, @LaurenZside & more horror gamers face off | Creator Confessions 6分钟15秒钟" [ref=291, url=https://www.youtube.com/watch?v=AywVVVVXpiU]
+                    text "Who will survive? @JuegaGerman, @LaurenZside & more horror gamers face off | Creator Confessions"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和LaurenZside"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "479万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=292]
+                svg_root
+            container
+              anchor [ref=293, url=https://www.youtube.com/watch?v=1wm03WOmhpM]
+                image "7分钟40秒钟"
+                  text "7:40"
+              container
+                heading "Survivalists @OttoBulletproof & more share vital tools and wildest expeditions | Creator Confessions"
+                  anchor "Survivalists @OttoBulletproof & more share vital tools and wildest expeditions | Creator Confessions 7分钟40秒钟" [ref=294, url=https://www.youtube.com/watch?v=1wm03WOmhpM]
+                    text "Survivalists @OttoBulletproof & more share vital tools and wildest expeditions | Creator Confessions"
+                group
+                  text "YouTube"
+                  container "已验证"
+                    svg_root
+                  text "和OttoBulletproof"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "348万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=295]
+                svg_root
+            container
+              anchor [ref=296, url=https://www.youtube.com/watch?v=O6p2EkNV_PM&pp=0gcJCSwMAYcqIYzv]
+                image "5分钟51秒钟"
+                  text "5:51"
+              container
+                heading "Thinking of traveling solo? @Elena Taber @Mai Pham & more have some advice | Creator Confessions"
+                  anchor "Thinking of traveling solo? @Elena Taber @Mai Pham & more have some advice | Creator Confessions 5分钟51秒钟" [ref=297, url=https://www.youtube.com/watch?v=O6p2EkNV_PM&pp=0gcJCSwMAYcqIYzv]
+                    text "Thinking of traveling solo? @Elena Taber @Mai Pham & more have some advice | Creator Confessions"
+                group
+                  anchor [ref=298, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "420万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=299]
+                svg_root
+            container
+              anchor [ref=300, url=https://www.youtube.com/watch?v=p3mHHOb9Zec]
+                image "8分钟32秒钟"
+                  text "8:32"
+              container
+                heading "Fishers @RAWWFishing, @釣りよかでしょう。 & more reveal best catches & go-to gear | Creator Confessions"
+                  anchor "Fishers @RAWWFishing, @釣りよかでしょう。 & more reveal best catches & go-to gear | Creator Confessions 8分钟32秒钟" [ref=301, url=https://www.youtube.com/watch?v=p3mHHOb9Zec]
+                    text "Fishers @RAWWFishing, @釣りよかでしょう。 & more reveal best catches & go-to gear | Creator Confessions"
+                group
+                  anchor [ref=302, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "443万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=303]
+                svg_root
+            container
+              anchor [ref=304, url=https://www.youtube.com/watch?v=dpBLpL6UmhM]
+                image "9分钟27秒钟"
+                  text "9:27"
+              container
+                heading "Vocal coaches @Tara Simon Studios @JARON M. LEGRAIR STUDIO & more reveal singing secrets | Creator Confessions"
+                  anchor "Vocal coaches @Tara Simon Studios @JARON M. LEGRAIR STUDIO & more reveal singing secrets | Creator Confessions 9分钟27秒钟" [ref=305, url=https://www.youtube.com/watch?v=dpBLpL6UmhM]
+                    text "Vocal coaches @Tara Simon Studios @JARON M. LEGRAIR STUDIO & more reveal singing secrets | Creator Confessions"
+                group
+                  anchor [ref=306, url=https://www.youtube.com/@YouTube]
+                    text "YouTube"
+                  container "已验证"
+                    svg_root
+                group
+                  svg_root
+                  text "347万"
+                  text "1年前"
+                group
+                  image "字幕"
+                    text "字幕"
+              button "其他操作" [ref=307]
+                svg_root
+    svg_root
+    container "Notifications" [ref=19]
+    container [ref=308]
+  container
+    button [ref=20]
+      svg_root
+    text "翻译当前页面"
+    button [ref=21]
+      svg_root
+    text "数据增强"
+    text "-"
+    text "开启"
+    button "找相似" [ref=22, loc=css:button[aria-label="找相似"]]
+      image
+      text "找相似"

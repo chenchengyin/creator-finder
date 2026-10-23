@@ -1,0 +1,694 @@
+{
+  "profile": {
+    "capturedAt": "2026-10-21T03:58:19.553Z",
+    "profileUrl": "https://www.tiktok.com/@itssimannn",
+    "statusCode": 0,
+    "httpStatus": 200,
+    "authorId": "6802112752128574469",
+    "username": "itssimannn",
+    "bio": "Did you do your chores? 🤥\n🎯 Goal 3.6M\nBusiness 📩 : itssimannn@gmail.com",
+    "privateAccount": false,
+    "unverifiedRegionFields": {
+      "semantics": "account_or_internal_region_not_confirmed_creator_location"
+    },
+    "publicLocation": {},
+    "followers": "3538405",
+    "playlists": [],
+    "captcha": false,
+    "loginWall": false,
+    "title": "ItssIMANNN (@itssimannn) | TikTok",
+    "visibleError": false,
+    "identityVerified": true,
+    "ready": true,
+    "latestOrderConfirmed": true
+  },
+  "candidate": {
+    "username": "itssimannn",
+    "authorIdHint": "6802112752128574469",
+    "keyword": "christian skits",
+    "source": "tiktok-video",
+    "sourceUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+    "sourceLink": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+    "sourceText": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+    "status": "queued",
+    "sourceEvidence": [
+      {
+        "videoId": "7320376964521413919",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "text": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+        "videoUrl": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+        "keyword": "christian skits",
+        "capturedAt": "2026-10-21T03:57:19.270Z",
+        "source": "tiktok_native_video_search"
+      }
+    ],
+    "bioHint": "Did you do your chores? 🤥\n🎯 Goal 3.6M\nBusiness 📩 : itssimannn@gmail.com"
+  },
+  "pages": [
+    {
+      "statusCode": 0,
+      "hasMore": true,
+      "cursor": "1783992087000",
+      "httpStatus": 200,
+      "items": [
+        {
+          "id": "7642106929464053022",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1779316696,
+          "views": "13000000",
+          "description": "Does your mom do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7642106929464053022"
+        },
+        {
+          "id": "7646954365575548191",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1780445322,
+          "views": "9900000",
+          "description": "Does your sibling do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7646954365575548191"
+        },
+        {
+          "id": "7525274903260548382",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1752114619,
+          "views": "18400000",
+          "description": "Which one is it? 🥺 #fyp #viral #trending #comedia ",
+          "pinned": true,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7525274903260548382"
+        },
+        {
+          "id": "7698932070457937183",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792547324,
+          "views": "7344",
+          "description": "Do you remember? 🥺 #fy #viralvideo #nostalgia #real ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698932070457937183"
+        },
+        {
+          "id": "7698606547978456351",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792471537,
+          "views": "48600",
+          "description": "Can you make the middle dancer change directions? 💃 #foryoupage #viraltiktok #funnyvideo ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698606547978456351"
+        },
+        {
+          "id": "7698507919964392735",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792448572,
+          "views": "707400",
+          "description": "Does your friend do the? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698507919964392735"
+        },
+        {
+          "id": "7698479616867994911",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792441979,
+          "views": "160000",
+          "description": "Do you get it? 😳 #fy #viralvideo #relatablememes #real ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698479616867994911"
+        },
+        {
+          "id": "7698187534689389854",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792373970,
+          "views": "22600",
+          "description": "#meowdoku Does your friend do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698187534689389854"
+        },
+        {
+          "id": "7695915877459299615",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1791845058,
+          "views": "61500",
+          "description": "That one friend be like..😭 #knowunity #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7695915877459299615"
+        },
+        {
+          "id": "7692576103268896030",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1791067459,
+          "views": "451500",
+          "description": "Does your friend do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7692576103268896030"
+        },
+        {
+          "id": "7691507210488253726",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1790818585,
+          "views": "3300000",
+          "description": "Girls vs boys be like..😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7691507210488253726"
+        },
+        {
+          "id": "7690965178204130591",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1790692412,
+          "views": "78100",
+          "description": "Superheroes be like: 🫩 #foryoupage #viraltiktok #spiderman #memes ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7690965178204130591"
+        },
+        {
+          "id": "7690954956014210335",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1790690033,
+          "views": "58800",
+          "description": "Real life vs Bit life 😭 #fy #viralvideo #trend #comedy ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7690954956014210335"
+        },
+        {
+          "id": "7690361628000390431",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1790551864,
+          "views": "571200",
+          "description": "Do you do this? 😭 #fyp #viral #trending #comedian ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7690361628000390431"
+        },
+        {
+          "id": "7666597470377430303",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1785018844,
+          "views": "1500000",
+          "description": "Does your dad say this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7666597470377430303"
+        },
+        {
+          "id": "7664000898783284510",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1784414279,
+          "views": "1800000",
+          "description": "Does your sibling do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7664000898783284510"
+        },
+        {
+          "id": "7663655058684382494",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1784333760,
+          "views": "1700000",
+          "description": "#meowdoku Does your friend say this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7663655058684382494"
+        },
+        {
+          "id": "7663259498588556558",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1784241657,
+          "views": "9200000",
+          "description": "ONE MORE GAME! 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7663259498588556558"
+        },
+        {
+          "id": "7662187596721753374",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1783992087,
+          "views": "3900000",
+          "description": "#meowdoku Does your siblings do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7662187596721753374"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "decision": "passed",
+    "reason": "ten_day_mean_above_threshold",
+    "averageViews": 200020,
+    "sampleSize": 5,
+    "sample": [
+      {
+        "id": "7698606547978456351",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "createdAt": 1792471537,
+        "views": 48600,
+        "description": "Can you make the middle dancer change directions? 💃 #foryoupage #viraltiktok #funnyvideo ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:58:19.553Z",
+        "url": "https://www.tiktok.com/@itssimannn/video/7698606547978456351"
+      },
+      {
+        "id": "7698507919964392735",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "createdAt": 1792448572,
+        "views": 707400,
+        "description": "Does your friend do the? 😭 #fyp #viral #trending #comedia ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:58:19.553Z",
+        "url": "https://www.tiktok.com/@itssimannn/video/7698507919964392735"
+      },
+      {
+        "id": "7698479616867994911",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "createdAt": 1792441979,
+        "views": 160000,
+        "description": "Do you get it? 😳 #fy #viralvideo #relatablememes #real ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:58:19.553Z",
+        "url": "https://www.tiktok.com/@itssimannn/video/7698479616867994911"
+      },
+      {
+        "id": "7698187534689389854",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "createdAt": 1792373970,
+        "views": 22600,
+        "description": "#meowdoku Does your friend do this? 😭 #fyp #viral #trending #comedia ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:58:19.553Z",
+        "url": "https://www.tiktok.com/@itssimannn/video/7698187534689389854"
+      },
+      {
+        "id": "7695915877459299615",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "createdAt": 1791845058,
+        "views": 61500,
+        "description": "That one friend be like..😭 #knowunity #fyp #viral #trending #comedia ",
+        "pinned": false,
+        "privateItem": false,
+        "mediaType": "video",
+        "source": "ego_passive_profile_item_list",
+        "capturedAt": "2026-10-21T03:58:19.553Z",
+        "url": "https://www.tiktok.com/@itssimannn/video/7695915877459299615"
+      }
+    ],
+    "windowStart": "2026-10-11T00:00:00+08:00",
+    "windowEnd": "2026-10-20T23:59:59+08:00",
+    "coverageComplete": true
+  },
+  "result": {
+    "authorId": "6802112752128574469",
+    "username": "itssimannn",
+    "profileUrl": "https://www.tiktok.com/@itssimannn",
+    "bio": "Did you do your chores? 🤥\n🎯 Goal 3.6M\nBusiness 📩 : itssimannn@gmail.com",
+    "emails": [
+      "itssimannn@gmail.com"
+    ],
+    "emailSource": "profile_bio",
+    "profileCapturedAt": "2026-10-21T03:58:19.553Z",
+    "followers": "3538405",
+    "location": {
+      "decision": "passed",
+      "country": "US",
+      "reason": "latest_video_locationCreated",
+      "semantics": "video_region_field_not_verified_creator_residence",
+      "evidence": [
+        {
+          "source": "video_detail_hydration",
+          "text": "locationCreated=US",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698932070457937183",
+          "videoId": "7698932070457937183",
+          "capturedAt": "2026-10-21T04:06:40.634Z"
+        }
+      ]
+    },
+    "content": {
+      "decision": "passed",
+      "reason": "explicit_public_christian_church_comedy_skit_caption_manual_review",
+      "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+      "reviewedAt": "2026-10-21T04:06:38.751Z",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+          "url": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+          "videoId": "7320376964521413919",
+          "publishedAt": "2024-01-04T22:42:04.000Z",
+          "captureSurface": "tiktok_native_video_search",
+          "sourceRecord": "tiktok-video-discovery.jsonl",
+          "capturedAt": "2026-10-21T03:57:19.270Z"
+        }
+      ],
+      "scope": "User accepts Christian-themed skits/comedy, including satire. This is a general comedy account with an explicit older relevant public caption; no claim about recent thematic frequency or personal belief. Original automatic two-caption heuristic is not treated as a user-specified minimum."
+    },
+    "metrics": {
+      "decision": "passed",
+      "reason": "ten_day_mean_above_threshold",
+      "averageViews": 200020,
+      "sampleSize": 5,
+      "sample": [
+        {
+          "id": "7698606547978456351",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792471537,
+          "views": 48600,
+          "description": "Can you make the middle dancer change directions? 💃 #foryoupage #viraltiktok #funnyvideo ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698606547978456351"
+        },
+        {
+          "id": "7698507919964392735",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792448572,
+          "views": 707400,
+          "description": "Does your friend do the? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698507919964392735"
+        },
+        {
+          "id": "7698479616867994911",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792441979,
+          "views": 160000,
+          "description": "Do you get it? 😳 #fy #viralvideo #relatablememes #real ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698479616867994911"
+        },
+        {
+          "id": "7698187534689389854",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1792373970,
+          "views": 22600,
+          "description": "#meowdoku Does your friend do this? 😭 #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7698187534689389854"
+        },
+        {
+          "id": "7695915877459299615",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "createdAt": 1791845058,
+          "views": 61500,
+          "description": "That one friend be like..😭 #knowunity #fyp #viral #trending #comedia ",
+          "pinned": false,
+          "privateItem": false,
+          "mediaType": "video",
+          "source": "ego_passive_profile_item_list",
+          "capturedAt": "2026-10-21T03:58:19.553Z",
+          "url": "https://www.tiktok.com/@itssimannn/video/7695915877459299615"
+        }
+      ],
+      "windowStart": "2026-10-11T00:00:00+08:00",
+      "windowEnd": "2026-10-20T23:59:59+08:00",
+      "coverageComplete": true
+    },
+    "countryFilterStage": "after_collection",
+    "decision": "matched",
+    "reason": "bio_email_content_ten_day_mean_and_US_video_region_met",
+    "videoRegion": {
+      "schemaVersion": 1,
+      "username": "itssimannn",
+      "authorId": "6802112752128574469",
+      "selectionSnapshotAt": "2026-10-21T03:58:19.553Z",
+      "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+      "requestedCount": 1,
+      "observations": [
+        {
+          "videoId": "7698932070457937183",
+          "authorId": "6802112752128574469",
+          "username": "itssimannn",
+          "videoUrl": "https://www.tiktok.com/@itssimannn/video/7698932070457937183",
+          "publishedAt": "2026-10-21T01:48:44.000Z",
+          "capturedAt": "2026-10-21T04:06:40.634Z",
+          "source": "video_detail_hydration",
+          "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+          "rawValue": "US",
+          "regionCode": "US",
+          "status": "observed",
+          "reason": "video_region_field_observed",
+          "creatorResidenceVerified": false
+        }
+      ],
+      "navigationAttempts": [
+        {
+          "number": 1,
+          "url": "https://www.tiktok.com/@itssimannn/video/7698932070457937183",
+          "httpStatus": 200,
+          "captcha": false,
+          "loginPrompt": false,
+          "error": null,
+          "capturedAt": "2026-10-21T04:06:40.635Z",
+          "videoId": "7698932070457937183"
+        }
+      ],
+      "stopped": false,
+      "stopReason": null,
+      "summary": {
+        "status": "single_video",
+        "regionCode": "US",
+        "requestedCount": 1,
+        "inspectedCount": 1,
+        "usableCount": 1,
+        "creatorResidenceVerified": false,
+        "meaning": "Observed video region field; not verified creator residence or nationality."
+      }
+    }
+  },
+  "contentReview": {
+    "decision": "passed",
+    "reason": "explicit_public_christian_church_comedy_skit_caption_manual_review",
+    "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+    "reviewedAt": "2026-10-21T04:06:38.751Z",
+    "evidence": [
+      {
+        "source": "creator_video_description",
+        "text": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+        "url": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+        "videoId": "7320376964521413919",
+        "publishedAt": "2024-01-04T22:42:04.000Z",
+        "captureSurface": "tiktok_native_video_search",
+        "sourceRecord": "tiktok-video-discovery.jsonl",
+        "capturedAt": "2026-10-21T03:57:19.270Z"
+      }
+    ],
+    "scope": "User accepts Christian-themed skits/comedy, including satire. This is a general comedy account with an explicit older relevant public caption; no claim about recent thematic frequency or personal belief. Original automatic two-caption heuristic is not treated as a user-specified minimum."
+  },
+  "contentReviewHistory": [
+    {
+      "previous": {
+        "decision": "pending",
+        "reason": "content_topic_and_format_unverified",
+        "evidence": []
+      },
+      "reviewedAt": "2026-10-21T03:59:01.262Z",
+      "decision": "passed",
+      "reason": "assistant_review_of_explicit_christian_skit_public_caption",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+          "url": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+          "videoId": "7320376964521413919",
+          "captureSurface": "tiktok_native_video_search",
+          "sourceRecord": "tiktok-video-discovery.jsonl",
+          "capturedAt": "2026-10-21T03:57:19.270Z"
+        }
+      ],
+      "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+      "scope": "Published Christian-tagged skit caption; older public evidence, not personal belief or a claim that all current posts share this theme"
+    },
+    {
+      "decision": "pending",
+      "reason": "only_one_historical_christian_tagged_skit_caption_not_sufficient_for_strict_content_direction",
+      "reviewMethod": "assistant_manual_review_of_captured_public_caption",
+      "evidence": [
+        {
+          "source": "creator_video_description",
+          "text": "#CapCut AYOOO 😱 #fypシ #christian #god #church #jokes #funnyskits #funnyvideos ",
+          "url": "https://www.tiktok.com/@itssimannn/video/7320376964521413919",
+          "videoId": "7320376964521413919",
+          "captureSurface": "tiktok_native_video_search",
+          "sourceRecord": "tiktok-video-discovery.jsonl",
+          "capturedAt": "2026-10-21T03:57:19.270Z"
+        }
+      ],
+      "reviewedAt": "2026-10-21T04:00:09.293Z",
+      "scope": "Preserve strict content-direction verification; no region visit while content remains unresolved"
+    }
+  ],
+  "videoRegion": {
+    "schemaVersion": 1,
+    "username": "itssimannn",
+    "authorId": "6802112752128574469",
+    "selectionSnapshotAt": "2026-10-21T03:58:19.553Z",
+    "selection": "latest_public_videos_in_verified_profile_snapshot_sorted_by_publish_time",
+    "requestedCount": 1,
+    "observations": [
+      {
+        "videoId": "7698932070457937183",
+        "authorId": "6802112752128574469",
+        "username": "itssimannn",
+        "videoUrl": "https://www.tiktok.com/@itssimannn/video/7698932070457937183",
+        "publishedAt": "2026-10-21T01:48:44.000Z",
+        "capturedAt": "2026-10-21T04:06:40.634Z",
+        "source": "video_detail_hydration",
+        "fieldPath": "__DEFAULT_SCOPE__[\"webapp.video-detail\"].itemInfo.itemStruct.locationCreated",
+        "rawValue": "US",
+        "regionCode": "US",
+        "status": "observed",
+        "reason": "video_region_field_observed",
+        "creatorResidenceVerified": false
+      }
+    ],
+    "navigationAttempts": [
+      {
+        "number": 1,
+        "url": "https://www.tiktok.com/@itssimannn/video/7698932070457937183",
+        "httpStatus": 200,
+        "captcha": false,
+        "loginPrompt": false,
+        "error": null,
+        "capturedAt": "2026-10-21T04:06:40.635Z",
+        "videoId": "7698932070457937183"
+      }
+    ],
+    "stopped": false,
+    "stopReason": null,
+    "summary": {
+      "status": "single_video",
+      "regionCode": "US",
+      "requestedCount": 1,
+      "inspectedCount": 1,
+      "usableCount": 1,
+      "creatorResidenceVerified": false,
+      "meaning": "Observed video region field; not verified creator residence or nationality."
+    }
+  }
+}

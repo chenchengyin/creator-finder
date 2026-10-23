@@ -1,0 +1,28 @@
+TAP version 13
+# Subtest: 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+not ok 1 - 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+  ---
+  duration_ms: 4.2665
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:477:1'
+  failureType: 'testCodeFailure'
+  error: 'Linktree DOM must not be read'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    p.evaluate (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:478:146)
+    read (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs:406:25)
+    async Object.readPage (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs:465:15)
+    async read (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:79:18)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.test.mjs:479:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51.448042

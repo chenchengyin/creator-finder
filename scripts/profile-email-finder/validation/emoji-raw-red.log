@@ -1,0 +1,36 @@
+TAP version 13
+# Subtest: 提取-EMAIL-019 emoji之前的UTF16位移不破坏邮箱原文证据
+not ok 1 - 提取-EMAIL-019 emoji之前的UTF16位移不破坏邮箱原文证据
+  ---
+  duration_ms: 5.321917
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:879:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + ''
+    - 'hello＠exa​mple．org'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'hello＠exa​mple．org'
+  actual: ''
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.test.mjs:880:154)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 41.265834

@@ -1,0 +1,4 @@
+{"phase":"before","page":"p1","action":"click","target":"@410","beforeUrl":"https://www.youtube.com/@choruslove","at":"2026-10-23T02:25:37.483Z"}
+{"phase":"after","page":"p1","action":"click","target":"@410","beforeUrl":"https://www.youtube.com/@choruslove","afterUrl":"https://www.youtube.com/@choruslove","at":"2026-10-23T02:25:37.650Z"}
+{"phase":"before","page":"p1","action":"mouse.click","target":"814.3359375","beforeUrl":"https://www.youtube.com/@choruslove","at":"2026-10-23T02:25:45.524Z"}
+{"phase":"after","page":"p1","action":"mouse.click","target":"814.3359375","beforeUrl":"https://www.youtube.com/@choruslove","afterUrl":"https://www.youtube.com/@choruslove","at":"2026-10-23T02:25:45.634Z"}

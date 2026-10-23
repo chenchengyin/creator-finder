@@ -1,0 +1,452 @@
+TAP version 13
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-kqRHY6/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+ok 1 - 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+  ---
+  duration_ms: 1096.303042
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-toGzPl/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-002 zero results still produce headers and target shortfall
+ok 2 - 导出-EXPORT-002 zero results still produce headers and target shortfall
+  ---
+  duration_ms: 67.109834
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-VcbVvE/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status
+not ok 3 - 输出-EXPORT-001 appended mounted-link columns preserve old metric formulas and source status
+  ---
+  duration_ms: 39.792
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:16:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot read properties of undefined (reading '0')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/export.test.mjs:22:33)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+not ok 4 - 参数-N-001/002 N is optional, frozen and a nonnegative safe integer
+  ---
+  duration_ms: 0.973291
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:36:1'
+  failureType: 'testCodeFailure'
+  error: 'unknown configuration key'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    normalizeConfig (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.mjs:5:2)
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:37:33)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+not ok 5 - 顺序-ORDER-001 搜索-SEARCH-001 主页-PROFILE-001/002 first ten unique authors are forced after valid exhaustion; later authors retain prefilter
+  ---
+  duration_ms: 44.391667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    -   '1',
+    -   '2',
+    -   '3',
+    -   '4',
+    -   '5',
+    -   '6',
+    -   '7',
+    -   '8',
+    -   '9',
+    -   '10',
+        '12',
+        '13'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: '1'
+    1: '2'
+    2: '3'
+    3: '4'
+    4: '5'
+    5: '6'
+    6: '7'
+    7: '8'
+    8: '9'
+    9: '10'
+    10: '12'
+    11: '13'
+  actual:
+    0: '12'
+    1: '13'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:47:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 顺序-ORDER-002 current response order beats preseeded global queue order
+not ok 6 - 顺序-ORDER-002 current response order beats preseeded global queue order
+  ---
+  duration_ms: 10.23275
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:53:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    resume configuration mismatch
+    + actual - expected
+    
+      {
+        country: 'US',
+        createdAt: '2026-10-21T04:00:00.000Z',
+        days: 10,
+    -   forceProfileFirstN: 1,
+        keywords: [
+          'christian skits'
+        ],
+        minAverageViewsExclusive: 50000,
+        requireBioEmail: true,
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    keywords:
+      0: 'christian skits'
+    country: 'US'
+    days: 10
+    minAverageViewsExclusive: 50000
+    requireBioEmail: true
+    targetCount: 1
+    windowStart: '2026-10-10T16:00:00.000Z'
+    windowEndExclusive: '2026-10-20T16:00:00.000Z'
+    timezone: 'Asia/Shanghai'
+    createdAt: '2026-10-21T04:00:00.000Z'
+    schemaVersion: 1
+    forceProfileFirstN: 1
+  actual:
+    schemaVersion: 1
+    keywords:
+      0: 'christian skits'
+    country: 'US'
+    days: 10
+    minAverageViewsExclusive: 50000
+    requireBioEmail: true
+    targetCount: 1
+    timezone: 'Asia/Shanghai'
+    windowStart: '2026-10-10T16:00:00.000Z'
+    windowEndExclusive: '2026-10-20T16:00:00.000Z'
+    createdAt: '2026-10-21T04:00:00.000Z'
+  operator: 'deepStrictEqual'
+  stack: |-
+    assertResumeCompatible (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.mjs:24:9)
+    runCampaign (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.mjs:24:61)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:56:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+not ok 7 - 搜索-SEARCH-002 only seven available authors means seven forced; unknown end never proceeds
+  ---
+  duration_ms: 20.8965
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:58:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 7
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 7
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:60:101)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+not ok 8 - 主页-PROFILE-003 complete same-run profile and link checks are reused across keyword and stable-ID rename
+  ---
+  duration_ms: 13.443375
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:64:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + []
+    - [
+    -   '1'
+    - ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: '1'
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:67:131)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+not ok 9 - 缓存-CACHE-001 a historical processedKeyword from signature rejection cannot satisfy forced inspection
+  ---
+  duration_ms: 2.436375
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:69:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    resume configuration mismatch
+    + actual - expected
+    
+      {
+        country: 'US',
+        createdAt: '2026-10-21T04:00:00.000Z',
+        days: 10,
+    -   forceProfileFirstN: 10,
+        keywords: [
+          'christian skits'
+        ],
+        minAverageViewsExclusive: 50000,
+        requireBioEmail: true,
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    keywords:
+      0: 'christian skits'
+    country: 'US'
+    days: 10
+    minAverageViewsExclusive: 50000
+    requireBioEmail: true
+    targetCount: 1
+    windowStart: '2026-10-10T16:00:00.000Z'
+    windowEndExclusive: '2026-10-20T16:00:00.000Z'
+    timezone: 'Asia/Shanghai'
+    createdAt: '2026-10-21T04:00:00.000Z'
+    schemaVersion: 1
+    forceProfileFirstN: 10
+  actual:
+    schemaVersion: 1
+    keywords:
+      0: 'christian skits'
+    country: 'US'
+    days: 10
+    minAverageViewsExclusive: 50000
+    requireBioEmail: true
+    targetCount: 1
+    timezone: 'Asia/Shanghai'
+    windowStart: '2026-10-10T16:00:00.000Z'
+    windowEndExclusive: '2026-10-20T16:00:00.000Z'
+    createdAt: '2026-10-21T04:00:00.000Z'
+  operator: 'deepStrictEqual'
+  stack: |-
+    assertResumeCompatible (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.mjs:24:9)
+    runCampaign (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.mjs:24:61)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:73:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+not ok 10 - 缓存-CACHE-002 historic captures and unknown link observations cannot be silently reused
+  ---
+  duration_ms: 0.299042
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:75:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:79:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+not ok 11 - 缓存-CACHE-003 same context reuses full metrics, changed context refreshes and does not mix old posts
+  ---
+  duration_ms: 0.1835
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:82:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:86:224)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+not ok 12 - 邮箱-EMAIL-003 mounted links are saved without granting email eligibility or triggering deep lookup
+  ---
+  duration_ms: 0.266292
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:88:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'no_search_bio_email'
+    - 'no_profile_bio_email'
+          ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'no_profile_bio_email'
+  actual: 'no_search_bio_email'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:91:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+not ok 13 - 断点-RESUME-001 fourth forced profile failure resumes without repeating first three or replacing it with rank eleven
+  ---
+  duration_ms: 23.7835
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:93:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'completed'
+    - 'paused'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'paused'
+  actual: 'completed'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:96:89)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 断点-RESUME-002 explicit target stop retains incomplete forced count
+not ok 14 - 断点-RESUME-002 explicit target stop retains incomplete forced count
+  ---
+  duration_ms: 23.673333
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:99:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'all_keywords_completed'
+    - 'target_reached'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'target_reached'
+  actual: 'all_keywords_completed'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:101:96)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+not ok 15 - 外链-LINK-001 raw hydration and native DOM link preserve full URL and source evidence
+  ---
+  duration_ms: 0.205458
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:111:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot read properties of undefined (reading 'status')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:113:30)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+not ok 16 - 外链-LINK-002 DOM fallback works; unloaded, wrong route and conflicts remain unknown
+  ---
+  duration_ms: 0.110959
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot read properties of undefined (reading 'status')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:116:138)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+not ok 17 - 外链-LINK-003 explicit empty mount is none; unsupported schemes stay unknown
+  ---
+  duration_ms: 0.046041
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:119:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot read properties of undefined (reading 'status')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/first-n.test.mjs:120:61)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 2
+# fail 15
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1261.997042

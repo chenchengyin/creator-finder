@@ -1,0 +1,44 @@
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/reels/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/reels/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/reels/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/fayeknightly_/reels/"}}
+{"progress":{"completion":"running","checked":0,"pending":0,"emails":0,"current":null}}
+{"progress":{"completion":"partial","checked":0,"pending":0,"emails":0,"current":null}}
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.instagram.com/fayeknightly_/reels/",
+  "completion": "partial",
+  "error": null,
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "emails": [],
+  "pages": [
+    {
+      "url": "https://www.instagram.com/fayeknightly_/reels/",
+      "key": "https://www.instagram.com/fayeknightly_/reels/",
+      "depth": 0,
+      "path": [
+        "https://www.instagram.com/fayeknightly_/reels/"
+      ],
+      "status": "partial",
+      "attempted": true,
+      "captures": [
+        "ddbc66074f100adec6eb9c99.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.instagram.com/fayeknightly_/reels/",
+      "finalUrl": "https://www.instagram.com/fayeknightly_/reels/",
+      "pendingProfileLinks": []
+    }
+  ],
+  "pending": [],
+  "issues": [],
+  "edges": [],
+  "updatedAt": "2026-10-22T11:42:54.510Z"
+}
+
+ego's nodejs process exited with code 2.

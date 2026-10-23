@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "config": {
+    "schemaVersion": 1,
+    "url": "https://www.instagram.com/fayeknightly_/",
+    "maxDepth": null,
+    "maxPages": null
+  },
+  "completion": "completed",
+  "pages": {
+    "https://www.instagram.com/fayeknightly_": {
+      "url": "https://www.instagram.com/fayeknightly_/",
+      "key": "https://www.instagram.com/fayeknightly_",
+      "depth": 0,
+      "path": [
+        "https://www.instagram.com/fayeknightly_/"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "f3a64841ea2a2957e7975b8c.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.instagram.com/fayeknightly_",
+      "finalUrl": "https://www.instagram.com/fayeknightly_/",
+      "pendingProfileLinks": [],
+      "bioEmailFound": true,
+      "stopReason": "profile_bio_email_found"
+    }
+  },
+  "queue": [],
+  "emails": [
+    {
+      "email": "TeamFaye@stregagroup.com",
+      "key": "teamfaye@stregagroup.com",
+      "status": "confirmed_public",
+      "variants": [
+        "TeamFaye@stregagroup.com"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.instagram.com/fayeknightly_/",
+          "pageKind": "profile",
+          "platform": "instagram",
+          "pageTitle": "Instagram",
+          "capturedAt": "2026-10-22T12:12:21.470Z",
+          "source": "profile_bio",
+          "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div",
+          "raw": "TeamFaye@stregagroup.com",
+          "context": "정 애 🇺🇸🇰🇷 \nmember of \nTeamFaye@stregagroup.com \n\nAccount owned by  (parent)",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.instagram.com/fayeknightly_/"
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [],
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "updatedAt": "2026-10-22T12:12:21.474Z"
+}

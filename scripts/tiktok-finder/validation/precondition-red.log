@@ -1,0 +1,44 @@
+TAP version 13
+# Subtest: 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+not ok 1 - 配置-CONFIG-001 wrong resume space rejects before changing persisted task data
+  ---
+  duration_ms: 49.160416
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:59:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:62:2)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+not ok 2 - 落盘-STORE-001 legacy directories cannot be silently converted to a new campaign
+  ---
+  duration_ms: 7.492667
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:65:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:67:2)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 98.321458

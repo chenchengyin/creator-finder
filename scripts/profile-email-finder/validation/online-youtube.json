@@ -1,0 +1,77 @@
+{
+  "captures": [
+    {
+      "url": "https://www.youtube.com/@YouTube",
+      "requestedUrl": "https://www.youtube.com/@YouTube",
+      "title": "YouTube - YouTube",
+      "kind": "profile",
+      "platform": "youtube",
+      "ready": true,
+      "complete": false,
+      "httpStatus": 200,
+      "access": "ok",
+      "blocks": [
+        {
+          "text": "YouTube",
+          "context": "YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-dynamic-text-view-model > h1",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "@YouTube",
+          "context": "@YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-content-metadata-view-model > div:nth-of-type(1)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "•YouTube's official YouTube channel …更多 YouTube和另外 3 个链接",
+          "context": "•YouTube's official YouTube channel …更多 YouTube和另外 3 个链接",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "4650万位订阅者•1660 个视频",
+          "context": "4650万位订阅者•1660 个视频",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-content-metadata-view-model > div:nth-of-type(2)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "订阅",
+          "context": "订阅",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-flexible-actions-view-model > div > button-view-model > button > div",
+          "source": "profile_bio",
+          "visible": true
+        }
+      ],
+      "links": [
+        {
+          "url": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "text": " YouTube",
+          "label": "",
+          "context": " YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-attribution-view-model > span:nth-of-type(1) > span > span > span > a",
+          "source": "profile_link",
+          "visible": true
+        }
+      ],
+      "actions": [
+        {
+          "selector": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-description-preview-view-model > truncated-text > button",
+          "label": "…更多",
+          "type": "profile_expand",
+          "waitFor": "ytd-about-channel-renderer"
+        }
+      ],
+      "issues": [],
+      "phase": "needs_expand",
+      "capturedAt": "2026-10-22T09:34:06.350Z",
+      "checkpoint": {
+        "phase": "needs_expand"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[p1 "TikTok - Make Your Day" | space "主页邮箱脚本验收-20261022"(51): 1 managed, 0 untracked — p1* "TikTok - Make Your Day"]
+root
+  container
+    svg_root
+    container
+      container
+        container
+          image
+          container
+            container
+              container
+                heading
+                  text "r3alism_0fficial"
+                heading
+                  text "r3alism_0fficial"
+              heading
+                container
+                  text "698"
+                  text "已关注"
+                container
+                  text "2.5M"
+                  text "粉丝"
+                container
+                  text "198M"
+                  text "赞"
+            container
+              heading
+                text "I'm Colin. I spread the Gospel, and follow Jesus. He saved me. So I remind you of Him everyday. R3alism.yt@gmail.com I AM WRITING A 365-DAY DEVOTIONAL🔥"
+              anchor [ref=1, url=https://www.tiktok.com/link/v2?aid=1988&lang=zh-Hans&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2FR3alism]
+                svg_root
+                text "linktr.ee/R3alism"
+          button "操作" [ref=2, loc=role:button[name="操作"]]
+        container
+          paragraph
+          container [ref=3]
+          paragraph
+        container
+          container
+            image
+            text "-"
+          button "Expand info card" [ref=4, loc=css:button[aria-label="Expand info card"]]
+            svg_root
+      container
+        button [ref=5]
+          svg_root
+        button [ref=6]
+          svg_root
+        button [ref=7]
+          text "登录"
+    image
+    heading
+      text "r3alism_0fficial"
+    paragraph
+      text "r3alism_0fficial"
+    text "698"
+    text "2.5M"
+    text "198M"
+    paragraph
+      text "I'm Colin. I spread the Gospel, and follow Jesus. He saved me. So I remind you of Him everyday. R3alism.yt@gmail.com I AM WRITING A 365-DAY DEVOTIONAL🔥"
+    container
+      svg_root
+      svg_root
+  container
+    button [ref=8]
+      svg_root
+    text "翻译当前页面"
+    button [ref=9]
+      svg_root
+    text "数据增强"
+    text "-"
+    text "开启"
+    button "找相似" [ref=10, loc=css:button[aria-label="找相似"]]
+      image
+      text "找相似"

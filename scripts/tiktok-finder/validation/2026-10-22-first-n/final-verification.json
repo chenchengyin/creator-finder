@@ -1,0 +1,18 @@
+{
+  "moduleTests": 90,
+  "regressionTests": 65,
+  "review": "completed_no_open_blockers",
+  "independentReview": false,
+  "historicalUnchangedFiles": 1484,
+  "liveAcceptance": false,
+  "sourceSha256": {
+    "config.mjs": "9c8840db658b85f07734794b16f775d425ed9a47bb7ecdc3e8bfea2470b03e20",
+    "workflow.mjs": "0b36a65a6f15b4fda7bbbf3f9665c9f7a39d8d8cf86d5f518dc872c50731e032",
+    "profile.mjs": "1958c892e3f81441f4cc15faee6ef574e2a38f49f3e4411c89cc37ec1ad94204",
+    "browser.mjs": "fa9f0dcae683837e739e268db4abc9153c07ae80a4b8aa4a77406e9cb1450f8e",
+    "export.mjs": "9e26aed25e7b44c7f6387e2f42718ab0d0d9f6316dfbacdc8ac0d0195f52ffe9",
+    "first-n.test.mjs": "021ff18f068e993f2e69f768b22012f5929fe3261574fa1ddf6e5abc2d6db1c9",
+    "export.test.mjs": "af09323570d9d248bda28d2cb785ba23ab09db8706b19fbd6cacd7d08741b514",
+    "config.example.json": "d475b0d299d278aabb9e3d08cc13246e7c9326164316c284c25a07bd67a33fcf"
+  }
+}

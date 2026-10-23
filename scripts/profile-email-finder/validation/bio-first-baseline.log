@@ -1,0 +1,508 @@
+TAP version 13
+# Subtest: 主页-PROFILE-001 无Bio邮箱仍返回挂载链接
+ok 1 - 主页-PROFILE-001 无Bio邮箱仍返回挂载链接
+  ---
+  duration_ms: 43.110084
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-002 展开INS资料并逐轮保存
+ok 2 - 主页-PROFILE-002 展开INS资料并逐轮保存
+  ---
+  duration_ms: 3.564625
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-003 YouTube邮箱只读不启动mailto
+ok 3 - 主页-PROFILE-003 YouTube邮箱只读不启动mailto
+  ---
+  duration_ms: 0.576583
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-004 私密或未知资料页不假空
+ok 4 - 主页-PROFILE-004 私密或未知资料页不假空
+  ---
+  duration_ms: 0.417292
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-005 采集器只读目标资料区协议
+ok 5 - 主页-PROFILE-005 采集器只读目标资料区协议
+  ---
+  duration_ms: 0.556375
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-001 导航串行并执行不同平台节奏
+ok 6 - 浏览-BROWSER-001 导航串行并执行不同平台节奏
+  ---
+  duration_ms: 3.924542
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-002 TikTok普通403仅等待后原址一次重试
+ok 7 - 浏览-BROWSER-002 TikTok普通403仅等待后原址一次重试
+  ---
+  duration_ms: 12.701833
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-003 验证码限流及控制丢失暂停
+ok 8 - 浏览-BROWSER-003 验证码限流及控制丢失暂停
+  ---
+  duration_ms: 2.798167
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-004 导航超时但正文已好直接读取
+ok 9 - 浏览-BROWSER-004 导航超时但正文已好直接读取
+  ---
+  duration_ms: 0.760833
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-005 生命周期不关闭调用方空间
+ok 10 - 浏览-BROWSER-005 生命周期不关闭调用方空间
+  ---
+  duration_ms: 1.8545
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-006 普通页面不自动滚动或通用展开
+ok 11 - 浏览-BROWSER-006 普通页面不自动滚动或通用展开
+  ---
+  duration_ms: 2.995083
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-007 未知/复制/表单动作不执行，留缺口
+ok 12 - 浏览-BROWSER-007 未知/复制/表单动作不执行，留缺口
+  ---
+  duration_ms: 30.318375
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-008 外站403不套用TikTok重试
+ok 13 - 浏览-BROWSER-008 外站403不套用TikTok重试
+  ---
+  duration_ms: 0.984042
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-009 可读主页有登录邀请不误停
+ok 14 - 浏览-BROWSER-009 可读主页有登录邀请不误停
+  ---
+  duration_ms: 1.125334
+  type: 'test'
+  ...
+# Subtest: 联系-CONTACT-001 capture保存先于下一步展开
+ok 15 - 联系-CONTACT-001 capture保存先于下一步展开
+  ---
+  duration_ms: 1.225667
+  type: 'test'
+  ...
+# Subtest: 写盘失败必须阻止下一步浏览操作
+ok 16 - 写盘失败必须阻止下一步浏览操作
+  ---
+  duration_ms: 1.181583
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+ok 17 - 浏览-BROWSER-010 普通外站登录墙只留分支缺口
+  ---
+  duration_ms: 0.777625
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+ok 18 - 主页-PROFILE-006 展开报错先观察已呈现资料，不丢新内容
+  ---
+  duration_ms: 0.812541
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-011 重定向到明显内网地址不读取DOM
+ok 19 - 浏览-BROWSER-011 重定向到明显内网地址不读取DOM
+  ---
+  duration_ms: 0.518709
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-013 已完成别名的capture要求停止时不再展开
+ok 20 - 链接-LINK-013 已完成别名的capture要求停止时不再展开
+  ---
+  duration_ms: 0.511375
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+ok 21 - 主页-PROFILE-007 YouTube简介使用原生按钮键盘激活
+  ---
+  duration_ms: 0.559375
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-012 Page无法确认停止执行时暂停队列
+ok 22 - 浏览-BROWSER-012 Page无法确认停止执行时暂停队列
+  ---
+  duration_ms: 0.831625
+  type: 'test'
+  ...
+# Subtest: 主页-PROFILE-008 展开超时后先落盘观察，原按钮最多再试一次
+ok 23 - 主页-PROFILE-008 展开超时后先落盘观察，原按钮最多再试一次
+  ---
+  duration_ms: 3.240541
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-013 等待期间用户接管立即停，不再读取DOM
+ok 24 - 浏览-BROWSER-013 等待期间用户接管立即停，不再读取DOM
+  ---
+  duration_ms: 0.705959
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-014 TikTok重试后401与浏览器异常保留真正暂停原因
+ok 25 - 浏览-BROWSER-014 TikTok重试后401与浏览器异常保留真正暂停原因
+  ---
+  duration_ms: 1.542041
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-015 普通外站导航失败不重试也不读上一页DOM
+ok 26 - 浏览-BROWSER-015 普通外站导航失败不重试也不读上一页DOM
+  ---
+  duration_ms: 0.647292
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-016 普通网页验证码与控制丢失继续暂停
+ok 27 - 浏览-BROWSER-016 普通网页验证码与控制丢失继续暂停
+  ---
+  duration_ms: 1.004375
+  type: 'test'
+  ...
+# Subtest: 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+ok 28 - 浏览-BROWSER-017 普通短链跳转到Linktree后不读取其DOM
+  ---
+  duration_ms: 0.319167
+  type: 'test'
+  ...
+# Subtest: 输入-INPUT-001 精确区分主页、聚合和普通网页
+ok 29 - 输入-INPUT-001 精确区分主页、聚合和普通网页
+  ---
+  duration_ms: 41.604958
+  type: 'test'
+  ...
+# Subtest: 输入-INPUT-002 非主页和危险地址不误识别
+ok 30 - 输入-INPUT-002 非主页和危险地址不误识别
+  ---
+  duration_ms: 2.093917
+  type: 'test'
+  ...
+# Subtest: 输入-INPUT-003 不默认截断且拒绝无效额度
+ok 31 - 输入-INPUT-003 不默认截断且拒绝无效额度
+  ---
+  duration_ms: 6.896041
+  type: 'test'
+  ...
+# Subtest: 输入-INPUT-004 CLI校验与只读模式不启动浏览器
+ok 32 - 输入-INPUT-004 CLI校验与只读模式不启动浏览器
+  ---
+  duration_ms: 65.80725
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-001 去重不丢来源与+tag
+ok 33 - 提取-EMAIL-001 去重不丢来源与+tag
+  ---
+  duration_ms: 4.193167
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-002 确定性清理全角和零宽字符
+ok 34 - 提取-EMAIL-002 确定性清理全角和零宽字符
+  ---
+  duration_ms: 2.424083
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-003 mailto只取收件人不取正文
+ok 35 - 提取-EMAIL-003 mailto只取收件人不取正文
+  ---
+  duration_ms: 2.845916
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-004 联系线索不分大小写或要求固定空格
+ok 36 - 提取-EMAIL-004 联系线索不分大小写或要求固定空格
+  ---
+  duration_ms: 3.545541
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-005 没有contact也扫描邮箱
+ok 37 - 提取-EMAIL-005 没有contact也扫描邮箱
+  ---
+  duration_ms: 1.631833
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-006 上下文围绕命中截断
+ok 38 - 提取-EMAIL-006 上下文围绕命中截断
+  ---
+  duration_ms: 9.31525
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-007 @提及不抑制混淆邮箱
+ok 39 - 提取-EMAIL-007 @提及不抑制混淆邮箱
+  ---
+  duration_ms: 1.022458
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-008 contactto前缀不擅删
+ok 40 - 提取-EMAIL-008 contactto前缀不擅删
+  ---
+  duration_ms: 0.58525
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-009 排除脚本/占位与@提及
+ok 41 - 提取-EMAIL-009 排除脚本/占位与@提及
+  ---
+  duration_ms: 0.210708
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-010 归属未知或另一达人也保留
+ok 42 - 提取-EMAIL-010 归属未知或另一达人也保留
+  ---
+  duration_ms: 0.30025
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-011 文本上限保留缺口且重复块不重复计数
+ok 43 - 提取-EMAIL-011 文本上限保留缺口且重复块不重复计数
+  ---
+  duration_ms: 218.663875
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-012 空白还原待复核不跨块拼接
+ok 44 - 提取-EMAIL-012 空白还原待复核不跨块拼接
+  ---
+  duration_ms: 21.130875
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-013 to/cc与百分号只解码一次
+ok 45 - 提取-EMAIL-013 to/cc与百分号只解码一次
+  ---
+  duration_ms: 11.460666
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-014 同地址各次语境独立保留
+ok 46 - 提取-EMAIL-014 同地址各次语境独立保留
+  ---
+  duration_ms: 0.513958
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-015 复杂邮箱不截短为看似合法地址
+ok 47 - 提取-EMAIL-015 复杂邮箱不截短为看似合法地址
+  ---
+  duration_ms: 14.197125
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-001 A到聚合页B到另一主页C逐个处理
+ok 48 - 链接-LINK-001 A到聚合页B到另一主页C逐个处理
+  ---
+  duration_ms: 254.80875
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-002 相对链接/query与hash路由保留
+ok 49 - 链接-LINK-002 相对链接/query与hash路由保留
+  ---
+  duration_ms: 0.568041
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-003 环和重定向别名不重复扫描
+ok 50 - 链接-LINK-003 环和重定向别名不重复扫描
+  ---
+  duration_ms: 17.443667
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-004 首个邮箱不会提前结束
+ok 51 - 链接-LINK-004 首个邮箱不会提前结束
+  ---
+  duration_ms: 41.795959
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-005 默认超过3跳20页仍继续，显式额度保留队列
+ok 52 - 链接-LINK-005 默认超过3跳20页仍继续，显式额度保留队列
+  ---
+  duration_ms: 296.088916
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-006 最终页重新分派，不读取危险重定向
+ok 53 - 链接-LINK-006 最终页重新分派，不读取危险重定向
+  ---
+  duration_ms: 8.616833
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-007 自己Footer Contact可递归，商品导航不爬
+ok 54 - 链接-LINK-007 自己Footer Contact可递归，商品导航不爬
+  ---
+  duration_ms: 0.285584
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-008 普通文字社交链接不要求图标
+ok 55 - 链接-LINK-008 普通文字社交链接不要求图标
+  ---
+  duration_ms: 0.055083
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-010 简介中的明确文本网址也递归
+ok 56 - 链接-LINK-010 简介中的明确文本网址也递归
+  ---
+  duration_ms: 0.314458
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-011 不破坏签名或合并不同query
+ok 57 - 链接-LINK-011 不破坏签名或合并不同query
+  ---
+  duration_ms: 0.08625
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-001 后续失败不丢已有邮箱
+ok 58 - 状态-STATE-001 后续失败不丢已有邮箱
+  ---
+  duration_ms: 9.203417
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-002 完整无邮箱与未读完整分开
+ok 59 - 状态-STATE-002 完整无邮箱与未读完整分开
+  ---
+  duration_ms: 19.77225
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-003 状态指针已提交后可重建摘要，不重抓成功页
+ok 60 - 状态-STATE-003 状态指针已提交后可重建摘要，不重抓成功页
+  ---
+  duration_ms: 42.702875
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-004 活跃写锁和损坏状态不能覆盖旧数据
+ok 61 - 状态-STATE-004 活跃写锁和损坏状态不能覆盖旧数据
+  ---
+  duration_ms: 6.720792
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-005 续跑补失败页，不重采成功页
+ok 62 - 状态-STATE-005 续跑补失败页，不重采成功页
+  ---
+  duration_ms: 32.256209
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-006 本页先读到邮箱，后展开失败仍提交
+ok 63 - 状态-STATE-006 本页先读到邮箱，后展开失败仍提交
+  ---
+  duration_ms: 9.726959
+  type: 'test'
+  ...
+# Subtest: 输出-OUTPUT-001 跨账号同邮箱保留全部来源
+ok 64 - 输出-OUTPUT-001 跨账号同邮箱保留全部来源
+  ---
+  duration_ms: 19.306375
+  type: 'test'
+  ...
+# Subtest: 输出-OUTPUT-002 不保存浏览器凭证和非公开字段
+ok 65 - 输出-OUTPUT-002 不保存浏览器凭证和非公开字段
+  ---
+  duration_ms: 20.819084
+  type: 'test'
+  ...
+# Subtest: 输出-OUTPUT-003 输出失败保留提交，续跑只重建输出
+ok 66 - 输出-OUTPUT-003 输出失败保留提交，续跑只重建输出
+  ---
+  duration_ms: 105.415958
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-011 长无邮箱正文不会阻塞进程
+ok 67 - 提取-EMAIL-011 长无邮箱正文不会阻塞进程
+  ---
+  duration_ms: 102.527667
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-009 只解包已知平台实际挂载跳转且保留原地址
+ok 68 - 链接-LINK-009 只解包已知平台实际挂载跳转且保留原地址
+  ---
+  duration_ms: 1.130542
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-007 evidence写入失败停止队列且只返回已提交事实
+ok 69 - 状态-STATE-007 evidence写入失败停止队列且只返回已提交事实
+  ---
+  duration_ms: 34.274041
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-008 已完成且关闭空间的任务重建输出不连接浏览器
+ok 70 - 状态-STATE-008 已完成且关闭空间的任务重建输出不连接浏览器
+  ---
+  duration_ms: 314.137
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-009 原浏览器不可用留暂停和可恢复状态
+ok 71 - 状态-STATE-009 原浏览器不可用留暂停和可恢复状态
+  ---
+  duration_ms: 7.13075
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-016 长@段落与损坏域名有界且不截取超长邮箱
+ok 72 - 提取-EMAIL-016 长@段落与损坏域名有界且不截取超长邮箱
+  ---
+  duration_ms: 675.389417
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-012 普通网页大容器中的Contact不把商店文章都纳入
+ok 73 - 链接-LINK-012 普通网页大容器中的Contact不把商店文章都纳入
+  ---
+  duration_ms: 2.240791
+  type: 'test'
+  ...
+# Subtest: 输出-OUTPUT-004 每份邮箱证据包含实际页型和标题
+ok 74 - 输出-OUTPUT-004 每份邮箱证据包含实际页型和标题
+  ---
+  duration_ms: 0.876375
+  type: 'test'
+  ...
+# Subtest: 链接-LINK-014 runner复用完成页向适配器明确返回stop
+ok 75 - 链接-LINK-014 runner复用完成页向适配器明确返回stop
+  ---
+  duration_ms: 192.72425
+  type: 'test'
+  ...
+# Subtest: 状态-STATE-010 损坏队列引用在写盘前拒绝并保护原状态
+ok 76 - 状态-STATE-010 损坏队列引用在写盘前拒绝并保护原状态
+  ---
+  duration_ms: 17.287834
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-017 异常点号邮箱与未解完mailto不冒充明确结果
+ok 77 - 提取-EMAIL-017 异常点号邮箱与未解完mailto不冒充明确结果
+  ---
+  duration_ms: 0.609458
+  type: 'test'
+  ...
+# Subtest: 输出-OUTPUT-005 同位置展开后的新语境不能被旧证据吞掉
+ok 78 - 输出-OUTPUT-005 同位置展开后的新语境不能被旧证据吞掉
+  ---
+  duration_ms: 153.333667
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-018 URL用户信息和图片文件名不冒充公开邮箱
+ok 79 - 提取-EMAIL-018 URL用户信息和图片文件名不冒充公开邮箱
+  ---
+  duration_ms: 0.604709
+  type: 'test'
+  ...
+# Subtest: 提取-EMAIL-019 emoji之前的UTF16位移不破坏邮箱原文证据
+ok 80 - 提取-EMAIL-019 emoji之前的UTF16位移不破坏邮箱原文证据
+  ---
+  duration_ms: 0.913583
+  type: 'test'
+  ...
+# Subtest: 跳过-SKIP-001 Linktree不访问，其他链接继续且续跑不重试跳过项
+ok 81 - 跳过-SKIP-001 Linktree不访问，其他链接继续且续跑不重试跳过项
+  ---
+  duration_ms: 24.55875
+  type: 'test'
+  ...
+# Subtest: 跳过-SKIP-002 外站被拒后继续下一分支，保留原邮箱和跳过原因
+ok 82 - 跳过-SKIP-002 外站被拒后继续下一分支，保留原邮箱和跳过原因
+  ---
+  duration_ms: 26.747542
+  type: 'test'
+  ...
+# Subtest: 跳过-SKIP-003 程序错误不被当作普通访问受阻吞掉
+ok 83 - 跳过-SKIP-003 程序错误不被当作普通访问受阻吞掉
+  ---
+  duration_ms: 9.781375
+  type: 'test'
+  ...
+1..83
+# tests 83
+# suites 0
+# pass 83
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3092.08475

@@ -1,0 +1,169 @@
+{ method: 'click', error: 'page.click timed out after 3000ms: Selector #page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-description-preview-view-model > truncated-text > button matched 1 elements, but none can receive input; dialog "YouTube" intercepts pointer events' }
+{"result":{"complete":false,"issues":["profile_expand_failed"],"checkpoint":{}},"rounds":1,"links":["https://youtube.com/user/youtube?sub_confirmation=1"]}
+[p1 "YouTube - YouTube" | space "主页邮箱脚本验收-20261022"(51): 1 managed, 0 untracked — p1* "YouTube - YouTube"]
+root
+  container
+    banner
+      container
+        container
+          button "导视" [ref=463, loc=css:button[aria-label="导视"]]
+            svg_root
+          container
+            anchor [ref=464, url=https://www.youtube.com/]
+              svg_root
+            text "SG"
+        container
+          button [ref=465]
+            svg_root
+            text "Filters"
+          search
+            form
+              comboboxgrouping [ref=466, loc=css:input[name="search_query"]]
+                text "搜索"
+            button "Search" [ref=467, loc=css:button[aria-label="Search"]]
+              svg_root
+          button "通过语音搜索内容" [ref=468, loc=css:button[aria-label="通过语音搜索内容"]]
+        container
+          button [ref=469]
+            svg_root
+            svg_root
+          button [ref=470]
+            svg_root
+          button "Your feed" [ref=471, loc=css:button[aria-label="Your feed"]]
+            svg_root
+    navigation
+    main
+      container
+        container
+          image
+          container
+            container
+              container
+                image
+                container
+                  container
+                    button [ref=472]
+                      svg_root
+                      text "blog.youtube/creator-and-artist-stories"
+                      svg_root
+                    button [ref=473]
+                      image
+                      text "youtube.com/user/youtube?sub_confirmation=1"
+                      svg_root
+                  button [ref=474]
+                    text "查看另外 2 条"
+                    svg_root
+              container
+                heading "YouTube，已验证"
+                  text "YouTube"
+                  image
+                container
+                  group
+                    text "@YouTube"
+                  text "•"
+                  group
+                    container "4650万位订阅者"
+                      text "4650万位订阅者"
+                    text "•"
+                    text "1660 个视频"
+                container
+                  text "YouTube's official YouTube channel"
+                  button "说明。YouTube's official YouTube channel…点按即可了解详情。" [ref=475, loc=css:button[aria-label="说明。YouTube's official YouTube channel…点按即可了解详情。"]]
+                    text "…更多"
+                container
+                  anchor [ref=476, url=https://youtube.com/user/youtube?sub_confirmation=1]
+                    image
+                    text "YouTube"
+                  button [ref=477]
+                    text "和另外 3 个链接"
+                container
+                  button "订阅" [ref=478, loc=css:button[aria-label="订阅"]]
+                    text "订阅"
+                  button [ref=479]
+                    text "View channel stats"
+            container
+              container
+                image
+                image
+                text "美国"
+              button "Expand info card" [ref=480, loc=css:button[aria-label="Expand info card"]]
+                svg_root
+            button "Expand" [ref=481, loc=role:button[name="Expand"]]
+              container
+                svg_root
+                paragraph
+                  text "Quick channel stats"
+              svg_root
+        tablist [ref=482]
+          tablist
+            tab [ref=483]
+              text "首页"
+            tab [ref=484]
+              text "视频"
+            tab [ref=485]
+              text "Shorts"
+            tab [ref=486]
+              text "直播"
+            tab [ref=487]
+              text "播客"
+            tab [ref=488]
+              text "播放列表"
+            tab [ref=489]
+              text "帖子"
+            button "搜索" [ref=490]
+              svg_root
+      container
+        container "YouTube 视频播放器" [ref=491]
+          video [ref=492]
+          anchor [ref=493, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+            text "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+          button "更多" [ref=494, loc=css:button[aria-label="更多"]]
+            svg_root
+          container [ref=495]
+            text "Do you think they would notice if it went missing?"
+          container
+            slider "播放滑块" [ref=496, loc=role:slider[name="播放滑块"]]
+            container
+              container
+                button "暂停 (k)" [ref=497, loc=css:button[aria-label="暂停 (k)"]]
+                  svg_root
+                button "取消静音 (m)" [ref=498, loc=css:button[aria-label="取消静音 (m)"]]
+                  svg_root
+                button "0 分钟 2 秒/8 分钟 19 秒" [ref=499, loc=role:button[name="0 分钟 2 秒/8 分钟 19 秒"]]
+                  text "0:02"
+                  text "/"
+                  text "8:19"
+              container
+                button "展开" [ref=500, loc=css:button[aria-label="展开"]]
+                  svg_root
+                button "设置" [ref=501, loc=css:button[aria-label="设置"]]
+                  svg_root
+        container
+          container
+            heading "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend. 8分钟20秒钟"
+              anchor [ref=502, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                text "@ldshadowlady created Shadowcraft as a teen. 15 years later, she's a Minecraft legend."
+            container
+              text "1,379,704次观看"
+              container
+                text "•"
+                text "2天前"
+          container
+            text "A Minecraft legend built block by block 🟪 Over 15 years ago, @ldshadowlady uploaded her first Call of Duty video from her bedroom. Today, she’s YouTube royalty, holding the crown as one of the mo..."
+            button [ref=503]
+              anchor [ref=504, url=https://www.youtube.com/watch?v=yjHvkMeVzK0]
+                text "了解详情"
+  container
+    button [ref=505]
+      svg_root
+    text "翻译当前页面"
+    button [ref=506]
+      svg_root
+    text "数据增强"
+    text "-"
+    text "开启"
+    button "找相似" [ref=507, loc=css:button[aria-label="找相似"]]
+      image
+      text "找相似"
+
+

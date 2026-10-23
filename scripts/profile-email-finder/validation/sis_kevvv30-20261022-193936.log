@@ -1,0 +1,101 @@
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/sis_kevvv30/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/sis_kevvv30/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/sis_kevvv30/"}}
+{"progress":{"completion":"running","checked":0,"pending":1,"emails":0,"current":"https://www.instagram.com/sis_kevvv30/"}}
+{"progress":{"completion":"running","checked":1,"pending":2,"emails":0,"current":"https://linktr.ee/kevanybissa"}}
+{"progress":{"completion":"running","checked":1,"pending":1,"emails":0,"current":"https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw"}}
+{"progress":{"completion":"running","checked":1,"pending":0,"emails":0,"current":null}}
+{"progress":{"completion":"completed","checked":1,"pending":0,"emails":0,"current":null}}
+{
+  "schemaVersion": 1,
+  "rootUrl": "https://www.instagram.com/sis_kevvv30/",
+  "completion": "completed",
+  "error": null,
+  "browser": {
+    "spaceId": 51,
+    "pageLabel": "p1",
+    "owned": false
+  },
+  "emails": [],
+  "pages": [
+    {
+      "url": "https://www.instagram.com/sis_kevvv30/",
+      "key": "https://www.instagram.com/sis_kevvv30",
+      "depth": 0,
+      "path": [
+        "https://www.instagram.com/sis_kevvv30/"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "307b3d91fabecdf67354c7ea.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.instagram.com/sis_kevvv30",
+      "finalUrl": "https://www.instagram.com/sis_kevvv30/",
+      "pendingProfileLinks": []
+    },
+    {
+      "url": "https://linktr.ee/kevanybissa",
+      "key": "https://linktr.ee/kevanybissa",
+      "depth": 1,
+      "path": [
+        "https://www.instagram.com/sis_kevvv30/",
+        "https://linktr.ee/kevanybissa"
+      ],
+      "status": "skipped",
+      "attempted": false,
+      "captures": [],
+      "issues": [
+        "linktree_temporarily_skipped"
+      ],
+      "checkpoint": {}
+    },
+    {
+      "url": "https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw",
+      "key": "https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw",
+      "depth": 1,
+      "path": [
+        "https://www.instagram.com/sis_kevvv30/",
+        "https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw"
+      ],
+      "status": "skipped",
+      "attempted": false,
+      "captures": [],
+      "issues": [
+        "linktree_temporarily_skipped"
+      ],
+      "checkpoint": {}
+    }
+  ],
+  "pending": [],
+  "issues": [
+    {
+      "url": "https://linktr.ee/kevanybissa",
+      "reason": "linktree_temporarily_skipped"
+    },
+    {
+      "url": "https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw",
+      "reason": "linktree_temporarily_skipped"
+    }
+  ],
+  "edges": [
+    {
+      "from": "https://www.instagram.com/sis_kevvv30/",
+      "to": "https://linktr.ee/kevanybissa",
+      "rawUrl": "linktr.ee/kevanybissa",
+      "source": "profile_link",
+      "location": "#mount_0_0_Zo > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > a"
+    },
+    {
+      "from": "https://www.instagram.com/sis_kevvv30/",
+      "to": "https://linktr.ee/kevanybissa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw",
+      "rawUrl": "https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fkevanybissa%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafFIs9Nq6GTFz6QP33CRCceqO2atRooxFrWe4Bz7JHOL9ZoH19YuN_BX88XRg_aem_3eNjld5mqeu3v-2OrtuDlw&e=AUD6zdjV4AArXu2C7sh1WtrA7RWT_4uCXTXEv9z9NRXNdEviPWcednpBDePkwxpeJd3DJ0078kpQl-V0zgnhKg8SLT3nw8qaz0OmYorquXssFpKpe544fVO-1bh3q_nEe0_9MhHLd4Qn",
+      "source": "profile_link",
+      "location": "#mount_0_0_Zo > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > a"
+    }
+  ],
+  "updatedAt": "2026-10-22T11:39:49.006Z"
+}
+

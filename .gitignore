@@ -1,0 +1,22 @@
+# Local configuration and generated caches
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+.cowork-temp/
+
+# Keep only the recorded samples required by offline tests.
+/runs/*
+!/runs/2026-10-21-christian-skits-us-5/
+/runs/2026-10-21-christian-skits-us-5/*
+!/runs/2026-10-21-christian-skits-us-5/profile-realjobrito.json
+!/runs/2026-10-21-christian-skits-us-5/profile-r3alism_0fficial.json
+!/runs/2026-10-21-christian-skits-us-5/profile-danielddwilliams.json
+!/runs/2026-10-21-christian-skits-us-5/profile-timtim44441.json
+!/runs/2026-10-21-christian-skits-us-5/profile-itssimannn.json
+!/runs/2026-10-22-easykol-region-rea/
+/runs/2026-10-22-easykol-region-rea/*
+!/runs/2026-10-22-easykol-region-rea/jeanne-runtime.json

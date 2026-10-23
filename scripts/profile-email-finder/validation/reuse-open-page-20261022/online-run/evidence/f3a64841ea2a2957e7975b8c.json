@@ -1,0 +1,140 @@
+{
+  "url": "https://www.instagram.com/fayeknightly_/",
+  "requestedUrl": "https://www.instagram.com/fayeknightly_/",
+  "kind": "profile",
+  "platform": "instagram",
+  "title": "Instagram",
+  "ready": true,
+  "complete": true,
+  "phase": "read",
+  "capturedAt": "2026-10-22T12:12:21.470Z",
+  "httpStatus": 200,
+  "issues": [],
+  "checkpoint": {
+    "phase": "read"
+  },
+  "blocks": [
+    {
+      "text": "fayeknightly_",
+      "context": "fayeknightly_",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a",
+      "visible": true
+    },
+    {
+      "text": "Faye Knightly 🧚",
+      "context": "Faye Knightly 🧚",
+      "source": "profile_bio",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+      "visible": true
+    },
+    {
+      "text": "655帖子",
+      "context": "655帖子",
+      "source": "profile_bio",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1)",
+      "visible": true
+    },
+    {
+      "text": "52.6万粉丝",
+      "context": "52.6万粉丝",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) > a",
+      "visible": true
+    },
+    {
+      "text": "577关注",
+      "context": "577关注",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(3) > a",
+      "visible": true
+    },
+    {
+      "text": "정 애 🇺🇸🇰🇷 \nmember of \nTeamFaye@stregagroup.com \n\nAccount owned by  (parent)",
+      "context": "정 애 🇺🇸🇰🇷 \nmember of \nTeamFaye@stregagroup.com \n\nAccount owned by  (parent)",
+      "source": "profile_bio",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div",
+      "visible": true
+    },
+    {
+      "text": "@therocksquad",
+      "context": "@therocksquad",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(1)",
+      "visible": true
+    },
+    {
+      "text": "@novakids",
+      "context": "@novakids",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(2)",
+      "visible": true
+    },
+    {
+      "text": "@aliciaknightly",
+      "context": "@aliciaknightly",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(3)",
+      "visible": true
+    },
+    {
+      "text": "linktr.ee/Fayeknightly_",
+      "context": "linktr.ee/Fayeknightly_",
+      "source": "profile_content",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a",
+      "visible": true
+    },
+    {
+      "text": "关注",
+      "context": "关注",
+      "source": "profile_bio",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > section:nth-of-type(2) > div > div > div > div > div:nth-of-type(1) > button > div > div",
+      "visible": true
+    },
+    {
+      "text": "发消息",
+      "context": "发消息",
+      "source": "profile_bio",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > section:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div",
+      "visible": true
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.instagram.com/therocksquad/",
+      "text": "@therocksquad",
+      "label": "",
+      "context": "정 애 🇺🇸🇰🇷\nmember of @therocksquad\nTeamFaye@stregagroup.com\n@novakids\nAccount owned by @aliciaknightly (parent)",
+      "source": "profile_link",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(1)",
+      "visible": true
+    },
+    {
+      "url": "https://www.instagram.com/novakids/",
+      "text": "@novakids",
+      "label": "",
+      "context": "정 애 🇺🇸🇰🇷\nmember of @therocksquad\nTeamFaye@stregagroup.com\n@novakids\nAccount owned by @aliciaknightly (parent)",
+      "source": "profile_link",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(2)",
+      "visible": true
+    },
+    {
+      "url": "https://www.instagram.com/aliciaknightly/",
+      "text": "@aliciaknightly",
+      "label": "",
+      "context": "정 애 🇺🇸🇰🇷\nmember of @therocksquad\nTeamFaye@stregagroup.com\n@novakids\nAccount owned by @aliciaknightly (parent)",
+      "source": "profile_link",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > span > div > span > a:nth-of-type(3)",
+      "visible": true
+    },
+    {
+      "url": "https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2FFayeknightly_%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafW7qvbQK98oDDmTTW_7ojZ8rzhi966PhYklKGrCqNhIsN5YpFnusQL3LgFiw_aem_GOq3VTjrXL5lPRA1PcYCOQ&e=AUBAKrcB0tM6JmOV7BetwFArCranJQM1AfJAReHFpTv0OyeKiYADT24PJeTXEAiNPi7-CW5qNlFyQgG5F_Rl3qQQC3rZ1jTnapNMtBCiGiPGH2VaRlWB_YGTxmxEpTtLvTX_3QjPRkjF",
+      "text": "linktr.ee/Fayeknightly_",
+      "label": "",
+      "context": "linktr.ee/Fayeknightly_",
+      "source": "profile_link",
+      "location": "#mount_0_0_g9 > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > section > main > div:nth-of-type(1) > div > header > div > section:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > a",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+YouTube 来源对话同步与验收
+日期：2026-10-23（北京时间）
+
+结论
+已按更正后的来源对话「设计主页邮箱递归查找脚本」01a16283-f323-7613-8072-bfcd8a8fd039完成增量集成。
+原源码只读对照；实际修改位于 /Users/vb/Projects/creator-finder_preview，不覆盖原项目，也不复制旧运行结果冒充新采集。
+
+真实结果
+1. kallaway@wavylabs.co：YouTube原生联系邮箱，acceptedEmails，sourceType=profile_contact。
+2. support@sandcastles.ai：站外Contact页公开支持邮箱，原始emails保留confirmed_public；接入层reviewEmails标记support_mailbox_requires_review，不自动满足达人邮箱条件。
+整份采集completed，6页记录（1页复用、5页新访问），pending=[]。原始邮箱、路径、原文和不同来源证据均保留。
+
+合并了哪些逻辑
+- 只有简介明确邮箱触发Bio优先结束。YouTube原生邮箱取得后继续简介里的文字网址和挂链，保留多个邮箱。
+- 恢复旧profile_contact_email_found结束的运行时，从保存capture重建待查链接，不重新打开频道或重做验证码。
+- 损坏验证断点先暂停，不能用错误类型或未知阶段重置勾选/提交预算。
+- 已提交的断点恢复只等待邮箱结果，连续恢复保留该阶段，不再次提交。
+- 点击接口报普通超时或元素消失时，先检查实际验证/邮箱结果；控制、CDP和写盘错误仍立即停止。
+- 验证快照只接受唯一可见框，定位到对应iframe的局部快照，不随意选择第一个同名框。
+- 站外support@邮箱作为通用支持线索待复核；不是完整的邮箱角色或归属推断模型。原生邮箱和正常站外商务邮箱仍沿用现有采纳规则。
+- preview既有WhatsApp忽略、规范URL去重、联系链接范围、访问节奏和不可变证据保留。
+
+实际操作步骤
+A. 前一轮原生邮箱实测（空间90，已结束）
+1. 打开 https://www.youtube.com/@kallawaymarketing，确认频道Kallaway。
+2. 简介点“更多”，打开About。
+3. 点击“查看电子邮件地址”，等待原生验证iframe就绪。
+4. 勾选一次普通reCAPTCHA，观察验证通过。
+5. 点击原生“提交”一次，读到mailto:kallaway@wavylabs.co。
+6. 保存#email、profile_contact_email证据和阶段检查点，采集completed后结束空间。
+该轮完整浏览器耗时33.184秒；本次合并没有重做这些已成功步骤。
+
+B. 本次合并后的新增挂链实测（空间92，已结束）
+1. 将前一轮preview运行的断点与不可变evidence复制到新的验收运行目录；前一轮结果保持原样。
+2. 新逻辑识别旧原生邮箱停止标记，直接从频道完整简介提取Helpful Links里的网址，恢复挂链队列。没有重新读取YouTube页面。
+3. 10:54:01 打开kallaway.co/launch，跟随页面正常跳转到onefactor.ai/kallaway/launch。
+4. 10:54:09 检查shortformsystem.co；10:54:17检查sandcastles.ai。
+5. 10:54:25 检查onefactor.ai/kallaway/academy。
+6. 从Sandcastles首页实际提取Contact链接，10:54:33打开 https://sandcastles.ai/contact。
+7. 页面文字及对应mailto均出现support@sandcastles.ai。保存路径：YouTube完整简介 → https://sandcastles.ai/ → https://sandcastles.ai/contact。
+8. 接入层把支持邮箱单列待复核，保留原生邮箱为已采纳。队列处理完成后正常finish空间92。
+本次新增挂链浏览器耗时32.795秒。前一轮原生验证和本次挂链续查分开计时，不能把两段相加当作整轮交付时间。
+从你更正来源到本次真实挂链验收完成约786.612秒，包含源码对照、开发、回归和独立复核。
+
+测试与复核
+新增SYNC-001～011先观察失败，再实现修复。全项目477 tests / 477 pass / 0 fail；独立复核11项增量测试通过。
+复核发现并修复三处：恢复旧已关闭运行没有浏览器、提交等待原始控制错误被吞、已提交阶段被observed覆盖。三项均有故障回归测试，最终复核未发现新的具体中高风险。
+没有Git仓库，未创建提交；原项目、原任务空间19/60/62均未改动。
+
+交付文件
+YouTube来源同步与验收证据.json：当前结果、采纳/复核、完整来源路径、动作时间、代码前后哈希及测试结果。
+项目模块文档：scripts/profile-email-finder/docs/2026-10-23-来源对话同步-*.md。
+项目实测记录：scripts/profile-email-finder/validation/youtube-source-merge-20261023。

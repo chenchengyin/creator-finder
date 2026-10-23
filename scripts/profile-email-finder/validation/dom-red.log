@@ -1,0 +1,16 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
+  [
+    'footer@example.org',
+    'hello@example.org',
++   'hidden@example.org',
+    'obfuscated@demo.org',
+    'other@example.org',
+    'plain@example.org',
+    'plus+tag@example.org'
+  ]
+
+    at file:////[eval2]:12:8
+
+ego's nodejs process exited with code 1.

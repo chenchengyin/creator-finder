@@ -1,0 +1,17 @@
+{
+  "url": "https://www.tiktok.com/@fixture",
+  "kind": "profile",
+  "platform": "tiktok",
+  "ready": true,
+  "complete": true,
+  "issues": [],
+  "checkpoint": {},
+  "blocks": [
+    {
+      "text": "fixture@example.org",
+      "location": "bio",
+      "visible": true
+    }
+  ],
+  "links": []
+}

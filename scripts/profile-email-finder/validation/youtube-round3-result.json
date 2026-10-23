@@ -1,0 +1,277 @@
+{
+  "result": {
+    "complete": true,
+    "issues": [],
+    "checkpoint": {}
+  },
+  "captures": [
+    {
+      "url": "https://www.youtube.com/@YouTube",
+      "requestedUrl": "https://www.youtube.com/@YouTube",
+      "title": "YouTube - YouTube",
+      "kind": "profile",
+      "platform": "youtube",
+      "ready": true,
+      "complete": false,
+      "httpStatus": 200,
+      "access": "ok",
+      "blocks": [
+        {
+          "text": "YouTube",
+          "context": "YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-dynamic-text-view-model > h1",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "@YouTube",
+          "context": "@YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-content-metadata-view-model > div:nth-of-type(1)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "•YouTube's official YouTube channel …更多 YouTube和另外 3 个链接",
+          "context": "•YouTube's official YouTube channel …更多 YouTube和另外 3 个链接",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "4650万位订阅者•1660 个视频",
+          "context": "4650万位订阅者•1660 个视频",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-content-metadata-view-model > div:nth-of-type(2)",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "订阅",
+          "context": "订阅",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-flexible-actions-view-model > div > button-view-model > button > div",
+          "source": "profile_bio",
+          "visible": true
+        }
+      ],
+      "links": [
+        {
+          "url": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "text": " YouTube",
+          "label": "",
+          "context": " YouTube",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-attribution-view-model > span:nth-of-type(1) > span > span > span > a",
+          "source": "profile_link",
+          "visible": true
+        }
+      ],
+      "actions": [
+        {
+          "selector": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-description-preview-view-model > truncated-text > button",
+          "label": "…更多",
+          "type": "profile_expand",
+          "waitFor": "ytd-about-channel-renderer"
+        }
+      ],
+      "issues": [],
+      "phase": "needs_expand",
+      "capturedAt": "2026-10-22T09:40:51.445Z",
+      "checkpoint": {
+        "phase": "needs_expand"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/@YouTube",
+      "requestedUrl": "https://www.youtube.com/@YouTube",
+      "title": "YouTube - YouTube",
+      "kind": "profile",
+      "platform": "youtube",
+      "ready": true,
+      "complete": true,
+      "httpStatus": 200,
+      "access": "ok",
+      "blocks": [
+        {
+          "text": "Subscribeyoutube.com/user/youtube?sub_confirmation=1",
+          "context": "Subscribeyoutube.com/user/youtube?sub_confirmation=1",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "Instagraminstagram.com/youtube",
+          "context": "Instagraminstagram.com/youtube",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "TikToktiktok.com/@youtube",
+          "context": "TikToktiktok.com/@youtube",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(3) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "YouTube Blogblog.youtube/creator-and-artist-stories",
+          "context": "YouTube Blogblog.youtube/creator-and-artist-stories",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(4) > div",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "www.youtube.com/@YouTube美国4650万位订阅者1,660 个视频1,355,654,549次观看",
+          "context": "www.youtube.com/@YouTube美国4650万位订阅者1,660 个视频1,355,654,549次观看",
+          "location": "#additional-info-container",
+          "source": "profile_bio",
+          "visible": true
+        },
+        {
+          "text": "分享频道",
+          "context": "分享频道",
+          "location": "#share-channel > ytd-button-renderer > yt-button-shape > button > div:nth-of-type(2)",
+          "source": "profile_bio",
+          "visible": true
+        }
+      ],
+      "links": [
+        {
+          "url": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "text": "youtube.com/user/youtube?sub_confirmation=1",
+          "label": "",
+          "context": "youtube.com/user/youtube?sub_confirmation=1",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div > span:nth-of-type(2) > a",
+          "source": "profile_link",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYV85VnYwanBwb3JLTTMtbDYtbExsYnxBSTVJdTV0STRkbmk4RzR3NXMzTTRuaGNDTTBCUS1GampNN1JZVVpzWGpZenRIM0ZhUW0tZXhGV09feExMdjZjekhNNVM1cENzRlBDcWN3YWJYYzh3T25QOGoxbmdHMTFHM0x0&q=https%3A%2F%2Finstagram.com%2Fyoutube",
+          "text": "instagram.com/youtube",
+          "label": "",
+          "context": "instagram.com/youtube",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div > span:nth-of-type(2) > a",
+          "source": "profile_link",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYWdYZGhyU29YQlBUYjF0WEhNUkQ5Z3xBSTVJdTVzdUpCUXhSX011THpxTlQ1QmozbENnbDQtTWt1Uzh5U2s0STBnbHhBeDIyQTQzWEttdmEyb1pldmhwUnNwdmJVSFlIMlFibXFseUNFRFYxRXYzSGZHOXZfMWZDN3hm&q=https%3A%2F%2Fwww.tiktok.com%2F%40youtube",
+          "text": "tiktok.com/@youtube",
+          "label": "",
+          "context": "tiktok.com/@youtube",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(3) > div > span:nth-of-type(2) > a",
+          "source": "profile_link",
+          "visible": true
+        },
+        {
+          "url": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IWUNPQWduR3BtTG91YkhUQXVFamstMnxBSTVJdTV0WDB6c2dHdG1yZkZPZE9uQ3UwelBWUlNOMVRxeV94ZUF0SUZRRjdYNnNrd3lYczFNaWtoSmp4WGZSTXhXdjZFcHJIdElmSVBuZ2tySV93eWtYUzlsaU5ZbDVYeUp0&q=https%3A%2F%2Fblog.youtube%2Fcreator-and-artist-stories%2F",
+          "text": "blog.youtube/creator-and-artist-stories",
+          "label": "",
+          "context": "blog.youtube/creator-and-artist-stories",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(4) > div > span:nth-of-type(2) > a",
+          "source": "profile_link",
+          "visible": true
+        },
+        {
+          "url": "http://www.youtube.com/@YouTube",
+          "text": "www.youtube.com/@YouTube",
+          "label": "",
+          "context": "www.youtube.com/@YouTube",
+          "location": "#additional-info-container > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a",
+          "source": "profile_link",
+          "visible": true
+        }
+      ],
+      "actions": [],
+      "issues": [],
+      "phase": "read",
+      "capturedAt": "2026-10-22T09:40:52.736Z",
+      "checkpoint": {
+        "phase": "read"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "emails": [],
+      "links": [
+        {
+          "url": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "key": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "kind": "profile",
+          "platform": "youtube",
+          "profileKey": "/user/youtube",
+          "source": "profile_link",
+          "location": "#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div:nth-of-type(1) > div > yt-attribution-view-model > span:nth-of-type(1) > span > span > span > a",
+          "rawUrl": "https://youtube.com/user/youtube?sub_confirmation=1"
+        }
+      ],
+      "exclusions": [],
+      "issues": []
+    },
+    {
+      "emails": [],
+      "links": [
+        {
+          "url": "https://www.youtube.com/@YouTube%E7%BE%8E%E5%9B%BD4650%E4%B8%87%E4%BD%8D%E8%AE%A2%E9%98%85%E8%80%851,660",
+          "key": "https://www.youtube.com/@YouTube%E7%BE%8E%E5%9B%BD4650%E4%B8%87%E4%BD%8D%E8%AE%A2%E9%98%85%E8%80%851,660",
+          "kind": "profile",
+          "platform": "youtube",
+          "profileKey": "/@YouTube%E7%BE%8E%E5%9B%BD4650%E4%B8%87%E4%BD%8D%E8%AE%A2%E9%98%85%E8%80%851,660",
+          "source": "profile_link",
+          "location": "#additional-info-container",
+          "rawUrl": "www.youtube.com/@YouTube美国4650万位订阅者1,660"
+        },
+        {
+          "url": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "key": "https://youtube.com/user/youtube?sub_confirmation=1",
+          "kind": "profile",
+          "platform": "youtube",
+          "profileKey": "/user/youtube",
+          "source": "profile_link",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(1) > div > span:nth-of-type(2) > a",
+          "rawUrl": "https://youtube.com/user/youtube?sub_confirmation=1"
+        },
+        {
+          "url": "https://instagram.com/youtube",
+          "key": "https://instagram.com/youtube",
+          "kind": "profile",
+          "platform": "instagram",
+          "profileKey": "/youtube",
+          "source": "profile_link",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(2) > div > span:nth-of-type(2) > a",
+          "rawUrl": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYV85VnYwanBwb3JLTTMtbDYtbExsYnxBSTVJdTV0STRkbmk4RzR3NXMzTTRuaGNDTTBCUS1GampNN1JZVVpzWGpZenRIM0ZhUW0tZXhGV09feExMdjZjekhNNVM1cENzRlBDcWN3YWJYYzh3T25QOGoxbmdHMTFHM0x0&q=https%3A%2F%2Finstagram.com%2Fyoutube"
+        },
+        {
+          "url": "https://www.tiktok.com/@youtube",
+          "key": "https://www.tiktok.com/@youtube",
+          "kind": "profile",
+          "platform": "tiktok",
+          "profileKey": "/@youtube",
+          "source": "profile_link",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(3) > div > span:nth-of-type(2) > a",
+          "rawUrl": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IYWdYZGhyU29YQlBUYjF0WEhNUkQ5Z3xBSTVJdTVzdUpCUXhSX011THpxTlQ1QmozbENnbDQtTWt1Uzh5U2s0STBnbHhBeDIyQTQzWEttdmEyb1pldmhwUnNwdmJVSFlIMlFibXFseUNFRFYxRXYzSGZHOXZfMWZDN3hm&q=https%3A%2F%2Fwww.tiktok.com%2F%40youtube"
+        },
+        {
+          "url": "https://blog.youtube/creator-and-artist-stories/",
+          "key": "https://blog.youtube/creator-and-artist-stories/",
+          "kind": "webpage",
+          "platform": null,
+          "profileKey": null,
+          "source": "profile_link",
+          "location": "#link-list-container > yt-channel-external-link-view-model:nth-of-type(4) > div > span:nth-of-type(2) > a",
+          "rawUrl": "https://www.youtube.com/redirect?event=channel_description&redir_token=QUlxb01IWUNPQWduR3BtTG91YkhUQXVFamstMnxBSTVJdTV0WDB6c2dHdG1yZkZPZE9uQ3UwelBWUlNOMVRxeV94ZUF0SUZRRjdYNnNrd3lYczFNaWtoSmp4WGZSTXhXdjZFcHJIdElmSVBuZ2tySV93eWtYUzlsaU5ZbDVYeUp0&q=https%3A%2F%2Fblog.youtube%2Fcreator-and-artist-stories%2F"
+        },
+        {
+          "url": "http://www.youtube.com/@YouTube",
+          "key": "http://www.youtube.com/@YouTube",
+          "kind": "profile",
+          "platform": "youtube",
+          "profileKey": "/@YouTube",
+          "source": "profile_link",
+          "location": "#additional-info-container > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a",
+          "rawUrl": "http://www.youtube.com/@YouTube"
+        }
+      ],
+      "exclusions": [],
+      "issues": []
+    }
+  ]
+}

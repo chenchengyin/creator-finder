@@ -1,0 +1,175 @@
+{
+  "authorId": "6742287939734848518",
+  "username": "vanceelliottcomedy",
+  "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+  "profile": {
+    "username": "vanceelliottcomedy",
+    "authorId": "6742287939734848518",
+    "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+    "ready": false,
+    "identityVerified": false,
+    "externalLink": {
+      "status": "unknown",
+      "url": null,
+      "reason": "offline_profile_not_available"
+    }
+  },
+  "emails": [],
+  "metrics": {
+    "items": [],
+    "sample": [],
+    "sampleSize": 0,
+    "totalViews": null,
+    "averageViews": null,
+    "coverageComplete": false,
+    "issues": [
+      "latest_order_unconfirmed",
+      "post_response_incomplete"
+    ],
+    "windowStart": "2026-10-10T16:00:00.000Z",
+    "windowEndExclusive": "2026-10-20T16:00:00.000Z"
+  },
+  "content": {
+    "decision": "passed",
+    "evidence": [
+      {
+        "videoId": "7685578802252057870",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "PART 11 - Shoutout to everyone commenting ideas! Comment more and I can use them in the next vid! #jesus #comedy #skit #christiancomedy #foryoupage ",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870"
+      },
+      {
+        "videoId": "7667428251031129358",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "Been super busy with long form videos, so here’s a throwback #Jesus #comedy #christiancomedy #skit #foryoupage",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358"
+      },
+      {
+        "videoId": "7662840055764962573",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "Doctor should’ve scheduled an appointment with Jesus instead #Jesus #christiancomedy #comedy #skit #foryoupage",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573"
+      },
+      {
+        "videoId": "7695946760778239245",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "Feel bad for him ngl #Jesus #comedy #christiancomedy #skit #foryoupage",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245"
+      },
+      {
+        "videoId": "7698560234981199118",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "Just take Him to the temple fr #Jesus #comedy #christiancomedy #skit #foryoupage",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.746Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118"
+      },
+      {
+        "videoId": "7446538017323617582",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "Jesus - just a chill guy who flipped tables #Jesus #christiancomedy #comedy #Bible #tables #skit #foryoupage ",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.750Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582"
+      },
+      {
+        "videoId": "7609165229083086094",
+        "authorId": "6742287939734848518",
+        "username": "vanceelliottcomedy",
+        "text": "I would love to have Jesus as a waiter lol #Jesus #christiancomedy #comedy #skit #foryoupage ",
+        "videoUrl": "https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20sketch%20comedy",
+        "keyword": "christian sketch comedy",
+        "capturedAt": "2026-10-22T10:00:26.756Z",
+        "source": "tiktok_native_video_search",
+        "url": "https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094"
+      }
+    ],
+    "uncertainty": null
+  },
+  "capture": {
+    "verificationContext": {
+      "runId": "87907dfd-617f-4ce6-b42a-8f9dadc0bfb3",
+      "criteria": "{\"config\":{\"keywords\":[\"christian sketch comedy\"],\"country\":\"US\",\"days\":10,\"minAverageViewsExclusive\":50000,\"requireBioEmail\":true,\"targetCount\":1,\"forceProfileFirstN\":10},\"windowStart\":\"2026-10-10T16:00:00.000Z\",\"windowEndExclusive\":\"2026-10-20T16:00:00.000Z\"}"
+    },
+    "profile": {
+      "username": "vanceelliottcomedy",
+      "authorId": "6742287939734848518",
+      "profileUrl": "https://www.tiktok.com/@vanceelliottcomedy",
+      "ready": false,
+      "identityVerified": false,
+      "externalLink": {
+        "status": "unknown",
+        "url": null,
+        "reason": "offline_profile_not_available"
+      }
+    },
+    "pages": [],
+    "postAttemptComplete": true,
+    "checks": {
+      "identity": "pending",
+      "email": "pending",
+      "posts": "in_progress",
+      "metrics": "pending",
+      "content": "passed",
+      "region": "pending"
+    },
+    "nextAction": "posts"
+  },
+  "sourceKeywords": [
+    "christian sketch comedy"
+  ],
+  "decision": "data_incomplete",
+  "reason": "profile_not_verified_public",
+  "location": {
+    "country": null,
+    "evidence": [],
+    "semantics": "video_region_field_not_verified_creator_residence"
+  },
+  "inclusionBasis": "内容： PART 11 - Shoutout to everyone commenting ideas! Comment more and I can use them in the next vid! #jesus #comedy #skit #christiancomedy #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7685578802252057870）； Been super busy with long form videos, so here’s a throwback #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7667428251031129358）； Doctor should’ve scheduled an appointment with Jesus instead #Jesus #christiancomedy #comedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7662840055764962573）； Feel bad for him ngl #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7695946760778239245）； Just take Him to the temple fr #Jesus #comedy #christiancomedy #skit #foryoupage（https://www.tiktok.com/@vanceelliottcomedy/video/7698560234981199118）； Jesus - just a chill guy who flipped tables #Jesus #christiancomedy #comedy #Bible #tables #skit #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7446538017323617582）； I would love to have Jesus as a waiter lol #Jesus #christiancomedy #comedy #skit #foryoupage （https://www.tiktok.com/@vanceelliottcomedy/video/7609165229083086094）。\n邮箱：未取得公开Bio邮箱；来源 https://www.tiktok.com/@vanceelliottcomedy，采集 未核验。\n主页挂链：unknown；未取得可用网址；仅记录公开挂链，不作为Bio邮箱。\n播放：2026-10-10T16:00:00.000Z 至 2026-10-20T16:00:00.000Z（结束不含），0条视频，算术均播未知，须严格大于50000；覆盖未完成。\n地区：未核验；字段不证明本人现居地。\n判定：data_incomplete；profile_not_verified_public。",
+  "processedKeywords": [
+    "christian sketch comedy"
+  ],
+  "keywordChecks": {
+    "christian sketch comedy": {
+      "rank": 4,
+      "forced": true,
+      "reason": "first_n_unique_authors",
+      "attempted": true,
+      "completed": false,
+      "reused": false
+    }
+  }
+}

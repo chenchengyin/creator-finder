@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "config": {
+    "schemaVersion": 1,
+    "url": "https://www.tiktok.com/@fixture",
+    "maxDepth": null,
+    "maxPages": null
+  },
+  "completion": "completed",
+  "pages": {
+    "https://www.tiktok.com/@fixture": {
+      "url": "https://www.tiktok.com/@fixture",
+      "key": "https://www.tiktok.com/@fixture",
+      "depth": 0,
+      "path": [
+        "https://www.tiktok.com/@fixture"
+      ],
+      "status": "complete",
+      "attempted": true,
+      "captures": [
+        "5056d2ee0d226799cad331f5.json"
+      ],
+      "issues": [],
+      "checkpoint": {},
+      "finalKey": "https://www.tiktok.com/@fixture",
+      "finalUrl": "https://www.tiktok.com/@fixture"
+    }
+  },
+  "queue": [],
+  "emails": [
+    {
+      "email": "fixture@example.org",
+      "key": "fixture@example.org",
+      "status": "confirmed_public",
+      "variants": [
+        "fixture@example.org"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.tiktok.com/@fixture",
+          "pageKind": "profile",
+          "platform": "tiktok",
+          "pageTitle": null,
+          "capturedAt": "2026-10-22T09:58:22.917Z",
+          "source": "visible_text",
+          "location": "bio",
+          "raw": "fixture@example.org",
+          "context": "fixture@example.org",
+          "contextTruncated": false,
+          "status": "confirmed_public",
+          "reason": null,
+          "recipientField": null,
+          "href": null,
+          "contactHint": false,
+          "normalization": [],
+          "path": [
+            "https://www.tiktok.com/@fixture"
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [],
+  "browser": {
+    "spaceId": 9999997,
+    "owned": true,
+    "pageLabel": "p1",
+    "closed": true
+  },
+  "updatedAt": "2026-10-22T10:04:40.785Z"
+}

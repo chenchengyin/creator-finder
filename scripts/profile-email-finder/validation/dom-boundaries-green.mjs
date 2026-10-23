@@ -1,0 +1,10 @@
+const {readRenderedPage}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/browser.mjs');
+const {extractCandidates}=await import('file:///Users/vb/Projects/creator-finder/scripts/profile-email-finder/finder.mjs');
+const assert=(await import('node:assert/strict')).default;
+const t=await taskSpace(51),p=t.page('p1');
+await p.goto('data:text/html,'+encodeURIComponent('<html><body><div><table><tr><td>www.youtube.com/@YouTube</td></tr><tr><td>美国4650万位订阅者</td></tr></table></div><p>hello<br>@example.org</p><p><span>inline</span><span>@example.org</span></p></body></html>'));
+const c=await p.evaluate(readRenderedPage,{url:'https://fixture.example.org/'});c.url='https://fixture.example.org/';const result=extractCandidates(c);
+assert.deepEqual(result.links.map(l=>l.url),['https://www.youtube.com/@YouTube']);
+assert.ok(result.emails.some(e=>e.key==='hello@example.org'&&e.status==='needs_review'));
+assert.ok(result.emails.some(e=>e.key==='inline@example.org'&&e.status==='confirmed_public'));
+console.log('DOM block boundaries: passed');

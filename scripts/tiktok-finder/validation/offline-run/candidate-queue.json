@@ -1,0 +1,61 @@
+[
+  {
+    "username": "fixture_confirmed",
+    "authorIdHint": "9000000000000000001",
+    "keyword": "christian skits",
+    "source": "tiktok-video",
+    "sourceUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+    "sourceLink": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+    "sourceText": "#christianskit",
+    "status": "checked",
+    "sourceEvidence": [
+      {
+        "videoId": "7777777777777777771",
+        "authorId": "9000000000000000001",
+        "username": "fixture_confirmed",
+        "text": "#christianskit",
+        "videoUrl": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+        "keyword": "christian skits",
+        "capturedAt": "2026-10-21T07:42:01.058Z",
+        "source": "tiktok_native_video_search"
+      },
+      {
+        "videoId": "7777777777777777771",
+        "authorId": "9000000000000000001",
+        "username": "fixture_confirmed",
+        "text": "#christianskit",
+        "videoUrl": "https://www.tiktok.com/@fixture_confirmed/video/7777777777777777771",
+        "searchUrl": "https://www.tiktok.com/search/video?q=bible%20comedy",
+        "keyword": "bible comedy",
+        "capturedAt": "2026-10-21T07:42:01.068Z",
+        "source": "tiktok_native_video_search"
+      }
+    ],
+    "decision": "confirmed"
+  },
+  {
+    "username": "fixture_suspected",
+    "authorIdHint": "9000000000000000002",
+    "keyword": "christian skits",
+    "source": "tiktok-video",
+    "sourceUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+    "sourceLink": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772",
+    "sourceText": "Christian discussion",
+    "status": "checked",
+    "sourceEvidence": [
+      {
+        "videoId": "7777777777777777772",
+        "authorId": "9000000000000000002",
+        "username": "fixture_suspected",
+        "text": "Christian discussion",
+        "videoUrl": "https://www.tiktok.com/@fixture_suspected/video/7777777777777777772",
+        "searchUrl": "https://www.tiktok.com/search/video?q=christian%20skits",
+        "keyword": "christian skits",
+        "capturedAt": "2026-10-21T07:42:01.058Z",
+        "source": "tiktok_native_video_search"
+      }
+    ],
+    "decision": "suspected"
+  }
+]

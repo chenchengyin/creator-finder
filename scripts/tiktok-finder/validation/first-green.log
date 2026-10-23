@@ -1,0 +1,248 @@
+TAP version 13
+# Subtest: 访问-ACCESS-003 document 429 wins over API403
+ok 1 - 访问-ACCESS-003 document 429 wins over API403
+  ---
+  duration_ms: 5.577917
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-003 document 401 wins over API403
+ok 2 - 访问-ACCESS-003 document 401 wins over API403
+  ---
+  duration_ms: 2.041041
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-003 partial bodies cannot mark search exhausted
+ok 3 - 完成-DONE-003 partial bodies cannot mark search exhausted
+  ---
+  duration_ms: 1005.558583
+  type: 'test'
+  ...
+# Subtest: 来源-SOURCE-001 old keyword response cannot finish the current word
+ok 4 - 来源-SOURCE-001 old keyword response cannot finish the current word
+  ---
+  duration_ms: 12003.478042
+  type: 'test'
+  ...
+# Subtest: 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+ok 5 - 访问-ACCESS-001/004 same-address 403 gets one delayed retry, budget persists
+  ---
+  duration_ms: 2.81375
+  type: 'test'
+  ...
+# Subtest: 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+not ok 6 - 节奏-PACE-001 actual navigations share a serialized 10.5 second clock
+  ---
+  duration_ms: 8.217834
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert(times.includes(10500))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/browser.test.mjs:31:104)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+ok 7 - 空间-EGO-001 runner chooses p1 and refuses user-owned spaces
+  ---
+  duration_ms: 1.270459
+  type: 'test'
+  ...
+# Subtest: 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+ok 8 - 输入-IN-001 short phrases preserve order and stable case-insensitive dedup
+  ---
+  duration_ms: 37.998916
+  type: 'test'
+  ...
+# Subtest: 输入-IN-002 invalid inputs are rejected before running
+ok 9 - 输入-IN-002 invalid inputs are rejected before running
+  ---
+  duration_ms: 1.307083
+  type: 'test'
+  ...
+# Subtest: 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+ok 10 - 配置-CONFIG-001 Shanghai complete days remain frozen across resume
+  ---
+  duration_ms: 0.258625
+  type: 'test'
+  ...
+# Subtest: CLI dry-run does not touch browser or create a run directory
+ok 11 - CLI dry-run does not touch browser or create a run directory
+  ---
+  duration_ms: 31.7955
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-cUizLV/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+ok 12 - 导出-EXPORT-001 actual XLSX preserves identifiers, sources, suspected and formulas
+  ---
+  duration_ms: 1339.567334
+  type: 'test'
+  ...
+# Inspect result written to file: /var/folders/jt/4fjfggtd4yv79dg9klccw_380000gn/T/finder-test-NJETbT/outputs/TikTok-达人查找结果.xlsx.inspect.ndjson
+# Subtest: 导出-EXPORT-002 zero results still produce headers and target shortfall
+ok 13 - 导出-EXPORT-002 zero results still produce headers and target shortfall
+  ---
+  duration_ms: 67.358875
+  type: 'test'
+  ...
+# Subtest: 身份-ID-001 wrong author and unready data never count as no email
+ok 14 - 身份-ID-001 wrong author and unready data never count as no email
+  ---
+  duration_ms: 1.940584
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+ok 15 - 指标-METRIC-001 window boundaries, pinned and photo exclusions preserve exact mean
+  ---
+  duration_ms: 4.434084
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+ok 16 - 指标-METRIC-002 zero is real, missing views and incomplete/order/identity fail coverage
+  ---
+  duration_ms: 0.43375
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+ok 17 - 指标-METRIC-003 thresholds are configurable, latest valid duplicate observation counts once
+  ---
+  duration_ms: 0.132792
+  type: 'test'
+  ...
+# Subtest: 指标-METRIC-004 known empty window is not data incomplete
+ok 18 - 指标-METRIC-004 known empty window is not data incomplete
+  ---
+  duration_ms: 0.061333
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+ok 19 - 内容-CONTENT-001 satire and combined tags qualify; historical topic dates retained
+  ---
+  duration_ms: 0.566666
+  type: 'test'
+  ...
+# Subtest: 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+ok 20 - 内容-CONTENT-002/003 only content ambiguity can enter suspected output
+  ---
+  duration_ms: 0.242625
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001/002 country is optional, explicit wrong region rejects
+ok 21 - 地区-REGION-001/002 country is optional, explicit wrong region rejects
+  ---
+  duration_ms: 0.087333
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+ok 22 - 恢复-RESUME-002 first page saves before blocked second page; resume keeps cached email
+  ---
+  duration_ms: 1.276042
+  type: 'test'
+  ...
+# Subtest: 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+ok 23 - 地区-REGION-001 cached list fields do not navigate; metrics failure skips detail
+  ---
+  duration_ms: 0.37125
+  type: 'test'
+  ...
+# Subtest: 回放-REPLAY-001 old five-person captures independently reproduce sample means
+ok 24 - 回放-REPLAY-001 old five-person captures independently reproduce sample means
+  ---
+  duration_ms: 9.404375
+  type: 'test'
+  ...
+# Subtest: 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+ok 25 - 顺序-SEQ-001/002 复用-CACHE-001 target reached still searches next word and reuses facts
+  ---
+  duration_ms: 33.709208
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-001 empty valid search exports an empty list
+ok 26 - 完成-DONE-001 empty valid search exports an empty list
+  ---
+  duration_ms: 15.853083
+  type: 'test'
+  ...
+# Subtest: 完成-DONE-002 unknown completion pauses without switching words
+ok 27 - 完成-DONE-002 unknown completion pauses without switching words
+  ---
+  duration_ms: 6.9345
+  type: 'test'
+  ...
+# Subtest: 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+ok 28 - 分页-PAGE-001 repeated cursor with new evidence continues; no progress pauses
+  ---
+  duration_ms: 9.130375
+  type: 'test'
+  ...
+# Subtest: 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+not ok 29 - 恢复-RESUME-001 落盘-STORE-001/002 pause restores first-page facts and clears PID
+  ---
+  duration_ms: 15.910459
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: 'resume configuration mismatch'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    assertResumeCompatible (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.mjs:21:2)
+    runCampaign (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.mjs:24:61)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:30:167)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 导出-EXPORT-002 export failure resumes export only and finishes after verification
+not ok 30 - 导出-EXPORT-002 export failure resumes export only and finishes after verification
+  ---
+  duration_ms: 17.377875
+  type: 'test'
+  location: '/Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:32:1'
+  failureType: 'testCodeFailure'
+  error: 'resume configuration mismatch'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    assertResumeCompatible (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/config.mjs:21:2)
+    runCampaign (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.mjs:24:61)
+    async TestContext.<anonymous> (file:///Users/vb/Projects/creator-finder/scripts/tiktok-finder/workflow.test.mjs:34:131)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: 落盘-STORE-001 active writer and changed resume config are rejected
+ok 31 - 落盘-STORE-001 active writer and changed resume config are rejected
+  ---
+  duration_ms: 13.30175
+  type: 'test'
+  ...
+# Subtest: 依赖-DEP-001 whole offline flow works with global fetch forbidden
+ok 32 - 依赖-DEP-001 whole offline flow works with global fetch forbidden
+  ---
+  duration_ms: 13.131291
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 29
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13091.054416

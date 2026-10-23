@@ -1,0 +1,9 @@
+{
+  "title": "Instagram 多关键词达人搜索脚本",
+  "threadId": "01a15f02-ee19-72f1-ba5c-4f19b37d36d1",
+  "hostId": "local",
+  "moduleDirectory": "/Users/vb/Projects/creator-finder/scripts/instagram-finder",
+  "projectlessOutputDirectory": "/Users/vb/Documents/Codex/2026-10-21/instagram-finder/outputs",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium"
+}
