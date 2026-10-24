@@ -24,16 +24,25 @@ for(const previousClicks of [0,3,10,30])test('访问-ACCESS-005 region resume pr
  assert.deepEqual(saved.navigationAttempts.slice(0,2),c.videoRegion.navigationAttempts.slice(0,2));
 });
 function pageFixture({statuses=[200],apiStatuses=[200],queries,failBody=false}={}){
- let nav=0,buffer=[],url='',scrolls=0;const keyword='christian skits';
+ let nav=0,buffer=[],url='',scrolls=0,filled='';const keyword='christian skits',actions=[];
  const make=()=>apiStatuses.flatMap((status,i)=>[{method:'Network.requestWillBeSent',params:{requestId:String(i),documentURL:url}},{method:'Network.responseReceived',params:{requestId:String(i),response:{url:'https://www.tiktok.com/api/search/item/full/?keyword='+encodeURIComponent(queries?.[i]||keyword),status}}},{method:'Network.loadingFinished',params:{requestId:String(i)}}]);
- return {get nav(){return nav;},get scrolls(){return scrolls;},page:{url:async()=>url,events:async()=>{const v=buffer;buffer=[];return v;},goto:async value=>{url=value;nav++;buffer=make();},evaluate:async f=>f.name==='readSearchPage'?{url,httpStatus:statuses[Math.min(nav-1,statuses.length-1)],links:[],captcha:false,loginPrompt:false}:scrollState,mouse:{move:async()=>{},wheel:async()=>{scrolls++;buffer=make();}},waitForSelector:async()=>{},waitForFunction:async()=>{},cdp:async(method,arg)=>{if(method==='Network.enable')return {};if(failBody&&arg.requestId==='1')throw Error('missing body');return {body:JSON.stringify({status_code:0,has_more:0,cursor:12,item_list:[]})};}}};
+ return {get nav(){return nav;},get scrolls(){return scrolls;},actions,page:{
+  url:async()=>url,events:async()=>{const v=buffer;buffer=[];return v;},
+  goto:async value=>{actions.push(['goto',value]);url=value;nav++;buffer=statuses[Math.min(nav-1,statuses.length-1)]>=400?make():[];},
+  click:async selector=>actions.push(['click',selector]),
+  fill:async(selector,value)=>{filled=value;actions.push(['fill',value]);},
+  keyboard:{press:async key=>{assert.equal(key,'Enter');actions.push(['press',key]);url='https://www.tiktok.com/search/video?q='+encodeURIComponent(filled);buffer=make();}},
+  evaluate:async f=>f.name==='readSearchPage'?{url,httpStatus:statuses[Math.min(nav-1,statuses.length-1)],links:[],captcha:false,loginPrompt:false}:scrollState,
+  mouse:{move:async()=>{},wheel:async()=>{scrolls++;buffer=make();}},waitForSelector:async()=>{},waitForFunction:async()=>{},
+  cdp:async(method,arg)=>{if(method==='Network.enable')return {};if(failBody&&arg.requestId==='1')throw Error('missing body');return {body:JSON.stringify({status_code:0,has_more:0,cursor:12,item_list:[]})};}
+ }};
 }
 for(const statuses of [[429],[401]])test('访问-ACCESS-003 document '+statuses[0]+' wins over API403',async t=>{
  const p=pageFixture({statuses,apiStatuses:[403]}),waits=[];const b=fn('createEgoBrowser')({page:p.page,runDir:await temp(t),sleep:async ms=>waits.push(ms)});
  await assert.rejects(b.discoverBatch({keyword:'christian skits'}),new RegExp(String(statuses[0])));assert.equal(p.nav,1);assert(!waits.includes(11000));
 });
 test('完成-DONE-003 partial bodies cannot mark search exhausted',async t=>{
- const p=pageFixture({apiStatuses:[200,200],failBody:true}),b=fn('createEgoBrowser')({page:p.page,runDir:await temp(t),sleep:async()=>{}});
+ let tick=20000;const p=pageFixture({apiStatuses:[200,200],failBody:true}),b=fn('createEgoBrowser')({page:p.page,runDir:await temp(t),now:()=>tick,sleep:async ms=>{tick+=ms;}});
  await assert.rejects(b.discoverBatch({keyword:'christian skits'}),/response|body/i);
 });
 test('来源-SOURCE-001 old keyword response cannot finish the current word',async t=>{
@@ -181,4 +190,13 @@ test('恢复-ACCESS-007 successful response clears stale body-failure marker bef
  const browser=fn('createEgoBrowser')({page:fixture.page,runDir:await temp(t),config,now:()=>tick,sleep:async ms=>tick+=ms});
  await browser.discoverBatch({keyword:'christian skits',checkpoint:{partialBodies:[]},onCheckpoint:async value=>saved=value});
  assert.equal(Object.hasOwn(saved,'partialBodies'),false);assert.equal(saved.retry,null);
+});
+
+test('入口-SEARCH-002 adapter submits through the homepage and saves the actual native result URL',async t=>{
+ const p=pageFixture(),runDir=await temp(t);let tick=20000;
+ const b=fn('createEgoBrowser')({page:p.page,runDir,now:()=>tick,sleep:async ms=>{tick+=ms;}});
+ const result=await b.discoverBatch({keyword:'christian skits'});
+ assert.deepEqual(p.actions,[['goto','https://www.tiktok.com/'],['click','loc=role:searchbox[name*=""]'],['click','input[data-e2e="search-user-input"]'],['fill','christian skits'],['press','Enter']]);
+ assert.equal(result.sourceUrl,'https://www.tiktok.com/search/video?q=christian%20skits');assert.equal(result.checkpoint.searchPageUrl,result.sourceUrl);
+ const capture=JSON.parse((await readFile(runDir+'/tiktok-video-discovery.jsonl','utf8')).trim());assert.equal(capture.url,result.sourceUrl);assert.equal(result.hasMore,false);
 });

@@ -45,17 +45,19 @@ test('CLI validates keyword, existing space ID and bounded batch count',()=>{
  assert.equal(parse(args).batches,1);assert.throws(()=>parse([...args,'--batches','0']));assert.throws(()=>parse([...args,'--bogus','x']));
  assert.equal(parse([...args,'--continue']).continueSearch,true);
 });
-test('dry-run emits the encoded TikTok URL and does not create state or call Ego',async()=>{
+test('dry-run preserves the keyword without composing a navigation URL or creating state',async()=>{
  const dir=await mkdtemp(join(tmpdir(),'creator-search-'));const runDir=join(dir,'not-created');
  const r=spawnSync(process.execPath,[new URL('./search.mjs',import.meta.url).pathname,'--space','328','--keyword','christian skits','--run-dir',runDir,'--dry-run'],{encoding:'utf8'});
- assert.equal(r.status,0,r.stderr);const plan=JSON.parse(r.stdout);assert.equal(plan.searchUrl,sourceUrl);await assert.rejects(readFile(join(runDir,'execution-state.json')),{code:'ENOENT'});
+ assert.equal(r.status,0,r.stderr);const plan=JSON.parse(r.stdout);assert.equal(plan.mode,'dry_run');assert.equal(plan.keyword,'christian skits');assert.equal(Object.hasOwn(plan,'searchUrl'),false);await assert.rejects(readFile(join(runDir,'execution-state.json')),{code:'ENOENT'});
 });
 
 function browserFixture({documentStatuses=[200],apiStatus=200}={}){
- let navigations=0,url='',buffer=[];
+ let navigations=0,url='',buffer=[],keyword='';
+ const emit=()=>{buffer=[{method:'Network.responseReceived',params:{requestId:'public-search',response:{url:'https://www.tiktok.com/api/search/item/full/?keyword='+encodeURIComponent(keyword),status:apiStatus}}}];};
  const page={
   url:async()=>url,
-  goto:async target=>{url=target;navigations++;buffer=[{method:'Network.responseReceived',params:{requestId:'public-search',response:{url:'https://www.tiktok.com/api/search/item/full/?keyword=christian%20skits',status:apiStatus}}}];},
+  goto:async target=>{url=target;navigations++;buffer=[];},
+  click:async()=>{},fill:async(selector,value)=>{keyword=value;},keyboard:{press:async key=>{assert.equal(key,'Enter');url='https://www.tiktok.com/search/video?q='+encodeURIComponent(keyword);emit();}},waitForFunction:async()=>{},
   events:async()=>{const events=buffer;buffer=[];return events;},
   evaluate:async()=>({url,httpStatus:documentStatuses[Math.min(navigations-1,documentStatuses.length-1)],captcha:false,loginPrompt:false,links:[]}),
   waitForSelector:async()=>{},
@@ -70,6 +72,7 @@ test('real search orchestration persists candidates, evidence and the last obser
  const queue=JSON.parse(await readFile(join(runDir,'candidate-queue.json'),'utf8'));
  const state=JSON.parse(await readFile(join(runDir,'execution-state.json'),'utf8'));
  assert.equal(queue[0].authorIdHint,'7401249717328757803');assert.equal(queue[0].sourceEvidence[0].text,'#christianskit');
+ assert.equal(queue[0].sourceEvidence[0].searchUrl,sourceUrl);assert.equal(state.searchCheckpoint.url,sourceUrl);
  assert.equal(state.searchCheckpoint.cursor,12);assert.equal(state.runtimeRunning,false);
 });
 test('HTML and API 403 share one retry budget within a search batch',async()=>{

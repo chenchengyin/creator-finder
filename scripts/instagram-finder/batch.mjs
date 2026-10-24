@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {randomUUID} from 'node:crypto';
 import {verificationConfig} from './verification.mjs';
 import {freezeWindow} from './metrics.mjs';
+import {runSearchWithRetry,validateSearchRetry} from './search-retry.mjs';
 import {processSearchPage} from './workflow.mjs';
 import {summarizeEmail} from '../profile-email-finder/integration.mjs';
 
@@ -25,6 +26,7 @@ export function normalizeBatchConfig(input){
 export function validateBatchState(state){
  if(state?.schemaVersion!==2||state.kind!=='instagram_email_batch'||state.projectRoot!==projectRoot||!state.config||!Array.isArray(state.topics)||state.topics.length!==state.config.keywords?.length||!state.authors||!Number.isSafeInteger(state.topicIndex)||state.topicIndex<0||state.topicIndex>state.topics.length||!['running','paused','failed','completed'].includes(state.status))throw Error('invalid_batch_state');
  normalizeBatchConfig(state.config);
+ validateSearchRetry(state.searchRetry);
  if(Array.isArray(state.authors)||Object.entries(state.authors).some(([id,a])=>!/^\d+$/.test(id)||!a||a.authorId!==id||typeof a.username!=='string'||!/^[A-Za-z0-9._]{1,30}$/.test(a.username)||!Array.isArray(a.sources)||a.verification&&(!a.verification.data||!a.verification.checks||a.verification.key!==JSON.stringify({username:a.username,authorId:id,config:verificationConfig(state.config.conditions,state.config.window)}))))throw Error('invalid_batch_state');
  for(const [index,t] of state.topics.entries())if(t.keyword!==state.config.keywords[index]||!Array.isArray(t.history)||!Array.isArray(t.pendingSearchPages)||t.currentPage&&(!Array.isArray(t.currentPage.items)||typeof t.currentPage.hasMore!=='boolean'||t.currentPage.hasMore&&!t.currentPage.cursor))throw Error('invalid_batch_state');
  return state;
@@ -48,7 +50,7 @@ export async function exportBatch(state,runDir){
    if(verification.status==='completed')status=matches===false?'rejected':matches===true?'core_pass_pending_content_review':'pending_review';
   }
   const emails=data.email?.acceptedEmails||[];
-  return {authorId:a.authorId,username:a.username,profileUrl:a.profileUrl,status,keywords:[...new Set((a.sources||[]).map(s=>s.keyword))],
+  return {authorId:a.authorId,username:a.username,profileUrl:a.profileUrl,status,keywords:[...new Set((a.sources||[]).map(s=>s.keyword))],searchKeywords:[...new Set((a.sources||[]).map(s=>s.searchKeyword??s.keyword))],
    email:emails.map(e=>e.email).join('; '),bioEmails:emails.filter(e=>e.sourceType==='bio').map(e=>e.email).join('; '),linkedEmails:emails.filter(e=>e.sourceType!=='bio').map(e=>e.email).join('; '),
    emailSourceUrls:[...new Set(emails.flatMap(e=>(e.evidence||[]).map(v=>v.sourceUrl)))],emailPaths:emails.flatMap(e=>(e.evidence||[]).map(v=>(v.path||[v.sourceUrl]).join(' → '))),
    emailReview:data.email?.reviewEmails??(data.email?.emails||[]).filter(e=>!emails.some(a=>a.key===e.key)),emailSources:emails.flatMap(e=>e.evidence||[]),emailCompletion:data.email?.completion??null,emailGaps:data.email?.issues||[],
@@ -56,9 +58,9 @@ export async function exportBatch(state,runDir){
    checks,'收录依据':`邮箱：${checks.email===true?'公开明确邮箱（Bio或挂链）':checks.email===false?'未发现':'待核验'}；国家：${data.country?.countryCode||'未知'}；均播：${data.averageViews?.metrics?.coverageComplete?data.averageViews.metrics.averageViews:'未核验或未请求'}；内容待人工复核`,
    evidence:{emailRun:`authors/${a.authorId}/email/results.json`,verification,sources:a.sources||[]}};
  });
- const report={schemaVersion:2,status:state.status,completionReason:state.completionReason??null,searchExhausted:state.searchExhausted??false,config:state.config,rows,updatedAt:state.updatedAt};
+ const report={schemaVersion:2,status:state.status,reason:state.reason??null,accessIssue:state.accessIssue??null,completionReason:state.completionReason??null,searchExhausted:state.searchExhausted??false,config:state.config,rows,updatedAt:state.updatedAt};
  await atomicJson(join(runDir,'results.json'),report);
- const fields=['authorId','username','profileUrl','status','keywords','email','bioEmails','linkedEmails','emailSourceUrls','emailPaths','emailCompletion','country','averageViews','收录依据'];
+ const fields=['authorId','username','profileUrl','status','keywords','searchKeywords','email','bioEmails','linkedEmails','emailSourceUrls','emailPaths','emailCompletion','country','averageViews','收录依据'];
  const quote=value=>'"'+String(Array.isArray(value)?value.join('; '):value??'').replaceAll('"','""')+'"';
  // A leading apostrophe keeps untrusted profile text from becoming spreadsheet formulas.
  const cell=value=>quote(typeof value==='string'&&/^[=+@-]/.test(value)?"'"+value:value);
@@ -67,7 +69,7 @@ export async function exportBatch(state,runDir){
  try{await fs.writeFile(tmp,csv);await fs.rename(tmp,join(runDir,'results.csv'));}catch(e){await fs.unlink(tmp).catch(()=>{});e.storageFailure=true;throw e;}
  return report;
 }
-export async function runBatch({config,runDir,resume=false,browser}){
+export async function runBatch({config,runDir,resume=false,browser,retryTiming={},onProgress=async()=>{},onFinish=async()=>{}}){
  if(!runDir)throw Error('run_dir_required');
  const dir=resolve(runDir);await fs.mkdir(dir,{recursive:true});
  const unlock=await lockBatch(dir);
@@ -85,15 +87,18 @@ export async function runBatch({config,runDir,resume=false,browser}){
    state={schemaVersion:2,kind:'instagram_email_batch',projectRoot,config:normalized,status:'running',topicIndex:0,authors:{},topics:normalized.keywords.map(keyword=>({keyword,history:[],pendingSearchPages:[],currentPage:null,activePageState:null})),browser:null};
    await atomicJson(join(dir,'config.json'),normalized);
   }
-  const save=async()=>{active?.assertHealthy?.();if(active?.session)state.browser=structuredClone(active.session);state.updatedAt=new Date().toISOString();await atomicJson(join(dir,'execution-state.json'),state);committed=structuredClone(state);};
+  const save=async()=>{active?.assertHealthy?.();if(active?.session)state.browser=structuredClone(active.session);state.updatedAt=new Date().toISOString();await atomicJson(join(dir,'execution-state.json'),state);committed=structuredClone(state);await onProgress(state);};
   await save();
   if(state.status==='completed'){await exportBatch(state,dir);return state;}
   active=typeof browser==='function'?await browser(state.browser,dir,async session=>{state.browser=structuredClone(session);await save();}):browser;
   if(!active?.page||!active.startKeyword||!active.nextSearchPage)throw Error('batch_browser_required');
-  state.status='running';delete state.reason;await save();
+  state.status='running';delete state.reason;delete state.accessIssue;await save();
+  const search=async(topic,cursor,call)=>runSearchWithRetry({state,keyword:topic.keyword,cursor,call,save,
+   onLimited:evidence=>{state.accessIssue=structuredClone(evidence);topic.pendingSearchPages=active.pendingSearchPages?.()||topic.pendingSearchPages;},
+   wait:active.waitForSearchRetry,now:retryTiming.now,random:retryTiming.random});
   const advance=async topic=>{
    const current=topic.currentPage;
-   const next=await active.nextSearchPage({keyword:topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages});
+   const next=await search(topic,current.cursor,()=>active.nextSearchPage({keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages}));
    if(!Array.isArray(next.items)||typeof next.hasMore!=='boolean'||next.hasMore&&(!next.cursor||next.cursor===current.cursor))throw Error('search_pagination_state_unknown');
    topic.currentPage=next;topic.pendingSearchPages=active.pendingSearchPages?.()||[];delete topic.advancePending;await save();
   };
@@ -104,7 +109,7 @@ export async function runBatch({config,runDir,resume=false,browser}){
    active.context?.({keyword:topic.keyword,stage:'search',username:null,authorId:null});
    if(topic.advancePending)await advance(topic);
    if(!topic.currentPage){
-    const first=await active.startKeyword(topic.keyword);topic.currentPage=first;
+    const first=await search(topic,null,()=>active.startKeyword(topic.keyword,topic.pendingSearchPages));topic.currentPage=first;
     if(!Array.isArray(first.items)||typeof first.hasMore!=='boolean'||first.hasMore&&!first.cursor)throw Error('search_pagination_state_unknown');
     topic.pendingSearchPages=active.pendingSearchPages?.()||[];await save();
    }
@@ -116,7 +121,7 @@ export async function runBatch({config,runDir,resume=false,browser}){
     for(const item of current.items){
      if(item.mediaType!==2)continue;
      const author=state.authors[item.authorId]??={authorId:item.authorId,username:item.username,profileUrl:`https://www.instagram.com/${item.username}/`,status:'pending',sources:[]};
-     if(!author.sources.some(s=>s.keyword===topic.keyword&&s.id===item.id))author.sources.push({...item,keyword:topic.keyword});
+     if(!author.sources.some(s=>s.keyword===topic.keyword&&s.id===item.id))author.sources.push({...item,keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword});
     }
     await save();
    }
@@ -124,7 +129,7 @@ export async function runBatch({config,runDir,resume=false,browser}){
     spaceId:active.session?.spaceId,emailLimits:state.config.emailLimits,context:active.context,assertHealthy:active.assertHealthy,readers:active.readers||{},
     onCheckpoint:async cp=>{topic.activePageState=cp;for(const [id,a] of Object.entries(cp.authors))state.authors[id]={...state.authors[id],...a};await save();}});
    if(progress.status==='paused'){state.status='paused';state.reason=progress.reason;await save();await exportBatch(state,dir);return state;}
-   topic.history.push({cursor:current.cursor,hasMore:current.hasMore,itemCount:current.items.length,fullyProcessed:!topic.limitDeferredCount});
+   topic.history.push({cursor:current.cursor,hasMore:current.hasMore,itemCount:current.items.length,fullyProcessed:!topic.limitDeferredCount,searchKeyword:current.searchKeyword??topic.keyword});
    if(state.config.maxAuthors&&checkedCount()>=state.config.maxAuthors&&(current.hasMore||topic.limitDeferredCount>0||state.topicIndex<state.topics.length-1))return await complete('author_limit_reached');
    topic.activePageState=null;delete topic.candidates;
    if(current.hasMore===false){topic.completed=true;topic.currentPage=null;state.topicIndex++;await save();continue;}
@@ -136,7 +141,8 @@ export async function runBatch({config,runDir,resume=false,browser}){
  }catch(e){
   if(!committed)throw e;
   const failed=structuredClone(committed);failed.status=e.storageFailure?'failed':e.pause||/control|ownership|delegat|closed|CDP|instagram_|search_/.test(e.message)?'paused':'failed';failed.reason=e.reason||e.message;
+  if(!e.storageFailure&&e.searchEvidence){failed.accessIssue=structuredClone(e.searchEvidence);const topic=failed.topics[failed.topicIndex];if(topic)topic.pendingSearchPages=active?.pendingSearchPages?.()||topic.pendingSearchPages;}
   if(!e.storageFailure){try{await atomicJson(join(dir,'execution-state.json'),failed);await exportBatch(failed,dir);}catch(writeError){failed.status='failed';failed.reason=writeError.message;}}
-  return failed;
- }finally{await unlock();}
+  state=failed;return failed;
+ }finally{try{await onFinish(state);}finally{await unlock();}}
 }

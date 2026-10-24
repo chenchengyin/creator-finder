@@ -3,7 +3,9 @@ import fs from 'node:fs/promises';
 import {resolve,join,relative,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
+import {randomUUID} from 'node:crypto';
 import {projectRoot,readBatch,exportSavedBatch,normalizeBatchConfig} from './batch.mjs';
+import {readProgress,watchChild} from './progress.mjs';
 
 export async function assertRunDirectory(input){
  const base=await fs.realpath(join(projectRoot,'runs')),dir=resolve(projectRoot,input);
@@ -30,7 +32,7 @@ export async function main(args=process.argv.slice(2),{print=console.log,launch}
  if(!options.runDir)throw Error('run_dir_required');
  if([options.resume,options.status,options.exportOnly].filter(Boolean).length>1)throw Error('conflicting_modes');
  options.runDir=await assertRunDirectory(options.runDir);
- if(options.status||options.exportOnly){print(JSON.stringify(options.status?await readBatch(options.runDir):await exportSavedBatch(options.runDir),null,2));return 0;}
+ if(options.status||options.exportOnly){print(JSON.stringify(options.status?{...await readBatch(options.runDir),runtime:await readProgress(options.runDir)}:await exportSavedBatch(options.runDir),null,2));return 0;}
  if(options.configPath)options.config=normalizeBatchConfig(JSON.parse(await fs.readFile(resolve(projectRoot,options.configPath),'utf8')));
  if(options.resume){
   const state=await readBatch(options.runDir);
@@ -42,8 +44,13 @@ export async function main(args=process.argv.slice(2),{print=console.log,launch}
  }
  try{await fs.access(join(options.runDir,'.lock'));throw Error('batch_lock_exists');}catch(e){if(e.code!=='ENOENT')throw e;}
  if(launch)return launch(options);
+ options.executionId=randomUUID();
  const moduleUrl=new URL('./runtime.mjs',import.meta.url).href;
- const script=`const {runInEgo}=await import(${JSON.stringify(moduleUrl)});const r=await runInEgo(${JSON.stringify(options)},{taskSpace,listTaskSpaces,claimTaskSpace,takeOverTaskSpace});console.log(JSON.stringify({status:r.status,reason:r.reason,authors:Object.keys(r.authors||{}).length}));process.exitCode=r.status==='completed'?0:r.status==='paused'?3:1;`;
- return new Promise((resolveRun,reject)=>{const child=spawn('ego-browser',['nodejs'],{stdio:['pipe','inherit','inherit']});child.on('error',reject);child.on('exit',code=>resolveRun(code??1));child.stdin.on('error',()=>{});child.stdin.end(script);});
+ // Ego maps nonzero worker codes to 1; the host translates a verified pause to CLI code 3.
+ const script=`const {runInEgo}=await import(${JSON.stringify(moduleUrl)});const r=await runInEgo(${JSON.stringify(options)},{taskSpace,listTaskSpaces,claimTaskSpace,takeOverTaskSpace});console.log(JSON.stringify({status:r.status,reason:r.reason,authors:Object.keys(r.authors||{}).length}));process.exitCode=['completed','paused'].includes(r.status)?0:1;`;
+ const child=spawn('ego-browser',['nodejs'],{stdio:['pipe','inherit','inherit']});
+ const monitored=watchChild(child,{runDir:options.runDir,runId:options.executionId,print,workerPausedExitCode:0});
+ child.stdin.on('error',()=>{});child.stdin.end(script);
+ return monitored;
 }
 if(process.argv[1]&&(await fs.realpath(process.argv[1]).catch(()=>null))===fileURLToPath(import.meta.url))main().then(code=>{process.exitCode=code;}).catch(e=>{console.error(e.message);process.exitCode=1;});

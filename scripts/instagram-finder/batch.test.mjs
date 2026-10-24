@@ -104,3 +104,66 @@ test('采纳-QUALITY-007 old saved email reports export fresh eligibility withou
  const row=JSON.parse(await fs.readFile(join(dir,'results.json'),'utf8')).rows[0];
  assert.equal(row.email,'');assert.equal(row.status,'pending_review');assert.equal(row.checks.email,null);assert.equal(row.evidence.verification.matches,null);assert.equal(row.emailReview[0].email,'info@publisher.example');assert.equal(await fs.readFile(path,'utf8'),before);
 });
+
+test('恢复-SEARCH-006 structured search pause is exported and preserves pending pages for resume',async t=>{
+ const dir=await temp(t),b=browser();let paused=true;
+ const evidence={requestId:'current-search',scope:'target',httpStatus:429,reason:'instagram_access_stopped_rate_limit'};
+ b.startKeyword=async()=>{if(paused)throw Object.assign(Error(evidence.reason),{pause:true,searchEvidence:evidence});return {items:[],hasMore:false,cursor:null};};
+ const pending={keyword:'#one',requestCursor:'next',connection:{edges:[],page_info:{has_next_page:false,end_cursor:null}}};
+ b.pendingSearchPages=()=>paused?[pending]:[];
+ const r=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b});assert.equal(r.status,'paused');assert.deepEqual(r.accessIssue,evidence);assert.equal(r.topics[0].pendingSearchPages.length,1);
+ const out=JSON.parse(await fs.readFile(join(dir,'results.json'),'utf8'));assert.deepEqual(out.accessIssue,evidence);
+ paused=false;const done=await run({runDir:dir,resume:true,browser:b});assert.equal(done.status,'completed');assert.equal(done.accessIssue,undefined);assert.equal(done.reason,undefined);
+});
+
+test('生命周期-PROGRESS-005 progress finalization completes before the batch lock is released',async t=>{
+ const dir=await temp(t),b=browser();b.startKeyword=async()=>({items:[],hasMore:false,cursor:null});let finished=false;
+ const result=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b,onFinish:async state=>{assert.equal(state.status,'completed');await fs.access(join(dir,'.lock'));await new Promise(r=>setTimeout(r,5));finished=true;}});assert.equal(result.status,'completed');assert.equal(finished,true);await assert.rejects(fs.access(join(dir,'.lock')),e=>e.code==='ENOENT');
+});
+
+test('生命周期-PROGRESS-005 finalization failure still releases the owned lock',async t=>{
+ const dir=await temp(t),b=browser();b.startKeyword=async()=>({items:[],hasMore:false,cursor:null});await assert.rejects(run({config:{...config,keywords:['#one']},runDir:dir,browser:b,onFinish:async()=>{throw Error('final_progress_failed');}}),/final_progress_failed/);await assert.rejects(fs.access(join(dir,'.lock')),e=>e.code==='ENOENT');
+});
+
+const rateError=cursor=>Object.assign(Error('instagram_access_stopped_rate_limit'),{pause:true,searchEvidence:{reason:'instagram_access_stopped_rate_limit',scope:'target',keyword:'#one',requestKeyword:'#one',requestCursor:cursor,httpStatus:429}});
+test('恢复-RETRY-001 first-page cooldown saves pending responses and retry intent before dispatch',async t=>{
+ const dir=await temp(t),b=browser();let now=1000,calls=0;
+ b.pendingSearchPages=()=>[{keyword:'#one',requestCursor:null,connection:{edges:[],page_info:{has_next_page:false,end_cursor:null}}}];
+ b.startKeyword=async(keyword,pending)=>{if(++calls===1)throw rateError(null);const saved=await api.readBatch(dir);assert.equal(saved.searchRetry.phase,'dispatching');assert.equal(saved.searchRetry.attempts,1);assert.equal(pending.length,1);return {items:[],hasMore:false,cursor:null};};
+ b.waitForSearchRetry=async until=>{const saved=await api.readBatch(dir);assert.equal(saved.searchRetry.phase,'waiting');assert.equal(saved.searchRetry.attempts,0);assert.equal(saved.topics[0].pendingSearchPages.length,1);assert.equal(saved.accessIssue.httpStatus,429);now=until;};
+ const r=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b,retryTiming:{now:()=>now,random:()=>0}});assert.equal(r.status,'completed');assert.equal(calls,2);assert.equal(r.searchRetry.attempts,1);assert.equal(r.searchRetry.phase,'idle');assert.equal(r.accessIssue,undefined);
+});
+test('恢复-RETRY-002 pagination retry retains the processed cursor and author deduplication',async t=>{
+ const dir=await temp(t),b=browser(),next=b.nextSearchPage;let now=1000,calls=0;
+ b.nextSearchPage=async args=>{assert.equal(args.previousCursor,'c1');if(++calls===1)throw rateError('c1');return next(args);};
+ b.waitForSearchRetry=async until=>{const saved=await api.readBatch(dir);assert.equal(saved.topics[0].advancePending,true);assert.equal(saved.topics[0].history.length,1);assert.equal(saved.searchRetry.cursor,'c1');now=until;};
+ const r=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b,retryTiming:{now:()=>now,random:()=>0}});assert.equal(r.status,'completed');assert.equal(calls,2);assert.equal(r.topics[0].history.length,2);assert.equal(b.actions.filter(a=>a==='profile:example').length,1);
+});
+test('恢复-RETRY-003 exhausted resume performs no search and keeps the consumed budget',async t=>{
+ const dir=await temp(t),b=browser();let now=1000,calls=0;b.startKeyword=async()=>{calls++;throw rateError(null);};b.waitForSearchRetry=async until=>{now=until;};
+ const args={runDir:dir,browser:b,retryTiming:{now:()=>now,random:()=>0}};
+ const r=await run({...args,config:{...config,keywords:['#one']}});assert.equal(r.status,'paused');assert.equal(r.reason,'search_retry_exhausted');assert.equal(calls,3);
+ const resumed=await run({...args,resume:true});assert.equal(resumed.reason,'search_retry_exhausted');assert.equal(calls,3);assert.equal(resumed.searchRetry.attempts,2);
+});
+test('恢复-RETRY-004 damaged retry state never connects to a browser',async t=>{
+ const dir=await temp(t);await run({config,runDir:dir,browser:browser()});const path=join(dir,'execution-state.json'),state=await api.readBatch(dir);state.searchRetry={attempts:-1,phase:'waiting'};await fs.writeFile(path,JSON.stringify(state));await assert.rejects(run({runDir:dir,resume:true,browser:async()=>assert.fail('invalid retry launched browser')}),/invalid_search_retry/);
+});
+
+test('恢复-RETRY-005 lost browser control during retry preserves dispatch intent and never replays on resume',async t=>{
+ const dir=await temp(t),b=browser();let now=1000,calls=0,fault=null;
+ b.assertHealthy=()=>{if(fault)throw fault;};b.waitForSearchRetry=async until=>{now=until;};
+ b.startKeyword=async()=>{if(++calls===1)throw rateError(null);fault=Object.assign(Error('browser ownership lost'),{pause:true});throw fault;};
+ const args={runDir:dir,browser:b,retryTiming:{now:()=>now,random:()=>0}};
+ const r=await run({...args,config:{...config,keywords:['#one']}});assert.equal(r.status,'paused');assert.equal(r.searchRetry.phase,'dispatching');assert.equal(r.searchRetry.attempts,1);
+ fault=null;const resumed=await run({...args,resume:true});assert.equal(resumed.reason,'search_retry_dispatch_interrupted');assert.equal(calls,2);
+});
+
+
+test('导出-HASH-004 preserves original and effective search terms in sources, history and CSV',async t=>{
+ const dir=await temp(t),b=browser();b.startKeyword=async raw=>{assert.equal(raw,'one');return {items:[item()],hasMore:false,cursor:null,keyword:'one',searchKeyword:'#one'};};
+ const state=await run({config:{...config,keywords:['one']},runDir:dir,browser:b});assert.equal(state.status,'completed');
+ assert.equal(state.authors['123'].sources[0].keyword,'one');assert.equal(state.authors['123'].sources[0].searchKeyword,'#one');
+ assert.equal(state.topics[0].history[0].searchKeyword,'#one');
+ const out=JSON.parse(await fs.readFile(join(dir,'results.json'),'utf8'));assert.deepEqual(out.rows[0].keywords,['one']);assert.deepEqual(out.rows[0].searchKeywords,['#one']);
+ assert.match(await fs.readFile(join(dir,'results.csv'),'utf8'),/searchKeywords/);
+});

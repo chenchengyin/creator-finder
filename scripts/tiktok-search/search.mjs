@@ -4,9 +4,35 @@ import fs from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
-import {navigateWith403Retry,pace,isControlError} from '../tiktok-browser/access.mjs';
+import {navigateWith403Retry,pace,isControlError,dismissTikTokLoginPopup} from '../tiktok-browser/access.mjs';
 
-const searchUrl=keyword=>'https://www.tiktok.com/search/video?q='+encodeURIComponent(keyword);
+// This URL scopes page/response checks; searches are submitted through the homepage form below.
+export const SEARCH_PAGE_SCOPE='https://www.tiktok.com/search/video';
+const SEARCH_HOME_URL='https://www.tiktok.com/';
+const SEARCH_INPUT_SELECTOR='input[data-e2e="search-user-input"]';
+export function searchPageMatches(url,keyword){try{const page=new URL(url);return page.hostname==='www.tiktok.com'&&page.pathname.startsWith('/search')&&[page.searchParams.get('q'),page.searchParams.get('keyword')].includes(keyword);}catch{return false;}}
+export async function searchViaHomepage(page,keyword){
+  await page.goto(SEARCH_HOME_URL);
+  await page.waitForSelector('loc=role:searchbox[name*=""]',{state:'visible',timeout:12000});
+  const access=await readSearchPageWithDismiss(page);
+  if(access.captcha)throw new Error('captcha_requires_user');
+  if(access.loginPrompt)throw new Error('login_prompt_needs_inspection');
+  if([401,403,429].includes(access.httpStatus))throw new Error('http_'+access.httpStatus);
+  await page.click('loc=role:searchbox[name*=""]',{label:'打开 TikTok 搜索输入框'});
+  await readSearchPageWithDismiss(page);
+  await page.click(SEARCH_INPUT_SELECTOR,{label:'聚焦 TikTok 搜索关键词'});
+  await page.fill(SEARCH_INPUT_SELECTOR,keyword,{timeout:12000});
+  await page.waitForFunction(value=>document.activeElement?.matches('input[data-e2e="search-user-input"]')&&document.activeElement.value===value,keyword,{timeout:12000});
+  await page.keyboard.press('Enter');
+  await page.waitForFunction(value=>{const current=new URL(location.href);return current.hostname==='www.tiktok.com'&&current.pathname.startsWith('/search')&&[current.searchParams.get('q'),current.searchParams.get('keyword')].includes(value);},keyword,{timeout:15000});
+  if(new URL(await page.url()).pathname!=='/search/video'){
+    await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(b=>b.getClientRects().length&&/^(视频|Videos)$/i.test(b.textContent.trim())),undefined,{timeout:12000});
+    const label=await page.evaluate(()=>[...document.querySelectorAll('button')].find(b=>b.getClientRects().length&&/^(视频|Videos)$/i.test(b.textContent.trim())).textContent.trim());
+    await page.click('loc=role:button[name='+JSON.stringify(label)+']',{label:'查看 TikTok 视频搜索结果'});
+    await page.waitForFunction(()=>location.pathname==='/search/video',undefined,{timeout:12000});
+  }
+  return page.url();
+}
 const belongsToKeyword=(event,keyword)=>{try{const url=new URL(event.params.response.url);return url.pathname==='/api/search/item/full/'&&[url.searchParams.get('keyword'),url.searchParams.get('q')].includes(keyword);}catch{return false;}};
 const protectionStatus=statuses=>statuses.find(s=>s===401||s===429)??statuses.find(s=>s===403);
 const USAGE='node search.mjs --space <已有空间ID> --keyword <关键词> --run-dir <批次目录> [--batches 1..50] [--continue] [--dry-run]\n默认抓取1批；--continue 在原搜索页继续滚动。仅产生候选和来源，不冒充最终合格达人。403等待11秒后同址重试一次。';
@@ -28,7 +54,7 @@ export function parseArgs(argv){
   assert(config.runDir,'--run-dir required');config.runDir=resolve(config.runDir);
   assert(Number.isInteger(config.batches)&&config.batches>=1&&config.batches<=50,'--batches must be 1..50');
   assert(/^p\d+$/.test(config.pageLabel),'--page must be an existing managed page label');
-  config.searchUrl=searchUrl(config.keyword);return config;
+  return config;
 }
 
 export function parseSearchResponse(data){
@@ -67,12 +93,19 @@ export function readSearchPage(){
     links:[...document.querySelectorAll('a[href*="/video/"]')].map(a=>({url:a.href,text:a.innerText}))};
 }
 
+export async function readSearchPageWithDismiss(page){
+  let access=await page.evaluate(readSearchPage);
+  if(!access.loginPrompt||access.captcha||[401,429].includes(access.httpStatus))return access;
+  if(await dismissTikTokLoginPopup(page))access=await page.evaluate(readSearchPage);
+  return access;
+}
+
 const writeJson=async(path,value)=>{const tmp=path+'.tmp-'+process.pid;await fs.writeFile(tmp,JSON.stringify(value,null,2)+'\n');await fs.rename(tmp,path);};
 async function readJson(path,fallback){try{return JSON.parse(await fs.readFile(path,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;return fallback;}}
 
 export async function runSearch({page,config,beforeNavigate,sleep,onProgress=async()=>{}}){
-  const {runDir,keyword,batches=1,continueSearch=false}=config,url=searchUrl(keyword);
-  if(continueSearch){const current=new URL(await page.url());assert(current.hostname==='www.tiktok.com'&&current.pathname.startsWith('/search')&&current.searchParams.get('q')===keyword,'original search page/keyword mismatch; do not mix batches');}
+  const {runDir,keyword,batches=1,continueSearch=false}=config,url=SEARCH_PAGE_SCOPE;
+  if(continueSearch)assert(searchPageMatches(await page.url(),keyword),'original search page/keyword mismatch; do not mix batches');
   await fs.mkdir(runDir,{recursive:true});
   const queuePath=join(runDir,'candidate-queue.json'),statePath=join(runDir,'execution-state.json');
   let queue=await readJson(queuePath,[]),state=await readJson(statePath,{task:'TikTok keyword candidate discovery',keywordOrder:[keyword],browser:{spaceId:config.spaceId},counts:{}});
@@ -83,7 +116,9 @@ export async function runSearch({page,config,beforeNavigate,sleep,onProgress=asy
   const attempts=attempt=>fs.appendFile(join(runDir,'access-attempts.jsonl'),JSON.stringify(attempt)+'\n');
   let heldEvents=[];
   const takeEvents=async()=>{const events=[...heldEvents,...await page.events()];heldEvents=[];return events;};
-  const go=prior403=>navigateWith403Retry({page,url,prior403,read:async()=>{const access=await page.evaluate(readSearchPage);heldEvents.push(...await page.events());return {...access,httpStatus:protectionStatus([access.httpStatus,...heldEvents.filter(e=>e.method==='Network.responseReceived'&&belongsToKeyword(e,keyword)).map(e=>e.params.response.status)])??access.httpStatus};},sleep,
+  const navigationPage={goto:()=>searchViaHomepage(page,keyword)};
+  for(const method of ['snapshot','url','click','reload'])if(typeof page[method]==='function')navigationPage[method]=(...args)=>page[method](...args);
+  const go=prior403=>navigateWith403Retry({page:navigationPage,url,prior403,read:async()=>{const access=await readSearchPageWithDismiss(page);heldEvents.push(...await page.events());return {...access,httpStatus:protectionStatus([access.httpStatus,...heldEvents.filter(e=>e.method==='Network.responseReceived'&&belongsToKeyword(e,keyword)).map(e=>e.params.response.status)])??access.httpStatus};},sleep,
     beforeNavigate:async()=>{await paced();heldEvents=[];await page.events();},onAttempt:attempts});
   state.status='searching';state.runtimeRunning=true;state.activeProcessId=process.pid;await writeJson(statePath,state);
   const results=[];let stopReason=null,hardBlocked=false,exhausted=false,lastCursor=state.searchCheckpoints?.[keyword]?.cursor??(state.searchCheckpoint?.keyword===keyword?state.searchCheckpoint.cursor:undefined);
@@ -97,12 +132,12 @@ export async function runSearch({page,config,beforeNavigate,sleep,onProgress=asy
         const before=await page.evaluate(()=>[...document.querySelectorAll('a[href*="/video/"]')].at(-1)?.href||'');
         await page.evaluate(()=>{let root=document.querySelector('a[href*="/video/"]')?.parentElement;while(root&&!(root.clientHeight>100&&root.scrollHeight>root.clientHeight+100&&/auto|scroll/.test(getComputedStyle(root).overflowY)))root=root.parentElement;root=root||document.scrollingElement;root.scrollTop=root.scrollHeight;});
         try{await page.waitForFunction(old=>[...document.querySelectorAll('a[href*="/video/"]')].at(-1)?.href!==old||!!document.querySelector('iframe[src*="captcha"],#captcha_container'),before,{timeout:12000});}catch(e){if(isControlError(e))throw e;}
-        access=await page.evaluate(readSearchPage);
+        access=await readSearchPageWithDismiss(page);
         if(access.httpStatus===403&&!access.captcha&&!access.loginPrompt){access=(await go(true)).access;retryUsed=true;}
       }
       if(!stopReason&&![401,403,429].includes(access.httpStatus)&&!access.captcha&&!access.loginPrompt){
         try{await page.waitForSelector('a[href*="/video/"]',{state:'visible',timeout:12000});}catch(e){if(isControlError(e))throw e;}
-        access=await page.evaluate(readSearchPage);
+        access=await readSearchPageWithDismiss(page);
       }
       let events=await takeEvents();
       const matching=events.filter(e=>e.method==='Network.responseReceived'&&belongsToKeyword(e,keyword));
@@ -115,7 +150,8 @@ export async function runSearch({page,config,beforeNavigate,sleep,onProgress=asy
       const denied=responses.find(e=>[401,403,429].includes(e.params.response.status));
       if(access.captcha||[401,403,429].includes(access.httpStatus)||denied){stopReason=access.captcha?'captcha_requires_user':'http_'+protectionStatus([access.httpStatus,...responses.map(e=>e.params.response.status)]);hardBlocked=true;}
       else if(access.loginPrompt)stopReason='login_prompt_needs_inspection';
-      const capture={keyword,url,capturedAt:new Date().toISOString(),responses:[]};
+      const sourceUrl=await page.url();
+      const capture={keyword,url:sourceUrl,capturedAt:new Date().toISOString(),responses:[]};
       if(!stopReason){
         for(const event of responses){
           try{const body=await page.cdp('Network.getResponseBody',{requestId:event.params.requestId});const raw=JSON.parse(body.base64Encoded?Buffer.from(body.body,'base64').toString('utf8'):body.body);capture.responses.push({...parseSearchResponse(raw),httpStatus:event.params.response.status});}
@@ -123,9 +159,9 @@ export async function runSearch({page,config,beforeNavigate,sleep,onProgress=asy
         }
         if(!capture.responses.length)stopReason='search_response_missing';
         if(capture.responses.some(r=>r.statusCode!==0))stopReason='search_response_error';
-        const merged=mergeCandidates(queue,capture.responses.filter(r=>r.statusCode===0).flatMap(r=>r.items),{keyword,sourceUrl:url,capturedAt:capture.capturedAt});queue=merged.queue;
+        const merged=mergeCandidates(queue,capture.responses.filter(r=>r.statusCode===0).flatMap(r=>r.items),{keyword,sourceUrl,capturedAt:capture.capturedAt});queue=merged.queue;
         const domItems=(access.links||[]).flatMap(link=>{const m=new URL(link.url).pathname.match(/^\/@([\w.-]+)\/video\/(\d+)$/);return m?[{username:m[1],videoId:m[2],description:link.text}]:[];});
-        const dom=mergeCandidates(queue,domItems,{keyword,sourceUrl:url,capturedAt:capture.capturedAt});queue=dom.queue;
+        const dom=mergeCandidates(queue,domItems,{keyword,sourceUrl,capturedAt:capture.capturedAt});queue=dom.queue;
         exhausted=!stopReason&&capture.responses.length===responses.length&&capture.responses.length>0&&capture.responses.every(r=>r.statusCode===0)&&capture.responses.at(-1).hasMore===false;
         if(capture.responses.at(-1)?.cursor!==undefined)lastCursor=capture.responses.at(-1).cursor;
         results.push({batch,newCandidates:merged.newCandidates+dom.newCandidates,totalCandidates:queue.length,exhausted});
@@ -139,7 +175,7 @@ export async function runSearch({page,config,beforeNavigate,sleep,onProgress=asy
     state.counts={...state.counts,uniqueCandidates:queue.length};state.runtimeRunning=false;state.activeProcessId=null;
     state.status=hardBlocked?'waiting_for_user_access_recovery':stopReason?'paused_for_inspection':'in_progress';state.stopReason=stopReason;
     state.sourceProgress??={};state.sourceProgress[keyword]??={};state.sourceProgress[keyword]['tiktok-video']=stopReason?'incomplete':exhausted?'exhausted':'active_search_results';
-    state.searchCheckpoint={keyword,pageLabel:config.pageLabel||'p3',url,exhausted,cursor:lastCursor};
+    state.searchCheckpoint={keyword,pageLabel:config.pageLabel||'p3',url:await page.url(),exhausted,cursor:lastCursor};
     state.searchCheckpoints??={};state.searchCheckpoints[keyword]=state.searchCheckpoint;
     state.browser={...state.browser,spaceId:config.spaceId,ownership:stopReason==='control_lost'?'user':hardBlocked?'handed_to_user':'agent'};
     await writeJson(statePath,state);

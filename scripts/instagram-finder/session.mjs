@@ -1,5 +1,5 @@
 const unavailable=e=>/control|ownership|delegat|CDP|closed|detached|unresponsive|inactive|execution.*stopped/i.test(e.message);
-export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),lastActionAt=null}){
+export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),lastActionAt=null,onWait=()=>{}}){
  let current={},failure=null;
  const state={lastActionAt};
  const assertHealthy=()=>{if(failure)throw failure;};
@@ -9,7 +9,7 @@ export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>s
   assertHealthy();
   const min=action==='goto'&&/^https:\/\/(www\.)?tiktok\.com\//.test(target)?10500:8000;
   const delay=state.lastActionAt===null?0:Math.max(0,min-(now()-state.lastActionAt));
-  if(delay)await sleep(delay);
+  if(delay){onWait({until:now()+delay,reason:'action_pacing'});try{await sleep(delay);}finally{onWait(null);}}
   assertHealthy();
  };
  const execute=async(page,action,target,call)=>{
@@ -32,6 +32,7 @@ export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>s
  };
  return {state,assertHealthy,context(value){current={...current,...value};},wrap(raw){
   return new Proxy(raw,{get(target,key){
+   if(key==='waitForTimeout')return ms=>guard(async()=>{onWait({until:now()+ms,reason:'page_delay'});try{return await raw.waitForTimeout(ms);}finally{onWait(null);}});
    // Let a coordinate action inspect its target only after the shared pacing wait.
    if(key==='prepareAction')return (action,target='')=>guard(()=>pace(action,target));
    if(['goto','click','reload','close','press'].includes(key)&&typeof raw[key]==='function')return (...args)=>execute(raw,key,String(args[0]||''),()=>raw[key](...args));

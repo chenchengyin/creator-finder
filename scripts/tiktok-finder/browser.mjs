@@ -2,13 +2,13 @@ import fs from 'node:fs/promises';
 import {join} from 'node:path';
 import assert from 'node:assert/strict';
 import {navigateWith403Retry,isControlError,inspectReloadScreen} from '../tiktok-browser/access.mjs';
-import {readSearchPage,parseSearchResponse} from '../tiktok-search/search.mjs';
+import {readSearchPageWithDismiss,parseSearchResponse,SEARCH_PAGE_SCOPE,searchPageMatches,searchViaHomepage} from '../tiktok-search/search.mjs';
 import {collectVideoRegions} from '../tiktok-video-region/region.mjs';
 import {runCampaign,writeJson} from './workflow.mjs';
 import {recoverPostBodies} from './post-body-recovery.mjs';
 import {createPaginationCollector,readScrollState,validatePaginationChain} from './pagination.mjs';
 const pause=reason=>Object.assign(new Error(reason),{pause:true});
-const scopeMatches=(actual,target)=>{try{const a=new URL(actual),b=new URL(target);return a.hostname===b.hostname&&a.pathname.replace(/\/$/,'')===b.pathname.replace(/\/$/,'')&&(b.pathname.startsWith('/search')?a.searchParams.get('q')===b.searchParams.get('q'):true);}catch{return false;}};
+const scopeMatches=(actual,target)=>{try{const a=new URL(actual),b=new URL(target),search=b.pathname.startsWith('/search');return a.hostname===b.hostname&&(search?a.pathname.startsWith('/search'):a.pathname.replace(/\/$/,'')===b.pathname.replace(/\/$/,''))&&(!search||!b.searchParams.has('q')||a.searchParams.get('q')===b.searchParams.get('q'));}catch{return false;}};
 export function readProfilePage(){
  let d;try{d=JSON.parse(document.getElementById('__UNIVERSAL_DATA_FOR_REHYDRATION__')?.textContent).__DEFAULT_SCOPE__['webapp.user-detail'];}catch{}
  const u=d?.userInfo?.user,latest=[...document.querySelectorAll('button')].find(b=>/^(最新|Latest)$/i.test(b.textContent?.trim()||''));
@@ -59,7 +59,7 @@ export function createEgoBrowser({page,task,runDir,config,sleep=ms=>new Promise(
   let resumeReloadPage=sameRetryTarget&&(checkpoint.retry.screen==='reload_button'||priorReloadClicks>0);
   if(sameRetryTarget&&checkpoint.retry.status===403&&!resumeReloadPage&&await inspectReloadScreen(page)==='reload_button')resumeReloadPage=true;
   if(!prior403&&!resumeReloadPage&&sameRetryTarget&&[401,403,429].includes(checkpoint.retry.status)){
-   const current=await page.evaluate(readSearchPage);
+   const current=await readSearchPageWithDismiss(page);
    if(!scopeMatches(current.url,url)||current.captcha||current.loginPrompt||current.httpStatus!==200)throw pause('http_'+checkpoint.retry.status);
    checkpoint={...checkpoint,retry:null};
   }
@@ -67,12 +67,12 @@ export function createEgoBrowser({page,task,runDir,config,sleep=ms=>new Promise(
   const inspect=async()=>{
    let access,start=now(),lastPosition,lastMovement=now(),signature,stableSince=now(),networkSignature,networkStableSince=now(),settleStarted;
    for(;;){
-    access=await page.evaluate(readSearchPage);captured=await collector.drain();
+    access=await readSearchPageWithDismiss(page);captured=await collector.drain();
     const statuses=[access.httpStatus,...captured.map(r=>r.response?.status)];
     const status=statuses.find(s=>s===401||s===429)??statuses.find(s=>s===403)??statuses.find(s=>s>=400)??access.httpStatus;
     access={...access,httpStatus:status};
     if(access.captcha||access.loginPrompt||status>=400)break;
-    if(!scopeMatches(access.url,url)&&await inspectReloadScreen(page)!=='reload_button')throw pause('page_identity_mismatch');
+    if(!(keyword?searchPageMatches(access.url,keyword):scopeMatches(access.url,url))&&await inspectReloadScreen(page)!=='reload_button')throw pause('page_identity_mismatch');
     const readiness=readyToSkip?await readyToSkip():false;
     if(readiness===true){skipBodies=true;break;}
     if(readiness==='wait'&&now()-start>=12000)throw pause('profile_readiness_timeout');
@@ -114,11 +114,12 @@ export function createEgoBrowser({page,task,runDir,config,sleep=ms=>new Promise(
    return access;
   };
   const reset=async()=>{await collector.reset();scrolling=false;restarted=true;};
-  const navigationPage={goto:async()=>{if(first&&trigger){first=false;await reset();await trigger();}else if(first&&scrollPage){first=false;scrolling=true;}else{first=false;await reset();await page.goto(url);}}};
+  const navigationPage={goto:async()=>{if(first&&scrollPage){first=false;scrolling=true;}else{first=false;await reset();if(trigger)await trigger();else await page.goto(url);}}};
   for(const method of ['snapshot','url'])if(typeof page[method]==='function')navigationPage[method]=(...args)=>page[method](...args);
   for(const method of ['click','reload'])if(typeof page[method]==='function')navigationPage[method]=async(...args)=>{await reset();return page[method](...args);};
   const nav=await navigateWith403Retry({page:navigationPage,url,prior403,priorReloadClicks,resumeReloadPage,read:inspect,sleep,beforeNavigate:async()=>{await paced(minimumIntervalMs);await collector.drain();},onAttempt:async attempt=>{checkpoint={...checkpoint,retry:{url,attempts:attempt.number,status:attempt.httpStatus,screen:attempt.screen||null,reloadClicks:attempt.reloadClicks??checkpoint.retry?.reloadClicks??0}};await onCheckpoint(checkpoint);await fs.appendFile(join(runDir,'access-attempts.jsonl'),JSON.stringify({url,number:attempt.number,httpStatus:attempt.httpStatus,action:attempt.action,screen:attempt.screen||null,reloadClicks:checkpoint.retry.reloadClicks,capturedAt:attempt.capturedAt})+'\n');}});
   if(nav.access.captcha)throw pause('captcha_requires_user');if(nav.access.loginPrompt)throw pause('login_prompt_needs_inspection');if(nav.access.httpStatus>=400)throw pause('http_'+nav.access.httpStatus);if(nav.error)throw pause(nav.error);
+  if(keyword)checkpoint={...checkpoint,searchPageUrl:await page.url()};
   const completedCheckpoint={...checkpoint,retry:null};delete completedCheckpoint.partialBodies;delete completedCheckpoint.bodyReadFailure;
   if(skipBodies){await onCheckpoint(completedCheckpoint);return [];}
   let bodies=[];
@@ -141,11 +142,11 @@ export function createEgoBrowser({page,task,runDir,config,sleep=ms=>new Promise(
  }
  const browser={
   async discoverBatch({keyword,checkpoint={},onCheckpoint}){
-   const url='https://www.tiktok.com/search/video?q='+encodeURIComponent(keyword);
-   const bodies=await action({url,endpoint:'/api/search/item/full/',keyword,checkpoint,onCheckpoint,scrollPage:checkpoint.started===true&&scopeMatches(await page.url(),url)});
+   const url=SEARCH_PAGE_SCOPE,alreadyOnPage=checkpoint.started===true&&searchPageMatches(await page.url(),keyword);
+   const bodies=await action({url,endpoint:'/api/search/item/full/',keyword,checkpoint,onCheckpoint,scrollPage:alreadyOnPage,trigger:()=>searchViaHomepage(page,keyword)});
    const responses=bodies.map(parseSearchResponse);if(responses.some(r=>r.statusCode!==0||r.hasMore===null))throw pause('search_response_invalid');
-   const result={items:responses.flatMap(r=>r.items),hasMore:responses.at(-1).hasMore,cursor:responses.at(-1).cursor,valid:true,checkpoint:{keyword,started:true,retry:null}};
-   await fs.appendFile(join(runDir,'tiktok-video-discovery.jsonl'),JSON.stringify({keyword,url,capturedAt:new Date().toISOString(),responses})+'\n');return result;
+   const sourceUrl=await page.url(),result={items:responses.flatMap(r=>r.items),hasMore:responses.at(-1).hasMore,cursor:responses.at(-1).cursor,sourceUrl,valid:true,checkpoint:{keyword,started:true,searchPageUrl:sourceUrl,retry:null}};
+   await fs.appendFile(join(runDir,'tiktok-video-discovery.jsonl'),JSON.stringify({keyword,url:sourceUrl,capturedAt:new Date().toISOString(),responses})+'\n');return result;
   },
   async readProfile(candidate,onCheckpoint=async()=>{},checkpoint={}){
    const url='https://www.tiktok.com/@'+candidate.username;let profile,lastSaved,latestInactiveSince=null;

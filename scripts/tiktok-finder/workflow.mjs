@@ -48,9 +48,9 @@ export async function runCampaign({config,runDir,browser,exporter=exportResults,
    if(targetReached()){state.completionReason='target_reached';break;}
    if(config.maxKeywords&&state.keywords.filter(k=>k.stage==='completed').length>=config.maxKeywords){state.completionReason='keyword_limit_reached';break;}
    const record=state.keywords[state.currentKeywordIndex],keyword=record.keyword;
-   const mergeBatch=items=>{
+   const mergeBatch=(items,sourceUrl=record.checkpoint?.searchPageUrl)=>{
     record.authorOrder??=[];
-    queue=mergeCandidates(queue,items,{keyword,sourceUrl:'https://www.tiktok.com/search/video?q='+encodeURIComponent(keyword),capturedAt:new Date().toISOString()}).queue;
+    queue=mergeCandidates(queue,items,{keyword,sourceUrl:sourceUrl||null,capturedAt:new Date().toISOString()}).queue;
     for(const item of items){
      const username=item.username?.toLowerCase();if(!username)continue;
      const match=queue.find(c=>item.authorId&&c.authorIdHint===item.authorId||!item.authorId&&[c.username,...(c.aliases||[])].some(name=>name.toLowerCase()===username));
@@ -63,10 +63,10 @@ export async function runCampaign({config,runDir,browser,exporter=exportResults,
    };
    if(record.stage==='pending')record.stage='searching';state.stage=record.stage;
    while(record.stage==='searching'){
-    const response=await browser.discoverBatch({keyword,checkpoint:record.checkpoint,onCheckpoint:async checkpoint=>{record.checkpoint=checkpoint;if(checkpoint.partialBodies)mergeBatch(checkpoint.partialBodies.filter(r=>r.statusCode===0).flatMap(r=>r.items));await persist();}});
+    const response=await browser.discoverBatch({keyword,checkpoint:record.checkpoint,onCheckpoint:async checkpoint=>{record.checkpoint=checkpoint;if(checkpoint.partialBodies)mergeBatch(checkpoint.partialBodies.filter(r=>r.statusCode===0).flatMap(r=>r.items),checkpoint.searchPageUrl);await persist();}});
     assert(response&&Array.isArray(response.items),'search_response_missing');
     const before=new Set(queue.flatMap(c=>c.sourceEvidence||[]).map(e=>e.keyword+':'+e.videoId));
-    mergeBatch(response.items);
+    mergeBatch(response.items,response.sourceUrl);
     const newEvidence=queue.flatMap(c=>c.sourceEvidence||[]).some(e=>!before.has(e.keyword+':'+e.videoId));
     const oldCursor=record.checkpoint?.cursor;record.checkpoint={...record.checkpoint,...response.checkpoint,keyword,cursor:response.cursor??record.checkpoint?.cursor};await persist();
     assert(response.valid===true&&typeof response.hasMore==='boolean','search_completion_unknown');

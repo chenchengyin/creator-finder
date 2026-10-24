@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {navigateWith403Retry,isControlError,inspectReloadScreen} from '../tiktok-browser/access.mjs';
+import {navigateWith403Retry,isControlError,inspectReloadScreen,dismissTikTokLoginPopup} from '../tiktok-browser/access.mjs';
 
 const FIELD='__DEFAULT_SCOPE__["webapp.video-detail"].itemInfo.itemStruct.locationCreated';
 const validCode=value=>typeof value==='string'&&/^[A-Z]{2}$/.test(value.trim().toUpperCase())&&!['ZZ','XX'].includes(value.trim().toUpperCase());
@@ -58,7 +58,9 @@ async function readReadyVideoPage(page){
       return !!detail?.itemInfo?.itemStruct||(typeof detail?.statusCode==='number'&&detail.statusCode!==0)||[401,403,429].includes(performance.getEntriesByType('navigation')[0]?.responseStatus)||!!document.querySelector('iframe[src*="captcha"],#captcha_container')||[...document.querySelectorAll('[role="dialog"]')].some(e=>e.getClientRects().length&&/登录\s*TikTok|Log in to TikTok/i.test(e.innerText));
     },undefined,{timeout:8000});}catch(error){if(isControlError(error))throw error;}
   }
-  return page.evaluate(readVideoPage);
+  let access=await page.evaluate(readVideoPage);
+  if(access.loginPrompt&&!access.captcha&&![401,429].includes(access.httpStatus)&&await dismissTikTokLoginPopup(page))access=await page.evaluate(readVideoPage);
+  return access;
 }
 
 export function extractVideoRegion(observation,expected){

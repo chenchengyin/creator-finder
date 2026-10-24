@@ -4,10 +4,23 @@ import assert from 'node:assert/strict';
 export const isControlError=error=>/control|user-owned|inactive|unassigned|ownership|delegated/i.test(error.message);
 export const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
+export async function dismissTikTokLoginPopup(page,snapshot){
+  if(!page.snapshot||!page.click||!page.waitForFunction)return false;
+  snapshot??=await page.snapshot();
+  const loginIndex=snapshot.search(/^\s*dialog[^\n]*(?:登录\s*TikTok|Log in to TikTok)/mi);
+  if(/captcha|验证码/i.test(snapshot)||loginIndex<0)return false;
+  const buttons=[...snapshot.slice(loginIndex).matchAll(/^\s*button "(?:关闭|Close|Close dialog)"[^\n]*\[ref=(\d+)/gmi)];
+  if(buttons.length!==1)return false;
+  await page.click('@'+buttons[0][1],{label:'关闭 TikTok 登录弹窗'});
+  await page.waitForFunction(()=>![...document.querySelectorAll('[role="dialog"]')].some(e=>e.getClientRects().length&&/登录\s*TikTok|Log in to TikTok/i.test(e.innerText)),undefined,{timeout:3000});
+  return true;
+}
+
 export async function inspectReloadScreen(page){
   if(!page.snapshot)return null;
-  const snapshot=(await page.snapshot()).replace(/^\s*text "(.*)"$/gm,'$1');
+  let snapshot=(await page.snapshot()).replace(/^\s*text "(.*)"$/gm,'$1');
   if(/captcha|验证码/i.test(snapshot))return 'captcha';
+  if(/^\s*dialog[^\n]*(?:登录\s*TikTok|Log in to TikTok)/mi.test(snapshot)&&await dismissTikTokLoginPopup(page,snapshot))snapshot=(await page.snapshot()).replace(/^\s*text "(.*)"$/gm,'$1');
   if(/Log in to TikTok|登录\s*TikTok/i.test(snapshot))return 'login';
   if(/Please wait|请稍候/i.test(snapshot))return 'waiting';
   const chrome403=/访问\s*www\.tiktok\.com\s*的请求遭到拒绝[\s\S]{0,500}HTTP ERROR 403/i.test(snapshot);

@@ -31,3 +31,12 @@ test('邮箱-YT-008 pacing can complete before the final coordinate inspection',
  const f=setup(),s=f.s(),raw=f.raw('p1');let inspectedAfterWait=false;raw.evaluate=async()=>{inspectedAfterWait=f.waits.reduce((a,b)=>a+b,0)>=8000;};raw.mouse.click=async()=>assert.equal(inspectedAfterWait,true);const page=s.wrap(raw);
  await page.goto('https://www.youtube.com/@owner');assert.equal(typeof page.prepareAction,'function');await page.prepareAction('mouse.click','#submit');await page.evaluate(()=>{});await page.mouse.click(20,30);assert.equal(f.logs.at(-1).action,'mouse.click');
 });
+
+test('状态-PROGRESS-005 pacing waits expose a deadline and always clear it',async()=>{
+ let time=0;const waits=[];const s=createSessionForProgress();
+ function createSessionForProgress(){return api.createSession({log:async()=>{},now:()=>time,lastActionAt:0,sleep:async ms=>{time+=ms;},onWait:value=>waits.push(value)});}
+ const page=s.wrap({url:async()=> 'https://www.instagram.com/',click:async()=>{}});await page.click('button');assert.deepEqual(waits,[{until:8000,reason:'action_pacing'},null]);
+});
+test('状态-PROGRESS-005 explicit browser waits clear their state even when interrupted',async()=>{
+ const waits=[],s=api.createSession({log:async()=>{},now:()=>1000,onWait:value=>waits.push(value)});const page=s.wrap({waitForTimeout:async()=>{throw Error('interrupted');}});await assert.rejects(page.waitForTimeout(60000),/interrupted/);assert.deepEqual(waits,[{until:61000,reason:'page_delay'},null]);
+});

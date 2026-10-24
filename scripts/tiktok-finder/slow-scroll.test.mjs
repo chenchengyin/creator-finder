@@ -7,7 +7,7 @@ import {temp} from './fixtures.mjs';
 
 // Browser/network boundaries are simulated; the adapter, timers, parsing and DOM callback are real.
 function fixture({onGoto,onScroll,height=40000}={}){
- let tick=20000,url='',sequence=0,position=0,pointer=false;
+ let tick=20000,url='',sequence=0,position=0,pointer=false,keyword='';
  const scheduled=[],buffer=[],bodies=new Map(),wheels=[],reads=[];
  const root={clientHeight:800,clientWidth:1200,scrollHeight:height,
   get scrollTop(){return position;},set scrollTop(value){position=Math.min(Math.max(0,value),root.scrollHeight-800);onScroll?.(api);},
@@ -26,7 +26,9 @@ function fixture({onGoto,onScroll,height=40000}={}){
  }
  const api={request,root,wheels,reads,get tick(){return tick;},get url(){return url;},
   now:()=>tick,sleep:async ms=>{tick+=ms;flush();},
-  page:{url:async()=>url,goto:async target=>{url=target;position=0;onGoto?.(api);flush();},
+  page:{url:async()=>url,goto:async target=>{url=target;position=0;if(target!=='https://www.tiktok.com/')onGoto?.(api);flush();},
+   waitForSelector:async()=>{},waitForFunction:async()=>{},click:async()=>{},fill:async(selector,value)=>{keyword=value;},
+   keyboard:{press:async key=>{assert.equal(key,'Enter');url='https://www.tiktok.com/search/video?q='+encodeURIComponent(keyword);position=0;onGoto?.(api);flush();}},
    events:async()=>{flush();return buffer.splice(0);},
    evaluate:async(fn,arg)=>{flush();if(fn.name==='readSearchPage')return {url,httpStatus:200,captcha:false,loginPrompt:false};return vm.runInNewContext('('+fn.toString()+')(argument)',{document,getComputedStyle:()=>({overflowY:'auto'}),innerWidth:1200,innerHeight:800,argument:arg});},
    mouse:{move:async()=>{pointer=true;},wheel:async(dx,dy)=>{assert(pointer,'wheel must point at the list');wheels.push({at:tick,delta:dy});root.scrollTop+=dy;flush();}},
