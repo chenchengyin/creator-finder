@@ -66,6 +66,18 @@ test('邮箱-YT-002 image challenge pauses without submitting, explicit resume u
  const stopped=await runFinder({config:{url},runDir:dir,browser:b()});assert.equal(stopped.completion,'paused');assert.ok(!f.actions.includes('click:#submit'));
  f.setState('verified');const resumed=await runFinder({runDir:dir,resume:true,browser:b()});assert.equal(resumed.completion,'completed');assert.equal(resumed.emails[0].email,'kikochan@pomato.hk');assert.equal(f.actions.filter(x=>x==='checkbox').length,1);
 });
+test('邮箱-YT-024 resume keeps a verified YouTube channel when tracking parameters disappear',async t=>{
+ const requested=url+'?si=shared-link',f=fixture('home',true),dir=await temp(t),b=()=>createEgoBrowser({page:f.page,sleep:async()=>{}});
+ f.page.url=async()=>requested;
+ assert.equal((await runFinder({config:{url:requested},runDir:dir,browser:b()})).completion,'paused');
+ let navigations=0;
+ f.setState('email');f.page.url=async()=>url;f.page.goto=async()=>{navigations++;f.setState('home');};
+ const resumed=await runFinder({runDir:dir,resume:true,browser:b()});
+ assert.equal(resumed.completion,'completed');
+ assert.equal(resumed.emails[0].email,'kikochan@pomato.hk');
+ assert.equal(f.actions.filter(x=>x==='checkbox').length,1);
+ assert.equal(navigations,0);
+});
 test('邮箱-YT-017 a visibly expired checkbox permits one checkpointed retry on resume',async t=>{
  const f=fixture('home',true),dir=await temp(t),b=()=>createEgoBrowser({page:f.page,sleep:async()=>{}});
  const stopped=await runFinder({config:{url},runDir:dir,browser:b()});assert.equal(stopped.completion,'paused');

@@ -485,7 +485,10 @@ export function createEgoBrowser({
         if (isControlError(e)) throw pause("user_control_lost");
         throw pause("browser_unavailable: " + e.message);
       }
-      if (current.key === info.key) {
+      if (current.key === info.key ||
+          (info.platform === "youtube" && info.kind === "profile" &&
+           current.platform === "youtube" && current.kind === "profile" &&
+           current.profileKey === info.profileKey)) {
         // The caller may have just navigated; pace the next navigation from this observation.
         lastNav = now();
       } else {
