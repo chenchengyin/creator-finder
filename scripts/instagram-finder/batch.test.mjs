@@ -23,6 +23,26 @@ test('BATCH-002 paused child resumes current author without repeating profile or
  const paused=await run({config,runDir:dir,browser:b});assert.equal(paused.status,'paused');assert.deepEqual(b.actions,['search:#one','profile:example']);
  const r=await run({runDir:dir,resume:true,browser:b});assert.equal(r.status,'completed');assert.equal(b.actions.filter(x=>x==='profile:example').length,1);assert.equal(b.actions.filter(x=>x==='search:#one').length,1);
 });
+test('YouTube image challenge saves the parent checkpoint before handing control to the user',async t=>{
+ const dir=await temp(t),b=browser();b.startKeyword=async()=>({items:[item()],hasMore:false,cursor:null});
+ b.readers.email=async()=>({rootUrl:'https://www.instagram.com/example/',completion:'paused',matches:null,issues:[{reason:'youtube_image_challenge'}]});
+ b.handOff=async()=>{assert.equal((await api.readBatch(dir)).status,'paused');await assert.rejects(fs.access(join(dir,'.lock')),e=>e.code==='ENOENT');b.actions.push('handOff');};
+ const stopped=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b});
+ assert.equal(stopped.status,'paused');assert.deepEqual(b.actions,['profile:example','handOff']);
+});
+test('expanded email limits revisit earlier queued links without repeating search',async t=>{
+ const dir=await temp(t),b=browser();let emailCalls=0,nextCalls=0;
+ b.startKeyword=async()=>({items:[item()],hasMore:true,cursor:'c1'});
+ b.nextSearchPage=async()=>{if(++nextCalls===1)throw Object.assign(Error('search_temporary_pause'),{pause:true});return {items:[],hasMore:false,cursor:null};};
+ b.readers.profile=async()=>({status:'observed',username:'example',authorId:'123',biography:'',links:[{url:'https://contact.example/'}],linksComplete:true});
+ b.readers.email=async()=>{emailCalls++;return emailCalls===1?{rootUrl:'https://www.instagram.com/example/',completion:'partial',matches:null,acceptedEmails:[],emails:[],pages:[{depth:1,status:'pending',attempted:false}]}:emailCalls===2?{rootUrl:'https://www.instagram.com/example/',completion:'paused',matches:null,acceptedEmails:[],emails:[],pages:[{depth:1,status:'paused',attempted:true}]}:{rootUrl:'https://www.instagram.com/example/',completion:'completed',matches:true,acceptedEmails:[{email:'agent@example.com'}],emails:[],pages:[{depth:1,status:'complete',attempted:true}]};};
+ const first={keywords:['#one'],conditions:{requireEmail:true,country:'US'},emailLimits:{maxDepth:0,maxPages:1}};
+ assert.equal((await run({config:first,runDir:dir,browser:b})).status,'paused');
+ const expanded={...first,emailLimits:{maxDepth:3,maxPages:20}};
+ assert.equal((await run({config:expanded,runDir:dir,resume:true,browser:b})).status,'paused');
+ const done=await run({runDir:dir,resume:true,browser:b});
+ assert.equal(done.status,'completed');assert.equal(emailCalls,3);assert.equal(done.authors['123'].verification.checks.email,true);assert.equal(b.actions.filter(x=>x==='search:#one').length,0);
+});
 test('BATCH-002 invalid input, stale lock, and historical checkpoints never launch browser',async t=>{
  const dir=await temp(t),launch=async()=>assert.fail('must not launch');
  await assert.rejects(run({runDir:dir,config:{...config,keywords:[]},browser:launch}));

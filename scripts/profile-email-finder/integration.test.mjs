@@ -38,6 +38,14 @@ test('EMAIL-004 completed child can be recovered before parent bookkeeping witho
  await find({profile:{...profile,links:[{url:'https://contact.example/'}]},runDir:dir,browser:b});
  const r=await find({profile,runDir:dir,browser:browser({})});assert.equal(r.matches,true);assert.deepEqual(b.reads,['https://contact.example/']);
 });
+test('bounded child resumes queued external links when its limits are expanded',async t=>{
+ const dir=await temp(t),p={...profile,links:[{url:'https://contact.example/'}]};
+ const first=await find({profile:p,runDir:dir,browser:browser({}),limits:{maxDepth:0,maxPages:1}});
+ assert.equal(first.matches,null);assert.equal(first.pages.find(page=>page.depth===1)?.attempted,false);
+ const b=browser({'https://contact.example/':{text:'Booking: agent@example.com'}});
+ const resumed=await find({profile:p,runDir:dir,browser:b,limits:{maxDepth:3,maxPages:20}});
+ assert.deepEqual(b.reads,['https://contact.example/']);assert.equal(resumed.matches,true);
+});
 test('EMAIL-001 incomplete profile falls back to borrowed browser instead of declaring empty',async t=>{
  const b=browser({[root]:{text:'actual@example.com'}}),r=await find({profile:{...profile,biography:null,linksComplete:false},runDir:await temp(t),browser:b});
  assert.equal(r.matches,true);assert.deepEqual(b.reads,[root]);

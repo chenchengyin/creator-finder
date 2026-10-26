@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {parseCountryResponse,parseCountryDialog,readAccountCountry} from './region.mjs';
+import {createSession} from './session.mjs';
 const key='IG_ABOUT_THIS_ACCOUNT:about_this_account_country';
 const body=(country='美国',visible=true,username='example')=>'for (;;);'+JSON.stringify({payload:{layout:{bloks_payload:{tree:{username},data:[{data:{key:key+'_visibility',initial:visible}},{data:{key,initial:country}}]}}}});
 test('parses native response and normalizes Chinese/English countries',()=>{assert.equal(parseCountryResponse(body(),'example').countryCode,'US');assert.equal(parseCountryResponse(body('United Kingdom'),'example').countryCode,'GB');assert.equal(parseCountryResponse(body('日本'),'example').countryCode,'JP');});
@@ -36,4 +37,74 @@ test('资料卡-CLOSE-002 takeover during keyboard close stops all remaining pag
  page.click=async selector=>{if(selector==='[data-creator-country-close]')throw Error('intercepts pointer events');return click(selector);};
  page.press=async()=>{throw Error('Control of this task space is with the user');};
  await assert.rejects(readAccountCountry({page,username:'example'}),/Control of this task space/);assert.equal(page.actions.includes('Escape'),false);assert.equal(page.actions.includes('cleanup'),false);
+});
+
+function timedCountryPage({keyboardClose=false,closeUnconfirmed=false,countryBlocked=false,wrongProfile=false}={}){
+ let time=0,closing=false,confirmedAt=null,menuReadyAt=null,aboutClickedAt=null,closeStartedAt=null,countryReadAt=null,optionsClickedAt=null;const waits=[],page=fakePage({blocked:countryBlocked}),click=page.click,evaluate=page.evaluate,cdp=page.cdp;
+ page.cdp=async(method,...args)=>{const value=await cdp(method,...args);if(method==='Network.getResponseBody'){time+=1200;countryReadAt=time;}return value;};
+ page.evaluate=async(fn,arg)=>{const value=await evaluate(fn,arg);if(arg?.operation==='menu'){time+=1200;menuReadyAt=time;}if(wrongProfile&&arg?.operation==='inspect')value.username='other';return value;};
+ page.waitForTimeout=async ms=>{time+=ms;};
+ page.click=async selector=>{
+  if(selector.startsWith('main header'))optionsClickedAt=time;
+  if(selector==='[data-creator-country-open]')aboutClickedAt=time;
+  if(selector==='[data-creator-country-close]'){
+   closeStartedAt=time;
+   if(keyboardClose)throw Error('intercepts pointer events');
+   closing=true;
+  }
+  return click(selector);
+ };
+ page.press=async()=>{closing=true;};
+ page.waitForFunction=async()=>{
+  if(!closing)return;
+  if(closeUnconfirmed)throw Error('close confirmation timeout');
+  time+=1200;confirmedAt=time;closing=false;
+ };
+ const session=createSession({log:async()=>{},now:()=>time,sleep:async ms=>{waits.push(ms);time+=ms;}});
+ return {page:session.wrap(page),waits,elapsedSinceClose:()=>time-confirmedAt,menuToAboutDelay:()=>aboutClickedAt-menuReadyAt,aboutToCloseDelay:()=>closeStartedAt-aboutClickedAt,readToCloseDelay:()=>closeStartedAt-countryReadAt,optionsClickedAt:()=>optionsClickedAt};
+}
+test('资料卡-PROFILE-001 verified ready profile opens options after two seconds instead of padding navigation to eight seconds',async()=>{
+ const f=timedCountryPage();
+ await f.page.goto('https://www.instagram.com/example/');
+ await f.page.waitForTimeout(2300);
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).countryCode,'US');
+ assert.equal(f.optionsClickedAt(),4300);
+});
+test('资料卡-PROFILE-002 identity mismatch cannot shorten a later navigation interval',async()=>{
+ const f=timedCountryPage({wrongProfile:true});
+ await f.page.goto('https://www.instagram.com/example/');
+ await f.page.waitForTimeout(2300);
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).reason,'profile_identity_mismatch');
+ assert.equal(f.optionsClickedAt(),null);
+ await f.page.goto('https://www.instagram.com/next/');
+ assert.equal(f.waits.at(-1),5700);
+});
+test('资料卡-MENU-001 ready options menu permits about entry click after 500ms',async()=>{
+ const f=timedCountryPage();
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).countryCode,'US');
+ assert.equal(f.menuToAboutDelay(),500);
+});
+test('资料卡-READ-001 country evidence is fully read before the 500ms close interval starts',async()=>{
+ const f=timedCountryPage();
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).countryCode,'US');
+ assert.equal(f.readToCloseDelay(),500);
+});
+test('资料卡-READ-002 blocked country response retains the ordinary close pacing',async()=>{
+ const f=timedCountryPage({countryBlocked:true});
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).status,'paused');
+ assert.equal(f.aboutToCloseDelay(),8000);
+});
+for(const keyboardClose of [false,true])test(`资料卡-CLOSE-003 confirmed ${keyboardClose?'keyboard':'pointer'} close permits the next action after one second`,async()=>{
+ const f=timedCountryPage({keyboardClose});
+ assert.equal((await readAccountCountry({page:f.page,username:'example',navigate:false})).countryCode,'US');
+ await f.page.goto('https://www.instagram.com/next/');
+ assert.equal(f.elapsedSinceClose(),1000);
+ await f.page.click('button');
+ assert.equal(f.waits.at(-1),8000);
+});
+test('资料卡-CLOSE-004 unconfirmed close retains ordinary action pacing',async()=>{
+ const f=timedCountryPage({closeUnconfirmed:true});
+ await readAccountCountry({page:f.page,username:'example',navigate:false});
+ await f.page.goto('https://www.instagram.com/next/');
+ assert.equal(f.waits.at(-1),8000);
 });

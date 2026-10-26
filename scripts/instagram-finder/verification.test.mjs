@@ -28,6 +28,10 @@ test('VERIFY-003 identity mismatch and changed resume criteria fail before later
  const f=fixture();f.readers.profile=async()=>({status:'observed',authorId:'999'});const r=await verify(f);assert.equal(r.reason,'profile_author_id_mismatch');assert.deepEqual(f.calls,[]);
  const good=fixture(),saved=await verify(good);good.calls.length=0;await assert.rejects(verify({...good,state:saved,conditions:{requireEmail:true,country:'CA'}}),/resume_input_mismatch/);assert.deepEqual(good.calls,[]);
 });
+test('email result for a different profile cannot be attached to the current creator',async()=>{
+ const f=fixture();f.readers.email=async()=>({rootUrl:'https://www.instagram.com/other/',completion:'completed',matches:true,acceptedEmails:[{email:'other@example.com'}]});
+ const r=await verify(f);assert.equal(r.status,'pending_review');assert.equal(r.reason,'email_root_url_mismatch');assert.equal(r.checks.email,undefined);assert.deepEqual(f.calls,['profile']);
+});
 test('VERIFY-003 failed checkpoint propagates and prevents all later browser actions',async()=>{
  const f=fixture();await assert.rejects(verify({...f,onCheckpoint:async()=>{throw Error('disk_full');}}),/disk_full/);assert.deepEqual(f.calls,[]);
 });

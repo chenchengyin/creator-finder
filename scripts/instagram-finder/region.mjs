@@ -54,11 +54,13 @@ export async function readAccountCountry({page,username,navigate=true}){
   if(state.username?.toLowerCase()!==username.toLowerCase()||!state.profileReady)return {...result,reason:'profile_identity_mismatch'};
   if(state.dialogCount&&!await waitForDialogToClear(page))return {...result,reason:'existing_dialog'};
   await page.cdp('Network.enable',{});await page.events();
+  await page.countryProfileReady?.();
   await page.click('main header [role="button"]:has(svg[aria-label="选项"]),main header [role="button"]:has(svg[aria-label="Options"])',{label:'打开 Instagram 原生选项'});
   owned=true;
-  await page.waitForFunction(()=>[...document.querySelectorAll('[role="dialog"] button,[role="dialog"] [role="button"]')].some(e=>/^(账户简介|账号简介|About this account|About this profile)$/i.test(e.textContent.trim())),undefined,{timeout:5000});
-  const menu=await page.evaluate(({operation})=>{const entry=[...document.querySelectorAll('[role="dialog"] button,[role="dialog"] [role="button"]')].find(e=>/^(账户简介|账号简介|About this account|About this profile)$/i.test(e.textContent.trim()));entry?.setAttribute('data-creator-country-open','');return {entry:!!entry};},{operation:'menu'});
+  await page.waitForFunction(()=>[...document.querySelectorAll('[role="dialog"] button,[role="dialog"] [role="button"]')].some(e=>e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden'&&/^(账户简介|账号简介|About this account|About this profile)$/i.test(e.textContent.trim())),undefined,{timeout:5000});
+  const menu=await page.evaluate(({operation})=>{const entry=[...document.querySelectorAll('[role="dialog"] button,[role="dialog"] [role="button"]')].find(e=>e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden'&&/^(账户简介|账号简介|About this account|About this profile)$/i.test(e.textContent.trim()));entry?.setAttribute('data-creator-country-open','');return {entry:!!entry};},{operation:'menu'});
   if(!menu.entry)return {...result,reason:'about_entry_unavailable'};
+  await page.countryMenuReady?.();
   await page.evaluate(({operation})=>{document.body.setAttribute('data-creator-country-query','');const style=document.createElement('style');style.id='creator-country-query-style';style.textContent='body[data-creator-country-query] [role="dialog"]:has([data-bloks-name]){opacity:0!important}';document.head.appendChild(style);setTimeout(()=>{if(document.getElementById(style.id)===style){style.remove();document.body.removeAttribute('data-creator-country-query');}},15000);},{operation:'mask'});
   await page.click('[data-creator-country-open]',{label:'查询原生账户所在地'});
   await page.waitForTimeout(700);
@@ -87,6 +89,7 @@ export async function readAccountCountry({page,username,navigate=true}){
   }
   if(observed&&dom&&observed.countryCode!==dom.countryCode)return {...result,status:'conflict',reason:'response_dialog_country_conflict'};
   const selected=observed||(dom&&{...dom,source:'instagram_about_this_account_dialog'});
+  if(selected)await page.countryDialogRead?.();
   return {...result,...selected,capturedAt:new Date().toISOString(),...(!selected?{reason:'country_not_returned'}:{})};
  }catch(error){
   if(error.pause||error.storageFailure){lostControl=true;throw error;}
@@ -95,13 +98,16 @@ export async function readAccountCountry({page,username,navigate=true}){
   return {...result,reason:error.message};
  }finally{
   if(owned&&!lostControl){
-   try{await page.click('[data-creator-country-close]',{label:'关闭本次账户资料卡'});await page.waitForFunction(()=>!document.querySelector('[data-creator-country-close]'),undefined,{timeout:5000});}catch(error){
+   let closed=false;
+   try{await page.click('[data-creator-country-close]',{label:'关闭本次账户资料卡'});await page.waitForFunction(()=>!document.querySelector('[data-creator-country-close]'),undefined,{timeout:5000});closed=true;}catch(error){
     if(/Control of this task space|delegat|ownership/i.test(error.message))throw error;
     if(/intercepts pointer events/i.test(error.message)){
      await page.press('[data-creator-country-close]','Enter');
      await page.waitForFunction(()=>!document.querySelector('[data-creator-country-close]'),undefined,{timeout:5000});
+     closed=true;
     }else await page.keyboard.press('Escape');
    }
+   if(closed)await page.countryDialogClosed?.();
    await page.evaluate(({operation})=>{document.getElementById('creator-country-query-style')?.remove();document.body.removeAttribute('data-creator-country-query');document.querySelectorAll('[data-creator-country-open],[data-creator-country-close]').forEach(e=>{e.removeAttribute('data-creator-country-open');e.removeAttribute('data-creator-country-close');});},{operation:'cleanup'});
   }
  }

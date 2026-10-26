@@ -4,7 +4,7 @@ import {resolve,join,relative,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
-import {projectRoot,readBatch,exportSavedBatch,normalizeBatchConfig} from './batch.mjs';
+import {projectRoot,readBatch,exportSavedBatch,normalizeBatchConfig,expandBatchEmailLimits} from './batch.mjs';
 import {readProgress,watchChild} from './progress.mjs';
 
 export async function assertRunDirectory(input){
@@ -36,7 +36,7 @@ export async function main(args=process.argv.slice(2),{print=console.log,launch}
  if(options.configPath)options.config=normalizeBatchConfig(JSON.parse(await fs.readFile(resolve(projectRoot,options.configPath),'utf8')));
  if(options.resume){
   const state=await readBatch(options.runDir);
-  if(options.config&&JSON.stringify(options.config)!==JSON.stringify(state.config))throw Error('resume_input_mismatch');
+  if(options.config)expandBatchEmailLimits(state.config,options.config);
   if(state.status==='completed'){print(JSON.stringify(await exportSavedBatch(options.runDir),null,2));return 0;}
  }else{
   if(!options.config)throw Error('config_required');

@@ -56,6 +56,6 @@ export async function findProfileEmail({page,profile,runDir,spaceId,browser,limi
   if(seedReady&&classifyUrl(args.url).key===classifyUrl(url).key){await args.onCapture(capture);return {complete:true,checkpoint:{phase:'caller_profile'}};}
   return borrowed.readPage(args);
  }};
- const result=await runFinder({config:saved?saved.config:{url,...limits},runDir,resume:!!saved,browser:adapter,onProgress});
+ const result=await runFinder({config:saved?{...saved.config,...limits}:{url,...limits},runDir,resume:!!saved,browser:adapter,onProgress});
  return summarizeEmail(result);
 }
