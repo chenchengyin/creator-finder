@@ -45,6 +45,8 @@ node /Users/vb/Projects/creator-finder_preview/scripts/instagram-finder/find.mjs
 
 挂链扫描遇 YouTube 图片验证码时，先保存作者与邮箱子断点、导出当前结果、释放批次写锁，再交还原浏览器空间。人工处理后使用原 run 目录的 `--resume` 继续；验证码过期时只允许一次有原生过期提示的复选框重试，不解图片题。
 
+外链触发浏览器原生定位等权限提示时，Ego Lite 会暂停并交还用户处理；脚本不能自动点击“取消”。用户取消并交还后，`--resume` 先核对原外链页面与断点，页面仍可读时复用落地页继续扫描，避免重新打开同一外链。
+
 ## 代码接口
 
 `processSearchPage({page, items, conditions:{requireEmail:true,...}, runDir, state, onCheckpoint, readers})` 与 `collectCreator({page, username, authorId, conditions, runDir, state, onCheckpoint})` 共用单作者 verification。浏览器调用方需要统一协调页面/节奏与空间；独立调用应显式管理对应 Page。
