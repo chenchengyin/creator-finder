@@ -98,7 +98,8 @@ export async function runBatch({config,runDir,resume=false,browser,retryTiming={
    wait:active.waitForSearchRetry,now:retryTiming.now,random:retryTiming.random});
   const advance=async topic=>{
    const current=topic.currentPage;
-   const next=await search(topic,current.cursor,()=>active.nextSearchPage({keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages}));
+   const knownCodes=[...new Set([...current.items.map(item=>item.code),...Object.values(state.authors).flatMap(a=>a.sources.filter(s=>s.keyword===topic.keyword).map(s=>s.code))])];
+   const next=await search(topic,current.cursor,()=>active.nextSearchPage({keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages,knownCodes}));
    if(!Array.isArray(next.items)||typeof next.hasMore!=='boolean'||next.hasMore&&(!next.cursor||next.cursor===current.cursor))throw Error('search_pagination_state_unknown');
    topic.currentPage=next;topic.pendingSearchPages=active.pendingSearchPages?.()||[];delete topic.advancePending;await save();
   };

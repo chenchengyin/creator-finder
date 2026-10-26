@@ -85,6 +85,13 @@ test('online scope: native end before author limit is keyword exhaustion',async 
  const r=await run({config:{keywords:['sourcing manager'],conditions:{requireEmail:true,countries:['US','GB']},maxAuthors:500},runDir:dir,browser:b});
  assert.equal(r.status,'completed');assert.equal(r.completionReason,'keywords_exhausted');assert.equal(r.searchExhausted,true);
 });
+test('翻页-KNOWN-002 passes verified current-page photo codes as well as creator sources',async t=>{
+ const dir=await temp(t),b=browser();let known;
+ b.startKeyword=async()=>({items:[item(),{...item('456','photo_author'),code:'photo',mediaType:1}],hasMore:true,cursor:'c1'});
+ b.nextSearchPage=async args=>{known=args.knownCodes;return {items:[],hasMore:false,cursor:null};};
+ const r=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b});
+ assert.equal(r.status,'completed');assert.deepEqual(known,['c123','photo']);assert.equal(r.authors['456'],undefined);
+});
 
 test('采纳-QUALITY-004 export retains reviewed evidence even when another source confirms the same email',async t=>{
  const dir=await temp(t),b=browser();

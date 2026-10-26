@@ -46,9 +46,9 @@ export async function runInEgo(options,api){
   Object.defineProperty(session,'lastActionAt',{enumerable:true,get:()=>coordinator.state.lastActionAt});
   return {page,session,assertHealthy:()=>{coordinator.assertHealthy();progress.assertHealthy();},context:value=>{coordinator.context(value);progress.context(value);},
    async startKeyword(value,initialPages=[]){keyword=value;pager=createSearchPager({page:search,keyword,onEvidence,initialPages});return pager.first();},
-   async nextSearchPage({keyword:value,searchKeyword,previousCursor,pendingPages}){
+   async nextSearchPage({keyword:value,searchKeyword,previousCursor,pendingPages,knownCodes}){
     if(!pager||keyword!==value){keyword=value;pager=createSearchPager({page:search,keyword,searchKeyword,initialPages:pendingPages,onEvidence});}
-    return pager.next({previousCursor,currentPageProcessed:true});
+    return pager.next({previousCursor,currentPageProcessed:true,knownCodes});
    },
    pendingSearchPages:()=>pager?.pendingPages()||[],
    waitForSearchRetry:until=>waitForSearchRetry(until,{onWait:value=>progress.wait(value),assertHealthy:()=>{coordinator.assertHealthy();progress.assertHealthy();}}),
