@@ -509,7 +509,8 @@ export function createEgoBrowser({
             )
           )
             throw pause("browser_unavailable: " + e.message);
-          navError = e;
+          const committed = e.message.match(/navigation committed at "([^"]+)" with document\.readyState="interactive"/);
+          if (!committed || await page.url() !== committed[1]) navError = e;
         }
       }
       if (navError && !info.platform)

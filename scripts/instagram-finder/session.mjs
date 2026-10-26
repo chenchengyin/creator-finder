@@ -1,4 +1,4 @@
-const unavailable=e=>/control|ownership|delegat|CDP|closed|detached|unresponsive|inactive|execution.*stopped/i.test(e.message);
+const unavailable=e=>/control of (?:this )?task space|user now controls this task space|user control (?:lost|unavailable)|ownership|delegat|CDP|closed|detached|unresponsive|inactive|execution.*stopped/i.test(e.message);
 export function createSession({log,now=()=>Date.now(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),lastActionAt=null,onWait=()=>{}}){
  let current={},failure=null,nextActionAt=null;
  const state={lastActionAt};

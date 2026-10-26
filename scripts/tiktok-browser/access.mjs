@@ -1,7 +1,7 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
-export const isControlError=error=>/control|user-owned|inactive|unassigned|ownership|delegated/i.test(error.message);
+export const isControlError=error=>/control of (?:this )?task space|user now controls this task space|user control (?:lost|unavailable)|user-owned|inactive|unassigned|ownership|delegated/i.test(error.message);
 export const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
 export async function dismissTikTokLoginPopup(page,snapshot){
@@ -53,7 +53,7 @@ export async function navigateWith403Retry({page,url,read,beforeNavigate=async()
   };
   const readCurrent=async()=>{
     try{access=await read();}
-    catch(cause){if(isControlError(cause))throw cause;access={httpStatus:null};error=cause.message;}
+    catch(cause){if(cause.pause||isControlError(cause))throw cause;access={httpStatus:null};error=cause.message;}
   };
   const settledReloadScreen=async()=>{
     let screen=await inspectReloadScreen(page);
@@ -72,7 +72,7 @@ export async function navigateWith403Retry({page,url,read,beforeNavigate=async()
       if(screen!=='reload_button')break;
       error=null;let clickError=null;
       try{await page.click("loc=role:button[name='重新加载']");}
-      catch(cause){if(isControlError(cause))throw cause;clickError=cause.message;}
+      catch(cause){if(cause.pause||isControlError(cause))throw cause;clickError=cause.message;}
       await readCurrent();
       screen=await settledReloadScreen();
       reloadClicks++;
@@ -85,7 +85,7 @@ export async function navigateWith403Retry({page,url,read,beforeNavigate=async()
 
   if(!prior403&&!resumeReloadPage){
     await beforeNavigate();
-    try{await page.goto(url);}catch(cause){if(isControlError(cause))throw cause;error=cause.message;}
+    try{await page.goto(url);}catch(cause){if(cause.pause||isControlError(cause))throw cause;error=cause.message;}
     await readCurrent();
     let screen=await settledReloadScreen();
     access=markScreen(access,screen);
@@ -125,7 +125,7 @@ export async function navigateWith403Retry({page,url,read,beforeNavigate=async()
       if(page.reload&&page.url&&await page.url()===url){action='reload';await page.reload();}
       else await page.goto(url);
     }else await page.goto(url);
-  }catch(cause){if(isControlError(cause))throw cause;retryError=cause.message;error=retryError;}
+  }catch(cause){if(cause.pause||isControlError(cause))throw cause;retryError=cause.message;error=retryError;}
   if(!inspectOnly)await readCurrent();
   screen=await settledReloadScreen();
   if(action==='reload_button')reloadClicks++;

@@ -15,6 +15,13 @@ test('SESSION-002 closed page produces a pause instead of an empty result',async
  assert.equal(typeof api.createSession,'function');const s=api.createSession({log:async()=>{}});
  await assert.rejects(s.wrap({url:async()=>{throw Error('Target closed');},goto:async()=>assert.fail('closed page must not navigate')}).goto('https://example.com/'),e=>e.pause===true);
 });
+test('SESSION-003 product URL containing control does not turn a committed navigation timeout into lost control',async()=>{
+ const error=Error('page.goto timed out waiting for load; navigation committed at "https://thehalara.au/products/tummy-control-workout-leggings" with document.readyState="interactive". Continue on this Page');
+ const s=api.createSession({log:async()=>{},now:()=>1000});
+ const page=s.wrap({label:'p1',url:async()=> 'https://thehalara.au/products/tummy-control-workout-leggings',goto:async()=>{throw error;},evaluate:async()=>true});
+ await assert.rejects(page.goto('https://halara.link/s/example'),e=>e===error&&e.pause!==true);
+ assert.equal(await page.evaluate(()=>true),true);
+});
 test('SESSION-002 a swallowed fatal error cannot permit a later read or action',async()=>{
  const f=setup();assert.equal(typeof api.createSession,'function');const s=api.createSession({log:async()=>{throw Error('disk_full');}}),raw=f.raw('p1');let reads=0;raw.evaluate=async()=>reads++;
  const page=s.wrap(raw);try{await page.goto('https://example.com/');}catch{}
