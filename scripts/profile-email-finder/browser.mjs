@@ -485,7 +485,12 @@ export function createEgoBrowser({
         if (isControlError(e)) throw pause("user_control_lost");
         throw pause("browser_unavailable: " + e.message);
       }
-      if (current.key === info.key ||
+      const resolved = checkpoint.resolvedUrl && classifyUrl(checkpoint.resolvedUrl);
+      if (resolved && (info.kind !== "webpage" || resolved.kind !== "webpage" ||
+          resolved.excludedReason)) throw pause("redirect_checkpoint_invalid");
+      if (resolved && current.key !== resolved.key)
+        throw pause("redirect_page_changed_before_resume");
+      if (current.key === info.key || resolved ||
           (info.platform === "youtube" && info.kind === "profile" &&
            current.platform === "youtube" && current.kind === "profile" &&
            current.profileKey === info.profileKey)) {
