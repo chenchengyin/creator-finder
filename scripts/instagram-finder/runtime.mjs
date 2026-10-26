@@ -6,6 +6,17 @@ import {createSearchPager} from './search.mjs';
 import {collectReels} from './reels.mjs';
 import {waitForSearchRetry} from './search-retry.mjs';
 import {createProgress} from './progress.mjs';
+import {findProfileEmail} from '../profile-email-finder/integration.mjs';
+
+export function profileBoundEmailReader(profilePage,emailPage,find=findProfileEmail){
+ return async args=>{
+  const expected=args.profile.profileUrl;
+  if(await profilePage.url()!==expected)throw Object.assign(Error('profile_page_changed_before_email'),{pause:true});
+  const result=await find({...args,page:emailPage});
+  if(await profilePage.url()!==expected)throw Object.assign(Error('profile_page_changed_during_email'),{pause:true});
+  return result;
+ };
+}
 
 export async function runInEgo(options,api){
  const progress=createProgress({runDir:options.runDir,runId:options.executionId});
@@ -40,19 +51,20 @@ export async function runInEgo(options,api){
    await log({phase:'after',action:'newPage',role,page:page.label,at:new Date().toISOString()});
    return coordinator.wrap(page);
   };
-  const search=await getPage('search','p1'),page=await getPage('profile'),detailPage=await getPage('detail');
+  const search=await getPage('search','p1'),page=await getPage('profile'),emailPage=await getPage('email'),detailPage=await getPage('detail');
   let pager,keyword;
   const onEvidence=async evidence=>{try{await fs.appendFile(join(runDir,'search-responses.jsonl'),JSON.stringify(evidence)+'\n');}catch(error){error.storageFailure=true;throw error;}};
   Object.defineProperty(session,'lastActionAt',{enumerable:true,get:()=>coordinator.state.lastActionAt});
   return {page,session,assertHealthy:()=>{coordinator.assertHealthy();progress.assertHealthy();},context:value=>{coordinator.context(value);progress.context(value);},
    async startKeyword(value,initialPages=[]){keyword=value;pager=createSearchPager({page:search,keyword,onEvidence,initialPages});return pager.first();},
-   async nextSearchPage({keyword:value,searchKeyword,previousCursor,pendingPages}){
+   async nextSearchPage({keyword:value,searchKeyword,previousCursor,pendingPages,knownCodes}){
     if(!pager||keyword!==value){keyword=value;pager=createSearchPager({page:search,keyword,searchKeyword,initialPages:pendingPages,onEvidence});}
-    return pager.next({previousCursor,currentPageProcessed:true});
+    return pager.next({previousCursor,currentPageProcessed:true,knownCodes});
    },
    pendingSearchPages:()=>pager?.pendingPages()||[],
    waitForSearchRetry:until=>waitForSearchRetry(until,{onWait:value=>progress.wait(value),assertHealthy:()=>{coordinator.assertHealthy();progress.assertHealthy();}}),
-   readers:{averageViews:args=>collectReels({...args,page,detailPage})},
+   readers:{email:profileBoundEmailReader(page,emailPage),averageViews:args=>collectReels({...args,page,detailPage})},
+   async handOff(){if(owned)await task.handOff();},
    async finish(){if(owned)await task.finish({keep:[]});session.closed=true;},
   };
  }});

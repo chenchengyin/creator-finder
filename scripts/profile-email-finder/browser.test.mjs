@@ -128,6 +128,31 @@ test("复用-REUSE-003 其他账号、空白页、不同query或路由仍导航�
   }
 });
 
+test("复用-REUSE-009 人工取消短链落地页权限提示后复用已确认页面", async () => {
+  const short = "https://seph.me/4fTMLw6";
+  const landing = "https://www.sephora.com/product/example";
+  const page = pageFor([cap(landing)], { currentUrl: landing });
+  const browser = create({ page, sleep: async () => {} });
+  const result = await browser.readPage({
+    url: short,
+    checkpoint: { resolvedUrl: landing },
+    onCapture: async () => {},
+  });
+  assert.equal(result.complete, true);
+  assert.deepEqual(page.actions, []);
+});
+
+test("复用-REUSE-010 已确认的短链落地页改变时暂停而不重新导航", async () => {
+  const page = pageFor([cap("https://other.example/")], { currentUrl: "https://other.example/" });
+  const browser = create({ page, sleep: async () => {} });
+  await assert.rejects(browser.readPage({
+    url: "https://seph.me/4fTMLw6",
+    checkpoint: { resolvedUrl: "https://www.sephora.com/product/example" },
+    onCapture: async () => {},
+  }), error => error.pause && error.reason === "redirect_page_changed_before_resume");
+  assert.deepEqual(page.actions, []);
+});
+
 test("复用-REUSE-004 当前页仍加载时等待目标资料后读取，保留已展开内容", async () => {
   let ready = false;
   const p = pageFor([cap()], { currentUrl: root });
@@ -624,6 +649,15 @@ test("浏览-BROWSER-015 普通外站导航失败不重试也不读上一页DOM"
     assert.equal(p.actions.filter((a) => a[0] === "goto").length, 1);
     assert.ok(result.issues.some((i) => i.includes(message)));
   }
+});
+test("浏览-BROWSER-018 外链已提交且页面可读时保留落地页而不重复跳转", async () => {
+  const short="https://halara.link/s/example",landing="https://thehalara.au/products/tummy-control-workout-leggings";
+  const page=pageFor([cap(landing)],{currentUrl:"about:blank"});
+  page.goto=async target=>{page.actions.push(["goto",target]);page.url=async()=>landing;throw Error(`page.goto timed out waiting for load; navigation committed at "${landing}" with document.readyState="interactive". Continue on this Page`);};
+  const {result,captured}=await read(page,short);
+  assert.equal(result.complete,true);
+  assert.equal(captured[0].url,landing);
+  assert.deepEqual(page.actions,[["goto",short]]);
 });
 test("浏览-BROWSER-016 普通网页验证码与控制丢失继续暂停", async () => {
   const u = "https://example.org/contact";

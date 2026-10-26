@@ -90,6 +90,18 @@ test('a complete loaded link list avoids reopening the native multi-link dialog'
 test('visible multi-link count mismatch requires reading the dialog instead of trusting stale links',async()=>{
  const hydrated={user:{username:'target',biography:'work@example.com',bio_links:[{url:'https://one.example/'}]}};const dialog=[{url:'https://one.example/'},{url:'https://two.example/'}];let clicked=0;
  const values=[false,'target',[JSON.stringify(hydrated)],{username:'target',biography:'work@example.com',truncated:false,hasMultiLinks:true},{expectedCount:2},dialog,false];
- const page={evaluate:async()=>values.shift(),url:async()=> 'https://www.instagram.com/target/',cdp:async()=>{},events:async()=>[],click:async()=>clicked++,waitForSelector:async()=>{},waitForTimeout:async()=>{}};
+ const page={evaluate:async()=>values.shift(),url:async()=> 'https://www.instagram.com/target/',cdp:async()=>{},events:async()=>[],click:async()=>clicked++,waitForSelector:async()=>{},waitForFunction:async()=>{},waitForTimeout:async()=>{}};
  const r=await readProfile({page,username:'target'});assert.equal(clicked,1);assert.equal(r.links.length,2);assert.equal(r.linksSource,'instagram_native_links_dialog');
+});
+test('multi-link dialog waits for its title and links after the dialog shell appears',async()=>{
+ const hydrated={user:{username:'target',biography:'No email',bio_links:[{url:'https://one.example/'}]}};
+ let stage=0,ready=false,clicked=0;
+ const page={url:async()=> 'https://www.instagram.com/target/',cdp:async()=>{},events:async()=>[],waitForSelector:async()=>{},waitForTimeout:async()=>{},click:async()=>{clicked++;},waitForFunction:async()=>{ready=true;},evaluate:async()=>{
+  stage++;if(stage===1)return false;if(stage===2)return 'target';if(stage===3)return [JSON.stringify(hydrated)];
+  if(stage===4)return {username:'target',biography:'No email',truncated:false,hasMultiLinks:true};
+  if(stage===5)return {expectedCount:2};if(stage===6)return ready?[{url:'https://one.example/'},{url:'https://two.example/'}]:null;
+  return true;
+ }};
+ const r=await readProfile({page,username:'target'});
+ assert.equal(r.status,'observed');assert.equal(r.links.length,2);assert.equal(clicked,2);
 });

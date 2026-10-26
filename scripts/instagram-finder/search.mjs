@@ -102,17 +102,17 @@ export function createSearchPager({page,keyword,searchKeyword:savedSearchKeyword
    const found=take(null);if(found)return found;
    throw new Error('initial_search_response_missing');
   },
-  async next({previousCursor,currentPageProcessed}){
+  async next({previousCursor,currentPageProcessed,knownCodes=[]}){
    if(currentPageProcessed!==true)throw new Error('current_page_not_processed');
    if(typeof previousCursor!=='string'||!previousCursor)throw new Error('previous_search_cursor_missing');
-   const restoring=stage==='restored';stage='pagination';await checkTopic({restoring});await page.cdp('Network.enable',{maxPostDataSize:65536});
+   const known=new Set(knownCodes),restoring=stage==='restored';stage='pagination';await checkTopic({restoring});await page.cdp('Network.enable',{maxPostDataSize:65536});
    for(let attempt=0;attempt<3;attempt++){
     await drain();let found=take(previousCursor);if(found)return found;
     const before=await view();
     await page.waitForTimeout(10500);await page.mouse.move(1100,700);await page.mouse.wheel(0,1700,{label:'本批处理完后继续当前话题'});
     for(let tick=0;tick<24;tick++){await page.waitForTimeout(500);await checkTopic();await drain();found=take(previousCursor);if(found)return found;}
     const after=await view();
-    if(after.codes.some(c=>!before.codes.includes(c)))throw new Error('search_results_loaded_without_verified_response');
+    if(after.codes.some(c=>!before.codes.includes(c)&&!known.has(c)))throw new Error('search_results_loaded_without_verified_response');
    }
    await drain({final:true});
    const found=take(previousCursor);if(found)return found;

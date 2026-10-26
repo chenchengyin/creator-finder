@@ -4,7 +4,7 @@ import {resolve,join,relative,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawn} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
-import {projectRoot,readBatch,exportSavedBatch,normalizeBatchConfig} from './batch.mjs';
+import {projectRoot,readBatch,exportSavedBatch,normalizeBatchConfig,expandBatchEmailLimits} from './batch.mjs';
 import {readProgress,watchChild} from './progress.mjs';
 
 export async function assertRunDirectory(input){
@@ -23,20 +23,21 @@ export async function assertRunDirectory(input){
 export async function main(args=process.argv.slice(2),{print=console.log,launch}={}){
  const options={};
  for(let i=0;i<args.length;i++){
-  const flag=args[i];if(flag==='--help'){print('Instagram找人与邮箱协作\n--config <配置JSON> --run-dir <preview/runs下新目录>\n--resume | --status | --export --run-dir <原目录>\n邮箱条件：requireEmail；挂链明确公开邮箱可用。');return 0;}
-  const key={'--config':'configPath','--run-dir':'runDir','--resume':'resume','--status':'status','--export':'exportOnly'}[flag];
+  const flag=args[i];if(flag==='--help'){print('Instagram找人与邮箱协作\n--config <配置JSON> --run-dir <preview/runs下新目录>\n--resume | --status | --export --run-dir <原目录>\n--resume --restart-current-keyword：仅搜索页关键词不符时归档旧游标并从官网搜索入口重走当前词\n邮箱条件：requireEmail；挂链明确公开邮箱可用。');return 0;}
+  const key={'--config':'configPath','--run-dir':'runDir','--resume':'resume','--status':'status','--export':'exportOnly','--restart-current-keyword':'restartCurrentKeyword'}[flag];
   if(!key||options[key]!==undefined)throw Error('invalid_or_duplicate_option: '+flag);
-  if(['resume','status','exportOnly'].includes(key))options[key]=true;
+  if(['resume','status','exportOnly','restartCurrentKeyword'].includes(key))options[key]=true;
   else{const value=args[++i];if(!value||value.startsWith('--'))throw Error('missing_value: '+flag);options[key]=value;}
  }
  if(!options.runDir)throw Error('run_dir_required');
  if([options.resume,options.status,options.exportOnly].filter(Boolean).length>1)throw Error('conflicting_modes');
+ if(options.restartCurrentKeyword&&!options.resume)throw Error('restart_current_keyword_requires_resume');
  options.runDir=await assertRunDirectory(options.runDir);
  if(options.status||options.exportOnly){print(JSON.stringify(options.status?{...await readBatch(options.runDir),runtime:await readProgress(options.runDir)}:await exportSavedBatch(options.runDir),null,2));return 0;}
  if(options.configPath)options.config=normalizeBatchConfig(JSON.parse(await fs.readFile(resolve(projectRoot,options.configPath),'utf8')));
  if(options.resume){
   const state=await readBatch(options.runDir);
-  if(options.config&&JSON.stringify(options.config)!==JSON.stringify(state.config))throw Error('resume_input_mismatch');
+  if(options.config)expandBatchEmailLimits(state.config,options.config);
   if(state.status==='completed'){print(JSON.stringify(await exportSavedBatch(options.runDir),null,2));return 0;}
  }else{
   if(!options.config)throw Error('config_required');

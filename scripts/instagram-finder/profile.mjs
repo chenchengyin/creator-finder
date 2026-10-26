@@ -87,6 +87,8 @@ export async function readProfile({page,username,navigate=true,stopOnBioEmail=fa
   if(moreLinks&&(!data?.linksComplete||data.links.length!==moreLinks.expectedCount)){
    await page.click('[data-creator-profile-links]');opened=true;
    await page.waitForSelector('[role="dialog"]',{timeout:10000});
+   try{await page.waitForFunction(expected=>[...document.querySelectorAll('[role="dialog"]')].some(d=>/^(链接|Links)\s*/i.test(d.innerText?.trimStart()||'')&&d.querySelectorAll('a[href]').length>=expected),moreLinks.expectedCount,{timeout:8000});}
+   catch(error){if(!/timeout/i.test(error.message))throw error;}
    const dialog=await page.evaluate(()=>{
     const d=[...document.querySelectorAll('[role="dialog"]')].find(e=>/^(链接|Links)\s*/i.test(e.innerText));
     if(!d)return null;d.setAttribute('data-creator-profile-dialog','');

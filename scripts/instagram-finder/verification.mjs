@@ -48,10 +48,16 @@ export async function verifyCreator({page,username,authorId,conditions,window,ru
   if(!reusable(result.data.email)){
    result.data.email=await (readers.email||findProfileEmail)({page,profile:{...profile,username,profileUrl:`https://www.instagram.com/${username}/`},runDir:join(runDir,'email'),spaceId,limits:emailLimits});await save();
   }
+  if(result.data.email.rootUrl&&result.data.email.rootUrl!==`https://www.instagram.com/${username}/`){
+   result.status='pending_review';result.reason='email_root_url_mismatch';await save();return result;
+  }
   result.checks.email=result.data.email.matches??null;
   if(result.data.email.completion==='failed')throw Error('email_failed: '+(result.data.email.error||'unknown_failure'));
   if(await pause(result.data.email,'email'))return result;
   await save();
+  if(result.checks.email===false&&profile.status==='observed'&&typeof profile.biography==='string'&&profile.linksComplete===true&&Array.isArray(profile.links)&&profile.links.length===0){
+   result.status='completed';result.reason='no_email_or_profile_links';delete result.stage;await save();return result;
+  }
  }
  for(const [enabled,stage,reader,check] of [
   [config.hasThreads,'threads',readers.threads||readThreadsAccount,d=>d.status==='observed'&&d.hasThreads===true?true:null],

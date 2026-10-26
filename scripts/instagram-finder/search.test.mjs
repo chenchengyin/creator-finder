@@ -35,6 +35,13 @@ test('accepts a native explicit final page and retains its items',async()=>{cons
 test('waits for a delayed search response without scrolling past unprocessed data',async()=>{const f=fixture({delayed:true});const r=await createSearchPager({page:f.page,keyword:'#biblereading'}).next({previousCursor:'c1',currentPageProcessed:true});assert.equal(r.hasMore,false);assert.equal(f.actions.length,1);});
 test('missing end state cannot be called keyword completion',async()=>{const f=fixture({hasMore:null});await assert.rejects(createSearchPager({page:f.page,keyword:'#biblereading'}).next({previousCursor:'c1',currentPageProcessed:true}),/search_pagination_state_unknown/);});
 test('stops when UI adds results whose native response could not be read',async()=>{const f=fixture({missing:true,loadedWithoutResponse:true});await assert.rejects(createSearchPager({page:f.page,keyword:'#biblereading'}).next({previousCursor:'c1',currentPageProcessed:true}),/search_results_loaded_without_verified_response/);assert.equal(f.actions.length,1);});
+test('翻页-KNOWN-001 virtualized previously verified cards do not prevent reaching the next native page',async()=>{
+ const f=fixture({missing:true,loadedWithoutResponse:true}),wheel=f.page.mouse.wheel;let count=0,events=[];
+ f.page.events=async()=>{const out=events;events=[];return out;};
+ f.page.mouse.wheel=async(...args)=>{await wheel(...args);if(++count===2)events=[{method:'Network.requestWillBeSent',params:{requestId:'next',request:{postData:new URLSearchParams({fb_api_req_friendly_name:'PolarisKeywordSearchExplorePaginationQuery',variables:JSON.stringify({query:'#biblereading',after:'c1'})}).toString()}}},{method:'Network.responseReceived',params:{requestId:'next',response:{url:'https://www.instagram.com/api/graphql',status:200}}}];};
+ const r=await createSearchPager({page:f.page,keyword:'#biblereading'}).next({previousCursor:'c1',currentPageProcessed:true,knownCodes:['new']});
+ assert.equal(r.items[0].code,'abc');assert.equal(r.hasMore,false);assert.equal(f.actions.length,2);
+});
 test('target search rate limit stops instead of claiming exhaustion',async()=>{const f=fixture({limit:true});await assert.rejects(createSearchPager({page:f.page,keyword:'#biblereading'}).next({previousCursor:'c1',currentPageProcessed:true}),/instagram_access_stopped_rate_limit/);assert.equal(f.actions.length,1);});
 test('restores an already loaded next batch without scrolling again',async()=>{
  const f=fixture();const initialPages=[{keyword:'#biblereading',requestCursor:'c1',connection:f.connection,capturedAt:'2026-10-22T00:00:00Z'}];

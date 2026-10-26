@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import {resolve,join,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {randomUUID} from 'node:crypto';
-import {verificationConfig} from './verification.mjs';
+import {verificationConfig,verifyCreator} from './verification.mjs';
+import {readProfile} from './profile.mjs';
 import {freezeWindow} from './metrics.mjs';
 import {runSearchWithRetry,validateSearchRetry} from './search-retry.mjs';
 import {processSearchPage} from './workflow.mjs';
@@ -22,6 +23,15 @@ export function normalizeBatchConfig(input){
  if(Object.keys(emailLimits).some(k=>!['maxPages','maxDepth'].includes(k))||Object.entries(emailLimits).some(([k,v])=>v!==null&&(!Number.isSafeInteger(v)||v<(k==='maxPages'?1:0))))throw Error('invalid_email_limits');
  if(input.maxAuthors!==undefined&&(!Number.isSafeInteger(input.maxAuthors)||input.maxAuthors<1))throw Error('invalid_author_limit');
  return {keywords:[...new Set(input.keywords)],conditions,window,emailLimits,...(input.maxAuthors!==undefined?{maxAuthors:input.maxAuthors}:{})};
+}
+export function expandBatchEmailLimits(saved,input){
+ const next=normalizeBatchConfig(input);
+ if(JSON.stringify({...saved,emailLimits:{}})!==JSON.stringify({...next,emailLimits:{}}))throw Error('resume_input_mismatch');
+ for(const key of ['maxDepth','maxPages']){
+  const old=saved.emailLimits?.[key]??null,value=next.emailLimits[key]??null;
+  if(old===null&&value!==null||old!==null&&value!==null&&value<old)throw Error('resume_cannot_reduce_email_limits');
+ }
+ return next;
 }
 export function validateBatchState(state){
  if(state?.schemaVersion!==2||state.kind!=='instagram_email_batch'||state.projectRoot!==projectRoot||!state.config||!Array.isArray(state.topics)||state.topics.length!==state.config.keywords?.length||!state.authors||!Number.isSafeInteger(state.topicIndex)||state.topicIndex<0||state.topicIndex>state.topics.length||!['running','paused','failed','completed'].includes(state.status))throw Error('invalid_batch_state');
@@ -69,19 +79,26 @@ export async function exportBatch(state,runDir){
  try{await fs.writeFile(tmp,csv);await fs.rename(tmp,join(runDir,'results.csv'));}catch(e){await fs.unlink(tmp).catch(()=>{});e.storageFailure=true;throw e;}
  return report;
 }
-export async function runBatch({config,runDir,resume=false,browser,retryTiming={},onProgress=async()=>{},onFinish=async()=>{}}){
+export async function runBatch({config,runDir,resume=false,restartCurrentKeyword=false,browser,retryTiming={},onProgress=async()=>{},onFinish=async()=>{}}){
  if(!runDir)throw Error('run_dir_required');
  const dir=resolve(runDir);await fs.mkdir(dir,{recursive:true});
  const unlock=await lockBatch(dir);
- let state,active,committed;
+ let state,active,committed,configExpanded=false;
  try{
   let saved;try{saved=await readBatch(dir);}catch(e){if(e.code!=='ENOENT')throw e;}
   if(saved){
    if(!resume)throw Error('run_exists_use_resume');
-   if(config&&JSON.stringify(normalizeBatchConfig(config))!==JSON.stringify(saved.config))throw Error('resume_input_mismatch');
-   state=saved;
+   state=saved;if(config){state.config=expandBatchEmailLimits(saved.config,config);configExpanded=JSON.stringify(state.config)!==JSON.stringify(saved.config);}
+   if(restartCurrentKeyword){
+    if(saved.status!=='paused'||saved.reason!=='search_topic_mismatch'||saved.topicIndex>=saved.topics.length)throw Error('restart_current_keyword_not_allowed');
+    const topic=saved.topics[saved.topicIndex];
+    await atomicJson(join(dir,'search-recovery-'+randomUUID()+'.json'),{at:new Date().toISOString(),reason:saved.reason,topicIndex:saved.topicIndex,topic:structuredClone(topic)});
+    state.topics[state.topicIndex]={keyword:topic.keyword,history:[],pendingSearchPages:[],currentPage:null,activePageState:null};
+    delete state.searchRetry;
+   }
   }else{
    if(resume)throw Error('saved_run_not_found');
+   if(restartCurrentKeyword)throw Error('restart_current_keyword_requires_resume');
    if((await fs.readdir(dir)).some(name=>name!=='.lock'))throw Error('run_directory_not_empty');
    const normalized=normalizeBatchConfig(config);
    state={schemaVersion:2,kind:'instagram_email_batch',projectRoot,config:normalized,status:'running',topicIndex:0,authors:{},topics:normalized.keywords.map(keyword=>({keyword,history:[],pendingSearchPages:[],currentPage:null,activePageState:null})),browser:null};
@@ -89,16 +106,42 @@ export async function runBatch({config,runDir,resume=false,browser,retryTiming={
   }
   const save=async()=>{active?.assertHealthy?.();if(active?.session)state.browser=structuredClone(active.session);state.updatedAt=new Date().toISOString();await atomicJson(join(dir,'execution-state.json'),state);committed=structuredClone(state);await onProgress(state);};
   await save();
+  if(configExpanded)await atomicJson(join(dir,'config.json'),state.config);
   if(state.status==='completed'){await exportBatch(state,dir);return state;}
   active=typeof browser==='function'?await browser(state.browser,dir,async session=>{state.browser=structuredClone(session);await save();}):browser;
   if(!active?.page||!active.startKeyword||!active.nextSearchPage)throw Error('batch_browser_required');
   state.status='running';delete state.reason;delete state.accessIssue;await save();
+  for(const author of Object.values(state.authors)){
+   const verification=author.verification,email=verification?.data?.email;
+   if(verification?.checks?.country===false){
+    if(author.emailBackfillPending){author.emailBackfillPending=false;await save();}
+    continue;
+   }
+   if(!author.emailBackfillPending&&(!['completed','pending_review'].includes(verification?.status)||email?.matches===true||
+    !(email?.pages||[]).some(p=>p.depth>0&&p.attempted===false&&p.status==='pending'&&
+     (state.config.emailLimits.maxDepth??Infinity)>=p.depth&&
+     (email.pages.filter(page=>page.attempted).length<(state.config.emailLimits.maxPages??Infinity)))))continue;
+   author.emailBackfillPending=true;await save();
+   active.context?.({username:author.username,authorId:author.authorId,stage:'email_backfill'});
+   const profile=await (active.readers?.profile||readProfile)({page:active.page,username:author.username,stopOnBioEmail:true});
+   const revised=structuredClone(verification);revised.status='in_progress';revised.data.profile=profile;delete revised.data.email;delete revised.checks.email;
+   author.verification=await verifyCreator({page:active.page,username:author.username,authorId:author.authorId,conditions:state.config.conditions,window:state.config.window,
+    runDir:join(dir,'authors',author.authorId),state:revised,spaceId:active.session?.spaceId,emailLimits:state.config.emailLimits,
+    readers:active.readers||{},context:active.context,assertHealthy:active.assertHealthy,onCheckpoint:async value=>{author.verification=value;await save();}});
+   author.checks=author.verification.checks;author.email=author.verification.data.email;author.country=author.verification.data.country;
+   author.status=author.verification.status==='pending_review'||author.verification.matches===null?'pending_review':author.verification.matches===false?'rejected':'core_pass_pending_content_review';
+   if(author.verification.status==='paused'){state.status='paused';state.reason=author.verification.reason;await save();await exportBatch(state,dir);return state;}
+   author.emailBackfillPending=false;
+   for(const topic of state.topics)if(topic.activePageState?.authors?.[author.authorId])topic.activePageState.authors[author.authorId]=structuredClone(author);
+   await save();
+  }
   const search=async(topic,cursor,call)=>runSearchWithRetry({state,keyword:topic.keyword,cursor,call,save,
    onLimited:evidence=>{state.accessIssue=structuredClone(evidence);topic.pendingSearchPages=active.pendingSearchPages?.()||topic.pendingSearchPages;},
    wait:active.waitForSearchRetry,now:retryTiming.now,random:retryTiming.random});
   const advance=async topic=>{
    const current=topic.currentPage;
-   const next=await search(topic,current.cursor,()=>active.nextSearchPage({keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages}));
+   const knownCodes=[...new Set([...current.items.map(item=>item.code),...Object.values(state.authors).flatMap(a=>a.sources.filter(s=>s.keyword===topic.keyword).map(s=>s.code))])];
+   const next=await search(topic,current.cursor,()=>active.nextSearchPage({keyword:topic.keyword,searchKeyword:current.searchKeyword??topic.keyword,previousCursor:current.cursor,pendingPages:topic.pendingSearchPages,knownCodes}));
    if(!Array.isArray(next.items)||typeof next.hasMore!=='boolean'||next.hasMore&&(!next.cursor||next.cursor===current.cursor))throw Error('search_pagination_state_unknown');
    topic.currentPage=next;topic.pendingSearchPages=active.pendingSearchPages?.()||[];delete topic.advancePending;await save();
   };
@@ -144,5 +187,9 @@ export async function runBatch({config,runDir,resume=false,browser,retryTiming={
   if(!e.storageFailure&&e.searchEvidence){failed.accessIssue=structuredClone(e.searchEvidence);const topic=failed.topics[failed.topicIndex];if(topic)topic.pendingSearchPages=active?.pendingSearchPages?.()||topic.pendingSearchPages;}
   if(!e.storageFailure){try{await atomicJson(join(dir,'execution-state.json'),failed);await exportBatch(failed,dir);}catch(writeError){failed.status='failed';failed.reason=writeError.message;}}
   state=failed;return failed;
- }finally{try{await onFinish(state);}finally{await unlock();}}
+ }finally{
+  const youtubeChallenge=state?.status==='paused'&&Object.values(state.authors||{}).some(a=>a.verification?.status==='paused'&&a.verification.data.email?.completion==='paused'&&a.verification.data.email.issues?.some(i=>i.reason==='youtube_image_challenge'));
+  try{await onFinish(state);}finally{await unlock();}
+  if(youtubeChallenge)await active?.handOff?.();
+ }
 }
