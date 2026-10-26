@@ -23,6 +23,25 @@ test('BATCH-002 paused child resumes current author without repeating profile or
  const paused=await run({config,runDir:dir,browser:b});assert.equal(paused.status,'paused');assert.deepEqual(b.actions,['search:#one','profile:example']);
  const r=await run({runDir:dir,resume:true,browser:b});assert.equal(r.status,'completed');assert.equal(b.actions.filter(x=>x==='profile:example').length,1);assert.equal(b.actions.filter(x=>x==='search:#one').length,1);
 });
+test('paused search topic can restart from the native search entry while retaining verified authors',async t=>{
+ const dir=await temp(t),first=browser();
+ first.nextSearchPage=async()=>{throw Object.assign(Error('search_topic_mismatch'),{pause:true});};
+ const paused=await run({config:{...config,keywords:['#one']},runDir:dir,browser:first});
+ assert.equal(paused.reason,'search_topic_mismatch');assert.equal(paused.topics[0].advancePending,true);
+ const resumed=browser();resumed.startKeyword=async keyword=>{resumed.actions.push('search:'+keyword);return {items:[item(),item('456','second')],hasMore:false,cursor:null};};
+ const done=await run({runDir:dir,resume:true,restartCurrentKeyword:true,browser:resumed});
+ assert.equal(done.status,'completed');assert.deepEqual(resumed.actions,['search:#one','profile:second','finish']);
+ assert.equal(Object.keys(done.authors).length,2);
+ const archives=(await fs.readdir(dir)).filter(name=>name.startsWith('search-recovery-'));
+ assert.equal(archives.length,1);const archive=JSON.parse(await fs.readFile(join(dir,archives[0]),'utf8'));
+ assert.equal(archive.reason,'search_topic_mismatch');assert.equal(archive.topic.advancePending,true);
+});
+test('keyword restart refuses unrelated pauses without changing the checkpoint',async t=>{
+ const dir=await temp(t),b=browser();b.nextSearchPage=async()=>{throw Object.assign(Error('search_rate_limit'),{pause:true});};
+ const paused=await run({config:{...config,keywords:['#one']},runDir:dir,browser:b});
+ await assert.rejects(run({runDir:dir,resume:true,restartCurrentKeyword:true,browser:browser()}),/restart_current_keyword_not_allowed/);
+ assert.equal(JSON.stringify(await api.readBatch(dir)),JSON.stringify(paused));
+});
 test('YouTube image challenge saves the parent checkpoint before handing control to the user',async t=>{
  const dir=await temp(t),b=browser();b.startKeyword=async()=>({items:[item()],hasMore:false,cursor:null});
  b.readers.email=async()=>({rootUrl:'https://www.instagram.com/example/',completion:'paused',matches:null,issues:[{reason:'youtube_image_challenge'}]});

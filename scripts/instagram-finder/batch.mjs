@@ -79,7 +79,7 @@ export async function exportBatch(state,runDir){
  try{await fs.writeFile(tmp,csv);await fs.rename(tmp,join(runDir,'results.csv'));}catch(e){await fs.unlink(tmp).catch(()=>{});e.storageFailure=true;throw e;}
  return report;
 }
-export async function runBatch({config,runDir,resume=false,browser,retryTiming={},onProgress=async()=>{},onFinish=async()=>{}}){
+export async function runBatch({config,runDir,resume=false,restartCurrentKeyword=false,browser,retryTiming={},onProgress=async()=>{},onFinish=async()=>{}}){
  if(!runDir)throw Error('run_dir_required');
  const dir=resolve(runDir);await fs.mkdir(dir,{recursive:true});
  const unlock=await lockBatch(dir);
@@ -89,8 +89,16 @@ export async function runBatch({config,runDir,resume=false,browser,retryTiming={
   if(saved){
    if(!resume)throw Error('run_exists_use_resume');
    state=saved;if(config){state.config=expandBatchEmailLimits(saved.config,config);configExpanded=JSON.stringify(state.config)!==JSON.stringify(saved.config);}
+   if(restartCurrentKeyword){
+    if(saved.status!=='paused'||saved.reason!=='search_topic_mismatch'||saved.topicIndex>=saved.topics.length)throw Error('restart_current_keyword_not_allowed');
+    const topic=saved.topics[saved.topicIndex];
+    await atomicJson(join(dir,'search-recovery-'+randomUUID()+'.json'),{at:new Date().toISOString(),reason:saved.reason,topicIndex:saved.topicIndex,topic:structuredClone(topic)});
+    state.topics[state.topicIndex]={keyword:topic.keyword,history:[],pendingSearchPages:[],currentPage:null,activePageState:null};
+    delete state.searchRetry;
+   }
   }else{
    if(resume)throw Error('saved_run_not_found');
+   if(restartCurrentKeyword)throw Error('restart_current_keyword_requires_resume');
    if((await fs.readdir(dir)).some(name=>name!=='.lock'))throw Error('run_directory_not_empty');
    const normalized=normalizeBatchConfig(config);
    state={schemaVersion:2,kind:'instagram_email_batch',projectRoot,config:normalized,status:'running',topicIndex:0,authors:{},topics:normalized.keywords.map(keyword=>({keyword,history:[],pendingSearchPages:[],currentPage:null,activePageState:null})),browser:null};
