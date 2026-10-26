@@ -24,3 +24,16 @@ test('user takeover propagates without further browser actions',async()=>{const 
 test('HTTP-200 protection response is a pause even without a returned profile identity',()=>{
  const r=parseCountryResponse(JSON.stringify({errors:[{message:'Rate limit exceeded'}],data:null}),'example');assert.equal(r.status,'paused');assert.equal(r.reason,'instagram_access_stopped_rate_limit');
 });
+test('资料卡-CLOSE-001 intercepted close button uses keyboard activation before continuing',async()=>{
+ const page=fakePage(),click=page.click;let open=false;
+ page.click=async selector=>{if(selector==='[data-creator-country-open]')open=true;if(selector==='[data-creator-country-close]')throw Error('none can receive input; <div> intercepts pointer events');return click(selector);};
+ page.press=async(selector,key)=>{assert.equal(selector,'[data-creator-country-close]');assert.equal(key,'Enter');page.actions.push('keyboard-close');open=false;};
+ const r=await readAccountCountry({page,username:'example'});
+ assert.equal(r.countryCode,'US');assert.equal(open,false);assert.equal(page.actions.includes('keyboard-close'),true);assert.equal(page.actions.includes('Escape'),false);assert.equal(page.actions.at(-1),'cleanup');
+});
+test('资料卡-CLOSE-002 takeover during keyboard close stops all remaining page actions',async()=>{
+ const page=fakePage(),click=page.click;
+ page.click=async selector=>{if(selector==='[data-creator-country-close]')throw Error('intercepts pointer events');return click(selector);};
+ page.press=async()=>{throw Error('Control of this task space is with the user');};
+ await assert.rejects(readAccountCountry({page,username:'example'}),/Control of this task space/);assert.equal(page.actions.includes('Escape'),false);assert.equal(page.actions.includes('cleanup'),false);
+});

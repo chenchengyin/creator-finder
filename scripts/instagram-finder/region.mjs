@@ -97,7 +97,10 @@ export async function readAccountCountry({page,username,navigate=true}){
   if(owned&&!lostControl){
    try{await page.click('[data-creator-country-close]',{label:'关闭本次账户资料卡'});await page.waitForFunction(()=>!document.querySelector('[data-creator-country-close]'),undefined,{timeout:5000});}catch(error){
     if(/Control of this task space|delegat|ownership/i.test(error.message))throw error;
-    await page.keyboard.press('Escape');
+    if(/intercepts pointer events/i.test(error.message)){
+     await page.press('[data-creator-country-close]','Enter');
+     await page.waitForFunction(()=>!document.querySelector('[data-creator-country-close]'),undefined,{timeout:5000});
+    }else await page.keyboard.press('Escape');
    }
    await page.evaluate(({operation})=>{document.getElementById('creator-country-query-style')?.remove();document.body.removeAttribute('data-creator-country-query');document.querySelectorAll('[data-creator-country-open],[data-creator-country-close]').forEach(e=>{e.removeAttribute('data-creator-country-open');e.removeAttribute('data-creator-country-close');});},{operation:'cleanup'});
   }
