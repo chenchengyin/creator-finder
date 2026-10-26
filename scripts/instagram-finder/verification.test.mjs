@@ -5,7 +5,7 @@ import {processSearchPage} from './workflow.mjs';
 let api={};try{api=await import('./verification.mjs');}catch(e){if(e.code!=='ERR_MODULE_NOT_FOUND')throw e;}
 const window={windowStart:'2026-10-12T00:00:00+08:00',windowEndExclusive:'2026-10-22T00:00:00+08:00'};
 function fixture(){const calls=[];return {calls,page:{url:async()=> 'https://external.example/'},username:'example',authorId:'123',runDir:'/tmp/not-written-verification',conditions:{requireEmail:true,country:'US',minAverageViewsExclusive:50000},window,readers:{
- profile:async()=>{calls.push('profile');return {username:'example',authorId:'123',status:'observed',biography:'',links:[],linksComplete:true};},
+ profile:async()=>{calls.push('profile');return {username:'example',authorId:'123',status:'observed',biography:'',links:[{url:'https://contact.example/'}],linksComplete:true};},
  email:async()=>{calls.push('email');return {completion:'completed',matches:false,acceptedEmails:[],emails:[],pages:[]};},
  country:async args=>{calls.push('country:'+args.navigate);return {status:'observed',countryCode:'MX'};},
  averageViews:async()=>{calls.push('mean');return {capture:{},metrics:{coverageComplete:true,passesThreshold:true,averageViews:60000}};}
@@ -56,4 +56,38 @@ test('online scope: either accepted country qualifies while other countries fail
   const f=fixture();f.conditions={requireEmail:true,countries:['US','GB']};f.readers.country=async()=>({status:'observed',countryCode});
   f.readers.averageViews=async()=>assert.fail('must not collect metrics');const r=await verify(f);assert.equal(r.checks.country,expected);
  }
+});
+
+test('邮箱-EMPTY-001 complete profile without email or links skips remaining checks',async()=>{
+ const f=fixture();f.readers.profile=async()=>{f.calls.push('profile');return {username:'example',authorId:'123',status:'observed',biography:'Perfume reviews',links:[],linksComplete:true};};
+ const r=await verify(f);
+ assert.equal(r.status,'completed');assert.equal(r.matches,false);assert.equal(r.checks.email,false);
+ assert.deepEqual(f.calls,['profile','email']);assert.equal(r.data.country,undefined);assert.equal(r.checks.country,undefined);assert.equal(r.data.averageViews,undefined);
+ assert.equal(r.reason,'no_email_or_profile_links');
+});
+
+test('邮箱-EMPTY-002 incomplete profiles and uncertain email results retain later checks',async()=>{
+ for(const change of [{status:'partial'},{biography:null},{linksComplete:false},{links:undefined},{links:[{url:'https://contact.example/'}]},{emailMatches:null}]){
+  const f=fixture();f.readers.profile=async()=>{f.calls.push('profile');return {username:'example',authorId:'123',status:'observed',biography:'Perfume reviews',links:[],linksComplete:true,...change};};
+  if(Object.hasOwn(change,'emailMatches'))f.readers.email=async()=>{f.calls.push('email');return {completion:'completed',matches:change.emailMatches,acceptedEmails:[],emails:[],pages:[]};};
+  const r=await verify(f);assert.deepEqual(f.calls,['profile','email','country:true','mean']);assert.equal(r.checks.country,false);
+ }
+});
+
+test('邮箱-EMPTY-003 old country pause with complete empty profile resumes without country interaction',async()=>{
+ const f=fixture();f.readers.country=async()=>({status:'paused',reason:'instagram_access_stopped_429'});
+ const stopped=await verify(f);assert.equal(stopped.status,'paused');stopped.data.profile.links=[];
+ f.calls.length=0;f.readers.country=async()=>assert.fail('empty profile must not reopen country');
+ const r=await verify({...f,state:stopped});assert.equal(r.status,'completed');assert.equal(r.matches,false);assert.deepEqual(f.calls,[]);assert.equal(r.stage,undefined);
+});
+
+test('邮箱-EMPTY-004 search skips country for empty profile and continues to next creator',async()=>{
+ const f=fixture();f.conditions={requireEmail:true,country:'US'};
+ f.readers.profile=async({username})=>{f.calls.push('profile:'+username);return {username,status:'observed',biography:username==='second'?'Bookings: creator@example.com':'Perfume reviews',links:[],linksComplete:true};};
+ f.readers.email=async({profile})=>{f.calls.push('email:'+profile.username);return {completion:'completed',matches:profile.username==='second',acceptedEmails:[],emails:[],pages:[]};};
+ f.readers.country=async({username})=>{f.calls.push('country:'+username);return {status:'observed',countryCode:'US'};};
+ const items=['123','456'].map((authorId,i)=>({id:String(i),code:'code'+i,authorId,username:i?'second':'example',mediaType:2}));
+ const r=await processSearchPage({...f,items});assert.equal(r.status,'completed');assert.equal(r.nextItemIndex,2);
+ assert.equal(r.authors['123'].status,'rejected');assert.equal(r.authors['456'].status,'core_pass_pending_content_review');
+ assert.deepEqual(f.calls,['profile:example','email:example','profile:second','email:second','country:second']);
 });
