@@ -43,6 +43,19 @@ test('expanded email limits revisit earlier queued links without repeating searc
  const done=await run({runDir:dir,resume:true,browser:b});
  assert.equal(done.status,'completed');assert.equal(emailCalls,3);assert.equal(done.authors['123'].verification.checks.email,true);assert.equal(b.actions.filter(x=>x==='search:#one').length,0);
 });
+test('expanded email limits skip old link backfill for a creator already excluded by country',async t=>{
+ const dir=await temp(t),b=browser();let emailCalls=0,nextCalls=0;
+ b.startKeyword=async()=>({items:[item()],hasMore:true,cursor:'c1'});
+ b.nextSearchPage=async()=>{if(++nextCalls===1)throw Object.assign(Error('search_temporary_pause'),{pause:true});return {items:[],hasMore:false,cursor:null};};
+ b.readers.profile=async()=>({status:'observed',username:'example',authorId:'123',biography:'',links:[{url:'https://contact.example/'}],linksComplete:true});
+ b.readers.country=async()=>({status:'observed',countryCode:'GB'});
+ b.readers.email=async()=>{emailCalls++;return {rootUrl:'https://www.instagram.com/example/',completion:'partial',matches:null,acceptedEmails:[],emails:[],pages:[{depth:1,status:'pending',attempted:false}]};};
+ const first={keywords:['#one'],conditions:{requireEmail:true,country:'US'},emailLimits:{maxDepth:0,maxPages:1}};
+ assert.equal((await run({config:first,runDir:dir,browser:b})).status,'paused');
+ const expanded={...first,emailLimits:{maxDepth:3,maxPages:20}};
+ const done=await run({config:expanded,runDir:dir,resume:true,browser:b});
+ assert.equal(done.status,'completed');assert.equal(emailCalls,1);assert.equal(done.authors['123'].checks.country,false);
+});
 test('BATCH-002 invalid input, stale lock, and historical checkpoints never launch browser',async t=>{
  const dir=await temp(t),launch=async()=>assert.fail('must not launch');
  await assert.rejects(run({runDir:dir,config:{...config,keywords:[]},browser:launch}));

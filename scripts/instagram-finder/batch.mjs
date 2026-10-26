@@ -105,6 +105,10 @@ export async function runBatch({config,runDir,resume=false,browser,retryTiming={
   state.status='running';delete state.reason;delete state.accessIssue;await save();
   for(const author of Object.values(state.authors)){
    const verification=author.verification,email=verification?.data?.email;
+   if(verification?.checks?.country===false){
+    if(author.emailBackfillPending){author.emailBackfillPending=false;await save();}
+    continue;
+   }
    if(!author.emailBackfillPending&&(!['completed','pending_review'].includes(verification?.status)||email?.matches===true||
     !(email?.pages||[]).some(p=>p.depth>0&&p.attempted===false&&p.status==='pending'&&
      (state.config.emailLimits.maxDepth??Infinity)>=p.depth&&
